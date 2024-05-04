@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</Console>
+		<File name="BaseTest"
+			fileName="Logs/BaseTest.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="LoginAndForgotPasswordFunctionality"
+			fileName="Logs/LoginAndForgotPasswordFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="LogoutFunctionality"
+			fileName="Logs/LogoutFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="AddSelfTaskAndCheckInDayViewFunctionality"
+			fileName="Logs/AddSelfTaskAndCheckInDayViewFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="MyActivitiesFunctionality"
+			fileName="Logs/MyActivitiesFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="RequestFunctionality"
+			fileName="Logs/RequestFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="CommonTestMethods"
+			fileName="Logs/CommonTestMethods.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="SelfTaskUpdateFunctionality"
+			fileName="Logs/SelfTaskUpdateFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="SelfTaskSubmittedFunctionality"
+			fileName="Logs/SelfTaskSubmittedFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+		<File name="SelfTaskDeleteFunctionality"
+			fileName="Logs/SelfTaskDeleteFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.biencaps.erp.testCases.BaseTest"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="BaseTest" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="LoginAndForgotPasswordFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="com.biencaps.erp.testCases.LogoutFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="LogoutFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="AddSelfTaskAndCheckInDayViewFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.MyActivitiesFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="MyActivitiesFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.RequestFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="RequestFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.utilities.CommonTestMethods"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="CommonTestMethods" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.SelfTaskUpdateFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="SelfTaskUpdateFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="SelfTaskSubmittedFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.SelfTaskDeleteFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="SelfTaskDeleteFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+	</Loggers>
+</Configuration>
