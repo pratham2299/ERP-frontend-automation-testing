@@ -10,7 +10,7 @@ public class DashboardPage {
 
 	protected WebElementActions webElementActions;
 
-	public By employeeName = By.xpath("//p[@class='profileName']");
+	public By employeeNameAfterLoggedIn = By.xpath("//p[@class='profileName']");
 
 	public By logOutIcon = By.xpath("(//*[name()='svg'][@class='logout-req'])[1]");
 	public By logOutButton = By.xpath("//div[@class='logout-confirm']");
@@ -27,7 +27,13 @@ public class DashboardPage {
 	public By createClosureButton = By.xpath("//p[normalize-space()='Create Closure']");
 	public By notificationIcon = By
 			.xpath("//div[@class='notifaction-icon-container']//*[name()='svg']//*[name()='path']");
-	public By firstNotificationMessage = By.xpath("(//div[@class='notification_subject']/h4)[1]");;
+	public By firstNotificationMessage = By.xpath("(//div[@class='notification_subject']/h4)[1]");
+
+	public By lastArrowForLevelView = By.xpath("(//button[@class='p-tree-toggler p-link']//*[name()='svg'])[last()]");
+	public By rolesForLevelView = By.xpath("//span[@class='p-treenode-label']");
+	public By lastRoleForLevelView = By.xpath("(//span[@class='p-treenode-label'])[last()]");
+
+	public By newTaskButton = By.xpath("//button[normalize-space()='New Task']");
 
 	// constructor created for webdriver initialized to this class driver variable
 	// Also that webdriver passed as argument to selenium methods class
@@ -38,7 +44,7 @@ public class DashboardPage {
 	}
 
 	public String checkEmployeeNameAtDashboard() {
-		return webElementActions.getTextMethod(employeeName);
+		return webElementActions.getTextMethod(employeeNameAfterLoggedIn);
 	}
 
 	public void clickOnMyTasksSection() {
@@ -91,5 +97,26 @@ public class DashboardPage {
 
 	public String checkFirstNotificationMessageForRequestDenied() {
 		return webElementActions.getTextMethod(firstNotificationMessage);
+	}
+
+	public void clickOnLastArrowForLevelView() {
+		webElementActions.clickOnMethod(lastArrowForLevelView);
+	}
+
+	public String checkRoleForLevelView() {
+		return webElementActions.getTextMethod(lastRoleForLevelView);
+	}
+
+	public void clickOnRandomRoleForLevelView() {
+		webElementActions.clickOnMethod(lastRoleForLevelView);
+	}
+
+	public void clickOnEmployeeFromLevelView(String employeeName) {
+		By employeeNameAtLevelView = By.xpath("//p[normalize-space()='" + employeeName + "']");
+		webElementActions.clickOnMethod(employeeNameAtLevelView);
+	}
+
+	public void clickOnNewTaskButtonFromLevelView() {
+		webElementActions.clickOnMethod(newTaskButton);
 	}
 }

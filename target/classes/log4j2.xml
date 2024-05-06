@@ -45,6 +45,11 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
+		<File name="AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality"
+			fileName="Logs/AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
 		<File name="SelfTaskSubmittedFunctionality"
 			fileName="Logs/SelfTaskSubmittedFunctionality.log">
 			<PatternLayout
@@ -109,6 +114,14 @@
 			level="all"
 			additivity="false">
 			<AppenderRef ref="SelfTaskUpdateFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef
+				ref="AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger

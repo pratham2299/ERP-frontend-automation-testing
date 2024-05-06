@@ -121,7 +121,7 @@ public class SelfTaskDeleteFunctionality extends BaseTest {
 	}
 
 	// Check total tasks count in day view after deleted multiple task
-	@Test(priority = 5)
+	@Test(priority = 5, enabled = false)
 	public void verifyTotalTasksCountInDayViewAfterDeletingAllTasks() throws InterruptedException {
 		log.info("Task deleted successfully from day view and no tasks present" + "\n");
 

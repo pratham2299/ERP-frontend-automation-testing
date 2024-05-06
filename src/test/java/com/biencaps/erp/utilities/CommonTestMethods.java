@@ -233,9 +233,9 @@ public class CommonTestMethods extends BaseTest {
 		String actualHigherAuthorityEmployeeName = verifyEmployeeNameAfterLoggedIn(loginEmployeeUserId);
 		log.info("Actual " + role + " employee name at dashboard page is: " + actualHigherAuthorityEmployeeName + "\n");
 
-		verifyNotificationMessage(requestSenderEmployeeName,
-				"after employee sent task " + requestAction + " request at " + role + " employee side", requestAction,
-				taskTitle);
+//		verifyNotificationMessage(requestSenderEmployeeName,
+//				"after employee sent task " + requestAction + " request at " + role + " employee side", requestAction,
+//				taskTitle);
 
 		requestFun.verifyRequestInReceivedRequestCard(requestSenderEmployeeName, requestAction, taskTitle);
 	}

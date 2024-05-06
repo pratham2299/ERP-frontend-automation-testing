@@ -1,416 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="62" passed="59" failed="2" skipped="1">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-04T14:05:23 IST" name="Suite" finished-at="2024-05-04T14:15:57 IST" duration-ms="633981">
+  <suite started-at="2024-05-06T17:37:51 IST" name="Suite" finished-at="2024-05-06T17:38:26 IST" duration-ms="34804">
     <groups>
     </groups>
-    <test started-at="2024-05-04T14:05:23 IST" name="Login And Forgot Password Functionality" finished-at="2024-05-04T14:05:40 IST" duration-ms="16937">
+    <test started-at="2024-05-06T17:37:51 IST" name="Login And Forgot Password Functionality" finished-at="2024-05-06T17:38:09 IST" duration-ms="18150">
       <class name="com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality">
-        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@7b84fcf8]" started-at="2024-05-04T14:05:23 IST" name="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword" finished-at="2024-05-04T14:05:27 IST" duration-ms="4039" status="PASS">
+        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:37:51 IST" name="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword" finished-at="2024-05-06T17:37:54 IST" duration-ms="3230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword -->
-        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword()[pri:3, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@7b84fcf8]" started-at="2024-05-04T14:05:27 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword" finished-at="2024-05-04T14:05:31 IST" duration-ms="3235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword -->
-        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword()[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@7b84fcf8]" started-at="2024-05-04T14:05:31 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword" finished-at="2024-05-04T14:05:33 IST" duration-ms="2954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword -->
-        <test-method signature="verifyForgotPasswordWithoutGivingUserId()[pri:5, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@7b84fcf8]" started-at="2024-05-04T14:05:33 IST" name="verifyForgotPasswordWithoutGivingUserId" finished-at="2024-05-04T14:05:35 IST" duration-ms="1451" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordWithoutGivingUserId -->
-        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndValidPassword()[pri:7, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@7b84fcf8]" started-at="2024-05-04T14:05:35 IST" name="verifyLoginEmployeeByGivingValidUserIdAndValidPassword" finished-at="2024-05-04T14:05:40 IST" duration-ms="5068" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingValidUserIdAndValidPassword -->
-        <test-method signature="checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@7b84fcf8]" started-at="2024-05-04T14:05:40 IST" name="checkEmployeeNameAfterLoggedIn" finished-at="2024-05-04T14:05:40 IST" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkEmployeeNameAfterLoggedIn -->
-      </class> <!-- com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality -->
-    </test> <!-- Login And Forgot Password Functionality -->
-    <test started-at="2024-05-04T14:05:40 IST" name="Add Self Task And Check In Day View Functionality" finished-at="2024-05-04T14:08:41 IST" duration-ms="180865">
-      <class name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality">
-        <test-method signature="verifyAddTaskFromSidebarWithoutEnteringTaskTitle()[pri:1, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:05:40 IST" name="verifyAddTaskFromSidebarWithoutEnteringTaskTitle" finished-at="2024-05-04T14:05:44 IST" duration-ms="3775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromSidebarWithoutEnteringTaskTitle -->
-        <test-method signature="verifyTotalTasksCountBeforeAddNewTask()[pri:3, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:05:44 IST" name="verifyTotalTasksCountBeforeAddNewTask" finished-at="2024-05-04T14:05:46 IST" duration-ms="2189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountBeforeAddNewTask -->
-        <test-method signature="verifyAddTaskFromMonthViewAtParticularDate()[pri:4, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:05:46 IST" name="verifyAddTaskFromMonthViewAtParticularDate" finished-at="2024-05-04T14:05:55 IST" duration-ms="9122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromMonthViewAtParticularDate -->
-        <test-method signature="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()[pri:5, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:05:55 IST" name="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" finished-at="2024-05-04T14:05:59 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate" duration-ms="4136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()[pri:6, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:05:59 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate" finished-at="2024-05-04T14:06:09 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" duration-ms="9178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate -->
-        <test-method signature="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()[pri:7, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:06:09 IST" name="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" finished-at="2024-05-04T14:06:22 IST" duration-ms="13008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate -->
-        <test-method signature="verifyAddedTaskFromMonthViewSidebarCheckInDayView()[pri:8, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:06:22 IST" name="verifyAddedTaskFromMonthViewSidebarCheckInDayView" finished-at="2024-05-04T14:06:52 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" duration-ms="30345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromMonthViewSidebarCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()[pri:9, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:06:52 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar" finished-at="2024-05-04T14:07:01 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView" duration-ms="9341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar -->
-        <test-method signature="verifyAddNewTaskFromDayView()[pri:10, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:01 IST" name="verifyAddNewTaskFromDayView" finished-at="2024-05-04T14:07:07 IST" duration-ms="5989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddNewTaskFromDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()[pri:11, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:07 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView" finished-at="2024-05-04T14:07:17 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView" duration-ms="9249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView -->
-        <test-method signature="verifyAddNewTaskFromDayViewSidebar()[pri:12, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:17 IST" name="verifyAddNewTaskFromDayViewSidebar" finished-at="2024-05-04T14:07:26 IST" duration-ms="9333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddNewTaskFromDayViewSidebar -->
-        <test-method signature="verifyAddedTaskFromDayViewSidebarCheckInDayView()[pri:13, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:26 IST" name="verifyAddedTaskFromDayViewSidebarCheckInDayView" finished-at="2024-05-04T14:07:28 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar" duration-ms="2399" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [2024-05-04] but found [2024-05-07]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [2024-05-04] but found [2024-05-07]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskCheckInDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:1157)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:716)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromDayViewSidebarCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar()[pri:14, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:28 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar" finished-at="2024-05-04T14:07:28 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar -->
-        <test-method signature="verifyAddTaskFromWeekViewAtParticularDate()[pri:15, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:28 IST" name="verifyAddTaskFromWeekViewAtParticularDate" finished-at="2024-05-04T14:07:40 IST" duration-ms="11540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromWeekViewAtParticularDate -->
-        <test-method signature="verifyNewAddedTaskFromWeekViewSidebarAtParticularDateInWeekView()[pri:16, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:40 IST" name="verifyNewAddedTaskFromWeekViewSidebarAtParticularDateInWeekView" finished-at="2024-05-04T14:07:43 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewAtParticularDate" duration-ms="2789" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewAddedTaskFromWeekViewSidebarAtParticularDateInWeekView -->
-        <test-method signature="verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView()[pri:17, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:43 IST" name="verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView" finished-at="2024-05-04T14:07:57 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewAtParticularDate" duration-ms="14067" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterTaskAddedFromWeekViewAtParticularDate()[pri:18, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:07:57 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterTaskAddedFromWeekViewAtParticularDate" finished-at="2024-05-04T14:08:06 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView" duration-ms="9315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterTaskAddedFromWeekViewAtParticularDate -->
-        <test-method signature="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()[pri:19, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:08:06 IST" name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" finished-at="2024-05-04T14:08:18 IST" duration-ms="12455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment -->
-        <test-method signature="verifyNewAddedTaskFromWeekViewSidebarInWeekView()[pri:20, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:08:18 IST" name="verifyNewAddedTaskFromWeekViewSidebarInWeekView" finished-at="2024-05-04T14:08:21 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="2249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewAddedTaskFromWeekViewSidebarInWeekView -->
-        <test-method signature="verifyAddedTaskFromWeekViewSidebarCheckInDayView()[pri:21, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:08:21 IST" name="verifyAddedTaskFromWeekViewSidebarCheckInDayView" finished-at="2024-05-04T14:08:32 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="11163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromWeekViewSidebarCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar()[pri:22, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]" started-at="2024-05-04T14:08:32 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar" finished-at="2024-05-04T14:08:41 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView" duration-ms="9158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar -->
-      </class> <!-- com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality -->
-    </test> <!-- Add Self Task And Check In Day View Functionality -->
-    <test started-at="2024-05-04T14:08:41 IST" name="Self Task Update Functionality" finished-at="2024-05-04T14:11:20 IST" duration-ms="158541">
-      <class name="com.biencaps.erp.testCases.SelfTaskUpdateFunctionality">
-        <test-method signature="verifyLastTaskDetailsInDayView()[pri:1, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:08:41 IST" name="verifyLastTaskDetailsInDayView" finished-at="2024-05-04T14:08:56 IST" duration-ms="15182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLastTaskDetailsInDayView -->
-        <test-method signature="verifyUpdateSelfTaskTitleFromDayViewAndCheckTaskTitleAndLogs()[pri:2, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:08:56 IST" name="verifyUpdateSelfTaskTitleFromDayViewAndCheckTaskTitleAndLogs" finished-at="2024-05-04T14:09:13 IST" duration-ms="16472" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskTitleFromDayViewAndCheckTaskTitleAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskStatusFromDayViewAndCheckTaskStatusAndLogs()[pri:3, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:09:13 IST" name="verifyUpdateSelfTaskStatusFromDayViewAndCheckTaskStatusAndLogs" finished-at="2024-05-04T14:09:27 IST" duration-ms="14140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskStatusFromDayViewAndCheckTaskStatusAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskPriorityFromDayViewAndCheckTaskPriorityAndLogs()[pri:4, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:09:27 IST" name="verifyUpdateSelfTaskPriorityFromDayViewAndCheckTaskPriorityAndLogs" finished-at="2024-05-04T14:09:41 IST" duration-ms="13707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskPriorityFromDayViewAndCheckTaskPriorityAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskDueDateFromDayViewAndCheckTaskDueDateAndLogs()[pri:6, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:09:41 IST" name="verifyUpdateSelfTaskDueDateFromDayViewAndCheckTaskDueDateAndLogs" finished-at="2024-05-04T14:09:55 IST" duration-ms="14828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskDueDateFromDayViewAndCheckTaskDueDateAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskDepartmentFromDayViewAndCheckTaskDepartmentAndLogs()[pri:7, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:09:55 IST" name="verifyUpdateSelfTaskDepartmentFromDayViewAndCheckTaskDepartmentAndLogs" finished-at="2024-05-04T14:10:10 IST" duration-ms="14525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskDepartmentFromDayViewAndCheckTaskDepartmentAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskGitlinkFromDayViewWithoutSelectingProject()[pri:8, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:10:10 IST" name="verifyUpdateSelfTaskGitlinkFromDayViewWithoutSelectingProject" finished-at="2024-05-04T14:10:13 IST" duration-ms="2603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskGitlinkFromDayViewWithoutSelectingProject -->
-        <test-method signature="verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs()[pri:9, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:10:13 IST" name="verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs" finished-at="2024-05-04T14:10:27 IST" depends-on-methods="com.biencaps.erp.testCases.SelfTaskUpdateFunctionality.verifyUpdateSelfTaskGitlinkFromDayViewWithoutSelectingProject" duration-ms="14781" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskGitlinkByGivingInvalidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs()[pri:10, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:10:27 IST" name="verifyUpdateSelfTaskGitlinkByGivingInvalidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs" finished-at="2024-05-04T14:10:34 IST" depends-on-methods="com.biencaps.erp.testCases.SelfTaskUpdateFunctionality.verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs" duration-ms="6232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskGitlinkByGivingInvalidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskGitlinkByGivingValidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs()[pri:11, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:10:34 IST" name="verifyUpdateSelfTaskGitlinkByGivingValidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs" finished-at="2024-05-04T14:10:47 IST" depends-on-methods="com.biencaps.erp.testCases.SelfTaskUpdateFunctionality.verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs" duration-ms="13773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskGitlinkByGivingValidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskVerifiedStatusFromDayViewAndCheckTaskVerifiedStatusAndLogs()[pri:12, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:10:47 IST" name="verifyUpdateSelfTaskVerifiedStatusFromDayViewAndCheckTaskVerifiedStatusAndLogs" finished-at="2024-05-04T14:10:57 IST" depends-on-methods="com.biencaps.erp.testCases.SelfTaskUpdateFunctionality.verifyUpdateSelfTaskGitlinkByGivingValidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs" duration-ms="9854" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class='listOfVerifiedWrapper']//div (tried for 7 second(s) with 500 milliseconds interval)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62337/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d02dea901232dbecef573dab2fbcfaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class='listOfVerifiedWrapper']//div (tried for 7 second(s) with 500 milliseconds interval)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62337/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d02dea901232dbecef573dab2fbcfaf
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.biencaps.erp.utilities.WebElementActions.sizeOfListOfWebElement(WebElementActions.java:31)
-at com.biencaps.erp.pageObjectModels.MyTasksPage.checkSelectedTaskVerifiedStatusValueFromDropdownInDayView(MyTasksPage.java:771)
-at com.biencaps.erp.testCases.SelfTaskUpdateFunctionality.verifyUpdateSelfTaskVerifiedStatusFromDayViewAndCheckTaskVerifiedStatusAndLogs(SelfTaskUpdateFunctionality.java:590)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskVerifiedStatusFromDayViewAndCheckTaskVerifiedStatusAndLogs -->
-        <test-method signature="verifyUpdateSelfTaskCommentFromDayViewAndCheckTaskCommentAndLogs()[pri:13, instance:com.biencaps.erp.testCases.SelfTaskUpdateFunctionality@70a36a66]" started-at="2024-05-04T14:10:57 IST" name="verifyUpdateSelfTaskCommentFromDayViewAndCheckTaskCommentAndLogs" finished-at="2024-05-04T14:11:20 IST" duration-ms="22415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateSelfTaskCommentFromDayViewAndCheckTaskCommentAndLogs -->
-      </class> <!-- com.biencaps.erp.testCases.SelfTaskUpdateFunctionality -->
-    </test> <!-- Self Task Update Functionality -->
-    <test started-at="2024-05-04T14:11:20 IST" name="Self Task Submitted Functionality" finished-at="2024-05-04T14:15:26 IST" duration-ms="246045">
-      <class name="com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality">
-        <test-method signature="verifySelfTaskSubmittedInDayView()[pri:1, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:11:20 IST" name="verifySelfTaskSubmittedInDayView" finished-at="2024-05-04T14:11:36 IST" duration-ms="16301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySelfTaskSubmittedInDayView -->
-        <test-method signature="verifyTaskSubmittedRequestInMyRequestSection()[pri:2, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:11:36 IST" name="verifyTaskSubmittedRequestInMyRequestSection" finished-at="2024-05-04T14:11:50 IST" duration-ms="13725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTaskSubmittedRequestInMyRequestSection -->
-        <test-method signature="verifyLogoutAsEmployeeLoginAsLeadLevelEmployeeAndCheckLeadLevelEmployeeName()[pri:3, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:11:50 IST" name="verifyLogoutAsEmployeeLoginAsLeadLevelEmployeeAndCheckLeadLevelEmployeeName" finished-at="2024-05-04T14:12:01 IST" duration-ms="11048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogoutAsEmployeeLoginAsLeadLevelEmployeeAndCheckLeadLevelEmployeeName -->
-        <test-method signature="verifyRequestForTaskSubmitOfEmployeeByLeadLevelEmployee()[pri:5, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:01 IST" name="verifyRequestForTaskSubmitOfEmployeeByLeadLevelEmployee" finished-at="2024-05-04T14:12:06 IST" duration-ms="4895" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRequestForTaskSubmitOfEmployeeByLeadLevelEmployee -->
-        <test-method signature="verifyLogoutAsEmployeeLoginAsTeamLeadLevelEmployeeAndCheckTeamLeadLevelEmployeeName()[pri:6, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:06 IST" name="verifyLogoutAsEmployeeLoginAsTeamLeadLevelEmployeeAndCheckTeamLeadLevelEmployeeName" finished-at="2024-05-04T14:12:17 IST" duration-ms="11414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogoutAsEmployeeLoginAsTeamLeadLevelEmployeeAndCheckTeamLeadLevelEmployeeName -->
-        <test-method signature="verifyRequestForTaskSubmitOfEmployeeByTeamLeadLevelEmployee()[pri:8, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:17 IST" name="verifyRequestForTaskSubmitOfEmployeeByTeamLeadLevelEmployee" finished-at="2024-05-04T14:12:26 IST" duration-ms="9382" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRequestForTaskSubmitOfEmployeeByTeamLeadLevelEmployee -->
-        <test-method signature="verifyIsRequestActionAndTaskTitlePresentInRequestCardList()[pri:12, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:26 IST" name="verifyIsRequestActionAndTaskTitlePresentInRequestCardList" finished-at="2024-05-04T14:12:29 IST" duration-ms="3049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIsRequestActionAndTaskTitlePresentInRequestCardList -->
-        <test-method signature="verifyLogoutAsHigherAuthorityLoginAsEmployeeAndCheckEmployeeName()[pri:13, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:29 IST" name="verifyLogoutAsHigherAuthorityLoginAsEmployeeAndCheckEmployeeName" finished-at="2024-05-04T14:12:39 IST" duration-ms="9702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogoutAsHigherAuthorityLoginAsEmployeeAndCheckEmployeeName -->
-        <test-method signature="verifyNotificationMessageOfTaskSubmitRequestRejectedByHigherAuthority()[pri:14, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:39 IST" name="verifyNotificationMessageOfTaskSubmitRequestRejectedByHigherAuthority" finished-at="2024-05-04T14:12:45 IST" duration-ms="6108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNotificationMessageOfTaskSubmitRequestRejectedByHigherAuthority -->
-        <test-method signature="verifyTaskStatusInDayViewAfterTaskSubmittedRequestRejectedByHigherAuthority()[pri:15, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:45 IST" name="verifyTaskStatusInDayViewAfterTaskSubmittedRequestRejectedByHigherAuthority" finished-at="2024-05-04T14:12:53 IST" duration-ms="8102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTaskStatusInDayViewAfterTaskSubmittedRequestRejectedByHigherAuthority -->
-        <test-method signature="verifyLogMessageAfterSubmitTaskRequestRejected()[pri:16, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:12:53 IST" name="verifyLogMessageAfterSubmitTaskRequestRejected" finished-at="2024-05-04T14:13:03 IST" duration-ms="9197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogMessageAfterSubmitTaskRequestRejected -->
-        <test-method signature="verifyTaskRequestInMyRequestSectionAfterRejectedSubmitTaskRequest()[pri:17, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:13:03 IST" name="verifyTaskRequestInMyRequestSectionAfterRejectedSubmitTaskRequest" finished-at="2024-05-04T14:13:20 IST" duration-ms="17166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTaskRequestInMyRequestSectionAfterRejectedSubmitTaskRequest -->
-        <test-method signature="verifyApprovedRequestForTaskSubmitOfEmployeeFromHigherAuthoritySide()[pri:18, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:13:20 IST" name="verifyApprovedRequestForTaskSubmitOfEmployeeFromHigherAuthoritySide" finished-at="2024-05-04T14:14:42 IST" duration-ms="81799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyApprovedRequestForTaskSubmitOfEmployeeFromHigherAuthoritySide -->
-        <test-method signature="verifyNotificationMessageOfTaskSubmitRequestApprovedByHigherAuthority()[pri:19, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:14:42 IST" name="verifyNotificationMessageOfTaskSubmitRequestApprovedByHigherAuthority" finished-at="2024-05-04T14:14:48 IST" duration-ms="6627" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNotificationMessageOfTaskSubmitRequestApprovedByHigherAuthority -->
-        <test-method signature="verifyTaskStatusInDayViewAfterTaskSubmittedRequestApprovedByHigherAuthority()[pri:20, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:14:48 IST" name="verifyTaskStatusInDayViewAfterTaskSubmittedRequestApprovedByHigherAuthority" finished-at="2024-05-04T14:14:56 IST" duration-ms="7696" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTaskStatusInDayViewAfterTaskSubmittedRequestApprovedByHigherAuthority -->
-        <test-method signature="verifyCompletedTasksCountAndPercentageAfterTaskCompletedInDayView()[pri:21, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:14:56 IST" name="verifyCompletedTasksCountAndPercentageAfterTaskCompletedInDayView" finished-at="2024-05-04T14:14:58 IST" duration-ms="2401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCompletedTasksCountAndPercentageAfterTaskCompletedInDayView -->
-        <test-method signature="verifyLogMessageAfterSubmitTaskRequestApproved()[pri:22, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:14:58 IST" name="verifyLogMessageAfterSubmitTaskRequestApproved" finished-at="2024-05-04T14:15:08 IST" duration-ms="10198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogMessageAfterSubmitTaskRequestApproved -->
-        <test-method signature="verifyTaskRequestInMyRequestSectionAfterApprovedSubmitTaskRequest()[pri:23, instance:com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality@6f152006]" started-at="2024-05-04T14:15:08 IST" name="verifyTaskRequestInMyRequestSectionAfterApprovedSubmitTaskRequest" finished-at="2024-05-04T14:15:26 IST" duration-ms="17203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTaskRequestInMyRequestSectionAfterApprovedSubmitTaskRequest -->
-      </class> <!-- com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality -->
-    </test> <!-- Self Task Submitted Functionality -->
-    <test started-at="2024-05-04T14:15:26 IST" name="Self Task Delete Functionality" finished-at="2024-05-04T14:15:57 IST" duration-ms="31468">
-      <class name="com.biencaps.erp.testCases.SelfTaskDeleteFunctionality">
-        <test-method is-config="true" signature="driverSetUp()[pri:0, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:05:17 IST" name="driverSetUp" finished-at="2024-05-04T14:05:23 IST" duration-ms="6215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverSetUp -->
-        <test-method is-config="true" signature="verifyLastTaskDetailsInDayView()[pri:0, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:15:26 IST" name="verifyLastTaskDetailsInDayView" finished-at="2024-05-04T14:15:26 IST" duration-ms="687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLastTaskDetailsInDayView -->
-        <test-method signature="verifyDeleteLastTaskFromDayView()[pri:1, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:15:26 IST" name="verifyDeleteLastTaskFromDayView" finished-at="2024-05-04T14:15:36 IST" duration-ms="9389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteLastTaskFromDayView -->
-        <test-method signature="verifyLogMessageAfterNewTaskDeleteFromDayView()[pri:2, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:15:36 IST" name="verifyLogMessageAfterNewTaskDeleteFromDayView" finished-at="2024-05-04T14:15:45 IST" duration-ms="9120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogMessageAfterNewTaskDeleteFromDayView -->
-        <test-method signature="verifyTotalTasksCountInDayViewAfterDeletingSingleTask()[pri:3, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:15:45 IST" name="verifyTotalTasksCountInDayViewAfterDeletingSingleTask" finished-at="2024-05-04T14:15:47 IST" duration-ms="2260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountInDayViewAfterDeletingSingleTask -->
-        <test-method signature="verifyMultipleTasksDeleteInDayView()[pri:4, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:15:47 IST" name="verifyMultipleTasksDeleteInDayView" finished-at="2024-05-04T14:15:55 IST" duration-ms="7922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMultipleTasksDeleteInDayView -->
-        <test-method signature="verifyTotalTasksCountInDayViewAfterDeletingAllTasks()[pri:5, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:15:55 IST" name="verifyTotalTasksCountInDayViewAfterDeletingAllTasks" finished-at="2024-05-04T14:15:57 IST" duration-ms="2079" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountInDayViewAfterDeletingAllTasks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@4983159f]" started-at="2024-05-04T14:15:57 IST" name="tearDown" finished-at="2024-05-04T14:15:57 IST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:37:54 IST" name="tearDown" finished-at="2024-05-06T17:37:54 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.biencaps.erp.testCases.SelfTaskDeleteFunctionality -->
-    </test> <!-- Self Task Delete Functionality -->
+        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword()[pri:3, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:37:54 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword" finished-at="2024-05-06T17:37:57 IST" duration-ms="2538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:37:57 IST" name="tearDown" finished-at="2024-05-06T17:37:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword()[pri:3, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword()[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:37:57 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword" finished-at="2024-05-06T17:37:59 IST" duration-ms="2363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:37:59 IST" name="tearDown" finished-at="2024-05-06T17:37:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword()[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyForgotPasswordWithoutGivingUserId()[pri:5, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:37:59 IST" name="verifyForgotPasswordWithoutGivingUserId" finished-at="2024-05-06T17:38:00 IST" duration-ms="1333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordWithoutGivingUserId -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:38:00 IST" name="tearDown" finished-at="2024-05-06T17:38:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyForgotPasswordWithoutGivingUserId status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyForgotPasswordWithoutGivingUserId()[pri:5, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyForgotPasswordByGivingUserId()[pri:6, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:38:00 IST" name="verifyForgotPasswordByGivingUserId" finished-at="2024-05-06T17:38:06 IST" duration-ms="5199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordByGivingUserId -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:38:06 IST" name="tearDown" finished-at="2024-05-06T17:38:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyForgotPasswordByGivingUserId status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyForgotPasswordByGivingUserId()[pri:6, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndValidPassword()[pri:7, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:38:06 IST" name="verifyLoginEmployeeByGivingValidUserIdAndValidPassword" finished-at="2024-05-06T17:38:09 IST" duration-ms="3349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployeeByGivingValidUserIdAndValidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:38:09 IST" name="tearDown" finished-at="2024-05-06T17:38:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingValidUserIdAndValidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingValidUserIdAndValidPassword()[pri:7, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:38:09 IST" name="checkEmployeeNameAfterLoggedIn" finished-at="2024-05-06T17:38:09 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmployeeNameAfterLoggedIn -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad]" started-at="2024-05-06T17:38:09 IST" name="tearDown" finished-at="2024-05-06T17:38:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkEmployeeNameAfterLoggedIn status=SUCCESS method=LoginAndForgotPasswordFunctionality.checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@2cc44ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality -->
+    </test> <!-- Login And Forgot Password Functionality -->
+    <test started-at="2024-05-06T17:38:09 IST" name="Add Update Assign Task And Check At Employee Side Functionality" finished-at="2024-05-06T17:38:26 IST" duration-ms="16595">
+      <class name="com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality">
+        <test-method is-config="true" signature="driverSetUp()[pri:0, instance:com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@7ca33c24]" started-at="2024-05-06T17:37:47 IST" name="driverSetUp" finished-at="2024-05-06T17:37:51 IST" duration-ms="4184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetUp -->
+        <test-method signature="verifyAssignTaskFromLevel()[pri:1, instance:com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@7ca33c24]" started-at="2024-05-06T17:38:09 IST" name="verifyAssignTaskFromLevel" finished-at="2024-05-06T17:38:26 IST" duration-ms="16590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAssignTaskFromLevel -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@7ca33c24]" started-at="2024-05-06T17:38:26 IST" name="tearDown" finished-at="2024-05-06T17:38:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAssignTaskFromLevel status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyAssignTaskFromLevel()[pri:1, instance:com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@7ca33c24] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@7ca33c24]" started-at="2024-05-06T17:38:26 IST" name="tearDown" finished-at="2024-05-06T17:38:26 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality -->
+    </test> <!-- Add Update Assign Task And Check At Employee Side Functionality -->
   </suite> <!-- Suite -->
 </testng-results>

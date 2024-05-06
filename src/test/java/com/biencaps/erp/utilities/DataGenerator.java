@@ -28,16 +28,28 @@ public class DataGenerator {
 		return credentials;
 	}
 
-	// This method stores employee user Id and password
+	// This method stores employee user Id and names
 	// So that we can use it while log in on production
 	public static HashMap<String, String> employeeUserIdsAndNamesOnProduction() {
-		HashMap<String, String> credentials = new HashMap<String, String>();
-		credentials.put("INC012", "Prathamesh Dhasade");
-		credentials.put("INC027", "Test Team Lead");
-		credentials.put("INC028", "Developer Level Tester");
-		credentials.put("INC008", "Vishal Lohbande");
+		HashMap<String, String> employees = new HashMap<String, String>();
+		employees.put("INC012", "Prathamesh Dhasade");
+		employees.put("INC027", "Test Team Lead");
+		employees.put("INC028", "Developer Level Tester");
+		employees.put("INC008", "Vishal Lohbande");
 
-		return credentials;
+		return employees;
+	}
+
+	// This method stores employee user Id and roles
+	// So that we can use it while log in on production
+	public static HashMap<String, String> employeeUserIdsAndRolesOnProduction() {
+		HashMap<String, String> employeeRoles = new HashMap<String, String>();
+		employeeRoles.put("INC012", "Lead");
+		employeeRoles.put("INC027", "Team Lead");
+		employeeRoles.put("INC028", "Developer");
+		employeeRoles.put("INC008", "Team Lead");
+
+		return employeeRoles;
 	}
 
 	// This method generate current date in provided format

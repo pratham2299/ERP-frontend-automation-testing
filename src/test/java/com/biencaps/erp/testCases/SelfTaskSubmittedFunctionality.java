@@ -75,29 +75,48 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 				"wants to submit", lastTaskTitleInDayView);
 	}
 
-//	@Test(priority = 3)
-//	public void verifyNotificationMessageAndRequestOfEmployeeAtAllHigherAuthority() throws InterruptedException {
-//		logOutFun.verifyLogOutEmployee();
-//
-//		commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority("lead level",
-//				Constants.leadLevelTesterEmployeeUserId, Constants.leadLevelTesterEmployeePassword,
-//				LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
-//
-//		logOutFun.verifyLogOutEmployee();
-//
-//		commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority("team lead level",
-//				Constants.teamLeadLevelTesterEmployeeUserId, Constants.teamLeadLevelTesterEmployeePassword,
-//				LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
-//
-//		request.clickOnFirstRejectButton();
-//		Thread.sleep(1000);
-//
-//		request.clickOnRejectSendButtonInRequestSection();
-//		Thread.sleep(2000);
-//	}
+	@Test(priority = 3)
+	public void verifyNotificationMessageAndRequestOfEmployeeAtAllHigherAuthority() throws InterruptedException {
+		if (DataGenerator.employeeUserIdsAndRolesOnProduction().get(LoginAndForgotPasswordFunctionality.validUserId)
+				.equalsIgnoreCase("Developer")) {
+			logOutFun.verifyLogOutEmployee();
+
+			commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority("lead level",
+					Constants.leadLevelTesterEmployeeUserId, Constants.leadLevelTesterEmployeePassword,
+					LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
+
+			logOutFun.verifyLogOutEmployee();
+
+			commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(
+					"team lead level", Constants.teamLeadLevelTesterEmployeeUserId,
+					Constants.teamLeadLevelTesterEmployeePassword,
+					LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
+
+			request.clickOnFirstRejectButton();
+			Thread.sleep(1000);
+
+			request.clickOnRejectSendButtonInRequestSection();
+			Thread.sleep(2000);
+		} else if (DataGenerator.employeeUserIdsAndRolesOnProduction()
+				.get(LoginAndForgotPasswordFunctionality.validUserId).equalsIgnoreCase("Lead")) {
+			logOutFun.verifyLogOutEmployee();
+
+			commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(
+					"team lead level", Constants.teamLeadLevelTesterEmployeeUserId,
+					Constants.teamLeadLevelTesterEmployeePassword,
+					LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
+
+			request.clickOnFirstRejectButton();
+			Thread.sleep(1000);
+
+			request.clickOnRejectSendButtonInRequestSection();
+			Thread.sleep(2000);
+		}
+
+	}
 
 	// Logout from employee and log in as lead level employee
-	@Test(priority = 3)
+	@Test(priority = 3, enabled = false)
 	public void verifyLogoutAsEmployeeLoginAsLeadLevelEmployeeAndCheckLeadLevelEmployeeName()
 			throws InterruptedException {
 		logOutFun.verifyLogOutEmployee();
@@ -121,14 +140,14 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 	}
 
 	// Reject task submit request by checking each request details
-	@Test(priority = 5)
+	@Test(priority = 5, enabled = false)
 	public void verifyRequestForTaskSubmitOfEmployeeByLeadLevelEmployee() throws InterruptedException {
 		requestFun.verifyRequestInReceivedRequestCard(LoginAndForgotPasswordFunctionality.actualEmployeeName,
 				"wants to submit", lastTaskTitleInDayView);
 	}
 
 	// Logout from employee and log in as team lead level employee
-	@Test(priority = 6)
+	@Test(priority = 6, enabled = false)
 	public void verifyLogoutAsEmployeeLoginAsTeamLeadLevelEmployeeAndCheckTeamLeadLevelEmployeeName()
 			throws InterruptedException {
 		logOutFun.verifyLogOutEmployee();
@@ -152,7 +171,7 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 	}
 
 	// Reject task submit request by checking each request details
-	@Test(priority = 8)
+	@Test(priority = 8, enabled = false)
 	public void verifyRequestForTaskSubmitOfEmployeeByTeamLeadLevelEmployee() throws InterruptedException {
 		requestFun.verifyRequestInReceivedRequestCard(LoginAndForgotPasswordFunctionality.actualEmployeeName,
 				"wants to submit", lastTaskTitleInDayView);

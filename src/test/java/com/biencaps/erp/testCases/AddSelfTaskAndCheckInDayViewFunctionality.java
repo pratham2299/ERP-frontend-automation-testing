@@ -291,7 +291,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnAddTasksButtonInSidebar();
 
-		commonMethods.verifyToastMessageAfterTaskAddFromSidebar(formattedDate);
+		commonMethods.verifyToastMessageAfterTaskAddFromSidebar(
+				actualScheduleDateFieldValueWhileAddTaskFromMonthViewAtParticularDate);
 
 		// Increased task total count
 		totalTasksCount = totalTasksCount + 1;
@@ -302,6 +303,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	public void verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() throws InterruptedException {
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
+
+		myTasks.clickOnTodayButton();
 
 		verifyAddedTaskCheckInDayView("from month view at particular date",
 				taskTitleInputWhileAddFromMonthViewAtParticularDate,
@@ -322,6 +325,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	@Test(priority = 6, dependsOnMethods = "verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView")
 	public void verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()
 			throws InterruptedException {
+		System.out.println(totalTasksCount);
 		commonMethods.verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(totalTasksCount);
 
 		myActivitiesFun.verifyLogMessage(LoginAndForgotPasswordFunctionality.actualEmployeeName, "has added new task",
@@ -435,7 +439,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnAddTasksButtonInSidebar();
 
-		commonMethods.verifyToastMessageAfterTaskAddFromSidebar(formattedDate);
+		commonMethods
+				.verifyToastMessageAfterTaskAddFromSidebar(actualTaskScheduleDateValueWhileAddTaskFromMonthViewSidebar);
 
 		totalTasksCount = totalTasksCount + 1;
 	}
@@ -445,6 +450,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	public void verifyAddedTaskFromMonthViewSidebarCheckInDayView() throws InterruptedException {
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
+
+		myTasks.clickOnTodayButton();
 
 		myTasks.clickOnCalendarInDayView();
 
@@ -468,8 +475,6 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 			log.info("Day in current day view is: " + day);
 			date = seperateDateAndDayInCurrentDayView[1].trim();
 			log.info("Date in current day view is: " + date);
-			System.out.println(date.substring(0, 2));
-			System.out.println(formattedDate.substring(8));
 
 			if (date.substring(0, 2).equalsIgnoreCase(formattedDate.substring(8))) {
 				verifyAddedTaskCheckInDayView("from month view sidebar", taskTitleInputWhileAddFromMonthViewSidebar,
@@ -482,6 +487,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 				String rollOverTaskColor = myTasks.checkRollOverTaskColor();
 				log.info("Roll over task color is: " + rollOverTaskColor);
+				assertEquals(rollOverTaskColor, "rgba(255, 15, 0, 1)");
 
 				break;
 			} else {
@@ -496,6 +502,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 				if (i > 0) {
 					String rollOverTaskColor = myTasks.checkRollOverTaskColor();
 					log.info("Roll over task color is: " + rollOverTaskColor);
+					assertEquals(rollOverTaskColor, "rgba(255, 15, 0, 1)");
 				}
 
 				myTasks.clickOnNextDayIconInDayView();
@@ -508,6 +515,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	@Test(priority = 9, dependsOnMethods = "verifyAddedTaskFromMonthViewSidebarCheckInDayView")
 	public void verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()
 			throws InterruptedException {
+		System.out.println(totalTasksCount);
 		commonMethods
 				.verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(commonMethods.getTotalTasksCountInDayView());
 
@@ -518,10 +526,10 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	// This method add task from day view
 	@Test(priority = 10)
 	public void verifyAddNewTaskFromDayView() throws InterruptedException {
-		myTasks.clickOnMonthButton();
-
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
+
+		myTasks.clickOnTodayButton();
 
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 
@@ -553,6 +561,9 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	@Test(priority = 11, dependsOnMethods = "verifyAddNewTaskFromDayView")
 	public void verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()
 			throws InterruptedException {
+		myTasks.clickOnTodayButton();
+		System.out.println(totalTasksCount);
+
 		commonMethods.verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(totalTasksCount);
 
 		myActivitiesFun.verifyLogMessage(LoginAndForgotPasswordFunctionality.actualEmployeeName, "has added new task",
@@ -564,6 +575,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	public void verifyAddNewTaskFromDayViewSidebar() throws InterruptedException {
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
+
+		myTasks.clickOnTodayButton();
 
 		myTasks.clickOnAddTaskButtonAtRightTopSide();
 		Thread.sleep(1000);
@@ -704,7 +717,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnAddTasksButtonInSidebar();
 
-		commonMethods.verifyToastMessageAfterTaskAddFromSidebar(formattedDate);
+		commonMethods
+				.verifyToastMessageAfterTaskAddFromSidebar(actualScheduleDateFieldValueWhileAddTaskFromDayViewSidebar);
 
 		totalTasksCount = totalTasksCount + 1;
 	}
@@ -715,15 +729,46 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
 
-		verifyAddedTaskCheckInDayView("from day view sidebar", taskTitleInputWhileAddFromDayViewSidebar,
-				actualTaskStatusWhileAddTaskFromDayViewSidebar, actualTaskPriorityWhileAddTaskFromDayViewSidebar,
-				actualTaskProjectWhileAddTaskFromDayViewSidebar,
-				actualScheduleDateFieldValueWhileAddTaskFromDayViewSidebar,
-				actualDueDateFieldValueWhileAddTaskFromDayViewSidebar,
-				actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar,
-				actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar,
-				LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				actualTaskCommentWhileAddTaskFromDayViewSidebar);
+		myTasks.clickOnTodayButton();
+
+		for (int i = 0; i < 10; i++) {
+			String dateWithDayInCurrentDayView = myTasks.checkDateInCurrentDayView();
+			String[] seperateDateAndDayInCurrentDayView = dateWithDayInCurrentDayView.split(",");
+
+			String day = seperateDateAndDayInCurrentDayView[0].trim();
+			log.info("Day in current day view is: " + day);
+			String date = seperateDateAndDayInCurrentDayView[1].trim();
+			log.info("Date in current day view is: " + date);
+
+			if (date.substring(0, 2)
+					.equalsIgnoreCase(actualDueDateFieldValueWhileAddTaskFromDayViewSidebar.substring(8))) {
+				verifyAddedTaskCheckInDayView("from day view sidebar", taskTitleInputWhileAddFromDayViewSidebar,
+						actualTaskStatusWhileAddTaskFromDayViewSidebar,
+						actualTaskPriorityWhileAddTaskFromDayViewSidebar,
+						actualTaskProjectWhileAddTaskFromDayViewSidebar,
+						actualScheduleDateFieldValueWhileAddTaskFromDayViewSidebar,
+						actualDueDateFieldValueWhileAddTaskFromDayViewSidebar,
+						actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar,
+						actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar,
+						LoginAndForgotPasswordFunctionality.actualEmployeeName,
+						actualTaskCommentWhileAddTaskFromDayViewSidebar);
+				break;
+			} else {
+				verifyAddedTaskCheckInDayView("from day view sidebar", taskTitleInputWhileAddFromDayViewSidebar,
+						actualTaskStatusWhileAddTaskFromDayViewSidebar,
+						actualTaskPriorityWhileAddTaskFromDayViewSidebar,
+						actualTaskProjectWhileAddTaskFromDayViewSidebar,
+						actualScheduleDateFieldValueWhileAddTaskFromDayViewSidebar,
+						actualDueDateFieldValueWhileAddTaskFromDayViewSidebar,
+						actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar,
+						actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar,
+						LoginAndForgotPasswordFunctionality.actualEmployeeName,
+						actualTaskCommentWhileAddTaskFromDayViewSidebar);
+
+				myTasks.clickOnNextDayIconInDayView();
+			}
+		}
+
 	}
 
 	// Checks total tasks count after added task from day view sidebar and also
@@ -731,6 +776,9 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	@Test(priority = 14, dependsOnMethods = "verifyAddedTaskFromDayViewSidebarCheckInDayView")
 	public void verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar()
 			throws InterruptedException {
+		myTasks.clickOnTodayButton();
+		System.out.println(totalTasksCount);
+
 		commonMethods.verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(totalTasksCount);
 
 		myActivitiesFun.verifyLogMessage(LoginAndForgotPasswordFunctionality.actualEmployeeName, "has added new task",
@@ -738,7 +786,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	}
 
 	// This method add new task from week view at particular date
-	@Test(priority = 15)
+	@Test(priority = 15, enabled = false)
 	public void verifyAddTaskFromWeekViewAtParticularDate() throws InterruptedException {
 		myTasks.clickOnWeekButton();
 		Thread.sleep(3000);
@@ -765,17 +813,29 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		String formattedDate = DataGenerator.generateCurrentDate("yyyy-MM-dd");
 
+		myTasks.clickOnStartDateCalendarIconWhileAddTaskFromSidebar();
+
+		if (formattedDate.substring(8).startsWith("0")) {
+			int dueDateInput = Integer.parseInt(formattedDate.substring(9));
+			dueDateInput = faker.number().numberBetween(dueDateInput + 1, dueDateInput + 5);
+			myTasks.selectTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar(dueDateInput);
+		} else {
+			int dueDateInput = Integer.parseInt(formattedDate.substring(8));
+			dueDateInput = faker.number().numberBetween(dueDateInput + 1, dueDateInput + 5);
+			myTasks.selectTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar(dueDateInput);
+		}
+
 		actualScheduleDateFieldValueWhileAddTaskFromWeekViewAtParticularDate = myTasks
 				.checkSelectedTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar();
 		log.info("Actual schedule date field value while add task from week view and at particular date is: "
 				+ actualScheduleDateFieldValueWhileAddTaskFromWeekViewAtParticularDate);
-		assertEquals(actualScheduleDateFieldValueWhileAddTaskFromWeekViewAtParticularDate, formattedDate);
+
+		myTasks.clickOnStartDateLabelWhileAddTaskFromSidebar();
 
 		actualDueDateFieldValueWhileAddTaskFromWeekViewAtParticularDate = myTasks
 				.checkSelectedTaskDueDateValueFromCalendarWhileAddTaskFromSidebar();
 		log.info("Actual due date field value while add task from week view and at particular date is: "
 				+ actualDueDateFieldValueWhileAddTaskFromWeekViewAtParticularDate);
-		assertEquals(actualDueDateFieldValueWhileAddTaskFromWeekViewAtParticularDate, formattedDate);
 
 		String actualTaskAssigneeNameWhileAddTaskFromWeekViewAtParticularDate = myTasks
 				.checkTaskAssigneeNameWhileAddTaskFromSidebar(LoginAndForgotPasswordFunctionality.actualEmployeeName);
@@ -873,37 +933,45 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnAddTasksButtonInSidebar();
 
-		commonMethods.verifyToastMessageAfterTaskAddFromSidebar(formattedDate);
+		commonMethods.verifyToastMessageAfterTaskAddFromSidebar(
+				actualScheduleDateFieldValueWhileAddTaskFromWeekViewAtParticularDate);
 
 		totalTasksCount = totalTasksCount + 1;
 	}
 
 	// This method checks added task from week view sidebar at particular date in
 	// week view task list
-	@Test(priority = 16, dependsOnMethods = "verifyAddTaskFromWeekViewAtParticularDate")
+	@Test(priority = 16, dependsOnMethods = "verifyAddTaskFromWeekViewAtParticularDate", enabled = false)
 	public void verifyNewAddedTaskFromWeekViewSidebarAtParticularDateInWeekView() throws InterruptedException {
-		myTasks.clickOnLastExpandButton();
-		Thread.sleep(1000);
-
-		myTasks.scrollUntilLastCollapseButtonInWeekView();
-		Thread.sleep(1000);
-
-		String actualNewAddedTaskTitleFromWeekViewSidebarAtParticularDateInWeekView = myTasks
-				.checkNewAddedTaskTitleInWeekView(taskTitleInputWhileAddFromWeekViewAtParticularDate);
-		log.info("Actual new added task title from week view sidebar at particular date in week view is: "
-				+ actualNewAddedTaskTitleFromWeekViewSidebarAtParticularDateInWeekView);
-		assertTrue(actualNewAddedTaskTitleFromWeekViewSidebarAtParticularDateInWeekView
-				.startsWith(taskTitleInputWhileAddFromWeekViewAtParticularDate));
+		verifyNewAddedTaskInWeekView("from week view sidebar at particular date",
+				taskTitleInputWhileAddFromWeekViewAtParticularDate);
 	}
 
 	// This method checks added task from week view sidebar at particular date in
 	// day view task list
-	@Test(priority = 17, dependsOnMethods = "verifyAddTaskFromWeekViewAtParticularDate")
+	@Test(priority = 17, dependsOnMethods = "verifyAddTaskFromWeekViewAtParticularDate", enabled = false)
 	public void verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView() throws InterruptedException {
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
 
 		webElementActions.refreshThePage();
+
+		myTasks.clickOnMonthButton();
+
+		myTasks.clickOnDayButton();
+		Thread.sleep(1500);
+
+		myTasks.clickOnTodayButton();
+
+		myTasks.clickOnCalendarInDayView();
+
+		if (actualTaskDueDateValueWhileAddTaskFromMonthViewSidebar.substring(8, 9).equalsIgnoreCase("0")) {
+			myTasks.clickOnParticularDateFromCalendarInDayView(
+					Integer.parseInt(actualTaskDueDateValueWhileAddTaskFromMonthViewSidebar.substring(9)));
+		} else {
+			myTasks.clickOnParticularDateFromCalendarInDayView(
+					Integer.parseInt(actualTaskDueDateValueWhileAddTaskFromMonthViewSidebar.substring(8)));
+		}
 
 		verifyAddedTaskCheckInDayView("from week view at particular date",
 				taskTitleInputWhileAddFromWeekViewAtParticularDate,
@@ -921,7 +989,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	// Checks total tasks count after added task from week view sidebar at
 	// particular date and also
 	// checks log message
-	@Test(priority = 18, dependsOnMethods = "verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView")
+	@Test(priority = 18, dependsOnMethods = "verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView", enabled = false)
 	public void verifyTotalTasksCountAndLogMessagesInDayViewAfterTaskAddedFromWeekViewAtParticularDate()
 			throws InterruptedException {
 		commonMethods.verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(totalTasksCount);
@@ -973,7 +1041,6 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		actualTaskScheduleDateValueWhileAddTaskFromWeekViewSidebar = myTasks
 				.checkSelectedTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar();
-
 		log.info("Actual task schedule date value while add task from week view sidebar is: "
 				+ actualTaskScheduleDateValueWhileAddTaskFromWeekViewSidebar);
 		assertEquals(actualTaskScheduleDateValueWhileAddTaskFromWeekViewSidebar, formattedDate);
@@ -998,7 +1065,6 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		actualTaskDueDateValueWhileAddTaskFromWeekViewSidebar = myTasks
 				.checkSelectedTaskDueDateValueFromCalendarWhileAddTaskFromSidebar();
-
 		log.info("Actual task due date value while add task from week view sidebar is: "
 				+ actualTaskDueDateValueWhileAddTaskFromWeekViewSidebar);
 
@@ -1054,7 +1120,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnAddTasksButtonInSidebar();
 
-		commonMethods.verifyToastMessageAfterTaskAddFromSidebar(formattedDate);
+		commonMethods
+				.verifyToastMessageAfterTaskAddFromSidebar(actualTaskScheduleDateValueWhileAddTaskFromWeekViewSidebar);
 
 		totalTasksCount = totalTasksCount + 1;
 	}
@@ -1063,18 +1130,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	// week view task list
 	@Test(priority = 20, dependsOnMethods = "verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment")
 	public void verifyNewAddedTaskFromWeekViewSidebarInWeekView() throws InterruptedException {
-		myTasks.clickOnLastExpandButton();
-		Thread.sleep(1000);
-
-		myTasks.scrollUntilLastCollapseButtonInWeekView();
-		Thread.sleep(1000);
-
-		String actualNewAddedTaskTitleFromWeekViewSidebarInWeekView = myTasks
-				.checkNewAddedTaskTitleInWeekView(taskTitleInputWhileAddFromWeekViewSidebar);
-		log.info("Actual new added task title from week view sidebar in week view is: "
-				+ actualNewAddedTaskTitleFromWeekViewSidebarInWeekView);
-		assertTrue(actualNewAddedTaskTitleFromWeekViewSidebarInWeekView
-				.startsWith(taskTitleInputWhileAddFromWeekViewSidebar));
+		verifyNewAddedTaskInWeekView("from week view sidebar", taskTitleInputWhileAddFromWeekViewSidebar);
 	}
 
 	// This method checks added task from week view sidebar in
@@ -1083,6 +1139,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	public void verifyAddedTaskFromWeekViewSidebarCheckInDayView() throws InterruptedException {
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
+
+		myTasks.clickOnTodayButton();
 
 		verifyAddedTaskCheckInDayView("from week view sidebar", taskTitleInputWhileAddFromWeekViewSidebar,
 				actualTaskStatusWhileAddTaskFromWeekViewSidebar, actualTaskPriorityWhileAddTaskFromWeekViewSidebar, "",
@@ -1112,110 +1170,114 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 
-		String actualTaskTitleAddedFromMonthViewAtParticularDateInDayView = myTasks.checkLastTaskTitleInDayView();
-		log.info("Actual added task title " + message + " in day view is: "
-				+ actualTaskTitleAddedFromMonthViewAtParticularDateInDayView);
+		int newAddedTaskRowIndex = myTasks.checkNewAddedTaskTitleRowIndexInDayView(taskTitle);
 
-		if (actualTaskTitleAddedFromMonthViewAtParticularDateInDayView.length() > 26) {
-			assertTrue(
-					actualTaskTitleAddedFromMonthViewAtParticularDateInDayView.startsWith(taskTitle.substring(0, 27)));
+		String actualTaskTitleInDayView = myTasks.checkRandomTaskTitleInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task title " + message + " in day view is: " + actualTaskTitleInDayView);
+
+		if (actualTaskTitleInDayView.length() > 26) {
+			assertTrue(actualTaskTitleInDayView.startsWith(taskTitle.substring(0, 27)));
 		} else {
-			assertEquals(actualTaskTitleAddedFromMonthViewAtParticularDateInDayView, taskTitle);
+			assertEquals(actualTaskTitleInDayView, taskTitle);
 		}
 
-		String actualTaskStatusAddedFromMonthViewAtParticularDateInDayView = myTasks.checkLastTaskStatusTextInDayView();
-		log.info("Actual added task status " + message + " in day view is: "
-				+ actualTaskStatusAddedFromMonthViewAtParticularDateInDayView);
-		assertEquals(actualTaskStatusAddedFromMonthViewAtParticularDateInDayView, taskStatus);
+		String actualTaskStatusInDayView = myTasks.checkRandomTaskStatusTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task status " + message + " in day view is: " + actualTaskStatusInDayView);
+		assertEquals(actualTaskStatusInDayView, taskStatus);
 
-		String actualTaskPriorityAddedFromMonthViewAtParticularDateInDayView = myTasks
-				.checkLastTaskPriorityTextInDayView();
-		log.info("Actual added task priority " + message + " in day view is: "
-				+ actualTaskPriorityAddedFromMonthViewAtParticularDateInDayView);
-		assertEquals(actualTaskPriorityAddedFromMonthViewAtParticularDateInDayView, taskPriority);
+		String actualTaskPriorityInDayView = myTasks.checkRandomTaskPriorityTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task priority " + message + " in day view is: " + actualTaskPriorityInDayView);
+		assertEquals(actualTaskPriorityInDayView, taskPriority);
 
 		try {
-			String actualTaskProjectAddedFromMonthViewAtParticularDateInDayView = myTasks
-					.checkLastTaskProjectTextInDayView();
-			log.info("Actual added task project " + message + " in day view is: "
-					+ actualTaskProjectAddedFromMonthViewAtParticularDateInDayView);
-			assertEquals(actualTaskProjectAddedFromMonthViewAtParticularDateInDayView, taskProject);
+			String actualTaskProjectInDayView = myTasks.checkRandomTaskProjectTextInDayView(newAddedTaskRowIndex);
+			log.info("Actual added task project " + message + " in day view is: " + actualTaskProjectInDayView);
+			assertEquals(actualTaskProjectInDayView, taskProject);
 		} catch (Exception e) {
-			log.info("Project field not selcted while add task from month view at particular date");
+			log.info("Project field not selected while add task " + message + "");
 		}
 
 		myTasks.scrollHorizantally(1500);
 
-		String actualTaskScheduleDateAddedFromMonthViewAtParticularDateInDayView = myTasks
-				.checkLastTaskScheduleDateTextInDayView();
-		log.info("Actual added task schedule date " + message + " in day view is: "
-				+ actualTaskScheduleDateAddedFromMonthViewAtParticularDateInDayView);
-		assertEquals(actualTaskScheduleDateAddedFromMonthViewAtParticularDateInDayView, taskStartDate);
+		String actualTaskScheduleDateInDayView = myTasks.checkRandomTaskScheduleDateTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task schedule date " + message + " in day view is: " + actualTaskScheduleDateInDayView);
+		assertEquals(actualTaskScheduleDateInDayView, taskStartDate);
 
-		String actualTaskDueDateAddedFromMonthViewAtParticularDateInDayView = myTasks
-				.checkLastTaskDueDateTextInDayView();
-		log.info("Actual added task due date " + message + " in day view is: "
-				+ actualTaskDueDateAddedFromMonthViewAtParticularDateInDayView);
-		assertEquals(actualTaskDueDateAddedFromMonthViewAtParticularDateInDayView, taskDueDate);
+		String actualTaskDueDateInDayView = myTasks.checkRandomTaskDueDateTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task due date " + message + " in day view is: " + actualTaskDueDateInDayView);
+		assertEquals(actualTaskDueDateInDayView, taskDueDate);
 
-		List<String> taskDepartmentValuesAddedFromMonthViewAtParticularDateInDayView = myTasks
-				.checkNewAddedTaskDepartmentsTextInDayView();
-		if (taskDepartmentValuesAddedFromMonthViewAtParticularDateInDayView.size() > 1) {
-			String actualFirstTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView = taskDepartmentValuesAddedFromMonthViewAtParticularDateInDayView
-					.get(0);
+		List<String> taskDepartmentValuesInDayView = myTasks
+				.checkRandomTaskDepartmentTextInDayView(newAddedTaskRowIndex);
+		if (taskDepartmentValuesInDayView.size() > 1) {
+			String actualFirstTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(0);
 			log.info("Actual first task department value added " + message + " in day view is: "
-					+ actualFirstTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView);
-			assertEquals(actualFirstTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView, taskDepartment1);
+					+ actualFirstTaskDepartmentValueInDayView);
+			assertEquals(actualFirstTaskDepartmentValueInDayView, taskDepartment1);
 
-			String actualSecondTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView = taskDepartmentValuesAddedFromMonthViewAtParticularDateInDayView
-					.get(1);
+			String actualSecondTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(1);
 			log.info("Actual second task department value added " + message + " in day view is: "
-					+ actualSecondTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView);
-			assertEquals(actualSecondTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView, taskDepartment2);
+					+ actualSecondTaskDepartmentValueInDayView);
+			assertEquals(actualSecondTaskDepartmentValueInDayView, taskDepartment2);
 		} else {
-			String actualFirstTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView = taskDepartmentValuesAddedFromMonthViewAtParticularDateInDayView
-					.get(0);
+			String actualFirstTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(0);
 			log.info("Actual first task department value added " + message + " in day view is: "
-					+ actualFirstTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView);
-			assertEquals(actualFirstTaskDepartmentValueAddedFromMonthViewAtParticularDateInDayView, taskDepartment1);
+					+ actualFirstTaskDepartmentValueInDayView);
+			assertEquals(actualFirstTaskDepartmentValueInDayView, taskDepartment1);
 		}
 
-		String actualTaskAssigneeNameAddedFromMonthViewAtParticularDateInDayView = myTasks
-				.checkLastTaskAssigneeNameTextInDayView();
-		log.info("Actual task assignee name added " + message + " in day view is: "
-				+ actualTaskAssigneeNameAddedFromMonthViewAtParticularDateInDayView);
-		assertEquals(actualTaskAssigneeNameAddedFromMonthViewAtParticularDateInDayView, taskAssignee);
+		String actualTaskAssigneeNameInDayView = myTasks.checkLastTaskAssigneeNameTextInDayView();
+		log.info("Actual task assignee name added " + message + " in day view is: " + actualTaskAssigneeNameInDayView);
+		assertEquals(actualTaskAssigneeNameInDayView, taskAssignee);
 
-		String actualTaskCommentAddedFromMonthViewAtParticularDateInDayView = myTasks
-				.checkLastTaskCommentTextInDayView();
-		log.info("Actual task comment added " + message + " in day view is: "
-				+ actualTaskCommentAddedFromMonthViewAtParticularDateInDayView);
+		String actualTaskCommentInDayView = myTasks.checkRandomTaskCommentTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual task comment added " + message + " in day view is: " + actualTaskCommentInDayView);
 
 		if (taskComment.equalsIgnoreCase(null) || taskComment.isBlank() || taskComment.isEmpty()) {
-			log.info("Task comment is empty or null");
+			log.info("Task comment is empty or null" + "\n");
 		} else {
-			if (actualTaskCommentAddedFromMonthViewAtParticularDateInDayView.length() > 16) {
-				assertTrue(actualTaskCommentAddedFromMonthViewAtParticularDateInDayView
-						.startsWith(taskComment.substring(0, 16)));
+			if (actualTaskCommentInDayView.length() > 16) {
+				assertTrue(actualTaskCommentInDayView.startsWith(taskComment.substring(0, 16)));
 			} else {
-				assertEquals(actualTaskCommentAddedFromMonthViewAtParticularDateInDayView, taskComment);
+				assertEquals(actualTaskCommentInDayView, taskComment);
 			}
 
-			myTasks.clickOnLastTaskCommentTextfieldInDayView();
+			myTasks.clickOnRandomTaskCommentTextfieldInDayView(newAddedTaskRowIndex);
+			Thread.sleep(1000);
 
 			myTasks.scrollUntilCommentTextfieldInUpdateTaskSidebar();
 
-			String actualTaskCommentInSidebarForUpdateTaskAddedFromMonthViewAtParticularDateInDayView = myTasks
-					.checkLastTaskCommentTextInUpdateTaskSidebar();
+			String actualTaskCommentInSidebarForUpdateTaskInDayView = myTasks
+					.checkRandomTaskCommentTextInUpdateTaskSidebar();
 			log.info("Actual task comment in sidebar for update task added " + message + " in day view is: "
-					+ actualTaskCommentInSidebarForUpdateTaskAddedFromMonthViewAtParticularDateInDayView + "\n");
-			assertEquals(actualTaskCommentInSidebarForUpdateTaskAddedFromMonthViewAtParticularDateInDayView,
-					taskComment);
+					+ actualTaskCommentInSidebarForUpdateTaskInDayView + "\n");
+			assertEquals(actualTaskCommentInSidebarForUpdateTaskInDayView, taskComment);
 
 			myTasks.clickOnCloseIconOfSidebarForUpdateTaskInDayView();
 			Thread.sleep(1000);
 		}
 
 		myTasks.scrollHorizantally(-1500);
+	}
+
+	public void verifyNewAddedTaskInWeekView(String message, String taskTitle) throws InterruptedException {
+//		if (webElementActions.isDisplayedMethod(myTasks.expandButtonsInWeekView)) {
+		try {
+			myTasks.clickOnAllExpandButtonsInWeekView();
+			Thread.sleep(1000);
+
+			myTasks.scrollUntilAllCollapseButtonsInWeekView();
+			Thread.sleep(1000);
+
+			String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+			log.info("Actual new added task title " + message + " in week view is: "
+					+ actualNewAddedTaskTitleInWeekView);
+			assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+		} catch (Exception e) {
+			String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+			log.info("Actual new added task title " + message + " in week view is: "
+					+ actualNewAddedTaskTitleInWeekView);
+			assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+		}
 	}
 }

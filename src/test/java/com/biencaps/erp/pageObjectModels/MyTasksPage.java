@@ -50,6 +50,7 @@ public class MyTasksPage {
 	public By closeToastMessage = By.xpath("(//*[name()='svg'][@aria-hidden='true'])[1]");
 	// Locators in day view
 	public By dayButton = By.xpath("//button[normalize-space()='Day']");
+	public By todayButton = By.xpath("//button[normalize-space()='Today']");
 	public By monthButton = By.xpath("//button[normalize-space()='Month']");
 	public By weekButton = By.xpath("//button[normalize-space()='Week']");
 	public By addTasksButtonInWeekView = By
@@ -73,10 +74,8 @@ public class MyTasksPage {
 	public By lastTaskGitlinkIconInDayView = By
 			.xpath("(//div[@class='selectDiv selectGitDiv']//*[name()='svg'])[last()]");
 	public By lastTaskCommentTextfieldInDayView = By.xpath("(//input[@id='taskTitle-input'])[last()]");
-	public static By lastExpandButtonInWeekView = By
-			.xpath("(//div[@class='rbc-header rbc-today']//p[normalize-space()='Expand'])[last()]");
-	public static By lastCollapseButtonInWeekView = By
-			.xpath("(//div[@class='rbc-header rbc-today']//p[normalize-space()='Collaps'])[last()]");
+	public By expandButtonsInWeekView = By.xpath("//p[normalize-space()='Expand']");
+	public By collapseButtonsInWeekView = By.xpath("//p[normalize-space()='Collaps']");
 
 	public By taskTitlesInDayView = By.xpath("//div[@class='taskTileDivContainer']//input[@type='text']");
 	public By taskStatusesInDayView = By.xpath("//div[@class='OutputWrapperStatus']");
@@ -89,6 +88,18 @@ public class MyTasksPage {
 	public By taskVerifiedStatusesInDayView = By.xpath("//div[@class='OutputWrapperVerified']");
 	public By taskGitlinkIconsInDayView = By.xpath("//div[@class='selectDiv selectGitDiv']//*[name()='svg']");
 	public By taskCommentsTextfieldInDayView = By.xpath("//input[@id='taskTitle-input']");
+
+	public String taskTitleInDayView = "//div[@class='taskTileDivContainer']//input[@type='text']";
+	public String taskStatusInDayView = "//div[@class='OutputWrapperStatus']";
+	public String taskPriorityInDayView = "//div[@class='OutputWrapperPrority']";
+	public String taskProjectInDayView = "//div[@class='selectDiv selectProjectDiv']//div[@class='OutputWrapperProject']";
+	public String taskScheduleDateInDayView = "//div[@classnam='taskScheduleDiv']";
+	public String taskDueDateInDayView = "//div[@class='outputDueDateWrapper']";
+	public String taskAssigneeNameInDayView = "//div[@class='AssigneeName']/p";
+	public String taskVerifiedStatusInDayView = "//div[@class='OutputWrapperVerified']";
+	public String taskGitlinkIconInDayView = "//div[@class='selectDiv selectGitDiv']//*[name()='svg']";
+	public String taskCommentTextfieldInDayView = "//input[@id='taskTitle-input']";
+
 	public By dayViewScroller = By.xpath("//div[@class='DayViewScroller']");
 
 	public By gitMessageForNotSelectingProjectOfTaskInDayView = By.xpath("//div[@class='gitmsgforProject']");
@@ -328,6 +339,10 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(dayButton);
 	}
 
+	public void clickOnTodayButton() {
+		webElementActions.clickOnMethod(todayButton);
+	}
+
 	public void clickOnCalendarInDayView() {
 		webElementActions.clickOnMethod(calendarInDayView);
 	}
@@ -373,43 +388,66 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(refreshButtonInDayView);
 	}
 
-	public String checkRandomSelfTaskTitleInDayView(int index) {
-		return webElementActions.getAtrributeMethod(taskTitlesInDayView, index);
+	public String checkRandomTaskTitleInDayView(int index) {
+		By taskTitle = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskTitleInDayView + "");
+		return webElementActions.getAtrributeMethod(taskTitle);
 	}
 
-	public String checkRandomSelfTaskStatusTextInDayView(int index) {
-		return webElementActions.getTextMethod(taskStatusesInDayView, index);
+	public String checkRandomTaskStatusTextInDayView(int index) {
+		By taskStatus = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskStatusInDayView + "");
+		return webElementActions.getTextMethod(taskStatus);
 	}
 
-	public String checkRandomSelfTaskPriorityTextInDayView(int index) {
-		return webElementActions.getTextMethod(taskPrioritiesInDayView, index);
+	public String checkRandomTaskPriorityTextInDayView(int index) {
+		By taskPriority = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskPriorityInDayView + "");
+		return webElementActions.getTextMethod(taskPriority);
 	}
 
-	public String checkRandomSelfTaskProjectTextInDayView(int index) {
-		return webElementActions.getTextMethod(taskProjectsInDayView, index);
+	public String checkRandomTaskProjectTextInDayView(int index) {
+		By taskProject = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskProjectInDayView + "");
+		return webElementActions.getTextMethod(taskProject);
 	}
 
-	public String checkRandomSelfTaskDueDateTextInDayView(int index) {
-		return webElementActions.getTextMethod(taskDueDatesInDayView, index);
+	public String checkRandomTaskScheduleDateTextInDayView(int index) {
+		By taskScheduleDate = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskScheduleDateInDayView + "");
+		return webElementActions.getTextMethod(taskScheduleDate);
 	}
 
-	public List<String> checkRandomSelfTaskDepartmentTextInDayView(int index) {
+	public String checkRandomTaskDueDateTextInDayView(int index) {
+		By taskDueDate = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskDueDateInDayView + "");
+		return webElementActions.getTextMethod(taskDueDate);
+	}
+
+	public List<String> checkRandomTaskDepartmentTextInDayView(int index) {
 		By selfTaskDepartmentsInDayView = By.xpath("(//tbody//tr)[" + (index + 1) + "]//div[@class='OutputTag']");
 		List<String> departmentsInRandomRow = webElementActions
 				.getValuesFromListOfWebElements(selfTaskDepartmentsInDayView);
 		return departmentsInRandomRow;
 	}
 
-	public String checkRandomSelfTaskVerificationStatusTextInDayView(int index) {
-		return webElementActions.getTextMethod(taskVerifiedStatusesInDayView, index);
+	public String checkRandomTaskVerificationStatusTextInDayView(int index) {
+		By taskVerifiedStatus = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskVerifiedStatusInDayView + "");
+		return webElementActions.getTextMethod(taskVerifiedStatus);
 	}
 
-	public String checkRandomSelfTaskCommentTextInUpdateTaskSidebar() {
+	public String checkRandomTaskCommentTextInUpdateTaskSidebar() {
 		return webElementActions.getTextMethod(commentTextfieldForUpdateFromSidebarInDayView);
 	}
 
 	public String checkLastTaskTitleInDayView() {
 		return webElementActions.getAtrributeMethod(lastTaskTitleInDayView);
+	}
+
+	public int checkNewAddedTaskTitleRowIndexInDayView(String taskTitle) {
+		List<String> taskTitles = webElementActions.getValuesOfWebelements(taskTitlesInDayView);
+		int index = 0;
+		for (int i = 0; i < taskTitles.size(); i++) {
+			if (taskTitles.get(i).equalsIgnoreCase(taskTitle)) {
+				index = taskTitles.indexOf(taskTitle);
+				break;
+			}
+		}
+		return index;
 	}
 
 	public String checkLastTaskStatusTextInDayView() {
@@ -517,6 +555,11 @@ public class MyTasksPage {
 		return webElementActions.getTextMethod(startDateValue);
 	}
 
+	public String checkDueDateFieldValue(String date) {
+		By startDateValue = By.xpath("//p[normalize-space()='" + date + "']");
+		return webElementActions.getTextMethod(startDateValue);
+	}
+
 	public void clickOnWeekButton() {
 		webElementActions.clickOnMethod(weekButton);
 	}
@@ -525,12 +568,16 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(addTasksButtonInWeekView);
 	}
 
-	public void clickOnLastExpandButton() {
-		webElementActions.clickOnMethod(lastExpandButtonInWeekView);
+	public void clickOnAllExpandButtonsInWeekView() {
+		for (int i = 0; i < webElementActions.sizeOfListOfWebElement(expandButtonsInWeekView); i++) {
+			webElementActions.clickOnMethod(expandButtonsInWeekView);
+		}
 	}
 
-	public void scrollUntilLastCollapseButtonInWeekView() {
-		webElementActions.scrollUntilElementFound(lastCollapseButtonInWeekView);
+	public void scrollUntilAllCollapseButtonsInWeekView() {
+		for (int i = 0; i < webElementActions.sizeOfListOfWebElement(collapseButtonsInWeekView); i++) {
+			webElementActions.clickOnMethod(collapseButtonsInWeekView);
+		}
 	}
 
 	public String checkNewAddedTaskTitleInWeekView(String taskTitle) {
@@ -839,7 +886,7 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(closeIconOfSidebarForTaskUpdateInDayView);
 	}
 
-	public String checkRandomSelfTaskCommentTextInDayView(int index) {
+	public String checkRandomTaskCommentTextInDayView(int index) {
 		return webElementActions.getAtrributeMethod(taskCommentsTextfieldInDayView, index);
 	}
 

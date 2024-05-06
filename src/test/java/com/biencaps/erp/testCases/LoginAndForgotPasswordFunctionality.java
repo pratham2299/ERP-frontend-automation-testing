@@ -203,7 +203,7 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 
 	// Checks forgot password functionality by giving user Id in employee Id
 	// field
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6)
 	public void verifyForgotPasswordByGivingUserId() throws InterruptedException {
 		String actualEnteredUserId = login.enterAndCheckUserId(Constants.employeeUserId);
 		log.info("Actual entered user Id is: " + actualEnteredUserId + "\n");
@@ -216,6 +216,8 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 		String actualSuccessMessageAfterForgotPasswordSent = login.checkForgotPasswordSentSuccessfullyMessage();
 		log.info("Actual success message after forgot password sent to employee email is: "
 				+ actualSuccessMessageAfterForgotPasswordSent + "\n");
+		
+		webElementActions.refreshThePage();
 	}
 
 	// Login employee with valid user Id and valid password and checks error

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Add Self Task And Check In Day View Functionality</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 04 14:05:40 IST 2024</td>
+<td>Started on:</td><td>Mon May 06 17:14:04 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>180 seconds (180865 ms)</td>
+<tr><td>Total time:</td><td>190 seconds (190163 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,21 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView()'><b>verifyAddedTaskFromDayViewSidebarCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td><div><pre>java.lang.AssertionError: expected [2024-05-04] but found [2024-05-07]
-	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskCheckInDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:1157)
-	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:716)
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td><div><pre>java.lang.AssertionError: expected [13] but found [5]
+	at com.biencaps.erp.utilities.CommonTestMethods.verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(CommonTestMethods.java:153)
+	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar(AddSelfTaskAndCheckInDayViewFunctionality.java:782)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1191750854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1191750854'><pre>java.lang.AssertionError: expected [2024-05-04] but found [2024-05-07]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1147061049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1147061049'><pre>java.lang.AssertionError: expected [13] but found [5]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskCheckInDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:1157)
-	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:716)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.biencaps.erp.utilities.CommonTestMethods.verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(CommonTestMethods.java:153)
+	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar(AddSelfTaskAndCheckInDayViewFunctionality.java:782)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,8 +121,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>0</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -132,139 +133,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()'><b>verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
-<td>9</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView()'><b>verifyAddedTaskFromMonthViewSidebarCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>30</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>4</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
 <td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
 <td>9</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
+<tr>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView()'><b>verifyAddNewTaskFromDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td></td>
+<td>6</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
+<tr>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()'><b>verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td></td>
+<td>10</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
+<tr>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate()'><b>verifyAddTaskFromMonthViewAtParticularDate</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td></td>
+<td>7</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
+<tr>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td></td>
+<td>9</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
 <td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
 <td>9</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
+<tr>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView()'><b>verifyNewAddedTaskFromWeekViewSidebarInWeekView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td></td>
+<td>8</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
 <td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountBeforeAddNewTask()'><b>verifyTotalTasksCountBeforeAddNewTask</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
 <td>2</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView()'><b>verifyAddNewTaskFromDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView()'><b>verifyAddedTaskFromMonthViewSidebarCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
-<td>5</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>70</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar()'><b>verifyAddNewTaskFromDayViewSidebar</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView()'><b>verifyAddedTaskFromWeekViewSidebarCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
-<td>9</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>12</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView()'><b>verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()'><b>verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
-<td>14</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>6</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
+<tr>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView()'><b>verifyAddedTaskFromDayViewSidebarCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td></td>
+<td>12</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
 <td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
 <td>9</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarAtParticularDateInWeekView()'><b>verifyNewAddedTaskFromWeekViewSidebarAtParticularDateInWeekView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
+<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar()'><b>verifyAddNewTaskFromDayViewSidebar</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
-<td>2</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>7</td>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 <tr>
 <td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromSidebarWithoutEnteringTaskTitle()'><b>verifyAddTaskFromSidebarWithoutEnteringTaskTitle</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
 <td></td>
 <td>3</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewAtParticularDate()'><b>verifyAddTaskFromWeekViewAtParticularDate</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>11</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()'><b>verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>13</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView()'><b>verifyNewAddedTaskFromWeekViewSidebarInWeekView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>2</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate()'><b>verifyAddTaskFromMonthViewAtParticularDate</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>9</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()'><b>verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>4</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterTaskAddedFromWeekViewAtParticularDate()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterTaskAddedFromWeekViewAtParticularDate</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>9</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView()'><b>verifyAddedTaskFromWeekViewSidebarCheckInDayView</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>11</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()'><b>verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td></td>
-<td>12</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar()'><b>verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar</b><br>Test class: com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</td>
-<td><div><pre>java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1889693386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1889693386'><pre>java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c532cd8</td></tr>
+<td>com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@1d470d0</td></tr>
 </table><p>
 </body>
 </html>

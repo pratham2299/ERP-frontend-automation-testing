@@ -16,11 +16,19 @@ public class WebElementActions {
 
 	public WebElementActions() {
 		this.driver = BaseTest.driver;
-		wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(7));
+		if (driver != null) {
+			wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(7));
+		} else {
+			driver.quit();
+		}
 	}
 
 	public void refreshThePage() {
-		driver.navigate().refresh();
+		if (driver != null) {
+			driver.navigate().refresh();
+		} else {
+			driver.quit();
+		}
 	}
 
 	public String currentWindowUrl() {
@@ -166,6 +174,17 @@ public class WebElementActions {
 
 		for (int i = 0; i < sizeOfWebElements; i++) {
 			values.add(webElements.get(i).getText());
+		}
+		return values;
+	}
+
+	public List<String> getValuesOfWebelements(By locator) {
+		List<WebElement> webElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+		int sizeOfWebElements = webElements.size();
+		List<String> values = new ArrayList<String>();
+
+		for (int i = 0; i < sizeOfWebElements; i++) {
+			values.add(webElements.get(i).getAttribute("value"));
 		}
 		return values;
 	}
