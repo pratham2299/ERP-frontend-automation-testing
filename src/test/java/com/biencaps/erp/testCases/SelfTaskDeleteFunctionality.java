@@ -27,7 +27,7 @@ public class SelfTaskDeleteFunctionality extends BaseTest {
 	public void verifyLastTaskDetailsInDayView() throws InterruptedException {
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 		commonMethods = new CommonTestMethods();
 		myActivitiesFun = new MyActivitiesFunctionality();
 

@@ -6,11 +6,10 @@ import java.util.*;
 import java.util.concurrent.*;
 
 import com.biencaps.erp.pageObjectModels.*;
-import com.biencaps.erp.testCases.*;
 
 public class DataGenerator {
 	static WebElementActions webElementActions = new WebElementActions();
-	static EmployeePage employee = new EmployeePage(BaseTest.driver);
+	static EmployeePage employee = new EmployeePage();
 
 	// This method stores employee user Id and password
 	// So that we can use it while log in on production

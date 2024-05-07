@@ -12,8 +12,7 @@ public class MyTasksPage {
 	private Faker faker = new Faker();
 
 	protected WebDriver driver;
-
-	protected WebElementActions webElementActions;
+	protected WebElementActions webElementActions = new WebElementActions();
 
 	// Locators
 

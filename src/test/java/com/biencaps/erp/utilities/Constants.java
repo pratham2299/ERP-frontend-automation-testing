@@ -13,9 +13,6 @@ public interface Constants {
 	String leadLevelTesterEmployeeUserId = "INC012";
 	String leadLevelTesterEmployeePassword = "Pratham@2299";
 
-//	String developerLevelTesterEmployeeUserId = "INC028";
-//	String developerLevelTesterEmployeePassword = "Dev@1234";
-
 //	String adminLevelTesterEmployeeUserId = "INC013";
 //	String adminLevelTesterEmployeePassword = "Admin@123";
 
@@ -25,9 +22,6 @@ public interface Constants {
 	String teamLeadLevelDeveloperEmployeeUserId = "INC008";
 	String teamLeadLevelDeveloperEmployeePassword = "Darling@2024";
 
-//	String employeeUserId = "INC028";
-//	String employeePassword = "Dev@1234";
-	
 	String employeeUserId = "INC012";
 	String employeePassword = "Pratham@2299";
 

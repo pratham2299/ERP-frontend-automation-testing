@@ -5,6 +5,11 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</Console>
+		<File name="SuiteListener"
+			fileName="Logs/SuiteListener.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
 		<File name="BaseTest"
 			fileName="Logs/BaseTest.log">
 			<PatternLayout
@@ -62,6 +67,13 @@
 		</File>
 	</Appenders>
 	<Loggers>
+		<Logger
+			name="com.biencaps.erp.utilities.SuiteListener"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="SuiteListener" />
+			<AppenderRef ref="Console" />
+		</Logger>
 		<Logger name="com.biencaps.erp.testCases.BaseTest"
 			level="all"
 			additivity="false">

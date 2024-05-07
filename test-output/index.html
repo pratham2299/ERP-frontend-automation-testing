@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,100 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">24 methods, 5 failed,  10 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddNewTaskFromDayView">verifyAddNewTaskFromDayView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddNewTaskFromDayViewSidebar">verifyAddNewTaskFromDayViewSidebar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddTaskFromMonthViewAtParticularDate">verifyAddTaskFromMonthViewAtParticularDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate">verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment">verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddedTaskFromDayViewSidebarCheckInDayView">verifyAddedTaskFromDayViewSidebarCheckInDayView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView">verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddedTaskFromMonthViewSidebarCheckInDayView">verifyAddedTaskFromMonthViewSidebarCheckInDayView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddedTaskFromWeekViewSidebarCheckInDayView">verifyAddedTaskFromWeekViewSidebarCheckInDayView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyNewAddedTaskFromWeekViewSidebarInWeekView">verifyNewAddedTaskFromWeekViewSidebarInWeekView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate">verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,7 +201,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" class="method navigator-link" hash-for-method="verifyAssignTaskFromLevel">verifyAssignTaskFromLevel</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyAddTaskFromSidebarWithoutEnteringTaskTitle">verifyAddTaskFromSidebarWithoutEnteringTaskTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -141,6 +234,11 @@
                         <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="verifyLoginEmployeeByGivingValidUserIdAndValidPassword">verifyLoginEmployeeByGivingValidUserIdAndValidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" class="method navigator-link" hash-for-method="verifyTotalTasksCountBeforeAddNewTask">verifyTotalTasksCountBeforeAddNewTask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -153,6 +251,280 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddNewTaskFromDayView">
+                  </a> <!-- verifyAddNewTaskFromDayView -->
+                  <span class="method-name">verifyAddNewTaskFromDayView</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;dayView-btn monthView-btn-view&quot; style=&quot;background: none;&quot;&gt;...&lt;/button&gt; is not clickable at point (1437, 118). Other element would receive the click: &lt;input type=&quot;text&quot; placeholder=&quot;Enter Tasks Name &quot; value=&quot;&quot;&gt;
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d310ead95bc8a4bfb9542c6a48dd079e, clickElement {id=f.9EE26CE8D40E6768727E82D42D92AFA8.d.BCD012C6CF177CF328B07C5376527C8B.e.230}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57443}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57443/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d310ead95bc8a4bfb9542c6a48dd079e)] -&gt; xpath: //button[normalize-space()=&apos;Day&apos;]]
+Session ID: d310ead95bc8a4bfb9542c6a48dd079e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
+	at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnDayButton(MyTasksPage.java:338)
+	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:529)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddNewTaskFromDayViewSidebar">
+                  </a> <!-- verifyAddNewTaskFromDayViewSidebar -->
+                  <span class="method-name">verifyAddNewTaskFromDayViewSidebar</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;dayView-btn monthView-btn-view&quot; style=&quot;background: none;&quot;&gt;...&lt;/button&gt; is not clickable at point (1437, 118). Other element would receive the click: &lt;input type=&quot;text&quot; placeholder=&quot;Enter Tasks Name &quot; value=&quot;&quot;&gt;
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d310ead95bc8a4bfb9542c6a48dd079e, clickElement {id=f.9EE26CE8D40E6768727E82D42D92AFA8.d.BCD012C6CF177CF328B07C5376527C8B.e.230}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57443}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57443/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d310ead95bc8a4bfb9542c6a48dd079e)] -&gt; xpath: //button[normalize-space()=&apos;Day&apos;]]
+Session ID: d310ead95bc8a4bfb9542c6a48dd079e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
+	at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnDayButton(MyTasksPage.java:338)
+	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar(AddSelfTaskAndCheckInDayViewFunctionality.java:576)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddTaskFromMonthViewAtParticularDate">
+                  </a> <!-- verifyAddTaskFromMonthViewAtParticularDate -->
+                  <span class="method-name">verifyAddTaskFromMonthViewAtParticularDate</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:322)
+	at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnRandomValueFromDropdownWhileAddTaskFromSidebar(MyTasksPage.java:259)
+	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate(AddSelfTaskAndCheckInDayViewFunctionality.java:205)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate">
+                  </a> <!-- verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate -->
+                  <span class="method-name">verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;monthView-btn monthView-btn-view&quot; style=&quot;background: rgb(255, 246, 223);&quot;&gt;...&lt;/button&gt; is not clickable at point (1293, 118). Other element would receive the click: &lt;input type=&quot;text&quot; placeholder=&quot;Enter Tasks Name &quot; value=&quot;&quot;&gt;
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d310ead95bc8a4bfb9542c6a48dd079e, clickElement {id=f.9EE26CE8D40E6768727E82D42D92AFA8.d.BCD012C6CF177CF328B07C5376527C8B.e.229}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57443}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57443/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d310ead95bc8a4bfb9542c6a48dd079e)] -&gt; xpath: //button[normalize-space()=&apos;Month&apos;]]
+Session ID: d310ead95bc8a4bfb9542c6a48dd079e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
+	at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnMonthButton(MyTasksPage.java:549)
+	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate(AddSelfTaskAndCheckInDayViewFunctionality.java:338)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment">
+                  </a> <!-- verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment -->
+                  <span class="method-name">verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;weekView-btn monthView-btn-view&quot; style=&quot;background: none;&quot;&gt;...&lt;/button&gt; is not clickable at point (1365, 118). Other element would receive the click: &lt;input type=&quot;text&quot; placeholder=&quot;Enter Tasks Name &quot; value=&quot;&quot;&gt;
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d310ead95bc8a4bfb9542c6a48dd079e, clickElement {id=f.9EE26CE8D40E6768727E82D42D92AFA8.d.BCD012C6CF177CF328B07C5376527C8B.e.231}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57443}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57443/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d310ead95bc8a4bfb9542c6a48dd079e)] -&gt; xpath: //button[normalize-space()=&apos;Week&apos;]]
+Session ID: d310ead95bc8a4bfb9542c6a48dd079e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
+	at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnWeekButton(MyTasksPage.java:563)
+	at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment(AddSelfTaskAndCheckInDayViewFunctionality.java:1005)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddedTaskFromDayViewSidebarCheckInDayView">
+                  </a> <!-- verifyAddedTaskFromDayViewSidebarCheckInDayView -->
+                  <span class="method-name">verifyAddedTaskFromDayViewSidebarCheckInDayView</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView">
+                  </a> <!-- verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView -->
+                  <span class="method-name">verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddedTaskFromMonthViewSidebarCheckInDayView">
+                  </a> <!-- verifyAddedTaskFromMonthViewSidebarCheckInDayView -->
+                  <span class="method-name">verifyAddedTaskFromMonthViewSidebarCheckInDayView</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddedTaskFromWeekViewSidebarCheckInDayView">
+                  </a> <!-- verifyAddedTaskFromWeekViewSidebarCheckInDayView -->
+                  <span class="method-name">verifyAddedTaskFromWeekViewSidebarCheckInDayView</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewAddedTaskFromWeekViewSidebarInWeekView">
+                  </a> <!-- verifyNewAddedTaskFromWeekViewSidebarInWeekView -->
+                  <span class="method-name">verifyNewAddedTaskFromWeekViewSidebarInWeekView</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView">
+                  </a> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView -->
+                  <span class="method-name">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar">
+                  </a> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar -->
+                  <span class="method-name">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar">
+                  </a> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar -->
+                  <span class="method-name">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar">
+                  </a> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar -->
+                  <span class="method-name">verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate">
+                  </a> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate -->
+                  <span class="method-name">verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
+[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -213,14 +585,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</span>
+              <span class="class-name">com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAssignTaskFromLevel">
-                  </a> <!-- verifyAssignTaskFromLevel -->
-                  <span class="method-name">verifyAssignTaskFromLevel</span>
+                  <a name="verifyAddTaskFromSidebarWithoutEnteringTaskTitle">
+                  </a> <!-- verifyAddTaskFromSidebarWithoutEnteringTaskTitle -->
+                  <span class="method-name">verifyAddTaskFromSidebarWithoutEnteringTaskTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalTasksCountBeforeAddNewTask">
+                  </a> <!-- verifyTotalTasksCountBeforeAddNewTask -->
+                  <span class="method-name">verifyTotalTasksCountBeforeAddNewTask</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,18 +615,18 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.biencaps.erp.utilities.TestExecutionListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.biencaps.erp.utilities.SuiteListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Login And Forgot Password Functionality&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login And Forgot Password Functionality --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Add Update Assign Task And Check At Employee Side Functionality&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Add Self Task And Check In Day View Functionality&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Add Update Assign Task And Check At Employee Side Functionality --&gt;
+  &lt;/test&gt; &lt;!-- Add Self Task And Check In Day View Functionality --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -262,7 +641,7 @@
                 <span class="test-name">Login And Forgot Password Functionality (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Add Update Assign Task And Check At Employee Side Functionality (1 class)</span>
+                <span class="test-name">Add Self Task And Check In Day View Functionality (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -288,39 +667,103 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAssignTaskFromLevel')
-data.setCell(0, 2, 'com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality')
-data.setCell(0, 3, 16590);
+data.setCell(0, 1, 'verifyForgotPasswordByGivingUserId')
+data.setCell(0, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
+data.setCell(0, 3, 5761);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyForgotPasswordByGivingUserId')
-data.setCell(1, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(1, 3, 5199);
+data.setCell(1, 1, 'verifyAddTaskFromMonthViewAtParticularDate')
+data.setCell(1, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(1, 3, 4222);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginEmployeeByGivingValidUserIdAndValidPassword')
 data.setCell(2, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(2, 3, 3349);
+data.setCell(2, 3, 3825);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword')
 data.setCell(3, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(3, 3, 3230);
+data.setCell(3, 3, 3702);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword')
-data.setCell(4, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(4, 3, 2538);
+data.setCell(4, 1, 'verifyAddTaskFromSidebarWithoutEnteringTaskTitle')
+data.setCell(4, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(4, 3, 3486);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword')
+data.setCell(5, 1, 'verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword')
 data.setCell(5, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(5, 3, 2363);
+data.setCell(5, 3, 2687);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyForgotPasswordWithoutGivingUserId')
+data.setCell(6, 1, 'verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword')
 data.setCell(6, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(6, 3, 1333);
+data.setCell(6, 3, 2442);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkEmployeeNameAfterLoggedIn')
-data.setCell(7, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(7, 3, 40);
+data.setCell(7, 1, 'verifyTotalTasksCountBeforeAddNewTask')
+data.setCell(7, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(7, 3, 2129);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyForgotPasswordWithoutGivingUserId')
+data.setCell(8, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
+data.setCell(8, 3, 1340);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate')
+data.setCell(9, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(9, 3, 1136);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment')
+data.setCell(10, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(10, 3, 1131);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyAddNewTaskFromDayView')
+data.setCell(11, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(11, 3, 1126);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyAddNewTaskFromDayViewSidebar')
+data.setCell(12, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(12, 3, 1073);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkEmployeeNameAfterLoggedIn')
+data.setCell(13, 2, 'com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
+data.setCell(13, 3, 57);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyAddedTaskFromDayViewSidebarCheckInDayView')
+data.setCell(14, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar')
+data.setCell(15, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView')
+data.setCell(16, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate')
+data.setCell(17, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyAddedTaskFromMonthViewSidebarCheckInDayView')
+data.setCell(18, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyNewAddedTaskFromWeekViewSidebarInWeekView')
+data.setCell(19, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar')
+data.setCell(20, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar')
+data.setCell(21, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView')
+data.setCell(22, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyAddedTaskFromWeekViewSidebarCheckInDayView')
+data.setCell(23, 2, 'com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality')
+data.setCell(23, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -340,7 +783,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -352,6 +795,21 @@ return data;
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyAddedTaskFromWeekViewAtParticularDateCheckInDayView</span>
+                <br/>
+                <span class="ignored-method-name">verifyAddTaskFromMonthViewByGivingOnlyTitle</span>
+                <br/>
+                <span class="ignored-method-name">verifyTotalTasksCountAndLogMessagesInDayViewAfterTaskAddedFromWeekViewAtParticularDate</span>
+                <br/>
+                <span class="ignored-method-name">verifyNewAddedTaskFromWeekViewSidebarAtParticularDateInWeekView</span>
+                <br/>
+                <span class="ignored-method-name">verifyAddTaskFromWeekViewAtParticularDate</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -360,84 +818,214 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">driverSetUp</span>
+                <span class="method-name">launchTheWebsite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">extentReportSetup</span>
+                <span class="method-start">4281 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivi...)</span>
+                <span class="method-start">4618 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword</span>
-                <span class="method-start">4232 ms</span>
+                <span class="method-start">4630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword status=SUCCESS method=Logi...)</span>
-                <span class="method-start">7465 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword status=SUCCESS method=Logi...)</span>
+                <span class="method-start">8345 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivi...)</span>
+                <span class="method-start">8375 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword</span>
-                <span class="method-start">7484 ms</span>
+                <span class="method-start">8376 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword status=SUCCESS method=Logi...)</span>
-                <span class="method-start">10033 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword status=SUCCESS method=Logi...)</span>
+                <span class="method-start">11066 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivi...)</span>
+                <span class="method-start">11069 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword</span>
-                <span class="method-start">10037 ms</span>
+                <span class="method-start">11070 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword status=SUCCESS method=Lo...)</span>
-                <span class="method-start">12401 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword status=SUCCESS method=Lo...)</span>
+                <span class="method-start">13515 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyForgotPasswordWitho...)</span>
+                <span class="method-start">13520 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgotPasswordWithoutGivingUserId</span>
-                <span class="method-start">12403 ms</span>
+                <span class="method-start">13521 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyForgotPasswordWithoutGivingUserId status=SUCCESS method=LoginAndForgotPasswor...)</span>
-                <span class="method-start">13737 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyForgotPasswordWithoutGivingUserId status=SUCCESS method=LoginAndForgotPasswor...)</span>
+                <span class="method-start">14862 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyForgotPasswordByGiv...)</span>
+                <span class="method-start">14864 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgotPasswordByGivingUserId</span>
-                <span class="method-start">13738 ms</span>
+                <span class="method-start">14866 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyForgotPasswordByGivingUserId status=SUCCESS method=LoginAndForgotPasswordFunc...)</span>
-                <span class="method-start">18938 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyForgotPasswordByGivingUserId status=SUCCESS method=LoginAndForgotPasswordFunc...)</span>
+                <span class="method-start">20632 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivi...)</span>
+                <span class="method-start">20635 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginEmployeeByGivingValidUserIdAndValidPassword</span>
-                <span class="method-start">18940 ms</span>
+                <span class="method-start">20637 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyLoginEmployeeByGivingValidUserIdAndValidPassword status=SUCCESS method=LoginA...)</span>
-                <span class="method-start">22290 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyLoginEmployeeByGivingValidUserIdAndValidPassword status=SUCCESS method=LoginA...)</span>
+                <span class="method-start">24463 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.checkEmployeeNameAfterLog...)</span>
+                <span class="method-start">24466 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkEmployeeNameAfterLoggedIn</span>
-                <span class="method-start">22291 ms</span>
+                <span class="method-start">24470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=checkEmployeeNameAfterLoggedIn status=SUCCESS method=LoginAndForgotPasswordFunction...)</span>
-                <span class="method-start">22333 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=checkEmployeeNameAfterLoggedIn status=SUCCESS method=LoginAndForgotPasswordFunction...)</span>
+                <span class="method-start">24528 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">flushExtentReport</span>
+                <span class="method-start">24530 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">extentReportSetup</span>
+                <span class="method-start">25225 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromSi...)</span>
+                <span class="method-start">25233 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyAssignTaskFromLevel</span>
-                <span class="method-start">22397 ms</span>
+                <span class="method-name">verifyAddTaskFromSidebarWithoutEnteringTaskTitle</span>
+                <span class="method-start">25235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyAssignTaskFromLevel status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmploy...)</span>
-                <span class="method-start">38989 ms</span>
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyAddTaskFromSidebarWithoutEnteringTaskTitle status=SUCCESS method=AddSelfTaskA...)</span>
+                <span class="method-start">28724 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCou...)</span>
+                <span class="method-start">28725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalTasksCountBeforeAddNewTask</span>
+                <span class="method-start">28725 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyTotalTasksCountBeforeAddNewTask status=SUCCESS method=AddSelfTaskAndCheckInDa...)</span>
+                <span class="method-start">30856 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddTaskFromMonthViewAtParticularDate</span>
+                <span class="method-start">30858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMo...)</span>
+                <span class="method-start">30858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyAddTaskFromMonthViewAtParticularDate status=FAILURE method=AddSelfTaskAndChec...)</span>
+                <span class="method-start">35275 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMo...)</span>
+                <span class="method-start">35285 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate</span>
+                <span class="method-start">35286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate status=FAILURE method=Add...)</span>
+                <span class="method-start">36580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFro...)</span>
+                <span class="method-start">36590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddNewTaskFromDayView</span>
+                <span class="method-start">36591 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyAddNewTaskFromDayView status=FAILURE method=AddSelfTaskAndCheckInDayViewFunct...)</span>
+                <span class="method-start">37872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFro...)</span>
+                <span class="method-start">37878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddNewTaskFromDayViewSidebar</span>
+                <span class="method-start">37878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyAddNewTaskFromDayViewSidebar status=FAILURE method=AddSelfTaskAndCheckInDayVi...)</span>
+                <span class="method-start">39110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createExtentReportForEachTestMethod(public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWe...)</span>
+                <span class="method-start">39119 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment</span>
+                <span class="method-start">39119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testMethodExectionResult([TestResult name=verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment status=FAILURE meth...)</span>
+                <span class="method-start">40405 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">flushExtentReport</span>
+                <span class="method-start">40418 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38996 ms</span>
+                <span class="method-start">40560 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -5,10 +5,7 @@ import org.openqa.selenium.*;
 import com.biencaps.erp.utilities.*;
 
 public class DashboardPage {
-	// Here one driver variable declared
-	protected WebDriver driver;
-
-	protected WebElementActions webElementActions;
+	protected WebElementActions webElementActions = new WebElementActions();
 
 	public By employeeNameAfterLoggedIn = By.xpath("//p[@class='profileName']");
 
@@ -34,14 +31,6 @@ public class DashboardPage {
 	public By lastRoleForLevelView = By.xpath("(//span[@class='p-treenode-label'])[last()]");
 
 	public By newTaskButton = By.xpath("//button[normalize-space()='New Task']");
-
-	// constructor created for webdriver initialized to this class driver variable
-	// Also that webdriver passed as argument to selenium methods class
-	// (A class which has common selenium methods used for all classes)
-	public DashboardPage(WebDriver driver2) {
-		this.driver = driver2;
-		webElementActions = new WebElementActions();
-	}
 
 	public String checkEmployeeNameAtDashboard() {
 		return webElementActions.getTextMethod(employeeNameAfterLoggedIn);

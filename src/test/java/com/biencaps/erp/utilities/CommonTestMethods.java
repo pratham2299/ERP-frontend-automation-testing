@@ -34,12 +34,12 @@ public class CommonTestMethods extends BaseTest {
 	// Login admin with valid credentials for re usability
 	public void verifyLoginEmployeeByGivingValidUserIdAndValidPassword(String userId, String password)
 			throws InterruptedException {
-		login = new LoginPage(driver);
+		login = new LoginPage();
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 		requestFun = new RequestFunctionality();
-		employee = new EmployeePage(driver);
+		employee = new EmployeePage();
 
 		String validUserId = userId;
 
@@ -75,7 +75,7 @@ public class CommonTestMethods extends BaseTest {
 	}
 
 	public String verifyEmployeeNameAfterLoggedIn(String userId) {
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 
 		String actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
 
@@ -243,7 +243,7 @@ public class CommonTestMethods extends BaseTest {
 	// Check notification message
 	public void verifyNotificationMessage(String employeeName, String message, String notificationMessage,
 			String taskTitle) throws InterruptedException {
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 
 		dashboard.clickOnNotificationIcon();
 //			Thread.sleep(6000);

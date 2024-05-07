@@ -50,8 +50,8 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 		loginFun = new LoginAndForgotPasswordFunctionality();
 		logOutFun = new LogoutFunctionality();
 		requestFun = new RequestFunctionality();
-		request = new RequestPage(driver);
-		dashboard = new DashboardPage(driver);
+		request = new RequestPage();
+		dashboard = new DashboardPage();
 		myActivities = new MyActivitiesFunctionality();
 		webElementActions = new WebElementActions();
 

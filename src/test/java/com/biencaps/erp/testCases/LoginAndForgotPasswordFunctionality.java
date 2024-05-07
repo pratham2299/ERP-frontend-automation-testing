@@ -9,7 +9,7 @@ import com.biencaps.erp.pageObjectModels.*;
 import com.biencaps.erp.utilities.*;
 
 /* This class is extended BaseTest class.
- *  BaseTest has driver so you can inherite driver from BaseTest to this class
+ *  BaseTest has  so you can inherite  from BaseTest to this class
  */
 public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	// This is logger API dependency code. To print messages in seperate file.
@@ -18,7 +18,8 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	public static String validUserId;
 	public static String actualEmployeeName;
 
-	protected LoginPage login;
+//	protected LoginPage login;
+	protected LoginPage login = new LoginPage();
 	protected WebElementActions webElementActions;
 	protected MyTasksPage myTasks;
 	protected DashboardPage dashboard;
@@ -28,12 +29,12 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 
 	@Test(priority = 1, enabled = false)
 	public void goToLoginPage() {
-		login = new LoginPage(driver);
+		login = new LoginPage();
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 		commonMethods = new CommonTestMethods();
-		employee = new EmployeePage(driver);
+		employee = new EmployeePage();
 		logOutFun = new LogoutFunctionality();
 
 		login.clickOnLetsConnectButton();
@@ -44,12 +45,12 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	// Login employee and get all employee user id, full name, role
 	@Test(priority = 1, enabled = false)
 	public void getAllEmployeeDetails() throws InterruptedException {
-		login = new LoginPage(driver);
+		login = new LoginPage();
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 		commonMethods = new CommonTestMethods();
-		employee = new EmployeePage(driver);
+		employee = new EmployeePage();
 		logOutFun = new LogoutFunctionality();
 
 		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.adminLevelTesterEmployeeUserId,
@@ -82,13 +83,13 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	// messages
 	@Test(priority = 2)
 	public void verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword() throws InterruptedException {
-		login = new LoginPage(driver);
+		login = new LoginPage();
 		webElementActions = new WebElementActions();
-		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage(driver);
-		commonMethods = new CommonTestMethods();
-		employee = new EmployeePage(driver);
-		logOutFun = new LogoutFunctionality();
+//		myTasks = new MyTasksPage();
+//		dashboard = new DashboardPage();
+//		commonMethods = new CommonTestMethods();
+//		employee = new EmployeePage();
+//		logOutFun = new LogoutFunctionality();
 
 		login.clickOnUserIdTextfield();
 
@@ -216,7 +217,7 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 		String actualSuccessMessageAfterForgotPasswordSent = login.checkForgotPasswordSentSuccessfullyMessage();
 		log.info("Actual success message after forgot password sent to employee email is: "
 				+ actualSuccessMessageAfterForgotPasswordSent + "\n");
-		
+
 		webElementActions.refreshThePage();
 	}
 
@@ -224,7 +225,7 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	// messages
 	@Test(priority = 7)
 	public void verifyLoginEmployeeByGivingValidUserIdAndValidPassword() throws InterruptedException {
-		login = new LoginPage(driver);
+		login = new LoginPage();
 
 		validUserId = Constants.employeeUserId;
 
@@ -265,6 +266,7 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	// By checking in hashmap value created in different class
 	@Test(priority = 8)
 	public void checkEmployeeNameAfterLoggedIn() {
+		dashboard = new DashboardPage();
 		actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
 		log.info("Actual employee name at dashboard page is: " + actualEmployeeName + "\n");
 

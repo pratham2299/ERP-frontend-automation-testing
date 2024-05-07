@@ -11,24 +11,16 @@ import org.openqa.selenium.support.ui.*;
 import com.biencaps.erp.testCases.BaseTest;
 
 public class WebElementActions {
-	private WebDriver driver;
+	public WebDriver driver;
 	private WebDriverWait wait;
 
 	public WebElementActions() {
 		this.driver = BaseTest.driver;
-		if (driver != null) {
-			wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(7));
-		} else {
-			driver.quit();
-		}
+		wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(7));
 	}
 
 	public void refreshThePage() {
-		if (driver != null) {
-			driver.navigate().refresh();
-		} else {
-			driver.quit();
-		}
+		driver.navigate().refresh();
 	}
 
 	public String currentWindowUrl() {

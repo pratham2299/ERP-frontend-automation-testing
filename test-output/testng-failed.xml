@@ -2,18 +2,35 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="com.biencaps.erp.utilities.TestExecutionListener"/>
+    <listener class-name="com.biencaps.erp.utilities.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="Add Update Assign Task And Check At Employee Side Functionality(failed)">
+  <test thread-count="5" name="Add Self Task And Check In Day View Functionality(failed)">
     <classes>
-      <class name="com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality">
+      <class name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality">
         <methods>
+          <include name="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView"/>
+          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar"/>
+          <include name="verifyAddTaskFromMonthViewAtParticularDate"/>
           <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="verifyAssignTaskFromLevel"/>
-          <include name="driverSetUp"/>
+          <include name="verifyAddedTaskFromWeekViewSidebarCheckInDayView"/>
+          <include name="testMethodExectionResult"/>
+          <include name="createExtentReportForEachTestMethod"/>
+          <include name="verifyNewAddedTaskFromWeekViewSidebarInWeekView"/>
+          <include name="verifyAddedTaskFromMonthViewSidebarCheckInDayView"/>
+          <include name="verifyAddNewTaskFromDayViewSidebar"/>
+          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView"/>
+          <include name="extentReportSetup"/>
+          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate"/>
+          <include name="launchTheWebsite"/>
+          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar"/>
+          <include name="flushExtentReport"/>
+          <include name="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate"/>
+          <include name="verifyAddedTaskFromDayViewSidebarCheckInDayView"/>
+          <include name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment"/>
+          <include name="verifyAddNewTaskFromDayView"/>
+          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar"/>
         </methods>
-      </class> <!-- com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality -->
+      </class> <!-- com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality -->
     </classes>
-  </test> <!-- Add Update Assign Task And Check At Employee Side Functionality(failed) -->
+  </test> <!-- Add Self Task And Check In Day View Functionality(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -79,7 +79,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	public void verifyAddTaskFromSidebarWithoutEnteringTaskTitle() throws InterruptedException {
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 		commonMethods = new CommonTestMethods();
 		myActivitiesFun = new MyActivitiesFunctionality();
 

@@ -22,7 +22,7 @@ public class LogoutFunctionality extends BaseTest {
 		// Passed driver get from BaseTest to my tasks page, dashboard page i.e. page
 		// object model
 		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage(driver);
+		dashboard = new DashboardPage();
 
 		dashboard.clickOnLogOutIcon();
 //		Thread.sleep(2000);

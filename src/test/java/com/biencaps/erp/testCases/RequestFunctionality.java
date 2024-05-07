@@ -20,8 +20,8 @@ public class RequestFunctionality extends BaseTest {
 	 */
 	public void verifyRequestInReceivedRequestCard(String employeeName, String action, String taskTitle)
 			throws InterruptedException {
-		dashboard = new DashboardPage(driver);
-		request = new RequestPage(driver);
+		dashboard = new DashboardPage();
+		request = new RequestPage();
 
 		dashboard.clickOnRequestSectionLink();
 		Thread.sleep(2000);
@@ -65,8 +65,8 @@ public class RequestFunctionality extends BaseTest {
 	 */
 	public void verifyRequestInMyRequestsCard(String employeeName, String requestAction, String taskTitle)
 			throws InterruptedException {
-		dashboard = new DashboardPage(driver);
-		request = new RequestPage(driver);
+		dashboard = new DashboardPage();
+		request = new RequestPage();
 
 		dashboard.clickOnRequestSectionLink();
 		Thread.sleep(2000);
@@ -115,8 +115,8 @@ public class RequestFunctionality extends BaseTest {
 	public void verifyTaskRequestInMyRequestSectionByFilteringRequestCategory(String requestCategory,
 			String employeeName, String actionTakenByEmployeeName, String requestAction, String taskTitle)
 			throws InterruptedException {
-		dashboard = new DashboardPage(driver);
-		request = new RequestPage(driver);
+		dashboard = new DashboardPage();
+		request = new RequestPage();
 
 		dashboard.clickOnRequestSectionLink();
 		Thread.sleep(2000);

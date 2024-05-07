@@ -7,7 +7,7 @@ import com.biencaps.erp.utilities.*;
 public class RequestPage {
 	protected WebDriver driver;
 
-	protected WebElementActions webElementActions;
+	protected WebElementActions webElementActions = new WebElementActions();
 
 	public By requestSectionLink = By.xpath("//p[normalize-space()='Request']");
 	public By refreshIcon = By.xpath("//div[@class='retTitle']//*[name()='svg']");
@@ -21,14 +21,6 @@ public class RequestPage {
 	public By approveButtons = By.xpath("//button[@id='req-approved-btn']");
 	public By rejectButtons = By.xpath("//button[@id='req-deny-btn']");
 	public By rejectSendButton = By.xpath("(//button[normalize-space()='Send'])[1]");
-
-	// constructor created for webdriver initialized to this class driver variable
-	// Also that webdriver passed as argument to selenium methods class
-	// (A class which has common selenium methods used for all classes)
-	public RequestPage(WebDriver driver2) {
-		this.driver = driver2;
-		webElementActions = new WebElementActions();
-	}
 
 	public void clickOnRefreshIconInRequestSection() {
 		webElementActions.clickOnMethod(refreshIcon);
