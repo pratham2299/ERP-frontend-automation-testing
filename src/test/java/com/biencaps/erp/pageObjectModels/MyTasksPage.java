@@ -29,7 +29,7 @@ public class MyTasksPage {
 	public By taskScheduleDateValueInSidebar = By.xpath("(//div[@class='taskEdtSelectDateForAdd']//p)[1]");
 	public By taskDueDateValueInSidebar = By.xpath("(//div[@class='taskEdtSelectDateForAdd']//p)[2]");
 	public By taskAssigneeNameInSidebar = By.xpath("//div[@class='navBarName']//p");
-	public By taskDepartmentInSidebar = By.xpath("//div[@class='newTaskAssigneeContent newTaskTagContent']/p");
+	public By taskDepartmentInSidebar = By.xpath("//div[@class='newTaskAssigneeContent newTaskTagContent']//p");
 	public By taskPriorityInSidebar = By.xpath("//div[@class='Priority']//p");
 	public By taskStatusInSidebar = By.xpath("//div[@class='newTaskAssigneeContent newTasStatusContentEdite']");
 	public By statusValuesFromDropdownInSidebar = By.xpath("//div[@class='TagContentDiv']");

@@ -20,8 +20,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	private String taskTitleInputWhileAddFromMonthViewAtParticularDate;
 	private String actualScheduleDateFieldValueWhileAddTaskFromMonthViewAtParticularDate;
 	private String actualDueDateFieldValueWhileAddTaskFromMonthViewAtParticularDate;
-	private String actualFirstTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate;
-	private String actualSecondTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate;
+	private String actualTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate;
 	private String actualTaskStatusWhileAddTaskFromMonthViewAtParticularDate;
 	private String actualTaskProjectWhileAddTaskFromMonthViewAtParticularDate;
 	private String actualTaskPriorityWhileAddTaskFromMonthViewAtParticularDate;
@@ -38,8 +37,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	private String taskTitleInputWhileAddFromDayViewSidebar;
 	private String actualScheduleDateFieldValueWhileAddTaskFromDayViewSidebar;
 	private String actualDueDateFieldValueWhileAddTaskFromDayViewSidebar;
-	private String actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar;
-	private String actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar;
+	private String actualTaskDepartmentWhileAddTaskFromDayViewSidebar;
 	private String actualTaskStatusWhileAddTaskFromDayViewSidebar;
 	private String actualTaskProjectWhileAddTaskFromDayViewSidebar;
 	private String actualTaskPriorityWhileAddTaskFromDayViewSidebar;
@@ -58,8 +56,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 	private String taskTitleInputWhileAddFromWeekViewAtParticularDate;
 	private String actualScheduleDateFieldValueWhileAddTaskFromWeekViewAtParticularDate;
 	private String actualDueDateFieldValueWhileAddTaskFromWeekViewAtParticularDate;
-	private String actualFirstTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate;
-	private String actualSecondTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate;
+	private String actualTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate;
 	private String actualTaskStatusWhileAddTaskFromWeekViewAtParticularDate;
 	private String actualTaskProjectWhileAddTaskFromWeekViewAtParticularDate;
 	private String actualTaskPriorityWhileAddTaskFromWeekViewAtParticularDate;
@@ -88,7 +85,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnAddTasksButtonInSidebar();
 
-		commonMethods.verifyToastMessage("after leaving task title field empty", "Please Add the task first");
+		commonMethods.verifyToastMessage("after leaving task title field empty", "Please Add the task ");
 
 		myTasks.clickOnCancelSidebarIcon();
 		Thread.sleep(1000);
@@ -199,31 +196,10 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 		assertEquals(actualTaskAssigneeNameWhileAddTaskFromMonthViewAtParticularDate,
 				LoginAndForgotPasswordFunctionality.actualEmployeeName);
 
-		// Selected random tag
-		myTasks.clickOnTagDropdownWhileAddTaskFromSidebar();
-
-		myTasks.clickOnRandomValueFromDropdownWhileAddTaskFromSidebar();
-
-		myTasks.clickOnTagFieldLabelWhileAddTaskFromSidebar();
-
-		List<String> taskDepartmentValuesWhileAddTaskFromMonthViewAtParticularDate = myTasks
-				.checkTaskDepartmentsWhileAddTaskFromSidebar();
-		if (taskDepartmentValuesWhileAddTaskFromMonthViewAtParticularDate.size() > 1) {
-			actualFirstTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate = taskDepartmentValuesWhileAddTaskFromMonthViewAtParticularDate
-					.get(0);
-			log.info("Actual first task department while add task from month view and at particular date is: "
-					+ actualFirstTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate);
-
-			actualSecondTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate = taskDepartmentValuesWhileAddTaskFromMonthViewAtParticularDate
-					.get(1);
-			log.info("Actual second task department while add task from month view and at particular date is: "
-					+ actualSecondTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate);
-		} else {
-			actualFirstTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate = taskDepartmentValuesWhileAddTaskFromMonthViewAtParticularDate
-					.get(0);
-			log.info("Actual first task department while add task from month view and at particular date is: "
-					+ actualFirstTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate);
-		}
+		actualTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate = myTasks
+				.checkTaskDepartmentWhileAddTaskFromSidebar();
+		log.info("Actual  task department while add task from month view and at particular date is: "
+				+ actualTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate);
 
 		myTasks.clickOnPriorityDropdownWhileAddTaskFromSidebar();
 
@@ -313,8 +289,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 				actualTaskProjectWhileAddTaskFromMonthViewAtParticularDate,
 				actualScheduleDateFieldValueWhileAddTaskFromMonthViewAtParticularDate,
 				actualDueDateFieldValueWhileAddTaskFromMonthViewAtParticularDate,
-				actualFirstTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate,
-				actualSecondTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate,
+				actualTaskDepartmentWhileAddTaskFromMonthViewAtParticularDate,
+
 				LoginAndForgotPasswordFunctionality.actualEmployeeName,
 				actualTaskCommentWhileAddTaskFromMonthViewAtParticularDate);
 	}
@@ -482,7 +458,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 						actualTaskPriorityWhileAddTaskFromMonthViewSidebar, "",
 						actualTaskScheduleDateValueWhileAddTaskFromMonthViewSidebar,
 						actualTaskDueDateValueWhileAddTaskFromMonthViewSidebar,
-						actualTaskDepartmentWhileAddTaskFromMonthViewSidebar, "",
+						actualTaskDepartmentWhileAddTaskFromMonthViewSidebar,
 						LoginAndForgotPasswordFunctionality.actualEmployeeName, "");
 
 				String rollOverTaskColor = myTasks.checkRollOverTaskColor();
@@ -496,7 +472,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 						actualTaskPriorityWhileAddTaskFromMonthViewSidebar, "",
 						actualTaskScheduleDateValueWhileAddTaskFromMonthViewSidebar,
 						actualTaskDueDateValueWhileAddTaskFromMonthViewSidebar,
-						actualTaskDepartmentWhileAddTaskFromMonthViewSidebar, "",
+						actualTaskDepartmentWhileAddTaskFromMonthViewSidebar,
 						LoginAndForgotPasswordFunctionality.actualEmployeeName, "");
 
 				if (i > 0) {
@@ -637,24 +613,9 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnTagFieldLabelWhileAddTaskFromSidebar();
 
-		List<String> taskDepartmentValuesWhileAddTaskFromDayViewSidebar = myTasks
-				.checkTaskDepartmentsWhileAddTaskFromSidebar();
-		if (taskDepartmentValuesWhileAddTaskFromDayViewSidebar.size() > 1) {
-			actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar = taskDepartmentValuesWhileAddTaskFromDayViewSidebar
-					.get(0);
-			log.info("Actual first task department while add task from day view sidebar is: "
-					+ actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar);
-
-			actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar = taskDepartmentValuesWhileAddTaskFromDayViewSidebar
-					.get(1);
-			log.info("Actual second task department while add task from day view sidebar is: "
-					+ actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar);
-		} else {
-			actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar = taskDepartmentValuesWhileAddTaskFromDayViewSidebar
-					.get(0);
-			log.info("Actual first task department while add task from day view sidebar is: "
-					+ actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar);
-		}
+		actualTaskDepartmentWhileAddTaskFromDayViewSidebar = myTasks.checkTaskDepartmentWhileAddTaskFromSidebar();
+		log.info("Actual task department while add task from day view sidebar is: "
+				+ actualTaskDepartmentWhileAddTaskFromDayViewSidebar);
 
 		myTasks.clickOnPriorityDropdownWhileAddTaskFromSidebar();
 
@@ -748,8 +709,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 						actualTaskProjectWhileAddTaskFromDayViewSidebar,
 						actualScheduleDateFieldValueWhileAddTaskFromDayViewSidebar,
 						actualDueDateFieldValueWhileAddTaskFromDayViewSidebar,
-						actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar,
-						actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar,
+						actualTaskDepartmentWhileAddTaskFromDayViewSidebar,
 						LoginAndForgotPasswordFunctionality.actualEmployeeName,
 						actualTaskCommentWhileAddTaskFromDayViewSidebar);
 				break;
@@ -760,8 +720,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 						actualTaskProjectWhileAddTaskFromDayViewSidebar,
 						actualScheduleDateFieldValueWhileAddTaskFromDayViewSidebar,
 						actualDueDateFieldValueWhileAddTaskFromDayViewSidebar,
-						actualFirstTaskDepartmentWhileAddTaskFromDayViewSidebar,
-						actualSecondTaskDepartmentWhileAddTaskFromDayViewSidebar,
+						actualTaskDepartmentWhileAddTaskFromDayViewSidebar,
 						LoginAndForgotPasswordFunctionality.actualEmployeeName,
 						actualTaskCommentWhileAddTaskFromDayViewSidebar);
 
@@ -850,24 +809,10 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		myTasks.clickOnTagFieldLabelWhileAddTaskFromSidebar();
 
-		List<String> taskDepartmentValuesWhileAddTaskFromWeekViewAtParticularDate = myTasks
-				.checkTaskDepartmentsWhileAddTaskFromSidebar();
-		if (taskDepartmentValuesWhileAddTaskFromWeekViewAtParticularDate.size() > 1) {
-			actualFirstTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate = taskDepartmentValuesWhileAddTaskFromWeekViewAtParticularDate
-					.get(0);
-			log.info("Actual first task department while add task from week view and at particular date is: "
-					+ actualFirstTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate);
-
-			actualSecondTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate = taskDepartmentValuesWhileAddTaskFromWeekViewAtParticularDate
-					.get(1);
-			log.info("Actual second task department while add task from week view and at particular date is: "
-					+ actualSecondTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate);
-		} else {
-			actualFirstTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate = taskDepartmentValuesWhileAddTaskFromWeekViewAtParticularDate
-					.get(0);
-			log.info("Actual first task department while add task from week view and at particular date is: "
-					+ actualFirstTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate);
-		}
+		actualTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate = myTasks
+				.checkTaskDepartmentWhileAddTaskFromSidebar();
+		log.info("Actual task department while add task from week view and at particular date is: "
+				+ actualTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate);
 
 		myTasks.clickOnPriorityDropdownWhileAddTaskFromSidebar();
 
@@ -980,8 +925,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 				actualTaskProjectWhileAddTaskFromWeekViewAtParticularDate,
 				actualScheduleDateFieldValueWhileAddTaskFromWeekViewAtParticularDate,
 				actualDueDateFieldValueWhileAddTaskFromWeekViewAtParticularDate,
-				actualFirstTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate,
-				actualSecondTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate,
+				actualTaskDepartmentWhileAddTaskFromWeekViewAtParticularDate,
 				LoginAndForgotPasswordFunctionality.actualEmployeeName,
 				actualTaskCommentWhileAddTaskFromWeekViewAtParticularDate);
 	}
@@ -1146,7 +1090,7 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 				actualTaskStatusWhileAddTaskFromWeekViewSidebar, actualTaskPriorityWhileAddTaskFromWeekViewSidebar, "",
 				actualTaskScheduleDateValueWhileAddTaskFromWeekViewSidebar,
 				actualTaskDueDateValueWhileAddTaskFromWeekViewSidebar,
-				actualTaskDepartmentWhileAddTaskFromWeekViewSidebar, "",
+				actualTaskDepartmentWhileAddTaskFromWeekViewSidebar,
 				LoginAndForgotPasswordFunctionality.actualEmployeeName,
 				actualTaskCommentWhileAddTaskFromWeekViewSidebar);
 	}
@@ -1164,8 +1108,8 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 	// Checks added task details in day view
 	public void verifyAddedTaskCheckInDayView(String message, String taskTitle, String taskStatus, String taskPriority,
-			String taskProject, String taskStartDate, String taskDueDate, String taskDepartment1,
-			String taskDepartment2, String taskAssignee, String taskComment) throws InterruptedException {
+			String taskProject, String taskStartDate, String taskDueDate, String taskDepartment, String taskAssignee,
+			String taskComment) throws InterruptedException {
 		myTasks.clickOnRefreshButtonInDayView();
 
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -1209,22 +1153,10 @@ public class AddSelfTaskAndCheckInDayViewFunctionality extends BaseTest {
 
 		List<String> taskDepartmentValuesInDayView = myTasks
 				.checkRandomTaskDepartmentTextInDayView(newAddedTaskRowIndex);
-		if (taskDepartmentValuesInDayView.size() > 1) {
-			String actualFirstTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(0);
-			log.info("Actual first task department value added " + message + " in day view is: "
-					+ actualFirstTaskDepartmentValueInDayView);
-			assertEquals(actualFirstTaskDepartmentValueInDayView, taskDepartment1);
-
-			String actualSecondTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(1);
-			log.info("Actual second task department value added " + message + " in day view is: "
-					+ actualSecondTaskDepartmentValueInDayView);
-			assertEquals(actualSecondTaskDepartmentValueInDayView, taskDepartment2);
-		} else {
-			String actualFirstTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(0);
-			log.info("Actual first task department value added " + message + " in day view is: "
-					+ actualFirstTaskDepartmentValueInDayView);
-			assertEquals(actualFirstTaskDepartmentValueInDayView, taskDepartment1);
-		}
+		String actualTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(0);
+		log.info("Actual  task department value added " + message + " in day view is: "
+				+ actualTaskDepartmentValueInDayView);
+		assertEquals(actualTaskDepartmentValueInDayView, taskDepartment);
 
 		String actualTaskAssigneeNameInDayView = myTasks.checkLastTaskAssigneeNameTextInDayView();
 		log.info("Actual task assignee name added " + message + " in day view is: " + actualTaskAssigneeNameInDayView);

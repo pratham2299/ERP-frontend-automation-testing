@@ -17,6 +17,7 @@
           <include name="createExtentReportForEachTestMethod"/>
           <include name="verifyNewAddedTaskFromWeekViewSidebarInWeekView"/>
           <include name="verifyAddedTaskFromMonthViewSidebarCheckInDayView"/>
+          <include name="verifyTotalTasksCountBeforeAddNewTask"/>
           <include name="verifyAddNewTaskFromDayViewSidebar"/>
           <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView"/>
           <include name="extentReportSetup"/>
@@ -29,6 +30,7 @@
           <include name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment"/>
           <include name="verifyAddNewTaskFromDayView"/>
           <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar"/>
+          <include name="verifyAddTaskFromSidebarWithoutEnteringTaskTitle"/>
         </methods>
       </class> <!-- com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality -->
     </classes>

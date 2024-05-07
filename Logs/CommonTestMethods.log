@@ -1,6 +1,2 @@
-17:23:57 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
-17:25:01 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving task title field empty is: Please Add the task first
-
-17:25:05 com.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/3
-17:25:05 com.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 3
+18:08:31 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving task title field empty is: Please Add the task first
 
