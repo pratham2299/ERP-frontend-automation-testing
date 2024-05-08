@@ -1,0 +1,88 @@
+15:19:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Total tasks count before add new task in day view is: 0
+
+15:19:57 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual entered task title from month view and at particular date is: Tirra Lirra by the River
+15:19:57 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual schedule date field value while add task from month view and at particular date is: 2024-05-08
+15:19:57 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual due date field value while add task from month view and at particular date is: 2024-05-08
+15:19:57 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name while add task from month view and at particular date is: Prathamesh Dhasade
+15:19:57 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual  task department while add task from month view and at particular date is: QA
+15:19:58 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task priority while add task from month view and at particular date is: Medium
+15:19:58 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual selected task status value from dropdown while add task from month view and at particular date is: In Progress
+15:19:58 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task status while add task from month view and at particular date is: In Progress
+15:19:58 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task project while add task from month view and at particular date is: E commerce
+15:19:58 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual entered task comment while add task from month view and at particular date is: Program Development
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task title from month view at particular date in day view is: Tirra Lirra by the River
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task status from month view at particular date in day view is: In Progress
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task priority from month view at particular date in day view is: Medium
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task project from month view at particular date in day view is: E commerce
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task schedule date from month view at particular date in day view is: 2024-05-08
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task due date from month view at particular date in day view is: 2024-05-08
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual  task department value added from month view at particular date in day view is: QA
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name added from month view at particular date in day view is: Prathamesh Dhasade
+15:20:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment added from month view at particular date in day view is: Program Development
+15:20:03 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment in sidebar for update task added from month view at particular date in day view is: Program Development
+
+15:20:16 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual entered task title from month view sidebar is: Many Waters
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task schedule date value while add task from month view sidebar is: 2024-05-06
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task due date value while add task from month view sidebar is: 2024-05-06
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name while add task from month view sidebar is: Prathamesh Dhasade
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task department while add task from month view sidebar is: QA
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task priority while add task from month view sidebar is: Low
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Task status values from dropdown while add task from month view sidebar are: [Not Started, In Discussion, In Progress, Submitted]
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual selected task status value from dropdown while add task from month view sidebar is: In Progress
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task status while add task from month view sidebar is: In Progress
+15:20:17 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment while add task from month view sidebar is: 
+15:20:21 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Day in current day view is: Monday
+15:20:21 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Date in current day view is: 06 May 2024
+15:20:21 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Day in current day view is: Monday
+15:20:21 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Date in current day view is: 06 May 2024
+15:20:22 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task title from month view sidebar in day view is: Many Waters
+15:20:22 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task status from month view sidebar in day view is: In Progress
+15:20:22 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task priority from month view sidebar in day view is: Low
+15:20:30 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Project field is not selected while add task from month view sidebar
+15:20:30 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task schedule date from month view sidebar in day view is: 2024-05-06
+15:20:30 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task due date from month view sidebar in day view is: 2024-05-06
+15:20:30 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual  task department value added from month view sidebar in day view is: QA
+15:20:30 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name added from month view sidebar in day view is: Prathamesh Dhasade
+15:20:30 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment added from month view sidebar in day view is: 
+15:20:30 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Task comment is empty or null
+
+15:20:35 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task title add from day view is: The Monkey's Raincoat
+15:20:52 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual entered task title from week view sidebar is: Infinite Jest
+15:20:52 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task schedule date value while add task from week view sidebar is: 2024-05-05
+15:20:52 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task due date value while add task from week view sidebar is: 2024-05-06
+15:20:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name while add task from week view sidebar is: Prathamesh Dhasade
+15:20:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task department while add task from week view sidebar is: QA
+15:20:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task priority while add task from week view sidebar is: Low
+15:20:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Task status values from dropdown while add task from week view sidebar are: [Not Started, In Discussion, In Progress, Submitted]
+15:20:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual selected task status value from dropdown while add task from week view sidebar is: In Progress
+15:20:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task status while add task from week view sidebar is: In Progress
+15:20:53 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment while add task from week view sidebar is: Barton-Zboncak
+15:21:02 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual new added task title from week view sidebar in week view is: Infinite Jest
+15:21:05 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Day in current day view is: Sunday
+15:21:05 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Date in current day view is: 05 May 2024
+15:21:05 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Day in current day view is: Sunday
+15:21:05 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Date in current day view is: 05 May 2024
+15:21:06 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task title from week view sidebar in day view is: Infinite Jest
+15:21:06 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task status from week view sidebar in day view is: In Progress
+15:21:06 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task priority from week view sidebar in day view is: Low
+15:21:14 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Project field is not selected while add task from week view sidebar
+15:21:14 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task schedule date from week view sidebar in day view is: 2024-05-05
+15:21:14 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task due date from week view sidebar in day view is: 2024-05-06
+15:21:14 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual  task department value added from week view sidebar in day view is: QA
+15:21:14 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name added from week view sidebar in day view is: Prathamesh Dhasade
+15:21:14 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment added from week view sidebar in day view is: Barton-Zboncak
+15:21:15 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment in sidebar for update task added from week view sidebar in day view is: Barton-Zboncak
+
+15:21:16 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Day in current day view is: Monday
+15:21:16 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Date in current day view is: 06 May 2024
+15:21:18 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task title from week view sidebar in day view is: Infinite Jest
+15:21:18 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task status from week view sidebar in day view is: In Progress
+15:21:18 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task priority from week view sidebar in day view is: Low
+15:21:25 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Project field is not selected while add task from week view sidebar
+15:21:25 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task schedule date from week view sidebar in day view is: 2024-05-05
+15:21:25 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual added task due date from week view sidebar in day view is: 2024-05-06
+15:21:25 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual  task department value added from week view sidebar in day view is: QA
+15:21:25 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name added from week view sidebar in day view is: Prathamesh Dhasade
+15:21:25 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment added from week view sidebar in day view is: Barton-Zboncak
+15:21:26 com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment in sidebar for update task added from week view sidebar in day view is: Barton-Zboncak
+

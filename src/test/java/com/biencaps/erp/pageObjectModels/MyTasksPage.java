@@ -22,10 +22,8 @@ public class MyTasksPage {
 	// Locators for add task from sidebar
 	public By taskNameTextfieldInSidebar = By.xpath("//input[@placeholder='Enter Tasks Name ']");
 	public By newTaskTitleInSidebar = By.xpath("//div[@class='newTaskParagraph']");
-	public By startDateLabelInSidebar = By.xpath("//label[normalize-space()='Start Date']");
+	public By departmentLabelInSidebar = By.xpath("//label[normalize-space()='Department']");
 	public By endDateLabelInSidebar = By.xpath("//label[normalize-space()='End Date']");
-	public By startDateCalendarIconInSidebar = By.xpath("(//div[@class='taskEdtSelectDateIcon']//*[name()='svg'])[1]");
-	public By endDateCalendarIconInSidebar = By.xpath("(//div[@class='taskEdtSelectDateIcon']//*[name()='svg'])[2]");
 	public By taskScheduleDateValueInSidebar = By.xpath("(//div[@class='taskEdtSelectDateForAdd']//p)[1]");
 	public By taskDueDateValueInSidebar = By.xpath("(//div[@class='taskEdtSelectDateForAdd']//p)[2]");
 	public By taskAssigneeNameInSidebar = By.xpath("//div[@class='navBarName']//p");
@@ -134,6 +132,8 @@ public class MyTasksPage {
 	public By timeValuesFromDropdownInDayView = By.xpath("//li[@class='react-datepicker__time-list-item ']");
 	public By lastEndTimeTextfieldInDayView = By.xpath("(//input[@placeholder='End time'])[last()]");
 
+	public By imageOfTaskViewedEmployeeInDayView = By.xpath("(//div[@class='taskOwnerImage viewedByDiv'])[last()]");
+
 	// constructor created for webdriver initialized to this class driver variable
 	// Also that webdriver passed as argument to selenium methods class
 	// (A class which has common selenium methods used for all classes)
@@ -148,6 +148,12 @@ public class MyTasksPage {
 
 	public String checkToastMessage(String toastMessageText) {
 		By toastMessageLocator = By.xpath("//div[contains(text(),'" + toastMessageText + "')]");
+		String toastMessage = webElementActions.getTextMethod(toastMessageLocator);
+		return toastMessage;
+	}
+
+	public String checkToastMessageInBlueColor(String toastMessageText) {
+		By toastMessageLocator = By.xpath("//div[contains(text(),\"" + toastMessageText + "\")]");
 		String toastMessage = webElementActions.getTextMethod(toastMessageLocator);
 		return toastMessage;
 	}
@@ -170,14 +176,12 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(cancelSidebarIcon);
 	}
 
-	public void clickOnStartDateCalendarIconWhileAddTaskFromSidebar() {
-//		webElementActions.clickOnMethod(startDateCalendarIconInSidebar, 0, "Start date calendar icon");
-		webElementActions.clickOnMethod(startDateCalendarIconInSidebar);
+	public void clickOnStartDateCalendarFieldWhileAddTaskFromSidebar() {
+		webElementActions.clickOnMethod(taskScheduleDateValueInSidebar);
 	}
 
-	public void clickOnEndDateCalendarIconWhileAddTaskFromSidebar() {
-//		webElementActions.clickOnMethod(startDateCalendarIconInSidebar, 1, "End date calendar icon");
-		webElementActions.clickOnMethod(endDateCalendarIconInSidebar);
+	public void clickOnEndDateCalendarFieldWhileAddTaskFromSidebar() {
+		webElementActions.clickOnMethod(taskDueDateValueInSidebar);
 	}
 
 	public void selectTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar(String date) {
@@ -186,15 +190,9 @@ public class MyTasksPage {
 	}
 
 	public void selectTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar(int date) {
-		By firstDateOfMonth = By.xpath("(//span[@aria-disabled='false'])[1]");
-		String firstDateOfMonthText = webElementActions.getTextMethod(firstDateOfMonth);
-
 		By selectedTaskScheduleDateValue;
-		if (date < Integer.parseInt(firstDateOfMonthText)) {
+		if (date < 1) {
 			webElementActions.clickOnMethod(previousMonthIconInDayView);
-//			int randomDate = new Faker().number().numberBetween(25, 30);
-//			selectedTaskScheduleDateValue = By
-//					.xpath("//span[@aria-disabled='false'][normalize-space()='" + randomDate + "']");
 
 			By lastDateOfMonth = By.xpath("(//span[@aria-disabled='false'])[last()]");
 			String lastDateOfMonthText = webElementActions.getTextMethod(lastDateOfMonth);
@@ -226,12 +224,8 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(selectedTaskDueDateValue);
 	}
 
-	public void clickOnStartDateLabelWhileAddTaskFromSidebar() {
-		webElementActions.clickOnMethod(startDateLabelInSidebar);
-	}
-
-	public void clickOnEndDateLabelWhileAddTaskFromSidebar() {
-		webElementActions.clickOnMethod(endDateLabelInSidebar);
+	public void clickOnDepartmentLabelWhileAddTaskFromSidebar() {
+		webElementActions.clickOnMethod(departmentLabelInSidebar);
 	}
 
 	public String checkSelectedTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar() {
@@ -359,11 +353,8 @@ public class MyTasksPage {
 	}
 
 	public void clickOnParticularDateFromCalendarInDayView(int date) {
-		By firstDateOfMonth = By.xpath("(//span[@aria-disabled='false'])[1]");
-		String firstDateOfMonthText = webElementActions.getTextMethod(firstDateOfMonth);
-
 		By selectedTaskScheduleDateValue;
-		if (date < Integer.parseInt(firstDateOfMonthText)) {
+		if (date < 1) {
 			webElementActions.clickOnMethod(previousMonthIconInDayView);
 			By lastDateOfMonth = By.xpath("(//span[@aria-disabled='false'])[last()]");
 			String lastDateOfMonthText = webElementActions.getTextMethod(lastDateOfMonth);
@@ -442,11 +433,14 @@ public class MyTasksPage {
 		int index = 0;
 		for (int i = 0; i < taskTitles.size(); i++) {
 			if (taskTitles.get(i).equalsIgnoreCase(taskTitle)) {
-				index = taskTitles.indexOf(taskTitle);
-				break;
+				index++;
+
+				if (index == 2) {
+					return index;
+				}
 			}
 		}
-		return index;
+		return taskTitles.indexOf(taskTitle);
 	}
 
 	public String checkLastTaskStatusTextInDayView() {
@@ -890,9 +884,16 @@ public class MyTasksPage {
 	}
 
 	public String checkTextAfterTaskRequestSentInDayView() {
-		WebElement lastTaskStatus = driver.findElement(lastTaskStatusInDayView);
-		webElementActions.mouseHoverOnElement(lastTaskStatus);
+		webElementActions.mouseHoverOnElement(lastTaskStatusInDayView);
 
 		return webElementActions.getTextMethod(textAfterRequestSentInDayView);
+	}
+
+	public String checkViwedHigherAuthorityNameInDayView(String taskViwedEmployee) throws InterruptedException {
+		webElementActions.mouseHoverOnElement(imageOfTaskViewedEmployeeInDayView);
+		Thread.sleep(1000);
+		By taskViwedEmployeeNameAfterHover = By.xpath("//div[normalize-space()='" + taskViwedEmployee + "']");
+
+		return webElementActions.getTextMethod(taskViwedEmployeeNameAfterHover);
 	}
 }

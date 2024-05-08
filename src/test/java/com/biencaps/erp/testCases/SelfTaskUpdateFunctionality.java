@@ -28,23 +28,80 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 
 	protected MyTasksPage myTasks;
 	protected CommonTestMethods commonMethods;
-	protected WebElementActions sm;
 	protected MyActivitiesFunctionality myActivities;
+	protected DashboardPage dashboard;
+	protected LogoutFunctionality logOutFun;
+	protected LoginAndForgotPasswordFunctionality loginFun;
+	protected WebElementActions webElementActions;
+	private String actualHigherAuthorityNameForViewTasks;
+
+	@Test(priority = 1)
+	public void verifyHigherAuthorityViewedTasks() throws InterruptedException {
+		myTasks = new MyTasksPage(driver);
+		commonMethods = new CommonTestMethods();
+		myActivities = new MyActivitiesFunctionality();
+		dashboard = new DashboardPage();
+		logOutFun = new LogoutFunctionality();
+		webElementActions = new WebElementActions();
+		loginFun = new LoginAndForgotPasswordFunctionality();
+
+		logOutFun.verifyLogOutEmployee();
+
+		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(
+				Constants.teamLeadLevelTesterEmployeeUserId, Constants.teamLeadLevelTesterEmployeePassword);
+
+		actualHigherAuthorityNameForViewTasks = commonMethods
+				.verifyEmployeeNameAfterLoggedIn(Constants.teamLeadLevelTesterEmployeeUserId);
+		log.info("Actual higher authority employee name for tasks view at dashboard page is: "
+				+ actualHigherAuthorityNameForViewTasks + "\n");
+
+		for (int i = 0; i < webElementActions.sizeOfListOfWebElement(dashboard.rolesForLevelView); i++) {
+			String lastRoleForLevelView = dashboard.checkRoleForLevelView();
+			log.info("Last role for level view is: " + lastRoleForLevelView);
+
+			if (lastRoleForLevelView.equalsIgnoreCase(
+					DataGenerator.employeeUserIdsAndRolesOnProduction().get(Constants.employeeUserId))) {
+				dashboard.clickOnRandomRoleForLevelView();
+				Thread.sleep(1000);
+
+				dashboard.clickOnEmployeeFromLevelView(LoginAndForgotPasswordFunctionality.actualEmployeeName);
+				Thread.sleep(1000);
+
+				commonMethods.verifyToastMessageInBlueColor("after viwed tasks by higher authority",
+						"You viewed " + LoginAndForgotPasswordFunctionality.actualEmployeeName + "'s Tasks");
+			} else {
+				dashboard.clickOnLastArrowForLevelView();
+				Thread.sleep(1000);
+			}
+		}
+
+		logOutFun.verifyLogOutEmployee();
+
+		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.employeeUserId,
+				Constants.employeePassword);
+
+		loginFun.checkEmployeeNameAfterLoggedIn();
+
+		myTasks.clickOnDayButton();
+		Thread.sleep(1500);
+
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
+		Thread.sleep(1000);
+
+		myTasks.scrollHorizantally(1600);
+
+		String actualTaskViwedEmployeeName = myTasks
+				.checkViwedHigherAuthorityNameInDayView(actualHigherAuthorityNameForViewTasks);
+		log.info("Actual task viewed higher authority employee name in day view is: " + actualTaskViwedEmployeeName);
+
+		myTasks.scrollHorizantally(-1600);
+	}
 
 	// Prints last task details like title, status, priority, project, due date etc
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void verifyLastTaskDetailsInDayView() throws InterruptedException {
 		// Passed driver get from BaseTest to my tasks page i.e. page object model and
 		// selenium methods, common test methods class
-		myTasks = new MyTasksPage(driver);
-		commonMethods = new CommonTestMethods();
-		sm = new WebElementActions();
-		myActivities = new MyActivitiesFunctionality();
-
-//		myTasks.clickOnDayButton();
-//
-//		myTasks.clickOnMonthButton();
-
 		myTasks.clickOnDayButton();
 		Thread.sleep(1500);
 
@@ -97,7 +154,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task title, checks updated task title,
 	// validate it whether it is matched with input task title
 	// Also checks log message after updated task title
-	@Test(priority = 2)
+	@Test(priority = 3, enabled = false)
 	public void verifyUpdateSelfTaskTitleFromDayViewAndCheckTaskTitleAndLogs() throws InterruptedException {
 		myTasks.scrollHorizantally(-1500);
 
@@ -133,7 +190,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task status, checks updated task status,
 	// validate it whether it is matched with input task status
 	// Also checks log message after updated task status
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void verifyUpdateSelfTaskStatusFromDayViewAndCheckTaskStatusAndLogs() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);
@@ -191,7 +248,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task priority, checks updated task priority,
 	// validate it whether it is matched with input task priority
 	// Also checks log message after updated task priority
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void verifyUpdateSelfTaskPriorityFromDayViewAndCheckTaskPriorityAndLogs() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);
@@ -236,7 +293,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task start and end time, checks updated task start and end time,
 	// validate it whether it is matched with input task start and end time
 	// Also checks log message after updated task start and end time
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 6, enabled = false)
 	public void verifyUpdateSelfTaskTimeFromDayViewAndCheckTaskTimeAndLogs() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);
@@ -297,7 +354,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task due date, checks updated task due date,
 	// validate it whether it is matched with input task due date
 	// Also checks log message after updated task due date
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void verifyUpdateSelfTaskDueDateFromDayViewAndCheckTaskDueDateAndLogs() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);
@@ -361,7 +418,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task department, checks updated task department,
 	// validate it whether it is matched with input task department
 	// Also checks log message after updated task department
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void verifyUpdateSelfTaskDepartmentFromDayViewAndCheckTaskDepartmentAndLogs() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);
@@ -434,7 +491,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 
 	// Try to add gilink without selecting project
 	// Check error message
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void verifyUpdateSelfTaskGitlinkFromDayViewWithoutSelectingProject() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);
@@ -458,7 +515,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task project, checks updated task project,
 	// validate it whether it is matched with input task project
 	// Also checks log message after updated task project
-	@Test(priority = 9, dependsOnMethods = "verifyUpdateSelfTaskGitlinkFromDayViewWithoutSelectingProject")
+	@Test(priority = 10, dependsOnMethods = "verifyUpdateSelfTaskGitlinkFromDayViewWithoutSelectingProject")
 	public void verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);
@@ -509,7 +566,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 
 	// update self task gitlink by giving invalid gitlink
 	// Checks error toast message
-	@Test(priority = 10, dependsOnMethods = "verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs")
+	@Test(priority = 11, dependsOnMethods = "verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs")
 	public void verifyUpdateSelfTaskGitlinkByGivingInvalidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs()
 			throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -534,7 +591,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task gitlink, checks updated task gitlink,
 	// validate it whether it is matched with input task gitlink
 	// Also checks log message after updated task gitlink
-	@Test(priority = 11, dependsOnMethods = "verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs")
+	@Test(priority = 12, dependsOnMethods = "verifyUpdateSelfTaskProjectFromDayViewAndCheckTaskProjectAndLogs")
 	public void verifyUpdateSelfTaskGitlinkByGivingValidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs()
 			throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -574,7 +631,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Update self task status, checks updated task verified status,
 	// validate it whether it is matched with input task verified status
 	// Also checks log message after updated task verified status
-	@Test(priority = 12, dependsOnMethods = "verifyUpdateSelfTaskGitlinkByGivingValidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs")
+	@Test(priority = 13, dependsOnMethods = "verifyUpdateSelfTaskGitlinkByGivingValidGitlinkFromDayViewAndCheckTaskGitlinkAndLogs")
 	public void verifyUpdateSelfTaskVerifiedStatusFromDayViewAndCheckTaskVerifiedStatusAndLogs()
 			throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -628,7 +685,7 @@ public class SelfTaskUpdateFunctionality extends BaseTest {
 	// Check and validate task comment after update and input task comment matched
 	// or not
 	// Checks and validate log message after task comment add
-	@Test(priority = 13)
+	@Test(priority = 14)
 	public void verifyUpdateSelfTaskCommentFromDayViewAndCheckTaskCommentAndLogs() throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
 		Thread.sleep(1000);

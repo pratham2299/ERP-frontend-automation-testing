@@ -1,0 +1,19 @@
+15:21:45 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual higher authority employee name for tasks view at dashboard page is: Prathamesh T Dhasade
+
+15:21:45 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Last role for level view is: Team Lead
+15:21:46 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Last role for level view is: Lead
+15:21:59 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual task viewed higher authority employee name in day view is: Prathamesh T Dhasade
+15:22:01 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task title in day view is: Infinite Jest
+15:22:01 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task status in day view is: In Progress
+15:22:01 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task priority in day view is: Low
+15:22:09 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task project in day view is: 
+15:22:10 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task due date in day view is: 2024-05-06
+15:22:10 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task departments in day view is: [QA]
+15:22:10 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task verified status in day view is: Not Verified
+15:22:12 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual Last self task comment in day view is: Barton-Zboncak
+
+15:22:15 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Task status values from dropdown are: [Not Started, In Discussion, In Progress]
+15:22:15 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual selected task status value from dropdown in day view is: In Progress
+15:22:17 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual updated task status in day view is: In Progress
+15:22:18 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual selected task priority value from dropdown is: Medium
+15:22:21 com.biencaps.erp.testCases.SelfTaskUpdateFunctionality - Actual updated task priority in day view is: Medium

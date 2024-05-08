@@ -15,11 +15,10 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	// This is logger API dependency code. To print messages in seperate file.
 	// So that you can check all execution logs anytime. Logs stores in Logs folder
 	public static Logger log = LogManager.getLogger(LoginAndForgotPasswordFunctionality.class);
-	public static String validUserId;
 	public static String actualEmployeeName;
 
 //	protected LoginPage login;
-	protected LoginPage login = new LoginPage();
+	protected LoginPage login;
 	protected WebElementActions webElementActions;
 	protected MyTasksPage myTasks;
 	protected DashboardPage dashboard;
@@ -39,7 +38,7 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 
 		login.clickOnLetsConnectButton();
 
-		assertEquals(webElementActions.currentWindowUrl(), Constants.websiteUrl + "login");
+		assertEquals(webElementActions.currentWindowUrl(), Constants.websiteUrl);
 	}
 
 	// Login employee and get all employee user id, full name, role
@@ -53,8 +52,8 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 		employee = new EmployeePage();
 		logOutFun = new LogoutFunctionality();
 
-		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.adminLevelTesterEmployeeUserId,
-				Constants.adminLevelTesterEmployeePassword);
+//		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.adminLevelTesterEmployeeUserId,
+//				Constants.adminLevelTesterEmployeePassword);
 
 		dashboard.clickOnEmployeeSectionLink();
 
@@ -79,110 +78,13 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 		}
 	}
 
-	// Login employee with valid user Id and invalid password and checks error
-	// messages
-	@Test(priority = 2)
-	public void verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword() throws InterruptedException {
-		login = new LoginPage();
-		webElementActions = new WebElementActions();
-//		myTasks = new MyTasksPage();
-//		dashboard = new DashboardPage();
-//		commonMethods = new CommonTestMethods();
-//		employee = new EmployeePage();
-//		logOutFun = new LogoutFunctionality();
-
-		login.clickOnUserIdTextfield();
-
-		String actualEnteredUserId = login.enterAndCheckUserId(Constants.employeeUserId);
-		log.info("Actual entered user Id is: " + actualEnteredUserId);
-
-		login.clickOnPasswordTextfield();
-
-		String invalidPassword = faker.internet().password();
-
-		String actualEnteredPassword = login.enterAndCheckPassword(invalidPassword);
-		log.info("Actual entered password is: " + actualEnteredPassword);
-
-		login.clickOnEyeIconNearPasswordTextfield();
-		Thread.sleep(1000);
-
-		login.clickOnEyeIconNearPasswordTextfield();
-
-		login.clickOnLoginButton();
-
-		String actualPasswordTextfieldErrorMessage = login.checkPasswordTextfieldErrorMessage();
-		log.info("Actual password textfield error message is: " + actualPasswordTextfieldErrorMessage);
-		assertEquals(actualPasswordTextfieldErrorMessage, "Enter Valid Password");
-
-		webElementActions.refreshThePage();
-	}
-
-	// Login employee with invalid user Id and valid password and checks error
-	// messages
-	@Test(priority = 3)
-	public void verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword() throws InterruptedException {
-		login.clickOnUserIdTextfield();
-
-		String invalidUserId = faker.name().firstName();
-
-		String actualEnteredUserId = login.enterAndCheckUserId(invalidUserId);
-		log.info("Actual entered user Id is: " + actualEnteredUserId);
-
-		login.clickOnPasswordTextfield();
-
-		String actualEnteredPassword = login.enterAndCheckPassword(Constants.employeePassword);
-		log.info("Actual entered password is: " + actualEnteredPassword);
-
-		login.clickOnEyeIconNearPasswordTextfield();
-		Thread.sleep(1000);
-
-		login.clickOnEyeIconNearPasswordTextfield();
-
-		login.clickOnLoginButton();
-
-		String actualUserIdTextfieldErrorMessage = login.checkUserIdTextfieldErrorMessage();
-		log.info("Actual userId textfield error message is: " + actualUserIdTextfieldErrorMessage + "\n");
-		assertEquals(actualUserIdTextfieldErrorMessage, "Enter Valid User ID");
-
-		webElementActions.refreshThePage();
-	}
-
-	// Login employee with invalid user Id and invalid password and checks error
-	// messages
-	@Test(priority = 4)
-	public void verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword() throws InterruptedException {
-		login.clickOnUserIdTextfield();
-
-		String invalidUserId = faker.name().firstName();
-
-		String actualEnteredUserId = login.enterAndCheckUserId(invalidUserId);
-		log.info("Actual entered user Id is: " + actualEnteredUserId);
-
-		login.clickOnPasswordTextfield();
-
-		String invalidPassword = faker.internet().password();
-
-		String actualEnteredPassword = login.enterAndCheckPassword(invalidPassword);
-		log.info("Actual entered password is: " + actualEnteredPassword);
-
-		login.clickOnEyeIconNearPasswordTextfield();
-		Thread.sleep(1000);
-
-		login.clickOnEyeIconNearPasswordTextfield();
-
-		login.clickOnLoginButton();
-
-		String actualUserIdTextfieldErrorMessage = login.checkUserIdTextfieldErrorMessage();
-		log.info("Actual userId textfield error message is: " + actualUserIdTextfieldErrorMessage + "\n");
-		assertEquals(actualUserIdTextfieldErrorMessage, "Enter Valid User ID");
-
-		webElementActions.refreshThePage();
-	}
-
 	// Checks forgot password functionality without giving user Id in employee Id
 	// field
-	@Test(priority = 5)
+	@Test(priority = 2)
 	public void verifyForgotPasswordWithoutGivingUserId() throws InterruptedException {
+		login = new LoginPage();
+		webElementActions = new WebElementActions();
+
 		login.clickOnForgotPasswordLink();
 
 		String actualErrorMessageForForgotPassword = login.checkErrorToastMessageForForgotPassword();
@@ -196,7 +98,7 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 
 	// Checks forgot password functionality by giving user Id in employee Id
 	// field
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 3, enabled = false)
 	public void verifyForgotPasswordByGivingValidUserId() throws InterruptedException {
 		String actualEnteredUserId = login.enterAndCheckUserId(Constants.employeeUserId);
 		log.info("Actual entered user Id is: " + actualEnteredUserId + "\n");
@@ -213,24 +115,17 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 		webElementActions.refreshThePage();
 	}
 
-	// Login employee with valid user Id and valid password and checks error
-	// messages
-	@Test(priority = 7)
-	public void verifyLoginEmployeeByGivingValidUserIdAndValidPassword() throws InterruptedException {
-		login = new LoginPage();
-
-		validUserId = Constants.employeeUserId;
-
+	// Login employee
+	@Test(priority = 4, dataProvider = "TestDataForLoginEmployee", dataProviderClass = DataProviders.class)
+	public void verifyLoginEmployee(String userId, String password) throws InterruptedException {
 		login.clickOnUserIdTextfield();
 
-		String actualEnteredUserId = login.enterAndCheckUserId(validUserId);
+		String actualEnteredUserId = login.enterAndCheckUserId(userId);
 		log.info("Actual entered user Id is: " + actualEnteredUserId);
-
-		String validPassword = Constants.employeePassword;
 
 		login.clickOnPasswordTextfield();
 
-		String actualEnteredPassword = login.enterAndCheckPassword(validPassword);
+		String actualEnteredPassword = login.enterAndCheckPassword(password);
 		log.info("Actual entered password is: " + actualEnteredPassword);
 
 		login.clickOnEyeIconNearPasswordTextfield();
@@ -240,13 +135,25 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 
 		login.clickOnLoginButton();
 
-		String actualToastMessageAfterSuccessfulLoggedIn = login.checkSuccessfullLoggedInToastMessage(validUserId);
-		log.info("Actual toast message after successful logged In is: " + actualToastMessageAfterSuccessfulLoggedIn
-				+ "\n");
-		assertEquals(actualToastMessageAfterSuccessfulLoggedIn, "Login Successfully");
-		Thread.sleep(500);
+		if (!userId.equalsIgnoreCase(Constants.employeeUserId)) {
+			String actualUserIdTextfieldErrorMessage = login.checkUserIdTextfieldErrorMessage();
+			log.info("Actual userId textfield error message is: " + actualUserIdTextfieldErrorMessage + "\n");
+			assertEquals(actualUserIdTextfieldErrorMessage, "Enter Valid User ID");
+		} else if (!password.equalsIgnoreCase(Constants.employeePassword)) {
+			String actualPasswordTextfieldErrorMessage = login.checkPasswordTextfieldErrorMessage();
+			log.info("Actual password textfield error message is: " + actualPasswordTextfieldErrorMessage);
+			assertEquals(actualPasswordTextfieldErrorMessage, "Enter Valid Password");
+		} else {
+			String actualToastMessageAfterSuccessfulLoggedIn = login.checkSuccessfullLoggedInToastMessage(userId);
+			log.info("Actual toast message after successful logged In is: " + actualToastMessageAfterSuccessfulLoggedIn
+					+ "\n");
+			assertEquals(actualToastMessageAfterSuccessfulLoggedIn, "Login Successfully");
+			Thread.sleep(500);
 
-		login.clickOnCloseIconOfToastMessage();
+			login.clickOnCloseIconOfToastMessage();
+		}
+
+		webElementActions.refreshThePage();
 	}
 
 	// This variable is printed actual logged in employee name
@@ -255,12 +162,12 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	@Test(priority = 8)
 	public void checkEmployeeNameAfterLoggedIn() {
 		dashboard = new DashboardPage();
-		
+
 		actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
 		log.info("Actual employee name at dashboard page is: " + actualEmployeeName + "\n");
 
 		String correspondingEmployeeNameFromHashmap = DataGenerator.employeeUserIdsAndNamesOnProduction()
-				.get(validUserId);
+				.get(Constants.employeeUserId);
 		assertEquals(actualEmployeeName, correspondingEmployeeNameFromHashmap);
 	}
 }

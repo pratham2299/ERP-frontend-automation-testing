@@ -77,8 +77,8 @@ public class BaseTest {
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		sparkReporter.config().setTheme(Theme.STANDARD);
-		extent.setSystemInfo("HostName", "Biencaps");
-		extent.setSystemInfo("UserName", "pratham");
+		extent.setSystemInfo("HostName", "RHEL8");
+		extent.setSystemInfo("UserName", "root");
 		sparkReporter.config().setDocumentTitle("ERP Automation Testing Report");
 		sparkReporter.config().setReportName("ERP Autoamtion Test Exection Results By Prathamesh Dhasade");
 	}

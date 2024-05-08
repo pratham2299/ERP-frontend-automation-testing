@@ -45,7 +45,8 @@ public class WebElementActions {
 		js.executeScript("arguments[0].scrollIntoView();", element);
 	}
 
-	public void mouseHoverOnElement(WebElement element) {
+	public void mouseHoverOnElement(By locator) {
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		// Creating object of an Actions class
 		Actions action = new Actions(driver);
 

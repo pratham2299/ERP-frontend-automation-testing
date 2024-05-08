@@ -8,29 +8,19 @@
     <classes>
       <class name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality">
         <methods>
-          <include name="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView"/>
-          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar"/>
-          <include name="verifyAddTaskFromMonthViewAtParticularDate"/>
-          <include name="tearDown"/>
-          <include name="verifyAddedTaskFromWeekViewSidebarCheckInDayView"/>
-          <include name="testMethodExectionResult"/>
-          <include name="createExtentReportForEachTestMethod"/>
-          <include name="verifyNewAddedTaskFromWeekViewSidebarInWeekView"/>
-          <include name="verifyAddedTaskFromMonthViewSidebarCheckInDayView"/>
-          <include name="verifyTotalTasksCountBeforeAddNewTask"/>
           <include name="verifyAddNewTaskFromDayViewSidebar"/>
-          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView"/>
           <include name="extentReportSetup"/>
-          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate"/>
+          <include name="tearDown"/>
           <include name="launchTheWebsite"/>
           <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar"/>
           <include name="flushExtentReport"/>
-          <include name="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate"/>
+          <include name="verifyAddedTaskFromWeekViewSidebarCheckInDayView"/>
           <include name="verifyAddedTaskFromDayViewSidebarCheckInDayView"/>
           <include name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment"/>
-          <include name="verifyAddNewTaskFromDayView"/>
+          <include name="createExtentReportForEachTestMethod"/>
+          <include name="testMethodExectionResult"/>
           <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar"/>
-          <include name="verifyAddTaskFromSidebarWithoutEnteringTaskTitle"/>
+          <include name="verifyNewAddedTaskFromWeekViewSidebarInWeekView"/>
         </methods>
       </class> <!-- com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality -->
     </classes>

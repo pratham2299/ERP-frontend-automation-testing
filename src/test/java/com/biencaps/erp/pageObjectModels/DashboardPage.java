@@ -36,6 +36,10 @@ public class DashboardPage {
 		return webElementActions.getTextMethod(employeeNameAfterLoggedIn);
 	}
 
+	public void clickOnEmployeeNameAtDashboard() {
+		webElementActions.clickOnMethod(employeeNameAfterLoggedIn);
+	}
+
 	public void clickOnMyTasksSection() {
 		webElementActions.clickOnMethod(myTasksSectionLink);
 	}

@@ -58,10 +58,10 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 		logOutFun.verifyLogOutEmployee();
 
 		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(
-				Constants.teamLeadLevelDeveloperEmployeeUserId, Constants.teamLeadLevelDeveloperEmployeePassword);
+				Constants.teamLeadLevelTesterEmployeeUserId, Constants.teamLeadLevelTesterEmployeePassword);
 
 		actualTaskOwnerName = commonMethods
-				.verifyEmployeeNameAfterLoggedIn(Constants.teamLeadLevelDeveloperEmployeeUserId);
+				.verifyEmployeeNameAfterLoggedIn(Constants.teamLeadLevelTesterEmployeeUserId);
 		log.info("Actual task owner employee name at dashboard page is: " + actualTaskOwnerName + "\n");
 
 		for (int i = 0; i < webElementActions.sizeOfListOfWebElement(dashboard.rolesForLevelView); i++) {
@@ -69,7 +69,7 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 			log.info("Last role for level view is: " + lastRoleForLevelView);
 
 			if (lastRoleForLevelView.equalsIgnoreCase(DataGenerator.employeeUserIdsAndRolesOnProduction()
-					.get(LoginAndForgotPasswordFunctionality.validUserId))) {
+					.get(Constants.employeeUserId))) {
 				dashboard.clickOnRandomRoleForLevelView();
 				Thread.sleep(1000);
 

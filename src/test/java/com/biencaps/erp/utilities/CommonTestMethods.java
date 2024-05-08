@@ -90,9 +90,9 @@ public class CommonTestMethods extends BaseTest {
 	// Also it check stoast message text
 	// and handled exception
 	public void verifyToastMessageAfterTaskAddFromSidebar(String date) {
-		try {
-			myTasks = new MyTasksPage(driver);
+		myTasks = new MyTasksPage(driver);
 
+		try {
 			String actualToastMessageAfterTaskAdd = myTasks.checkTaskAddedToastMessage(date);
 			log.info("Actual toast message after task add from sidebar is: " + actualToastMessageAfterTaskAdd + "\n");
 
@@ -114,10 +114,33 @@ public class CommonTestMethods extends BaseTest {
 	// Also it check stoast message text
 	// and handled exception
 	public void verifyToastMessage(String message, String toastMessageText) {
-		try {
-			myTasks = new MyTasksPage(driver);
+		myTasks = new MyTasksPage(driver);
 
+		try {
 			String actualToastMessage = myTasks.checkToastMessage(toastMessageText);
+			log.info("Actual toast message " + message + " is: " + actualToastMessage + "\n");
+
+			if (actualToastMessage.equals(null) || actualToastMessage.isBlank() || actualToastMessage.isEmpty()) {
+				log.error("Toast message text is null or empty");
+			} else {
+				assertEquals(actualToastMessage, toastMessageText);
+				Thread.sleep(500);
+
+				myTasks.clickOnCloseIconOfToastMessage();
+			}
+		} catch (Exception e) {
+			log.error("Toast message text is not found");
+		}
+	}
+	
+	// Created toast message common method
+	// Also it check stoast message text
+	// and handled exception
+	public void verifyToastMessageInBlueColor(String message, String toastMessageText) {
+		myTasks = new MyTasksPage(driver);
+
+		try {
+			String actualToastMessage = myTasks.checkToastMessageInBlueColor(toastMessageText);
 			log.info("Actual toast message " + message + " is: " + actualToastMessage + "\n");
 
 			if (actualToastMessage.equals(null) || actualToastMessage.isBlank() || actualToastMessage.isEmpty()) {

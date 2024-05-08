@@ -29,12 +29,22 @@ public class DataGenerator {
 
 	// This method stores employee user Id and names
 	// So that we can use it while log in on production
+	public static HashMap<String, String> employeeUserIdsAndPasswords() {
+		HashMap<String, String> employees = new HashMap<String, String>();
+		employees.put("INC012", "Pratham@2299");
+		employees.put("INC008", "Darling@2024");
+		employees.put("INC017", "Pass@123");
+
+		return employees;
+	}
+
+	// This method stores employee user Id and names
+	// So that we can use it while log in on production
 	public static HashMap<String, String> employeeUserIdsAndNamesOnProduction() {
 		HashMap<String, String> employees = new HashMap<String, String>();
 		employees.put("INC012", "Prathamesh Dhasade");
-		employees.put("INC027", "Test Team Lead");
-		employees.put("INC028", "Developer Level Tester");
 		employees.put("INC008", "Vishal Lohbande");
+		employees.put("INC017", "Prathamesh T Dhasade");
 
 		return employees;
 	}
@@ -44,9 +54,7 @@ public class DataGenerator {
 	public static HashMap<String, String> employeeUserIdsAndRolesOnProduction() {
 		HashMap<String, String> employeeRoles = new HashMap<String, String>();
 		employeeRoles.put("INC012", "Lead");
-		employeeRoles.put("INC027", "Team Lead");
-		employeeRoles.put("INC028", "Developer");
-		employeeRoles.put("INC008", "Team Lead");
+		employeeRoles.put("INC017", "Team Lead");
 
 		return employeeRoles;
 	}
@@ -80,5 +88,18 @@ public class DataGenerator {
 
 		String randomTaskStartTime = formatter.format(randomTime);
 		return randomTaskStartTime;
+	}
+
+	public static String generateRandomString(int stringMinLength, int stringMaxLength) {
+		int minLength = stringMinLength;
+		int maxLength = stringMaxLength; // You can adjust this as per your requirement
+		int length = minLength + new Random().nextInt(maxLength - minLength);
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < length; i++) {
+			int index = new Random().nextInt(chars.length());
+			sb.append(chars.charAt(index));
+		}
+		return sb.toString();
 	}
 }

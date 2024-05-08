@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="23" passed="6" failed="7" skipped="10">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-07T18:08:12 IST" name="Suite" finished-at="2024-05-07T18:08:39 IST" duration-ms="26785">
+  <suite started-at="2024-05-08T10:14:58 IST" name="Suite" finished-at="2024-05-08T10:18:19 IST" duration-ms="201042">
     <groups>
     </groups>
-    <test started-at="2024-05-07T18:08:12 IST" name="Login And Forgot Password Functionality" finished-at="2024-05-07T18:08:29 IST" duration-ms="16920">
+    <test started-at="2024-05-08T10:14:58 IST" name="Login And Forgot Password Functionality" finished-at="2024-05-08T10:15:13 IST" duration-ms="14999">
       <class name="com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality">
-        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:12 IST" name="extentReportSetup" finished-at="2024-05-07T18:08:12 IST" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:14:58 IST" name="extentReportSetup" finished-at="2024-05-08T10:14:58 IST" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetup -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:13 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:13 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:14:58 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:14:58 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:13 IST" name="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword" finished-at="2024-05-07T18:08:16 IST" duration-ms="3856" status="PASS">
+        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:14:58 IST" name="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword" finished-at="2024-05-08T10:15:01 IST" duration-ms="2985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:16 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:16 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:01 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:01 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword()[pri:3, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:16 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword" finished-at="2024-05-07T18:08:20 IST" duration-ms="3132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:16 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:01 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:01 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:20 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:20 IST" duration-ms="3" status="PASS">
+        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword()[pri:3, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:01 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword" finished-at="2024-05-08T10:15:04 IST" duration-ms="3066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:04 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:04 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:20 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:20 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:04 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:04 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,11 +74,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword()[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:20 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword" finished-at="2024-05-07T18:08:22 IST" duration-ms="2711" status="PASS">
+        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword()[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:04 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword" finished-at="2024-05-08T10:15:07 IST" duration-ms="2837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:22 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:22 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:07 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,11 +89,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyForgotPasswordWithoutGivingUserId()[pri:5, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:22 IST" name="verifyForgotPasswordWithoutGivingUserId" finished-at="2024-05-07T18:08:24 IST" duration-ms="1339" status="PASS">
+        <test-method signature="verifyForgotPasswordWithoutGivingUserId()[pri:5, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:07 IST" name="verifyForgotPasswordWithoutGivingUserId" finished-at="2024-05-08T10:15:09 IST" duration-ms="1401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForgotPasswordWithoutGivingUserId -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:22 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:07 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:24 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:09 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:24 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:24 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:09 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,11 +126,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndValidPassword()[pri:7, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:24 IST" name="verifyLoginEmployeeByGivingValidUserIdAndValidPassword" finished-at="2024-05-07T18:08:28 IST" duration-ms="4589" status="PASS">
+        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndValidPassword()[pri:7, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:09 IST" name="verifyLoginEmployeeByGivingValidUserIdAndValidPassword" finished-at="2024-05-08T10:15:12 IST" duration-ms="3684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginEmployeeByGivingValidUserIdAndValidPassword -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:28 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:28 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,7 +141,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:28 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,11 +152,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:28 IST" name="checkEmployeeNameAfterLoggedIn" finished-at="2024-05-07T18:08:28 IST" duration-ms="110" status="PASS">
+        <test-method signature="checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="checkEmployeeNameAfterLoggedIn" finished-at="2024-05-08T10:15:12 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEmployeeNameAfterLoggedIn -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:28 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:28 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:12 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,23 +167,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-07T18:08:28 IST" name="flushExtentReport" finished-at="2024-05-07T18:08:29 IST" duration-ms="613" status="PASS">
+        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="flushExtentReport" finished-at="2024-05-08T10:15:13 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushExtentReport -->
       </class> <!-- com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality -->
     </test> <!-- Login And Forgot Password Functionality -->
-    <test started-at="2024-05-07T18:08:29 IST" name="Add Self Task And Check In Day View Functionality" finished-at="2024-05-07T18:08:39 IST" duration-ms="9792">
+    <test started-at="2024-05-08T10:15:13 IST" name="Add Self Task And Check In Day View Functionality" finished-at="2024-05-08T10:18:19 IST" duration-ms="186002">
       <class name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality">
-        <test-method is-config="true" signature="launchTheWebsite()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:07 IST" name="launchTheWebsite" finished-at="2024-05-07T18:08:12 IST" duration-ms="4826" status="PASS">
+        <test-method is-config="true" signature="launchTheWebsite()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:14:54 IST" name="launchTheWebsite" finished-at="2024-05-08T10:14:58 IST" duration-ms="4006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheWebsite -->
-        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:29 IST" name="extentReportSetup" finished-at="2024-05-07T18:08:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:13 IST" name="extentReportSetup" finished-at="2024-05-08T10:15:13 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetup -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:29 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:13 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,67 +194,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddTaskFromSidebarWithoutEnteringTaskTitle()[pri:1, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:29 IST" name="verifyAddTaskFromSidebarWithoutEnteringTaskTitle" finished-at="2024-05-07T18:08:31 IST" duration-ms="1885" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please Add the task ] but found [Please Add the task first]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please Add the task ] but found [Please Add the task first]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.biencaps.erp.utilities.CommonTestMethods.verifyToastMessage(CommonTestMethods.java:126)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromSidebarWithoutEnteringTaskTitle(AddSelfTaskAndCheckInDayViewFunctionality.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyAddTaskFromSidebarWithoutEnteringTaskTitle()[pri:1, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:13 IST" name="verifyAddTaskFromSidebarWithoutEnteringTaskTitle" finished-at="2024-05-08T10:15:17 IST" duration-ms="3729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddTaskFromSidebarWithoutEnteringTaskTitle -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:31 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:17 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:17 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromSidebarWithoutEnteringTaskTitle status=FAILURE method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromSidebarWithoutEnteringTaskTitle()[pri:1, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddTaskFromSidebarWithoutEnteringTaskTitle status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromSidebarWithoutEnteringTaskTitle()[pri:1, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:31 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:31 IST" duration-ms="2" status="PASS">
+        <test-method signature="verifyTotalTasksCountBeforeAddNewTask()[pri:3, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:17 IST" name="verifyTotalTasksCountBeforeAddNewTask" finished-at="2024-05-08T10:15:19 IST" duration-ms="2134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalTasksCountBeforeAddNewTask -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:17 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:17 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -265,92 +224,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyTotalTasksCountBeforeAddNewTask()[pri:3, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:31 IST" name="verifyTotalTasksCountBeforeAddNewTask" finished-at="2024-05-07T18:08:32 IST" duration-ms="1101" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="dayView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1437, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.126}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Day']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="dayView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1437, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.126}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Day']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
-at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnDayButton(MyTasksPage.java:338)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountBeforeAddNewTask(AddSelfTaskAndCheckInDayViewFunctionality.java:127)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountBeforeAddNewTask -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:32 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:32 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:19 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTotalTasksCountBeforeAddNewTask status=FAILURE method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountBeforeAddNewTask()[pri:3, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTotalTasksCountBeforeAddNewTask status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountBeforeAddNewTask()[pri:3, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:32 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:19 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -361,160 +246,74 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddTaskFromMonthViewAtParticularDate()[pri:4, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:32 IST" name="verifyAddTaskFromMonthViewAtParticularDate" finished-at="2024-05-07T18:08:34 IST" duration-ms="1123" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="monthView-btn monthView-btn-view" style="background: rgb(255, 246, 223);">...</button> is not clickable at point (1293, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.127}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Month']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="monthView-btn monthView-btn-view" style="background: rgb(255, 246, 223);">...</button> is not clickable at point (1293, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.127}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Month']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
-at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnMonthButton(MyTasksPage.java:549)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate(AddSelfTaskAndCheckInDayViewFunctionality.java:144)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="verifyAddTaskFromMonthViewAtParticularDate()[pri:4, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:19 IST" name="verifyAddTaskFromMonthViewAtParticularDate" finished-at="2024-05-08T10:15:27 IST" duration-ms="7597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddTaskFromMonthViewAtParticularDate -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:34 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:34 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:27 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:27 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromMonthViewAtParticularDate status=FAILURE method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate()[pri:4, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddTaskFromMonthViewAtParticularDate status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate()[pri:4, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()[pri:5, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:34 IST" name="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" finished-at="2024-05-07T18:08:34 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:27 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()[pri:5, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:27 IST" name="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" finished-at="2024-05-08T10:15:32 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate" duration-ms="5044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()[pri:6, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:34 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate" finished-at="2024-05-07T18:08:34 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:32 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()[pri:5, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:32 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()[pri:6, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:32 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate" finished-at="2024-05-08T10:15:41 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" duration-ms="9194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:34 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:41 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:41 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()[pri:6, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:41 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:41 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -525,160 +324,74 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()[pri:7, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:34 IST" name="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" finished-at="2024-05-07T18:08:35 IST" duration-ms="1079" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="monthView-btn monthView-btn-view" style="background: rgb(255, 246, 223);">...</button> is not clickable at point (1293, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.127}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Month']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="monthView-btn monthView-btn-view" style="background: rgb(255, 246, 223);">...</button> is not clickable at point (1293, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.127}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Month']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
-at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnMonthButton(MyTasksPage.java:549)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate(AddSelfTaskAndCheckInDayViewFunctionality.java:314)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()[pri:7, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:41 IST" name="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" finished-at="2024-05-08T10:15:46 IST" duration-ms="5303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:35 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:46 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate status=FAILURE method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()[pri:7, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()[pri:7, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyAddedTaskFromMonthViewSidebarCheckInDayView()[pri:8, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:35 IST" name="verifyAddedTaskFromMonthViewSidebarCheckInDayView" finished-at="2024-05-07T18:08:35 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="verifyAddedTaskFromMonthViewSidebarCheckInDayView()[pri:8, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:46 IST" name="verifyAddedTaskFromMonthViewSidebarCheckInDayView" finished-at="2024-05-08T10:16:24 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" duration-ms="37740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedTaskFromMonthViewSidebarCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()[pri:9, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:35 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar" finished-at="2024-05-07T18:08:35 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:46 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:24 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedTaskFromMonthViewSidebarCheckInDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView()[pri:8, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()[pri:9, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:24 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar" finished-at="2024-05-08T10:16:36 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView" duration-ms="11885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:35 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:24 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:36 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:36 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()[pri:9, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:36 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -689,364 +402,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddNewTaskFromDayView()[pri:10, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:35 IST" name="verifyAddNewTaskFromDayView" finished-at="2024-05-07T18:08:36 IST" duration-ms="1080" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="dayView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1437, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.126}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Day']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="dayView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1437, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.126}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Day']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
-at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnDayButton(MyTasksPage.java:338)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView(AddSelfTaskAndCheckInDayViewFunctionality.java:505)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="verifyAddNewTaskFromDayView()[pri:10, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:36 IST" name="verifyAddNewTaskFromDayView" finished-at="2024-05-08T10:16:41 IST" duration-ms="4804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddNewTaskFromDayView -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:36 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:41 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:41 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddNewTaskFromDayView status=FAILURE method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView()[pri:10, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddNewTaskFromDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView()[pri:10, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()[pri:11, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:36 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView" finished-at="2024-05-07T18:08:36 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView -->
-        <test-method signature="verifyAddNewTaskFromDayViewSidebar()[pri:12, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:36 IST" name="verifyAddNewTaskFromDayViewSidebar" finished-at="2024-05-07T18:08:37 IST" duration-ms="1128" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="dayView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1437, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.126}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Day']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="dayView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1437, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.126}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Day']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
-at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnDayButton(MyTasksPage.java:338)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar(AddSelfTaskAndCheckInDayViewFunctionality.java:552)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddNewTaskFromDayViewSidebar -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:36 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:41 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:41 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:37 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:37 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()[pri:11, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:41 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView" finished-at="2024-05-08T10:16:51 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView" duration-ms="10469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:51 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:51 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddNewTaskFromDayViewSidebar status=FAILURE method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar()[pri:12, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()[pri:11, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyAddedTaskFromDayViewSidebarCheckInDayView()[pri:13, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:37 IST" name="verifyAddedTaskFromDayViewSidebarCheckInDayView" finished-at="2024-05-07T18:08:37 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromDayViewSidebarCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar()[pri:14, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:37 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar" finished-at="2024-05-07T18:08:37 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromDayViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar -->
-        <test-method signature="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()[pri:19, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:37 IST" name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" finished-at="2024-05-07T18:08:39 IST" duration-ms="1094" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="weekView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1365, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.129}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Week']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="weekView-btn monthView-btn-view" style="background: none;">...</button> is not clickable at point (1365, 118). Other element would receive the click: <input type="text" placeholder="Enter Tasks Name " value="">
-  (Session info: chrome=124.0.6367.119)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [006ecbb0722d094b6f2e7e3f0495576b, clickElement {id=f.4A66033EA3385147DB983D8182A3A304.d.73AE1D36A3F043B396757F59E668651F.e.129}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (006ecbb0722d094b6f2e7e3f0495576b)] -> xpath: //button[normalize-space()='Week']]
-Session ID: 006ecbb0722d094b6f2e7e3f0495576b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:70)
-at com.biencaps.erp.pageObjectModels.MyTasksPage.clickOnWeekButton(MyTasksPage.java:563)
-at com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment(AddSelfTaskAndCheckInDayViewFunctionality.java:949)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:37 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-07T18:08:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:51 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1057,124 +454,104 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:39 IST" name="testMethodExectionResult" finished-at="2024-05-07T18:08:39 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()[pri:19, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:51 IST" name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" finished-at="2024-05-08T10:17:02 IST" duration-ms="11074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:02 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:17:02 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment status=FAILURE method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()[pri:19, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()[pri:19, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyNewAddedTaskFromWeekViewSidebarInWeekView()[pri:20, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:39 IST" name="verifyNewAddedTaskFromWeekViewSidebarInWeekView" finished-at="2024-05-07T18:08:39 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:02 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:17:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyNewAddedTaskFromWeekViewSidebarInWeekView()[pri:20, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:02 IST" name="verifyNewAddedTaskFromWeekViewSidebarInWeekView" finished-at="2024-05-08T10:17:10 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="7458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewAddedTaskFromWeekViewSidebarInWeekView -->
-        <test-method signature="verifyAddedTaskFromWeekViewSidebarCheckInDayView()[pri:21, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:39 IST" name="verifyAddedTaskFromWeekViewSidebarCheckInDayView" finished-at="2024-05-07T18:08:39 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:10 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:17:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewAddedTaskFromWeekViewSidebarInWeekView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView()[pri:20, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:10 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:17:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyAddedTaskFromWeekViewSidebarCheckInDayView()[pri:21, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:10 IST" name="verifyAddedTaskFromWeekViewSidebarCheckInDayView" finished-at="2024-05-08T10:18:08 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="58646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedTaskFromWeekViewSidebarCheckInDayView -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar()[pri:22, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:39 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar" finished-at="2024-05-07T18:08:39 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824 depends on not successfully finished methods 
-[com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() on instance com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:08 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:18:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedTaskFromWeekViewSidebarCheckInDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView()[pri:21, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:08 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:18:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar()[pri:22, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:08 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar" finished-at="2024-05-08T10:18:19 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView" duration-ms="10690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar -->
-        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:39 IST" name="flushExtentReport" finished-at="2024-05-07T18:08:39 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:19 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:18:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar()[pri:22, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:19 IST" name="flushExtentReport" finished-at="2024-05-08T10:18:19 IST" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushExtentReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-07T18:08:39 IST" name="tearDown" finished-at="2024-05-07T18:08:39 IST" duration-ms="409" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:19 IST" name="tearDown" finished-at="2024-05-08T10:18:19 IST" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

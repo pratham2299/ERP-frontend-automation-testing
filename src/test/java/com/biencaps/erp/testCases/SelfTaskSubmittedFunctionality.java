@@ -77,7 +77,7 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	@Test(priority = 3)
 	public void verifyNotificationMessageAndRequestOfEmployeeAtAllHigherAuthority() throws InterruptedException {
-		if (DataGenerator.employeeUserIdsAndRolesOnProduction().get(LoginAndForgotPasswordFunctionality.validUserId)
+		if (DataGenerator.employeeUserIdsAndRolesOnProduction().get(Constants.employeeUserId)
 				.equalsIgnoreCase("Developer")) {
 			logOutFun.verifyLogOutEmployee();
 
@@ -97,8 +97,8 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 			request.clickOnRejectSendButtonInRequestSection();
 			Thread.sleep(2000);
-		} else if (DataGenerator.employeeUserIdsAndRolesOnProduction()
-				.get(LoginAndForgotPasswordFunctionality.validUserId).equalsIgnoreCase("Lead")) {
+		} else if (DataGenerator.employeeUserIdsAndRolesOnProduction().get(Constants.employeeUserId)
+				.equalsIgnoreCase("Lead")) {
 			logOutFun.verifyLogOutEmployee();
 
 			commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(
@@ -112,105 +112,6 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 			request.clickOnRejectSendButtonInRequestSection();
 			Thread.sleep(2000);
 		}
-
-	}
-
-	// Logout from employee and log in as lead level employee
-	@Test(priority = 3, enabled = false)
-	public void verifyLogoutAsEmployeeLoginAsLeadLevelEmployeeAndCheckLeadLevelEmployeeName()
-			throws InterruptedException {
-		logOutFun.verifyLogOutEmployee();
-
-		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.leadLevelTesterEmployeeUserId,
-				Constants.leadLevelTesterEmployeePassword);
-		Thread.sleep(3000);
-
-		actualHigherAuthorityName = commonMethods
-				.verifyEmployeeNameAfterLoggedIn(Constants.leadLevelTesterEmployeeUserId);
-		log.info("Actual lead level employee name at dashboard page is: " + actualHigherAuthorityName + "\n");
-	}
-
-	// Check notification message at lead level employee
-	// of task submit request of employee
-	@Test(priority = 4, enabled = false)
-	public void verifyNotificationMessageAtLeadLevelEmployeeSideOfTaskSubmitOfEmployee() throws InterruptedException {
-		commonMethods.verifyNotificationMessage(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"after employee sent task submit request at lead level employee side", "wants to submit",
-				lastTaskTitleInDayView);
-	}
-
-	// Reject task submit request by checking each request details
-	@Test(priority = 5, enabled = false)
-	public void verifyRequestForTaskSubmitOfEmployeeByLeadLevelEmployee() throws InterruptedException {
-		requestFun.verifyRequestInReceivedRequestCard(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"wants to submit", lastTaskTitleInDayView);
-	}
-
-	// Logout from employee and log in as team lead level employee
-	@Test(priority = 6, enabled = false)
-	public void verifyLogoutAsEmployeeLoginAsTeamLeadLevelEmployeeAndCheckTeamLeadLevelEmployeeName()
-			throws InterruptedException {
-		logOutFun.verifyLogOutEmployee();
-
-		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(
-				Constants.teamLeadLevelTesterEmployeeUserId, Constants.teamLeadLevelTesterEmployeePassword);
-		Thread.sleep(3000);
-
-		actualHigherAuthorityName = commonMethods
-				.verifyEmployeeNameAfterLoggedIn(Constants.teamLeadLevelTesterEmployeeUserId);
-	}
-
-	// Check notification message at team lead level employee
-	// of task submit request of employee
-	@Test(priority = 7, enabled = false)
-	public void verifyNotificationMessageAtTeamLeadLevelEmployeeSideOfTaskSubmitOfEmployee()
-			throws InterruptedException {
-		commonMethods.verifyNotificationMessage(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"after employee sent task submit request at team lead level employee side", "wants to submit",
-				lastTaskTitleInDayView);
-	}
-
-	// Reject task submit request by checking each request details
-	@Test(priority = 8, enabled = false)
-	public void verifyRequestForTaskSubmitOfEmployeeByTeamLeadLevelEmployee() throws InterruptedException {
-		requestFun.verifyRequestInReceivedRequestCard(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"wants to submit", lastTaskTitleInDayView);
-
-		request.clickOnFirstRejectButton();
-		Thread.sleep(1000);
-
-		request.clickOnRejectSendButtonInRequestSection();
-		Thread.sleep(2000);
-	}
-
-	// Logout from employee and log in as admin
-	@Test(priority = 9, enabled = false)
-	public void verifyLogoutAsEmployeeLoginAsAdminAndCheckAdminName() throws InterruptedException {
-		logOutFun.verifyLogOutEmployee();
-
-		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.adminLevelTesterEmployeeUserId,
-				Constants.adminLevelTesterEmployeePassword);
-		Thread.sleep(3000);
-
-		actualHigherAuthorityName = commonMethods
-				.verifyEmployeeNameAfterLoggedIn(Constants.adminLevelTesterEmployeeUserId);
-		log.info("Actual admin level employee name at dashboard page is: " + actualHigherAuthorityName + "\n");
-	}
-
-	// Check notification message at team admin level employee
-	// of task submit request of employee
-	@Test(priority = 10, enabled = false)
-	public void verifyNotificationMessageAtAdminLevelEmployeeSideOfTaskSubmitOfEmployee() throws InterruptedException {
-		commonMethods.verifyNotificationMessage(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"after employee sent task submit request at admin level employee side", "wants to submit",
-				lastTaskTitleInDayView);
-	}
-
-	// Deny task submit request by checking each request details
-	@Test(priority = 11, enabled = false)
-	public void verifyRejectedRequestForTaskSubmitOfEmployeeFromAdminSide() throws InterruptedException {
-		requestFun.verifyRequestInReceivedRequestCard(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"wants to submit", lastTaskTitleInDayView);
 	}
 
 	// Check after rejected request request card and its details present or not
@@ -232,11 +133,11 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 	public void verifyLogoutAsHigherAuthorityLoginAsEmployeeAndCheckEmployeeName() throws InterruptedException {
 		logOutFun.verifyLogOutEmployee();
 
-		loginFun.verifyLoginEmployeeByGivingValidUserIdAndValidPassword();
+		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.employeeUserId,
+				Constants.employeePassword);
 		Thread.sleep(3000);
 
-		String actualEmployeeName = commonMethods
-				.verifyEmployeeNameAfterLoggedIn(LoginAndForgotPasswordFunctionality.validUserId);
+		String actualEmployeeName = commonMethods.verifyEmployeeNameAfterLoggedIn(Constants.employeeUserId);
 		log.info("Actual employee name at dashboard page is: " + actualEmployeeName + "\n");
 	}
 
@@ -251,10 +152,6 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 	@Test(priority = 15)
 	public void verifyTaskStatusInDayViewAfterTaskSubmittedRequestRejectedByHigherAuthority()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnWeekButton();
-
 		myTasks.clickOnDayButton();
 		Thread.sleep(2000);
 
@@ -295,37 +192,35 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	@Test(priority = 18)
 	public void verifyApprovedRequestForTaskSubmitOfEmployeeFromHigherAuthoritySide() throws InterruptedException {
-		dashboard.clickOnMyTasksSection();
-		Thread.sleep(2000);
+		if (DataGenerator.employeeUserIdsAndRolesOnProduction().get(Constants.employeeUserId)
+				.equalsIgnoreCase("Developer")) {
+			logOutFun.verifyLogOutEmployee();
 
-		myTasks.clickOnDayButton();
-		Thread.sleep(2000);
+			commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority("lead level",
+					Constants.leadLevelTesterEmployeeUserId, Constants.leadLevelTesterEmployeePassword,
+					LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
 
-		verifySelfTaskSubmittedInDayView();
+			logOutFun.verifyLogOutEmployee();
 
-		verifyTaskSubmittedRequestInMyRequestSection();
+			commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(
+					"team lead level", Constants.teamLeadLevelTesterEmployeeUserId,
+					Constants.teamLeadLevelTesterEmployeePassword,
+					LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
 
-		verifyLogoutAsEmployeeLoginAsLeadLevelEmployeeAndCheckLeadLevelEmployeeName();
+			request.clickOnFirstApproveButton();
+			Thread.sleep(2000);
+		} else if (DataGenerator.employeeUserIdsAndRolesOnProduction().get(Constants.employeeUserId)
+				.equalsIgnoreCase("Lead")) {
+			logOutFun.verifyLogOutEmployee();
 
-		verifyRequestForTaskSubmitOfEmployeeByLeadLevelEmployee();
+			commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(
+					"team lead level", Constants.teamLeadLevelTesterEmployeeUserId,
+					Constants.teamLeadLevelTesterEmployeePassword,
+					LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
 
-		verifyLogoutAsEmployeeLoginAsTeamLeadLevelEmployeeAndCheckTeamLeadLevelEmployeeName();
-
-		requestFun.verifyRequestInReceivedRequestCard(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"wants to submit", lastTaskTitleInDayView);
-
-//		commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority("lead level",
-//				Constants.leadLevelTesterEmployeeUserId, Constants.leadLevelTesterEmployeePassword,
-//				LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
-//
-//		logOutFun.verifyLogOutEmployee();
-//
-//		commonMethods.verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority("team lead level",
-//				Constants.teamLeadLevelTesterEmployeeUserId, Constants.teamLeadLevelTesterEmployeePassword,
-//				LoginAndForgotPasswordFunctionality.actualEmployeeName, "wants to submit", lastTaskTitleInDayView);
-
-		request.clickOnFirstApproveButton();
-		Thread.sleep(2000);
+			request.clickOnFirstApproveButton();
+			Thread.sleep(2000);
+		}
 
 		verifyIsRequestActionAndTaskTitlePresentInRequestCardList();
 
