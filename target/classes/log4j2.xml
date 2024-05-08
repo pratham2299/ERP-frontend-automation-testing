@@ -20,6 +20,11 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
+		<File name="ProfilePageUpdateFunctionality"
+			fileName="Logs/ProfilePageUpdateFunctionality.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
 		<File name="LogoutFunctionality"
 			fileName="Logs/LogoutFunctionality.log">
 			<PatternLayout
@@ -85,6 +90,13 @@
 			level="all"
 			additivity="false">
 			<AppenderRef ref="LoginAndForgotPasswordFunctionality" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="com.biencaps.erp.testCases.ProfilePageUpdateFunctionality"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="ProfilePageUpdateFunctionality" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger name="com.biencaps.erp.testCases.LogoutFunctionality"

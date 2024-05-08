@@ -4,25 +4,13 @@
   <listeners>
     <listener class-name="com.biencaps.erp.utilities.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="Add Self Task And Check In Day View Functionality(failed)">
+  <test thread-count="5" name="Profile Page Update Functionality(failed)">
     <classes>
-      <class name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality">
+      <class name="com.biencaps.erp.testCases.ProfilePageUpdateFunctionality">
         <methods>
-          <include name="verifyAddNewTaskFromDayViewSidebar"/>
-          <include name="extentReportSetup"/>
-          <include name="tearDown"/>
-          <include name="launchTheWebsite"/>
-          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayViewSidebar"/>
-          <include name="flushExtentReport"/>
-          <include name="verifyAddedTaskFromWeekViewSidebarCheckInDayView"/>
-          <include name="verifyAddedTaskFromDayViewSidebarCheckInDayView"/>
-          <include name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment"/>
-          <include name="createExtentReportForEachTestMethod"/>
-          <include name="testMethodExectionResult"/>
-          <include name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar"/>
-          <include name="verifyNewAddedTaskFromWeekViewSidebarInWeekView"/>
+          <include name="verifyGmailKeySubmitAtEmployeeSide" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
-      </class> <!-- com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality -->
+      </class> <!-- com.biencaps.erp.testCases.ProfilePageUpdateFunctionality -->
     </classes>
-  </test> <!-- Add Self Task And Check In Day View Functionality(failed) -->
+  </test> <!-- Profile Page Update Functionality(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -12,10 +12,10 @@
 		</classes>
 	</test>
 	<test thread-count="5"
-		name="Add Self Task And Check In Day View Functionality">
+		name="Profile Page Update Functionality">
 		<classes>
 			<class
-				name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" />
+				name="com.biencaps.erp.testCases.ProfilePageUpdateFunctionality" />
 		</classes>
 	</test>
 </suite> 

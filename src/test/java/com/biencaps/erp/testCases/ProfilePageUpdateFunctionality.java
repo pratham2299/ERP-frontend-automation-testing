@@ -3,12 +3,8 @@ package com.biencaps.erp.testCases;
 import org.apache.logging.log4j.*;
 import org.testng.annotations.Test;
 
-import com.biencaps.erp.pageObjectModels.DashboardPage;
-import com.biencaps.erp.pageObjectModels.ProfilePage;
-import com.biencaps.erp.utilities.CommonTestMethods;
-import com.biencaps.erp.utilities.Constants;
-import com.biencaps.erp.utilities.DataGenerator;
-import com.biencaps.erp.utilities.WebElementActions;
+import com.biencaps.erp.pageObjectModels.*;
+import com.biencaps.erp.utilities.*;
 
 public class ProfilePageUpdateFunctionality {
 	// This is logger API dependency code. To print messages in seperate file.
@@ -55,8 +51,10 @@ public class ProfilePageUpdateFunctionality {
 				"Please Fill Correct password");
 	}
 
-	@Test(priority = 3)
-	public void verifyGmailKeySubmitAtEmployeeSideByEnteringLessThan16DigitGmailKey() throws InterruptedException {
+	@Test(priority = 3, dataProvider = "TestDataForSubmitGmailKey", dataProviderClass = DataProviders.class)
+	public void verifyGmailKeySubmitAtEmployeeSide(String gmailKey, String password) throws InterruptedException {
+		webElementActions.refreshThePage();
+
 		dashboard.clickOnEmployeeNameAtDashboard();
 		Thread.sleep(1000);
 
@@ -64,18 +62,22 @@ public class ProfilePageUpdateFunctionality {
 
 		profile.clearGmailKeyField();
 
-		String randomLessThan16DigitGmailKeyInput = DataGenerator.generateRandomString(1, 15);
+		profile.enterGmailKey(gmailKey);
 
-		profile.enterGmailKey(randomLessThan16DigitGmailKeyInput);
-
-		profile.enterPassword(Constants.employeePassword);
+		profile.enterPassword(password);
 
 		profile.clickOnSendButtonForGmailKeySubmit();
 
-		commonMethods.verifyToastMessage("after not entering gmail key for gmail key submit",
-				"Please Fill Correct 16 digit key");
-
-		webElementActions.refreshThePage();
+		if (gmailKey.length() < 16 || gmailKey.length() > 16) {
+			commonMethods.verifyToastMessage("after entering invalid gmail key for gmail key submit",
+					"Please Fill Correct 16 digit key");
+		} else if (password.equalsIgnoreCase(Constants.employeePassword)) {
+			commonMethods.verifyToastMessage("after entering invalid password for gmail key submit",
+					"Enter valid password");
+		} else {
+			commonMethods.verifyToastMessage("after entering valid gmail key and valid password for gmail key submit",
+					"Updated Successfully");
+		}
 	}
 
 }

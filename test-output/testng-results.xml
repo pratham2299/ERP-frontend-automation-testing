@@ -1,99 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-08T10:14:58 IST" name="Suite" finished-at="2024-05-08T10:18:19 IST" duration-ms="201042">
+  <suite started-at="2024-05-08T20:39:30 IST" name="Suite" finished-at="2024-05-08T20:40:38 IST" duration-ms="67334">
     <groups>
     </groups>
-    <test started-at="2024-05-08T10:14:58 IST" name="Login And Forgot Password Functionality" finished-at="2024-05-08T10:15:13 IST" duration-ms="14999">
+    <test started-at="2024-05-08T20:39:30 IST" name="Login And Forgot Password Functionality" finished-at="2024-05-08T20:39:47 IST" duration-ms="16921">
       <class name="com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality">
-        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:14:58 IST" name="extentReportSetup" finished-at="2024-05-08T10:14:58 IST" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:30 IST" name="extentReportSetup" finished-at="2024-05-08T20:39:31 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportSetup -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:14:58 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:14:58 IST" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:14:58 IST" name="verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword" finished-at="2024-05-08T10:15:01 IST" duration-ms="2985" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:01 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:01 IST" duration-ms="18" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingValidUserIdAndInvalidPassword()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:01 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:01 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword()[pri:3, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:01 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword" finished-at="2024-05-08T10:15:04 IST" duration-ms="3066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:04 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:04 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingInvalidUserIdAndValidPassword()[pri:3, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:04 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:04 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword()[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:04 IST" name="verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword" finished-at="2024-05-08T10:15:07 IST" duration-ms="2837" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:07 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:07 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingInvalidUserIdAndInvalidPassword()[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyForgotPasswordWithoutGivingUserId()[pri:5, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:07 IST" name="verifyForgotPasswordWithoutGivingUserId" finished-at="2024-05-08T10:15:09 IST" duration-ms="1401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordWithoutGivingUserId -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:07 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:31 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T20:39:31 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,44 +22,174 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:09 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:09 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyForgotPasswordWithoutGivingUserId()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:31 IST" name="verifyForgotPasswordWithoutGivingUserId" finished-at="2024-05-08T20:39:33 IST" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordWithoutGivingUserId -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:33 IST" name="testMethodExectionResult" finished-at="2024-05-08T20:39:33 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyForgotPasswordWithoutGivingUserId status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyForgotPasswordWithoutGivingUserId()[pri:5, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05] output={null}]]]>
+                <![CDATA[[TestResult name=verifyForgotPasswordWithoutGivingUserId status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyForgotPasswordWithoutGivingUserId()[pri:2, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:09 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:33 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T20:39:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingValidUserIdAndValidPassword() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyLoginEmployeeByGivingValidUserIdAndValidPassword()[pri:7, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:09 IST" name="verifyLoginEmployeeByGivingValidUserIdAndValidPassword" finished-at="2024-05-08T10:15:12 IST" duration-ms="3684" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginEmployeeByGivingValidUserIdAndValidPassword -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:12 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:33 IST" name="verifyLoginEmployee" data-provider="TestDataForLoginEmployee" finished-at="2024-05-08T20:39:36 IST" duration-ms="3670" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginEmployeeByGivingValidUserIdAndValidPassword status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployeeByGivingValidUserIdAndValidPassword()[pri:7, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05] output={null}]]]>
+                <![CDATA[Nuuk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pratham@2299]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployee -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:36 IST" name="testMethodExectionResult" finished-at="2024-05-08T20:39:36 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployee status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:36 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T20:39:36 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:36 IST" name="verifyLoginEmployee" data-provider="TestDataForLoginEmployee" finished-at="2024-05-08T20:39:39 IST" duration-ms="2927" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INC012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[u6c7klepm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployee -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:39 IST" name="testMethodExectionResult" finished-at="2024-05-08T20:39:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployee status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:39 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T20:39:39 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:39 IST" name="verifyLoginEmployee" data-provider="TestDataForLoginEmployee" finished-at="2024-05-08T20:39:42 IST" duration-ms="2690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nuuk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[u6c7klepm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployee -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:42 IST" name="testMethodExectionResult" finished-at="2024-05-08T20:39:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployee status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:42 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T20:39:42 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentReportForEachTestMethod -->
+        <test-method signature="verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:42 IST" name="verifyLoginEmployee" data-provider="TestDataForLoginEmployee" finished-at="2024-05-08T20:39:46 IST" duration-ms="4066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INC012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pratham@2299]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginEmployee -->
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:46 IST" name="testMethodExectionResult" finished-at="2024-05-08T20:39:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginEmployee status=SUCCESS method=LoginAndForgotPasswordFunctionality.verifyLoginEmployee(java.lang.String,java.lang.String)[pri:4, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodExectionResult -->
+        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:46 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T20:39:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,410 +200,144 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="checkEmployeeNameAfterLoggedIn" finished-at="2024-05-08T10:15:12 IST" duration-ms="59" status="PASS">
+        <test-method signature="checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:46 IST" name="checkEmployeeNameAfterLoggedIn" finished-at="2024-05-08T20:39:47 IST" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEmployeeNameAfterLoggedIn -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:47 IST" name="testMethodExectionResult" finished-at="2024-05-08T20:39:47 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkEmployeeNameAfterLoggedIn status=SUCCESS method=LoginAndForgotPasswordFunctionality.checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05] output={null}]]]>
+                <![CDATA[[TestResult name=checkEmployeeNameAfterLoggedIn status=SUCCESS method=LoginAndForgotPasswordFunctionality.checkEmployeeNameAfterLoggedIn()[pri:8, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@4af0df05]" started-at="2024-05-08T10:15:12 IST" name="flushExtentReport" finished-at="2024-05-08T10:15:13 IST" duration-ms="565" status="PASS">
+        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:47 IST" name="flushExtentReport" finished-at="2024-05-08T20:39:47 IST" duration-ms="573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushExtentReport -->
       </class> <!-- com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality -->
     </test> <!-- Login And Forgot Password Functionality -->
-    <test started-at="2024-05-08T10:15:13 IST" name="Add Self Task And Check In Day View Functionality" finished-at="2024-05-08T10:18:19 IST" duration-ms="186002">
-      <class name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality">
-        <test-method is-config="true" signature="launchTheWebsite()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:14:54 IST" name="launchTheWebsite" finished-at="2024-05-08T10:14:58 IST" duration-ms="4006" status="PASS">
+    <test started-at="2024-05-08T20:39:47 IST" name="Profile Page Update Functionality" finished-at="2024-05-08T20:40:38 IST" duration-ms="50365">
+      <class name="com.biencaps.erp.testCases.ProfilePageUpdateFunctionality">
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey()[pri:1, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:39:47 IST" name="verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey" finished-at="2024-05-08T20:39:57 IST" duration-ms="9364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey -->
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword()[pri:2, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:39:57 IST" name="verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword" finished-at="2024-05-08T20:40:00 IST" duration-ms="3466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword -->
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSide(java.lang.String,java.lang.String)[pri:3, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:40:00 IST" name="verifyGmailKeySubmitAtEmployeeSide" data-provider="TestDataForSubmitGmailKey" finished-at="2024-05-08T20:40:05 IST" duration-ms="4222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mgz8xi5Bqhy7Sw]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pratham@2299]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSide -->
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSide(java.lang.String,java.lang.String)[pri:3, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:40:05 IST" name="verifyGmailKeySubmitAtEmployeeSide" data-provider="TestDataForSubmitGmailKey" finished-at="2024-05-08T20:40:09 IST" duration-ms="4250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kEDvfxvCwJDYdrJ0oZA9XW9O]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pratham@2299]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSide -->
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSide(java.lang.String,java.lang.String)[pri:3, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:40:09 IST" name="verifyGmailKeySubmitAtEmployeeSide" data-provider="TestDataForSubmitGmailKey" finished-at="2024-05-08T20:40:19 IST" duration-ms="10345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jxyn mast qqtg jhkh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0uhkztu2mf47]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSide -->
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSide(java.lang.String,java.lang.String)[pri:3, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:40:19 IST" name="verifyGmailKeySubmitAtEmployeeSide" data-provider="TestDataForSubmitGmailKey" finished-at="2024-05-08T20:40:23 IST" duration-ms="4271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mgz8xi5Bqhy7Sw]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0uhkztu2mf47]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSide -->
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSide(java.lang.String,java.lang.String)[pri:3, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:40:23 IST" name="verifyGmailKeySubmitAtEmployeeSide" data-provider="TestDataForSubmitGmailKey" finished-at="2024-05-08T20:40:28 IST" duration-ms="4218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kEDvfxvCwJDYdrJ0oZA9XW9O]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0uhkztu2mf47]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSide -->
+        <test-method signature="verifyGmailKeySubmitAtEmployeeSide(java.lang.String,java.lang.String)[pri:3, instance:com.biencaps.erp.testCases.ProfilePageUpdateFunctionality@45815ffc]" started-at="2024-05-08T20:40:28 IST" name="verifyGmailKeySubmitAtEmployeeSide" data-provider="TestDataForSubmitGmailKey" finished-at="2024-05-08T20:40:38 IST" duration-ms="10203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jxyn mast qqtg jhkh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pratham@2299]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGmailKeySubmitAtEmployeeSide -->
+      </class> <!-- com.biencaps.erp.testCases.ProfilePageUpdateFunctionality -->
+      <class name="com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality">
+        <test-method is-config="true" signature="launchTheWebsite()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:39:21 IST" name="launchTheWebsite" finished-at="2024-05-08T20:39:30 IST" duration-ms="9605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheWebsite -->
-        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:13 IST" name="extentReportSetup" finished-at="2024-05-08T10:15:13 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentReportSetup -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:13 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:13 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromSidebarWithoutEnteringTaskTitle() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddTaskFromSidebarWithoutEnteringTaskTitle()[pri:1, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:13 IST" name="verifyAddTaskFromSidebarWithoutEnteringTaskTitle" finished-at="2024-05-08T10:15:17 IST" duration-ms="3729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromSidebarWithoutEnteringTaskTitle -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:17 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:17 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromSidebarWithoutEnteringTaskTitle status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromSidebarWithoutEnteringTaskTitle()[pri:1, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyTotalTasksCountBeforeAddNewTask()[pri:3, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:17 IST" name="verifyTotalTasksCountBeforeAddNewTask" finished-at="2024-05-08T10:15:19 IST" duration-ms="2134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountBeforeAddNewTask -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:17 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:17 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountBeforeAddNewTask() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:19 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:19 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTotalTasksCountBeforeAddNewTask status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountBeforeAddNewTask()[pri:3, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:19 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:19 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddTaskFromMonthViewAtParticularDate()[pri:4, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:19 IST" name="verifyAddTaskFromMonthViewAtParticularDate" finished-at="2024-05-08T10:15:27 IST" duration-ms="7597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromMonthViewAtParticularDate -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:27 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:27 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromMonthViewAtParticularDate status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate()[pri:4, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:27 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:27 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()[pri:5, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:27 IST" name="verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" finished-at="2024-05-08T10:15:32 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewAtParticularDate" duration-ms="5044" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:32 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:32 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView()[pri:5, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:32 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:32 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()[pri:6, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:32 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate" finished-at="2024-05-08T10:15:41 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView" duration-ms="9194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:41 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:41 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate()[pri:6, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:41 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:41 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()[pri:7, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:41 IST" name="verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" finished-at="2024-05-08T10:15:46 IST" duration-ms="5303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:46 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:15:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate()[pri:7, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyAddedTaskFromMonthViewSidebarCheckInDayView()[pri:8, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:46 IST" name="verifyAddedTaskFromMonthViewSidebarCheckInDayView" finished-at="2024-05-08T10:16:24 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate" duration-ms="37740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromMonthViewSidebarCheckInDayView -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:15:46 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:15:46 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:24 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:24 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddedTaskFromMonthViewSidebarCheckInDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView()[pri:8, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()[pri:9, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:24 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar" finished-at="2024-05-08T10:16:36 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromMonthViewSidebarCheckInDayView" duration-ms="11885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:24 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:24 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:36 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:36 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromMonthViewSidebar()[pri:9, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:36 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:36 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddNewTaskFromDayView()[pri:10, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:36 IST" name="verifyAddNewTaskFromDayView" finished-at="2024-05-08T10:16:41 IST" duration-ms="4804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddNewTaskFromDayView -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:41 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:41 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddNewTaskFromDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView()[pri:10, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:41 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:41 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()[pri:11, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:41 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView" finished-at="2024-05-08T10:16:51 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddNewTaskFromDayView" duration-ms="10469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:51 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:16:51 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromDayView()[pri:11, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:51 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:16:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()[pri:19, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:16:51 IST" name="verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" finished-at="2024-05-08T10:17:02 IST" duration-ms="11074" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:02 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:17:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment()[pri:19, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:02 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:17:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyNewAddedTaskFromWeekViewSidebarInWeekView()[pri:20, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:02 IST" name="verifyNewAddedTaskFromWeekViewSidebarInWeekView" finished-at="2024-05-08T10:17:10 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="7458" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewAddedTaskFromWeekViewSidebarInWeekView -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:10 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:17:10 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNewAddedTaskFromWeekViewSidebarInWeekView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyNewAddedTaskFromWeekViewSidebarInWeekView()[pri:20, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:10 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:17:10 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyAddedTaskFromWeekViewSidebarCheckInDayView()[pri:21, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:17:10 IST" name="verifyAddedTaskFromWeekViewSidebarCheckInDayView" finished-at="2024-05-08T10:18:08 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddTaskFromWeekViewSidebarByGivingOnlyTitleDateAndComment" duration-ms="58646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedTaskFromWeekViewSidebarCheckInDayView -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:08 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:18:08 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddedTaskFromWeekViewSidebarCheckInDayView status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView()[pri:21, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="createExtentReportForEachTestMethod(java.lang.reflect.Method)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:08 IST" name="createExtentReportForEachTestMethod" finished-at="2024-05-08T10:18:08 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createExtentReportForEachTestMethod -->
-        <test-method signature="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar()[pri:22, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:08 IST" name="verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar" finished-at="2024-05-08T10:18:19 IST" depends-on-methods="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality.verifyAddedTaskFromWeekViewSidebarCheckInDayView" duration-ms="10690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar -->
-        <test-method is-config="true" signature="testMethodExectionResult(org.testng.ITestResult)[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:19 IST" name="testMethodExectionResult" finished-at="2024-05-08T10:18:19 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar status=SUCCESS method=AddSelfTaskAndCheckInDayViewFunctionality.verifyTotalTasksCountAndLogMessagesInDayViewAfterAddingAnotherTaskFromWeekViewSidebar()[pri:22, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodExectionResult -->
-        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:19 IST" name="flushExtentReport" finished-at="2024-05-08T10:18:19 IST" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushExtentReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality@2c7b5824]" started-at="2024-05-08T10:18:19 IST" name="tearDown" finished-at="2024-05-08T10:18:19 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@5669c5fb]" started-at="2024-05-08T20:40:38 IST" name="tearDown" finished-at="2024-05-08T20:40:38 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality -->
-    </test> <!-- Add Self Task And Check In Day View Functionality -->
+      </class> <!-- com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality -->
+    </test> <!-- Profile Page Update Functionality -->
   </suite> <!-- Suite -->
 </testng-results>

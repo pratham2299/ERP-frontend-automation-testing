@@ -1,36 +1,16 @@
-15:19:50 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving task title field empty is: Please Add the task first
+20:38:17 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
+20:38:20 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering password for gmail key submit is: Please Fill Correct password
 
-15:19:53 com.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/0
-15:19:53 com.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 0
+20:39:57 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
+20:40:00 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering password for gmail key submit is: Please Fill Correct password
 
-15:20:00 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-08
+20:40:04 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:20:05 com.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/1
-15:20:05 com.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 1
+20:40:08 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:20:18 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-06
+20:40:19 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
+20:40:23 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:20:34 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from day view is: task added successfully
+20:40:27 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:20:36 com.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/3
-15:20:36 com.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 3
-
-15:20:54 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-05
-
-15:21:29 com.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/4
-15:21:29 com.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 4
-
-15:21:40 com.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
-15:21:41 com.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-15:21:43 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
-
-15:21:48 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after viwed tasks by higher authority is: You viewed Prathamesh Dhasade's Tasks
-
-15:21:51 com.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC012
-15:21:51 com.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pratham@2299
-15:21:53 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
-
-15:22:15 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after selected already exist task priority in day view is: task status already updated
-
-15:22:19 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task priority updated in day view is: task priority updated successfully
-
+20:40:38 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
