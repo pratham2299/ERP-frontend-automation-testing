@@ -12,17 +12,10 @@
 		</classes>
 	</test>
 	<test thread-count="5"
-		name="Password Change Functionality">
-		<classes>
-			<class
-				name="in.biencaps.erp.testCases.PasswordChangeFunctionality" />
-		</classes>
-	</test>
-	<test thread-count="5"
 		name="Add Self Task And Check In Day View Functionality">
 		<classes>
 			<class
-				name="in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" />
+				name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" />
 		</classes>
 	</test>
 </suite> 

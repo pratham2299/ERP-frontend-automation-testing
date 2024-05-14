@@ -2,6 +2,8 @@ package in.biencaps.erp.utilities;
 
 import static org.testng.Assert.*;
 
+import java.util.List;
+
 import org.apache.logging.log4j.*;
 
 import in.biencaps.erp.pages.*;
@@ -67,7 +69,8 @@ public class CommonTestMethods extends BaseTest {
 
 		String actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
 
-		String correspondingEmployeeNameFromHashmap = DataGenerator.employeeUserIdsAndNames().get(userId);
+		String correspondingEmployeeNameFromHashmap = LoginAndForgotPasswordFunctionality.employeeUserIdsAndNames
+				.get(userId);
 		assertEquals(actualEmployeeName, correspondingEmployeeNameFromHashmap);
 
 		return actualEmployeeName;
@@ -208,6 +211,164 @@ public class CommonTestMethods extends BaseTest {
 		log.info("Completed tasks percentage in day view is: " + myTasks.checkPercentageOfTaskCompletedInDayView()
 				+ "%\n");
 		assertEquals(roundedPercentageOfCompletedTasks, myTasks.checkPercentageOfTaskCompletedInDayView());
+	}
+
+	// Checks added task details in day view
+	public void verifyAddedTaskCheckInDayView(String message, String taskTitle, String taskStatus, String taskPriority,
+			String taskProject, String taskStartDate, String taskDueDate, String taskDepartment, String taskAssignee,
+			String taskComment) throws InterruptedException {
+		myTasks.clickOnRefreshButtonInDayView();
+
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
+
+		int newAddedTaskRowIndex = myTasks.checkNewAddedTaskTitleRowIndexInDayView(taskTitle);
+
+		String actualTaskTitleInDayView = myTasks.checkRandomTaskTitleInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task title " + message + " in day view is: " + actualTaskTitleInDayView);
+
+		if (actualTaskTitleInDayView.length() > 26) {
+			assertTrue(actualTaskTitleInDayView.startsWith(taskTitle.substring(0, 27)));
+		} else {
+			assertEquals(actualTaskTitleInDayView, taskTitle);
+		}
+
+		String actualTaskStatusInDayView = myTasks.checkRandomTaskStatusTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task status " + message + " in day view is: " + actualTaskStatusInDayView);
+		assertEquals(actualTaskStatusInDayView, taskStatus);
+
+		String actualTaskPriorityInDayView = myTasks.checkRandomTaskPriorityTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task priority " + message + " in day view is: " + actualTaskPriorityInDayView);
+		assertEquals(actualTaskPriorityInDayView, taskPriority);
+
+		try {
+			String actualTaskProjectInDayView = myTasks.checkRandomTaskProjectTextInDayView(newAddedTaskRowIndex);
+			log.info("Actual added task project " + message + " in day view is: " + actualTaskProjectInDayView);
+			assertEquals(actualTaskProjectInDayView, taskProject);
+		} catch (Exception e) {
+			log.info("Project field is not selected while add task " + message + "");
+		}
+
+		myTasks.scrollHorizantally(1500);
+
+		String actualTaskScheduleDateInDayView = myTasks.checkRandomTaskScheduleDateTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task schedule date " + message + " in day view is: " + actualTaskScheduleDateInDayView);
+		assertEquals(actualTaskScheduleDateInDayView, taskStartDate);
+
+		String actualTaskDueDateInDayView = myTasks.checkRandomTaskDueDateTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual added task due date " + message + " in day view is: " + actualTaskDueDateInDayView);
+		assertEquals(actualTaskDueDateInDayView, taskDueDate);
+
+		List<String> taskDepartmentValuesInDayView = myTasks
+				.checkRandomTaskDepartmentTextInDayView(newAddedTaskRowIndex);
+		String actualTaskDepartmentValueInDayView = taskDepartmentValuesInDayView.get(0);
+		log.info("Actual  task department value added " + message + " in day view is: "
+				+ actualTaskDepartmentValueInDayView);
+		assertEquals(actualTaskDepartmentValueInDayView, taskDepartment);
+
+		String actualTaskAssigneeNameInDayView = myTasks.checkLastTaskAssigneeNameTextInDayView();
+		log.info("Actual task assignee name added " + message + " in day view is: " + actualTaskAssigneeNameInDayView);
+		assertEquals(actualTaskAssigneeNameInDayView, taskAssignee);
+
+		String actualTaskCommentInDayView = myTasks.checkRandomTaskCommentTextInDayView(newAddedTaskRowIndex);
+		log.info("Actual task comment added " + message + " in day view is: " + actualTaskCommentInDayView);
+
+		if (taskComment.equalsIgnoreCase(null) || taskComment.isBlank() || taskComment.isEmpty()) {
+			log.info("Task comment is empty or null" + "\n");
+		} else {
+			if (actualTaskCommentInDayView.length() > 16) {
+				assertTrue(actualTaskCommentInDayView.startsWith(taskComment.substring(0, 16)));
+			} else {
+				assertEquals(actualTaskCommentInDayView, taskComment);
+			}
+
+			myTasks.clickOnRandomTaskCommentTextfieldInDayView(newAddedTaskRowIndex);
+			Thread.sleep(1000);
+
+			myTasks.scrollUntilCommentTextfieldInUpdateTaskSidebar();
+
+			String actualTaskCommentInSidebarForUpdateTaskInDayView = myTasks
+					.checkRandomTaskCommentTextInUpdateTaskSidebar();
+			log.info("Actual task comment in sidebar for update task added " + message + " in day view is: "
+					+ actualTaskCommentInSidebarForUpdateTaskInDayView + "\n");
+			assertEquals(actualTaskCommentInSidebarForUpdateTaskInDayView, taskComment);
+
+			myTasks.clickOnCloseIconOfSidebarForUpdateTaskInDayView();
+			Thread.sleep(1000);
+		}
+
+		myTasks.scrollHorizantally(-1500);
+	}
+
+	public void verifyNewAddedTaskInWeekView(String message, String taskTitle, String taskScheduleDate,
+			String taskDueDate) throws InterruptedException {
+		String actualLastDateInWeekView = myTasks.checkLastDateInWeekView();
+		log.info("Actual last date in week view is: " + actualLastDateInWeekView);
+
+		String actualFirstDateInWeekView = myTasks.checkFirstDateInWeekView();
+		log.info("Actual first date in week view is: " + actualFirstDateInWeekView);
+
+		if (Integer.parseInt(actualLastDateInWeekView) < Integer.parseInt(taskDueDate.substring(8))) {
+			myTasks.clickOnNextWeekSelectIcon();
+			Thread.sleep(1000);
+
+			try {
+				myTasks.clickOnAllExpandButtonsInWeekView();
+				Thread.sleep(1000);
+
+				myTasks.scrollUntilAllCollapseButtonsInWeekView();
+				Thread.sleep(1000);
+
+				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+				log.info("Actual new added task title " + message + " in week view is: "
+						+ actualNewAddedTaskTitleInWeekView);
+				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+			} catch (Exception e) {
+				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+				log.info("Actual new added task title " + message + " in week view is: "
+						+ actualNewAddedTaskTitleInWeekView);
+				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+			}
+		} else if (Integer.parseInt(actualFirstDateInWeekView) > Integer.parseInt(taskScheduleDate.substring(8))) {
+			myTasks.clickOnPreviousWeekSelectIcon();
+			Thread.sleep(1000);
+
+			try {
+				myTasks.clickOnAllExpandButtonsInWeekView();
+				Thread.sleep(1000);
+
+				myTasks.scrollUntilAllCollapseButtonsInWeekView();
+				Thread.sleep(1000);
+
+				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+				log.info("Actual new added task title " + message + " in week view is: "
+						+ actualNewAddedTaskTitleInWeekView);
+				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+			} catch (Exception e) {
+				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+				log.info("Actual new added task title " + message + " in week view is: "
+						+ actualNewAddedTaskTitleInWeekView);
+				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+			}
+		} else {
+			try {
+				myTasks.clickOnAllExpandButtonsInWeekView();
+				Thread.sleep(1000);
+
+				myTasks.scrollUntilAllCollapseButtonsInWeekView();
+				Thread.sleep(1000);
+
+				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+				log.info("Actual new added task title " + message + " in week view is: "
+						+ actualNewAddedTaskTitleInWeekView);
+				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+			} catch (Exception e) {
+				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
+				log.info("Actual new added task title " + message + " in week view is: "
+						+ actualNewAddedTaskTitleInWeekView);
+				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
+			}
+		}
+
 	}
 
 	public void verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(String role,

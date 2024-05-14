@@ -32,13 +32,13 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 	protected WebElementActions webElementActions;
 
 	private String taskTitleInputWhileAddFromLevelViewSidebar;
+	private String actualTaskStatusWhileAddTaskFromLevelViewSidebar;
+	private String actualTaskPriorityWhileAddTaskFromLevelViewSidebar;
+	private String actualTaskProjectWhileAddTaskFromLevelViewSidebar;
 	private String actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar;
 	private String actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar;
-	private String actualFirstTaskDepartmentWhileAddTaskFromLevelViewSidebar;
-	private String actualSecondTaskDepartmentWhileAddTaskFromLevelViewSidebar;
-	private String actualTaskStatusWhileAddTaskFromLevelViewSidebar;
-	private String actualTaskProjectWhileAddTaskFromLevelViewSidebar;
-	private String actualTaskPriorityWhileAddTaskFromLevelViewSidebar;
+	private String actualTaskDepartmentWhileAddTaskFromLevelViewSidebar;
+	private String actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar;
 	private String actualTaskCommentWhileAddTaskFromLevelViewSidebar;
 
 	public String actualTaskOwnerName;
@@ -116,39 +116,17 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 
 				// Prints assignee value and checks whether assignee name and
 				// logged in employee name matches or not
-//				String actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar = myTasks
-//						.checkTaskAssigneeNameWhileAddTaskFromSidebar(
-//								LoginAndForgotPasswordFunctionality.actualEmployeeName);
-//				log.info("Actual task assignee name while add task from month view and at particular date is: "
-//						+ actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar);
-//				assertEquals(actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar,
-//						LoginAndForgotPasswordFunctionality.actualEmployeeName);
+				actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar = myTasks
+						.checkTaskAssigneeNameWhileAddTaskFromSidebarAtLevelView();
+				log.info("Actual task assignee name while add task from month view and at particular date is: "
+						+ actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar);
+				assertEquals(actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar,
+						LoginAndForgotPasswordFunctionality.actualEmployeeName);
 
-				// Selected random tag
-				myTasks.clickOnTagDropdownWhileAddTaskFromSidebar();
-
-				myTasks.clickOnRandomValueFromDropdownWhileAddTaskFromSidebar();
-
-				myTasks.clickOnTagFieldLabelWhileAddTaskFromSidebar();
-
-				List<String> taskDepartmentValuesWhileAddTaskFromLevelViewSidebar = myTasks
-						.checkTaskDepartmentsWhileAddTaskFromSidebar();
-				if (taskDepartmentValuesWhileAddTaskFromLevelViewSidebar.size() > 1) {
-					actualFirstTaskDepartmentWhileAddTaskFromLevelViewSidebar = taskDepartmentValuesWhileAddTaskFromLevelViewSidebar
-							.get(0);
-					log.info("Actual first task department while add task from month view and at particular date is: "
-							+ actualFirstTaskDepartmentWhileAddTaskFromLevelViewSidebar);
-
-					actualSecondTaskDepartmentWhileAddTaskFromLevelViewSidebar = taskDepartmentValuesWhileAddTaskFromLevelViewSidebar
-							.get(1);
-					log.info("Actual second task department while add task from month view and at particular date is: "
-							+ actualSecondTaskDepartmentWhileAddTaskFromLevelViewSidebar);
-				} else {
-					actualFirstTaskDepartmentWhileAddTaskFromLevelViewSidebar = taskDepartmentValuesWhileAddTaskFromLevelViewSidebar
-							.get(0);
-					log.info("Actual first task department while add task from month view and at particular date is: "
-							+ actualFirstTaskDepartmentWhileAddTaskFromLevelViewSidebar);
-				}
+				actualTaskDepartmentWhileAddTaskFromLevelViewSidebar = myTasks
+						.checkTaskDepartmentWhileAddTaskFromSidebar();
+				log.info("Actual task department while add task from month view and at particular date is: "
+						+ actualTaskDepartmentWhileAddTaskFromLevelViewSidebar);
 
 				myTasks.clickOnPriorityDropdownWhileAddTaskFromSidebar();
 
@@ -200,7 +178,7 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 					log.info("Actual task project while add task from month view and at particular date is: "
 							+ actualTaskProjectWhileAddTaskFromLevelViewSidebar);
 				} catch (Exception e) {
-					System.out.println("Project field not selected any value");
+					log.info("Project field not selected any value");
 				}
 
 				// Prints Entered taks comment and
@@ -222,6 +200,71 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 				Thread.sleep(1000);
 			}
 		}
+	}
+
+	@Test(priority = 2)
+	public void verifyTaskAddedFromLevelViewByHigherAuthorityInEmployeeDayView() throws InterruptedException {
+		commonMethods.verifyAddedTaskCheckInDayView("after added task from level view to lower level employee",
+				taskTitleInputWhileAddFromLevelViewSidebar, actualTaskStatusWhileAddTaskFromLevelViewSidebar,
+				actualTaskPriorityWhileAddTaskFromLevelViewSidebar, actualTaskProjectWhileAddTaskFromLevelViewSidebar,
+				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualTaskDepartmentWhileAddTaskFromLevelViewSidebar, actualTaskOwnerName,
+				actualTaskCommentWhileAddTaskFromLevelViewSidebar);
+
+		myTasks.clickOnWeekButton();
+
+		commonMethods.verifyNewAddedTaskInWeekView("after added task from level view to lower level employee",
+				taskTitleInputWhileAddFromLevelViewSidebar,
+				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar);
+	}
+
+	@Test(priority = 3)
+	public void verifyNotificationAfterAssignedTaskFromHigherAuthorityAtLowerLevelEmployeeSide()
+			throws InterruptedException {
+		logOutFun.verifyLogOutEmployee();
+
+		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.employeeUserId,
+				Constants.employeePassword);
+
+		String actualTaskAssignedEmployeeName = commonMethods.verifyEmployeeNameAfterLoggedIn(Constants.employeeUserId);
+		log.info("Actual task assigned employee name at dashboard page is: " + actualTaskAssignedEmployeeName + "\n");
+
+		commonMethods.verifyNotificationMessage(actualTaskOwnerName,
+				"after added task from level view to lower level employee", "assigned you a task",
+				taskTitleInputWhileAddFromLevelViewSidebar);
+	}
+
+	@Test(priority = 4)
+	public void verifyAssignedTaskDetailsInDayViewAndWeekViewAndLogMessage() throws InterruptedException {
+		myTasks.clickOnDayButton();
+
+		myTasks.clickOnTodayButton();
+		Thread.sleep(1000);
+
+		commonMethods.verifyAddedTaskCheckInDayView("after added task from level view to lower level employee",
+				taskTitleInputWhileAddFromLevelViewSidebar, actualTaskStatusWhileAddTaskFromLevelViewSidebar,
+				actualTaskPriorityWhileAddTaskFromLevelViewSidebar, actualTaskProjectWhileAddTaskFromLevelViewSidebar,
+				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualTaskDepartmentWhileAddTaskFromLevelViewSidebar, actualTaskOwnerName,
+				actualTaskCommentWhileAddTaskFromLevelViewSidebar);
+
+		myTasks.clickOnWeekButton();
+
+		commonMethods.verifyNewAddedTaskInWeekView("after added task from level view to lower level employee",
+				taskTitleInputWhileAddFromLevelViewSidebar,
+				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar);
+
+		myTasks.clickOnDayButton();
+
+		myTasks.clickOnTodayButton();
+		Thread.sleep(1000);
+
+		myActivities.verifyLogMessage(actualTaskOwnerName, "has added new task",
+				taskTitleInputWhileAddFromLevelViewSidebar);
 	}
 
 }

@@ -18,7 +18,9 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 	public static Logger log = LogManager.getLogger(LoginAndForgotPasswordFunctionality.class);
 	public static String actualEmployeeName;
 
-//	protected LoginPage login;
+	public static HashMap<String, String> employeeUserIdsAndNames;
+	public static HashMap<String, String> employeeUserIdsAndRoles;
+
 	protected LoginPage login;
 	protected WebElementActions webElementActions;
 	protected MyTasksPage myTasks;
@@ -49,24 +51,24 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 		try {
 			employee.clickOnLoadMoreButton();
 
-			HashMap<String, String> employeeUserIdsAndNames = DataGenerator.employeeUserIdsAndNames();
+			employeeUserIdsAndNames = DataGenerator.employeeUserIdsAndNames();
 			for (Map.Entry<String, String> entry : employeeUserIdsAndNames.entrySet()) {
 				log.info(entry.getKey() + "=> " + entry.getValue());
 			}
 
-			HashMap<String, String> employeeUserIdsAndRoles = DataGenerator.employeeUserIdsAndRoles();
+			employeeUserIdsAndRoles = DataGenerator.employeeUserIdsAndRoles();
 			for (Map.Entry<String, String> entry : employeeUserIdsAndRoles.entrySet()) {
 				log.info(entry.getKey() + "=> " + entry.getValue());
 			}
 
 			logOutFun.verifyLogOutEmployee();
 		} catch (Exception e) {
-			HashMap<String, String> employeeUserIdsAndNames = DataGenerator.employeeUserIdsAndNames();
+			employeeUserIdsAndNames = DataGenerator.employeeUserIdsAndNames();
 			for (Map.Entry<String, String> entry : employeeUserIdsAndNames.entrySet()) {
 				log.info(entry.getKey() + "=> " + entry.getValue());
 			}
 
-			HashMap<String, String> employeeUserIdsAndRoles = DataGenerator.employeeUserIdsAndRoles();
+			employeeUserIdsAndRoles = DataGenerator.employeeUserIdsAndRoles();
 			for (Map.Entry<String, String> entry : employeeUserIdsAndRoles.entrySet()) {
 				log.info(entry.getKey() + "=> " + entry.getValue());
 			}
@@ -161,7 +163,7 @@ public class LoginAndForgotPasswordFunctionality extends BaseTest {
 		actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
 		log.info("Actual employee name at dashboard page is: " + actualEmployeeName + "\n");
 
-		String correspondingEmployeeNameFromHashmap = DataGenerator.employeeUserIdsAndNames()
+		String correspondingEmployeeNameFromHashmap = employeeUserIdsAndNames
 				.get(Constants.employeeUserId);
 		assertEquals(actualEmployeeName, correspondingEmployeeNameFromHashmap);
 	}

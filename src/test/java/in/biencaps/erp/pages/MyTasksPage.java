@@ -27,7 +27,8 @@ public class MyTasksPage {
 	public By endDateLabelInSidebar = By.xpath("//label[normalize-space()='End Date']");
 	public By taskScheduleDateValueInSidebar = By.xpath("(//div[@class='taskEdtSelectDateForAdd']//p)[1]");
 	public By taskDueDateValueInSidebar = By.xpath("(//div[@class='taskEdtSelectDateForAdd']//p)[2]");
-	public By taskAssigneeNameInSidebar = By.xpath("//div[@class='navBarName']//p");
+	public By taskAssigneeNameInSidebar = By.cssSelector("div[class='navBarName'] p");
+	public By taskAssigneeNameInSidebarAtLevelView = By.cssSelector("div[class='Assignee'] p");
 	public By taskDepartmentInSidebar = By.xpath("//div[@class='Tags']//p");
 	public By taskPriorityInSidebar = By.xpath("//div[@class='Priority']//p");
 	public By taskStatusInSidebar = By.xpath("//div[@class='newTaskAssigneeContent newTasStatusContentEdite']");
@@ -241,8 +242,12 @@ public class MyTasksPage {
 		return webElementActions.getTextMethod(taskDueDateValueInSidebar);
 	}
 
-	public String checkTaskAssigneeNameWhileAddTaskFromSidebar(String assigneeName) {
+	public String checkTaskAssigneeNameWhileAddTaskFromSidebar() {
 		return webElementActions.getTextMethod(taskAssigneeNameInSidebar);
+	}
+
+	public String checkTaskAssigneeNameWhileAddTaskFromSidebarAtLevelView() {
+		return webElementActions.getTextMethod(taskAssigneeNameInSidebarAtLevelView);
 	}
 
 	public void clickOnTagFieldLabelWhileAddTaskFromSidebar() {
@@ -382,44 +387,44 @@ public class MyTasksPage {
 	}
 
 	public String checkRandomTaskTitleInDayView(int index) {
-		By taskTitle = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskTitleInDayView + "");
+		By taskTitle = By.xpath("//tbody//tr[" + (index + 1) + "] " + taskTitleInDayView + "");
 		return webElementActions.getAtrributeMethod(taskTitle, "value");
 	}
 
 	public String checkRandomTaskStatusTextInDayView(int index) {
-		By taskStatus = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskStatusInDayView + "");
+		By taskStatus = By.xpath("//tbody//tr[" + (index + 1) + "] " + taskStatusInDayView + "");
 		return webElementActions.getTextMethod(taskStatus);
 	}
 
 	public String checkRandomTaskPriorityTextInDayView(int index) {
-		By taskPriority = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskPriorityInDayView + "");
+		By taskPriority = By.xpath("//tbody//tr[" + (index + 1) + "] " + taskPriorityInDayView + "");
 		return webElementActions.getTextMethod(taskPriority);
 	}
 
 	public String checkRandomTaskProjectTextInDayView(int index) {
-		By taskProject = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskProjectInDayView + "");
+		By taskProject = By.xpath("//tbody//tr[" + (index + 1) + "] " + taskProjectInDayView + "");
 		return webElementActions.getTextMethod(taskProject);
 	}
 
 	public String checkRandomTaskScheduleDateTextInDayView(int index) {
-		By taskScheduleDate = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskScheduleDateInDayView + "");
+		By taskScheduleDate = By.xpath("//tbody//tr[" + (index + 1) + "] " + taskScheduleDateInDayView + "");
 		return webElementActions.getTextMethod(taskScheduleDate);
 	}
 
 	public String checkRandomTaskDueDateTextInDayView(int index) {
-		By taskDueDate = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskDueDateInDayView + "");
+		By taskDueDate = By.xpath("//tbody//tr[" + (index + 1) + "] " + taskDueDateInDayView + "");
 		return webElementActions.getTextMethod(taskDueDate);
 	}
 
 	public List<String> checkRandomTaskDepartmentTextInDayView(int index) {
-		By selfTaskDepartmentsInDayView = By.xpath("(//tbody//tr)[" + (index + 1) + "]//div[@class='OutputTag']");
+		By selfTaskDepartmentsInDayView = By.xpath("//tbody//tr[" + (index + 1) + "]//div[@class='OutputTag']");
 		List<String> departmentsInRandomRow = webElementActions
 				.getValuesFromListOfWebElements(selfTaskDepartmentsInDayView);
 		return departmentsInRandomRow;
 	}
 
 	public String checkRandomTaskVerificationStatusTextInDayView(int index) {
-		By taskVerifiedStatus = By.xpath("(//tbody//tr)[" + (index + 1) + "] " + taskVerifiedStatusInDayView + "");
+		By taskVerifiedStatus = By.xpath("//tbody//tr[" + (index + 1) + "] " + taskVerifiedStatusInDayView + "");
 		return webElementActions.getTextMethod(taskVerifiedStatus);
 	}
 

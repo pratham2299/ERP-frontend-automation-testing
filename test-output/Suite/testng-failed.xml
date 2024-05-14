@@ -4,28 +4,18 @@
   <listeners>
     <listener class-name="in.biencaps.erp.utilities.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="Login and forgot password functionality(failed)">
+  <test thread-count="5" name="Add Self Task And Check In Day View Functionality(failed)">
     <classes>
-      <class name="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality">
+      <class name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality">
         <methods>
           <include name="extentReportSetup"/>
           <include name="testMethodExectionResult"/>
-          <include name="tearDown"/>
+          <include name="verifyTaskAddedFromLevelViewByHigherAuthorityInEmployeeDayView"/>
           <include name="launchTheWebsite"/>
+          <include name="tearDown"/>
           <include name="createExtentReportForEachTestMethod"/>
-          <include name="checkEmployeeNameAfterLoggedIn"/>
         </methods>
-      </class> <!-- in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality -->
+      </class> <!-- in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality -->
     </classes>
-  </test> <!-- Login and forgot password functionality(failed) -->
-  <test thread-count="5" name="Password Change Functionality(failed)">
-    <classes>
-      <class name="in.biencaps.erp.testCases.PasswordChangeFunctionality">
-        <methods>
-          <include name="goToChangeLoginPasswordDiv"/>
-          <include name="verifyChangeLoginPassword" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- in.biencaps.erp.testCases.PasswordChangeFunctionality -->
-    </classes>
-  </test> <!-- Password Change Functionality(failed) -->
+  </test> <!-- Add Self Task And Check In Day View Functionality(failed) -->
 </suite> <!-- Failed suite [Suite] -->
