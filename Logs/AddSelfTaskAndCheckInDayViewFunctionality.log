@@ -1,0 +1,12 @@
+15:56:42 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Total tasks count before add new task in day view is: 2
+
+15:56:47 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual entered task title from month view sidebar is: Look Homeward, Angel
+15:56:47 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task schedule date value while add task from month view sidebar is: 2024-05-12
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task due date value while add task from month view sidebar is: 2024-05-12
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task assignee name while add task from month view sidebar is: Prathamesh Dhasade
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task department while add task from month view sidebar is: QA
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task priority while add task from month view sidebar is: Low
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Task status values from dropdown while add task from month view sidebar are: [Not Started, In Discussion, In Progress, Submitted]
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual selected task status value from dropdown while add task from month view sidebar is: Not Started
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task status while add task from month view sidebar is: Not Started
+15:56:48 in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality - Actual task comment while add task from month view sidebar is: 

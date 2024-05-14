@@ -1,16 +1,23 @@
-20:38:17 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
-20:38:20 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering password for gmail key submit is: Please Fill Correct password
+15:51:42 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
+15:51:43 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Admin@123
+15:51:46 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
 
-20:39:57 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
-20:40:00 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering password for gmail key submit is: Please Fill Correct password
+15:53:00 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
+15:53:01 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Admin@123
+15:53:04 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
 
-20:40:04 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+15:53:46 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid current password is: Enter Correct Current Password
 
-20:40:08 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+15:55:25 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
+15:55:25 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Admin@123
+15:55:29 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
 
-20:40:19 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
-20:40:23 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+15:56:14 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid current password is: Enter Correct Current Password
 
-20:40:27 com.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+15:56:34 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering all valid passwords is: Password Updated Successfully
 
-20:40:38 com.biencaps.erp.utilities.CommonTestMethods - Toast message text is not found
+15:56:37 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving task title field empty is: Please Add the task first
+
+15:56:42 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/2
+15:56:42 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 2
+

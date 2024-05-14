@@ -2,49 +2,67 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener class-name="com.biencaps.erp.utilities.SuiteListener" />
+		<listener class-name="in.biencaps.erp.utilities.SuiteListener" />
 	</listeners>
 
 	<test thread-count="5" name="Login And Forgot Password Functionality">
 		<classes>
 			<class
-				name="com.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" />
+				name="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Profile page update functionality">
+		<classes>
+			<class
+				name="in.biencaps.erp.testCases.ProfilePageUpdateFunctionality" />
+		</classes>
+	</test>
+	<test thread-count="5"
+		name="Password Change Functionality">
+		<classes>
+			<class
+				name="in.biencaps.erp.testCases.PasswordChangeFunctionality" />
 		</classes>
 	</test>
 	<test thread-count="5"
 		name="Add Self Task And Check In Day View Functionality">
 		<classes>
 			<class
-				name="com.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" />
+				name="in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality" />
 		</classes>
 	</test>
 	<test thread-count="5"
 		name="Self Task Update Functionality">
 		<classes>
 			<class
-				name="com.biencaps.erp.testCases.SelfTaskUpdateFunctionality" />
+				name="in.biencaps.erp.testCases.SelfTaskUpdateFunctionality" />
 		</classes>
 	</test>
 	<test thread-count="5"
 		name="Self Task Submitted Functionality">
 		<classes>
 			<class
-				name="com.biencaps.erp.testCases.SelfTaskSubmittedFunctionality" />
+				name="in.biencaps.erp.testCases.SelfTaskSubmittedFunctionality" />
 		</classes>
 	</test>
 	<test thread-count="5"
 		name="Add Update Assign Task And Check At Employee Side Functionality">
 		<classes>
 			<class
-				name="com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" />
+				name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" />
 		</classes>
 	</test>
 	<test thread-count="5"
 		name="Self Task Delete Functionality">
 		<classes>
 			<class
-				name="com.biencaps.erp.testCases.SelfTaskDeleteFunctionality" />
-			<class name="com.biencaps.erp.testCases.LogoutFunctionality" />
+				name="in.biencaps.erp.testCases.SelfTaskDeleteFunctionality" />
+		</classes>
+	</test>
+	<test thread-count="5"
+		name="Logout Functionality">
+		<classes>
+			<class name="in.biencaps.erp.testCases.LogoutFunctionality" />
 		</classes>
 	</test>
 </suite> 

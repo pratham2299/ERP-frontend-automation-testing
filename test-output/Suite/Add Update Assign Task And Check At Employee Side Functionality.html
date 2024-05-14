@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Add Update Assign Task And Check At Employee Side Functionality</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 07 11:21:14 IST 2024</td>
+<td>Started on:</td><td>Tue May 14 15:23:35 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (11 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1317 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,23 +76,76 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.launchTheWebsite()'><b>launchTheWebsite</b><br>Test class: com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.logger&quot; is null
-	at com.biencaps.erp.testCases.BaseTest.driverSetUp(BaseTest.java:64)
-	at com.biencaps.erp.testCases.BaseTest.launchTheWebsite(BaseTest.java:38)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1280603381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1280603381'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.logger&quot; is null
-	at com.biencaps.erp.testCases.BaseTest.driverSetUp(BaseTest.java:64)
-	at com.biencaps.erp.testCases.BaseTest.launchTheWebsite(BaseTest.java:38)
+<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyAssignTaskFromLevel()'><b>verifyAssignTaskFromLevel</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg class=&quot;logout-req&quot; width=&quot;19&quot; height=&quot;18&quot; viewBox=&quot;0 0 19 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (1491, 25). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2334}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: (//*[name()=&apos;svg&apos;][@class=&apos;logout-req&apos;])[1]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnLogOutIcon(DashboardPage.java:76)
+	at in.biencaps.erp.testCases.LogoutFunctionality.verifyLogOutEmployee(LogoutFunctionality.java:27)
+	at in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyAssignTaskFromLevel(AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace665950914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace665950914'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg class=&quot;logout-req&quot; width=&quot;19&quot; height=&quot;18&quot; viewBox=&quot;0 0 19 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (1491, 25). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2334}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: (//*[name()=&apos;svg&apos;][@class=&apos;logout-req&apos;])[1]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnLogOutIcon(DashboardPage.java:76)
+	at in.biencaps.erp.testCases.LogoutFunctionality.verifyLogOutEmployee(LogoutFunctionality.java:27)
+	at in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyAssignTaskFromLevel(AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -104,77 +157,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
-<td>com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@26bab2f1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.flushExtentReport()'><b>flushExtentReport</b><br>Test class: com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</td>
-<td></td>
-<td>0</td>
-<td>com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@26bab2f1</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.extentReportSetup()'><b>extentReportSetup</b><br>Test class: com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</td>
-<td></td>
-<td>0</td>
-<td>com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@26bab2f1</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.testMethodExectionResult()'><b>testMethodExectionResult</b><br>Test class: com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</td>
-<td></td>
-<td>0</td>
-<td>com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@26bab2f1</td></tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.createExtentReportForEachTestMethod()'><b>createExtentReportForEachTestMethod</b><br>Test class: com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</td>
-<td></td>
-<td>0</td>
-<td>com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@26bab2f1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyAssignTaskFromLevel()'><b>verifyAssignTaskFromLevel</b><br>Test class: com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.logger&quot; is null
-	at com.biencaps.erp.testCases.BaseTest.driverSetUp(BaseTest.java:64)
-	at com.biencaps.erp.testCases.BaseTest.launchTheWebsite(BaseTest.java:38)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1968298538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1968298538'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.logger&quot; is null
-	at com.biencaps.erp.testCases.BaseTest.driverSetUp(BaseTest.java:64)
-	at com.biencaps.erp.testCases.BaseTest.launchTheWebsite(BaseTest.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@26bab2f1</td></tr>
+<td>1</td>
+<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@1698fc68</td></tr>
 </table><p>
 </body>
 </html>

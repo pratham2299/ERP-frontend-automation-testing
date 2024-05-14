@@ -1,8 +1,13 @@
-20:37:51 com.biencaps.erp.testCases.BaseTest - Chrome browser launched
-20:37:51 com.biencaps.erp.testCases.BaseTest - Browser window maximized
+15:51:41 in.biencaps.erp.testCases.BaseTest - Chrome browser launched
+15:51:41 in.biencaps.erp.testCases.BaseTest - Browser window maximized
 
-20:38:29 com.biencaps.erp.testCases.BaseTest - All browser closed
-20:39:30 com.biencaps.erp.testCases.BaseTest - Chrome browser launched
-20:39:30 com.biencaps.erp.testCases.BaseTest - Browser window maximized
+15:52:59 in.biencaps.erp.testCases.BaseTest - Chrome browser launched
+15:52:59 in.biencaps.erp.testCases.BaseTest - Browser window maximized
 
-20:40:38 com.biencaps.erp.testCases.BaseTest - All browser closed
+15:55:24 in.biencaps.erp.testCases.BaseTest - Chrome browser launched
+15:55:24 in.biencaps.erp.testCases.BaseTest - Browser window maximized
+
+15:58:04 in.biencaps.erp.testCases.BaseTest - Window is not available
+
+15:58:18 in.biencaps.erp.testCases.BaseTest - Window is not available
+

@@ -1,112 +1,130 @@
-20:37:52 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyForgotPasswordWithoutGivingUserId
+15:51:42 in.biencaps.erp.utilities.SuiteListener - Test Started: getAllEmployeeDetails
 
-20:37:54 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyForgotPasswordWithoutGivingUserId
+15:51:48 in.biencaps.erp.utilities.SuiteListener - Test Failed: getAllEmployeeDetails
 
-20:37:54 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:51:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyForgotPasswordWithoutGivingUserId
 
-20:37:57 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:51:55 in.biencaps.erp.utilities.SuiteListener - Test Failed: verifyForgotPasswordWithoutGivingUserId
 
-20:37:57 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:51:56 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:38:00 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:52:59 in.biencaps.erp.utilities.SuiteListener - Test Started: getAllEmployeeDetails
 
-20:38:00 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:53:18 in.biencaps.erp.utilities.SuiteListener - Test Passed: getAllEmployeeDetails
 
-20:38:02 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:53:18 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyForgotPasswordWithoutGivingUserId
 
-20:38:02 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:53:18 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyForgotPasswordWithoutGivingUserId
 
-20:38:06 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:53:19 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:38:06 com.biencaps.erp.utilities.SuiteListener - Test Started: checkEmployeeNameAfterLoggedIn
+15:53:22 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:38:07 com.biencaps.erp.utilities.SuiteListener - Test Passed: checkEmployeeNameAfterLoggedIn
+15:53:22 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:38:08 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey
+15:53:25 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:38:17 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey
+15:53:25 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:38:17 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword
+15:53:27 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:38:21 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword
+15:53:27 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:38:21 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:53:31 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:38:22 com.biencaps.erp.utilities.SuiteListener - Test Failed: verifyGmailKeySubmitAtEmployeeSide
+15:53:31 in.biencaps.erp.utilities.SuiteListener - Test Started: checkEmployeeNameAfterLoggedIn
 
-20:38:22 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:53:39 in.biencaps.erp.utilities.SuiteListener - Test Failed: checkEmployeeNameAfterLoggedIn
 
-20:38:23 com.biencaps.erp.utilities.SuiteListener - Test Failed: verifyGmailKeySubmitAtEmployeeSide
+15:53:40 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyChangeLoginPassword
 
-20:38:23 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:53:47 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyChangeLoginPassword
 
-20:38:25 com.biencaps.erp.utilities.SuiteListener - Test Failed: verifyGmailKeySubmitAtEmployeeSide
+15:53:47 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyChangeLoginPassword
 
-20:38:25 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:53:53 in.biencaps.erp.utilities.SuiteListener - Test Failed: verifyChangeLoginPassword
 
-20:38:26 com.biencaps.erp.utilities.SuiteListener - Test Failed: verifyGmailKeySubmitAtEmployeeSide
+15:53:53 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyChangeLoginPassword
 
-20:38:26 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:55:24 in.biencaps.erp.utilities.SuiteListener - Test Started: getAllEmployeeDetails
 
-20:38:27 com.biencaps.erp.utilities.SuiteListener - Test Failed: verifyGmailKeySubmitAtEmployeeSide
+15:55:43 in.biencaps.erp.utilities.SuiteListener - Test Passed: getAllEmployeeDetails
 
-20:38:28 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:55:44 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyForgotPasswordWithoutGivingUserId
 
-20:38:29 com.biencaps.erp.utilities.SuiteListener - Test Failed: verifyGmailKeySubmitAtEmployeeSide
+15:55:44 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyForgotPasswordWithoutGivingUserId
 
-20:39:31 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyForgotPasswordWithoutGivingUserId
+15:55:45 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:39:33 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyForgotPasswordWithoutGivingUserId
+15:55:47 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:39:33 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:55:47 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:39:36 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:55:51 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:39:36 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:55:51 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:39:39 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:55:54 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:39:39 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:55:54 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
 
-20:39:42 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:55:58 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
 
-20:39:42 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyLoginEmployee
+15:55:58 in.biencaps.erp.utilities.SuiteListener - Test Started: checkEmployeeNameAfterLoggedIn
 
-20:39:46 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyLoginEmployee
+15:56:06 in.biencaps.erp.utilities.SuiteListener - Test Failed: checkEmployeeNameAfterLoggedIn
 
-20:39:46 com.biencaps.erp.utilities.SuiteListener - Test Started: checkEmployeeNameAfterLoggedIn
+15:56:07 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyChangeLoginPassword
 
-20:39:47 com.biencaps.erp.utilities.SuiteListener - Test Passed: checkEmployeeNameAfterLoggedIn
+15:56:15 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyChangeLoginPassword
 
-20:39:47 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey
+15:56:15 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyChangeLoginPassword
 
-20:39:57 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey
+15:56:21 in.biencaps.erp.utilities.SuiteListener - Test Failed: verifyChangeLoginPassword
 
-20:39:57 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword
+15:56:21 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyChangeLoginPassword
 
-20:40:00 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword
+15:56:27 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyChangeLoginPassword
 
-20:40:00 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:56:27 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyChangeLoginPassword
 
-20:40:05 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSide
+15:56:35 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyChangeLoginPassword
 
-20:40:05 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:56:35 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyAddTaskFromSidebarWithoutEnteringTaskTitle
 
-20:40:09 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSide
+15:56:39 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyAddTaskFromSidebarWithoutEnteringTaskTitle
 
-20:40:09 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:56:39 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyTotalTasksCountBeforeAddNewTask
 
-20:40:19 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSide
+15:56:42 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyTotalTasksCountBeforeAddNewTask
 
-20:40:19 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:56:42 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyAddTaskFromMonthViewAtParticularDate
 
-20:40:23 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSide
+15:56:44 in.biencaps.erp.utilities.SuiteListener - Test Failed: verifyAddTaskFromMonthViewAtParticularDate
 
-20:40:23 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:56:44 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView
 
-20:40:28 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSide
+15:56:44 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verifyAddedTaskFromMonthViewAtParticularDateCheckInDayView
 
-20:40:28 com.biencaps.erp.utilities.SuiteListener - Test Started: verifyGmailKeySubmitAtEmployeeSide
+15:56:44 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate
 
-20:40:38 com.biencaps.erp.utilities.SuiteListener - Test Passed: verifyGmailKeySubmitAtEmployeeSide
+15:56:44 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verifyTotalTasksCountAndLogMessagesInDayViewAfterNewTaskAddFromMonthViewAtParticularDate
+
+15:56:44 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate
+
+15:56:56 in.biencaps.erp.utilities.SuiteListener - Test Failed: verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate
+
+15:56:56 in.biencaps.erp.utilities.SuiteListener - Test Failed: verifyAddTaskFromMonthViewSidebarByGivingOnlyTitleAndDate
+
+15:58:05 in.biencaps.erp.utilities.SuiteListener - Test Started: getAllEmployeeDetails
+
+15:58:05 in.biencaps.erp.utilities.SuiteListener - Test Failed: getAllEmployeeDetails
+
+15:58:05 in.biencaps.erp.utilities.SuiteListener - Test Failed: getAllEmployeeDetails
+
+15:58:19 in.biencaps.erp.utilities.SuiteListener - Test Started: getAllEmployeeDetails
+
+15:58:19 in.biencaps.erp.utilities.SuiteListener - Test Failed: getAllEmployeeDetails
+
+15:58:19 in.biencaps.erp.utilities.SuiteListener - Test Failed: getAllEmployeeDetails
 

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 06 18:07:06 IST 2024</td>
+<td>Started on:</td><td>Tue May 14 15:23:36 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7174 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1104 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView()'><b>verifyLastTaskDetailsInDayView</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView()'><b>verifyLastTaskDetailsInDayView</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
 Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -100,21 +93,39 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1363127070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1363127070'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace835903016", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace835903016'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,37 +152,9 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
 </pre></div></td>
-<td>7</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>1</td>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -182,45 +165,45 @@ Session ID: f017dc93a90a39555212d2f1af455912
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.closeBrowser()'><b>closeBrowser</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.testMethodExectionResult()'><b>testMethodExectionResult</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.tearDown()'><b>tearDown</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.createExtentReportForEachTestMethod()'><b>createExtentReportForEachTestMethod</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.tearDown()'><b>tearDown</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.testMethodExectionResult()'><b>testMethodExectionResult</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.closeBrowser()'><b>closeBrowser</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.createExtentReportForEachTestMethod()'><b>createExtentReportForEachTestMethod</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.tearDown()'><b>tearDown</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.testMethodExectionResult()'><b>testMethodExectionResult</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.tearDown()'><b>tearDown</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.createExtentReportForEachTestMethod()'><b>createExtentReportForEachTestMethod</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.closeBrowser()'><b>closeBrowser</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.createExtentReportForEachTestMethod()'><b>createExtentReportForEachTestMethod</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.closeBrowser()'><b>closeBrowser</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.testMethodExectionResult()'><b>testMethodExectionResult</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
 <td></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -231,23 +214,16 @@ Session ID: f017dc93a90a39555212d2f1af455912
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyTotalTasksCountInDayViewAfterDeletingSingleTask()'><b>verifyTotalTasksCountInDayViewAfterDeletingSingleTask</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLogMessageAfterNewTaskDeleteFromDayView()'><b>verifyLogMessageAfterNewTaskDeleteFromDayView</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
 Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -255,21 +231,39 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1751574336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1751574336'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898794552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898794552'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -296,55 +290,20 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
 </pre></div></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLogMessageAfterNewTaskDeleteFromDayView()'><b>verifyLogMessageAfterNewTaskDeleteFromDayView</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyDeleteLastTaskFromDayView()'><b>verifyDeleteLastTaskFromDayView</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
 Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -352,21 +311,39 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1720994940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1720994940'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace343700122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace343700122'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -393,55 +370,20 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
 </pre></div></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyDeleteLastTaskFromDayView()'><b>verifyDeleteLastTaskFromDayView</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyTotalTasksCountInDayViewAfterDeletingSingleTask()'><b>verifyTotalTasksCountInDayViewAfterDeletingSingleTask</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
 Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -449,21 +391,39 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace52313140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace52313140'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134904383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134904383'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -490,55 +450,20 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
 </pre></div></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 <tr>
-<td title='com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyMultipleTasksDeleteInDayView()'><b>verifyMultipleTasksDeleteInDayView</b><br>Test class: com.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
+<td title='in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyMultipleTasksDeleteInDayView()'><b>verifyMultipleTasksDeleteInDayView</b><br>Test class: in.biencaps.erp.testCases.SelfTaskDeleteFunctionality</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
 Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -546,21 +471,39 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1991656106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1991656106'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;My Tasks&apos;] (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:77)
-	at com.biencaps.erp.pageObjectModels.DashboardPage.clickOnMyTasksSection(DashboardPage.java:51)
-	at com.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1779230211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1779230211'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;Notification_Float&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.158)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d07de36c39b0773d2ca5ed910b221e, clickElement {id=f.0B22A10A54F1DA670606926EB92A911B.d.E2B8E1A2D9A1C30BBA97F152122167B3.e.2335}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49305/devtoo..., se:cdpVersion: 124.0.6367.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (88d07de36c39b0773d2ca5ed910b221e)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
+Session ID: 88d07de36c39b0773d2ca5ed910b221e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:119)
+	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:44)
+	at in.biencaps.erp.testCases.SelfTaskDeleteFunctionality.verifyLastTaskDetailsInDayView(SelfTaskDeleteFunctionality.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -587,37 +530,9 @@ Session ID: f017dc93a90a39555212d2f1af455912
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.119)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f017dc93a90a39555212d2f1af455912, findElement {using=xpath, value=//p[normalize-space()=&apos;My Tasks&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52807/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f017dc93a90a39555212d2f1af455912
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
 </pre></div></td>
 <td>0</td>
-<td>com.biencaps.erp.testCases.SelfTaskDeleteFunctionality@37052337</td></tr>
+<td>in.biencaps.erp.testCases.SelfTaskDeleteFunctionality@25e2a451</td></tr>
 </table><p>
 </body>
 </html>
