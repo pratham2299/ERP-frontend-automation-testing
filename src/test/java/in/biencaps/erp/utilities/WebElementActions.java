@@ -16,7 +16,7 @@ public class WebElementActions {
 
 	public WebElementActions() {
 		this.driver = BaseTest.driver;
-		wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(7));
+		wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(6));
 	}
 
 	public WebElement waitForElementVisibility(By locator) {
@@ -106,12 +106,6 @@ public class WebElementActions {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollLeft += arguments[1];", element, xValue);
-	}
-
-	public void scrollBottomOfDiv(By locator) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		// Scroll to the bottom of the div element using JavaScript
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollTop = arguments[0].scrollHeight", element);
 	}
 
 	public void clickOnMethod(By locator) {

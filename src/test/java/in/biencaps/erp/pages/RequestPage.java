@@ -10,7 +10,7 @@ public class RequestPage {
 	protected WebElementActions webElementActions = new WebElementActions();
 
 	public By requestSectionLink = By.xpath("//p[normalize-space()='Request']");
-	public By refreshIcon = By.xpath("//div[@class='retTitle']//*[name()='svg']");
+	public By refreshIcon = By.xpath("//div[@class='req-header-container']//*[name()='svg']");
 	public By receivedRequestButton = By.xpath("//button[normalize-space()='Requests']");
 	public By myRequestsButton = By.xpath("//button[normalize-space()='My Requests']");
 	public By requestCategoryDropdown = By.xpath("//select[@class='filtersForRequests']");

@@ -116,7 +116,7 @@ public class MyTasksPage {
 	public By searchBarInDayView = By.cssSelector("input[placeholder='Search task name']");
 	public By taskStatusesValuesFromDropdown = By.xpath("//div[@class='listOfStatusWrapper']//div");
 	public By taskPrioritiesValuesFromDropdown = By.xpath("//div[@class='listOfProrityWrapper']/div");
-	public By taskProjectValuesFromDropdown = By.cssSelector("ProjectTitleDiv");
+	public By taskProjectValuesFromDropdown = By.cssSelector(".ProjectTitleDiv");
 	public By previousMonthIconInDayView = By.xpath("//button[@aria-label='Previous Month']//*[name()='svg']");
 	public By nextMonthIconInDayView = By.xpath("//button[@aria-label='Next Month']//*[name()='svg']");
 	public By taskDepartmentValuesFromDropdown = By.xpath("//div[@class='listOfTagsWrapper']/div");

@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="in.biencaps.erp.utilities.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="Add Self Task And Check In Day View Functionality(failed)">
+  <test thread-count="5" name="Add Update Assign Task And Check At Employee Side Functionality(failed)">
     <classes>
       <class name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality">
         <methods>
-          <include name="extentReportSetup"/>
-          <include name="testMethodExectionResult"/>
-          <include name="verifyTaskAddedFromLevelViewByHigherAuthorityInEmployeeDayView"/>
-          <include name="launchTheWebsite"/>
-          <include name="tearDown"/>
-          <include name="createExtentReportForEachTestMethod"/>
+          <include name="test_Method_Exection_Result"/>
+          <include name="extent_Report_Setup"/>
+          <include name="verify_Last_Task_Details_In_Day_View"/>
+          <include name="launch_The_Website"/>
+          <include name="create_Extent_Report_For_Each_Test_Method"/>
+          <include name="tear_Down"/>
         </methods>
       </class> <!-- in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality -->
     </classes>
-  </test> <!-- Add Self Task And Check In Day View Functionality(failed) -->
+  </test> <!-- Add Update Assign Task And Check At Employee Side Functionality(failed) -->
 </suite> <!-- Failed suite [Suite] -->

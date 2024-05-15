@@ -18,7 +18,7 @@ public class LogoutFunctionality extends BaseTest {
 	protected MyTasksPage myTasks;
 	protected DashboardPage dashboard;
 
-	public void verifyLogOutEmployee() throws InterruptedException {
+	public void verify_LogOut_Employee() throws InterruptedException {
 		// Passed driver get from BaseTest to my tasks page, dashboard page i.e. page
 		// object model
 		myTasks = new MyTasksPage(driver);
@@ -39,6 +39,5 @@ public class LogoutFunctionality extends BaseTest {
 		} else {
 			assertEquals(currentPageURLAfterLogOut, Constants.websiteUrlOnStagingEnvironemnt);
 		}
-		Thread.sleep(2000);
 	}
 }

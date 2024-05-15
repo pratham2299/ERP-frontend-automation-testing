@@ -18,7 +18,7 @@ public class RequestFunctionality extends BaseTest {
 	 * This method is responsible to check first request card details and validate
 	 * details in request section
 	 */
-	public void verifyRequestInReceivedRequestCard(String employeeName, String action, String taskTitle)
+	public void verify_Request_In_Received_Request_Card(String employeeName, String action, String taskTitle)
 			throws InterruptedException {
 		dashboard = new DashboardPage();
 		request = new RequestPage();
@@ -63,7 +63,7 @@ public class RequestFunctionality extends BaseTest {
 	 * This method is responsible to check first request card details and validate
 	 * details in my request section
 	 */
-	public void verifyRequestInMyRequestsCard(String employeeName, String requestAction, String taskTitle)
+	public void verify_Request_In_My_Requests_Card(String employeeName, String requestAction, String taskTitle)
 			throws InterruptedException {
 		dashboard = new DashboardPage();
 		request = new RequestPage();
@@ -112,7 +112,7 @@ public class RequestFunctionality extends BaseTest {
 		}
 	}
 
-	public void verifyTaskRequestInMyRequestSectionByFilteringRequestCategory(String requestCategory,
+	public void verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category(String requestCategory,
 			String employeeName, String actionTakenByEmployeeName, String requestAction, String taskTitle)
 			throws InterruptedException {
 		dashboard = new DashboardPage();

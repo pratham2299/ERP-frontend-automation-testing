@@ -36,16 +36,16 @@ public class BaseTest {
 	public Connection connection;
 
 	@BeforeSuite
-	public void launchTheWebsite() throws Exception {
+	public void launch_The_Website() throws Exception {
 		try {
-			driverSetUp();
+			driver_Setup();
 		} catch (Exception e) {
 			log.error("Window is not available" + "\n");
 			driver.quit();
 		}
 	}
 
-	public void driverSetUp() throws Exception {
+	public void driver_Setup() throws Exception {
 		if (Constants.browserName.equalsIgnoreCase("firefox")) {
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--ignore-certificate-errors");
@@ -76,12 +76,12 @@ public class BaseTest {
 		log.info("Browser window maximized" + "\n");
 	}
 
-	public void setupBackendAPI() {
+	public void setup_Backend_API() {
 		RestAssured.baseURI = Constants.backendUrl;
 		log.info("Connected to backend API" + "\n");
 	}
 
-	public void setUpDatabase() throws Exception {
+	public void setup_Database() throws Exception {
 		// Connect to the database
 		String url = Constants.databaseUrl;
 		String user = Constants.databaseUserName;
@@ -90,8 +90,8 @@ public class BaseTest {
 		log.info("Connected to database" + "\n");
 	}
 
-	@BeforeClass
-	public void extentReportSetup() {
+	@BeforeTest
+	public void extent_Report_Setup() {
 		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + File.separator + "Reports"
 				+ File.separator + Constants.extentReportHTMLFileName);
 		extent = new ExtentReports();
@@ -104,12 +104,12 @@ public class BaseTest {
 	}
 
 	@BeforeMethod
-	public void createExtentReportForEachTestMethod(Method testMethod) {
+	public void create_Extent_Report_For_Each_Test_Method(Method testMethod) {
 		logger = extent.createTest(testMethod.getName());
 	}
 
 	@AfterMethod
-	public void testMethodExectionResult(ITestResult result) {
+	public void test_Method_Exection_Result(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			logger.log(Status.FAIL,
 					MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
@@ -125,7 +125,7 @@ public class BaseTest {
 	}
 
 	@AfterSuite
-	public void tearDown() throws InterruptedException {
+	public void tear_Down() throws InterruptedException {
 		if (driver != null) {
 			driver.manage().deleteAllCookies();
 			driver.quit();

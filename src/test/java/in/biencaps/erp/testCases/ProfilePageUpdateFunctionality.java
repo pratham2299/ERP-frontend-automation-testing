@@ -21,7 +21,7 @@ public class ProfilePageUpdateFunctionality {
 	protected CommonTestMethods commonMethods;
 
 	@Test(priority = 1)
-	public void verifyGmailKeySubmitAtEmployeeSideWithoutEnteringGmailKey() throws InterruptedException {
+	public void verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Gmail_Key() throws InterruptedException {
 		webElementActions = new WebElementActions();
 		dashboard = new DashboardPage();
 		profile = new ProfilePage();
@@ -36,14 +36,14 @@ public class ProfilePageUpdateFunctionality {
 
 		profile.clickOnSendButtonForGmailKeySubmit();
 
-		commonMethods.verifyToastMessage("after not entering gmail key for gmail key submit",
+		commonMethods.verify_Toast_Message("after not entering gmail key for gmail key submit",
 				"Please Fill Correct 16 digit key");
 
 		webElementActions.refreshThePage();
 	}
 
 	@Test(priority = 2)
-	public void verifyGmailKeySubmitAtEmployeeSideWithoutEnteringPassword() throws InterruptedException {
+	public void verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Password() throws InterruptedException {
 		dashboard.clickOnEmployeeNameAtDashboard();
 		Thread.sleep(1000);
 
@@ -51,12 +51,13 @@ public class ProfilePageUpdateFunctionality {
 
 		profile.clickOnSendButtonForGmailKeySubmit();
 
-		commonMethods.verifyToastMessage("after not entering password for gmail key submit",
+		commonMethods.verify_Toast_Message("after not entering password for gmail key submit",
 				"Please Fill Correct password");
 	}
 
 	@Test(priority = 3, dataProvider = "TestDataForSubmitGmailKey", dataProviderClass = DataProviders.class)
-	public void verifyGmailKeySubmitAtEmployeeSide(String gmailKey, String password) throws InterruptedException {
+	public void verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data(String gmailKey, String password)
+			throws InterruptedException {
 		webElementActions.refreshThePage();
 
 		dashboard.clickOnEmployeeNameAtDashboard();
@@ -75,26 +76,26 @@ public class ProfilePageUpdateFunctionality {
 		profile.clickOnSendButtonForGmailKeySubmit();
 
 		if (!gmailKey.equalsIgnoreCase(Constants.gmailKey)) {
-			commonMethods.verifyToastMessage("after entering invalid gmail key for gmail key submit",
+			commonMethods.verify_Toast_Message("after entering invalid gmail key for gmail key submit",
 					"Please Fill Correct 16 digit key");
 		} else if (!password.equalsIgnoreCase(Constants.employeePassword)) {
-			commonMethods.verifyToastMessage("after entering invalid password for gmail key submit",
+			commonMethods.verify_Toast_Message("after entering invalid password for gmail key submit",
 					"Enter valid password");
 		} else {
-			commonMethods.verifyToastMessage("after entering valid gmail key and valid password for gmail key submit",
+			commonMethods.verify_Toast_Message("after entering valid gmail key and valid password for gmail key submit",
 					"Updated Successfully");
 		}
 	}
 
 	@Test(priority = 4)
-	public void verifyPrimaryMobileNumberTextfieldByLeavingFieldEmpty() throws InterruptedException {
+	public void verify_Primary_Mobile_Number_Textfield_By_Leaving_Field_Empty() throws InterruptedException {
 		profile.scrollUntilSubmitButtonFound();
 
 		profile.clearPrimaryMobileNumberTextfield();
 
 		profile.clickOnSubmitButton();
 
-		commonMethods.verifyToastMessage("after leaving primary mobile number textfield empty",
+		commonMethods.verify_Toast_Message("after leaving primary mobile number textfield empty",
 				"Enter Valid Primary Mobile Number");
 
 		String actualBorderColorOfPrimaryMobileNumberTextfieldAfterLeavingFieldEmpty = profile
@@ -105,8 +106,8 @@ public class ProfilePageUpdateFunctionality {
 	}
 
 	@Test(priority = 5, dataProvider = "TestDataForUpdateProfile", dataProviderClass = DataProviders.class)
-	public void verifyProfileUpdateFromEmployeeSide(String primaryMobileNumber, String secondaryMobileNumber,
-			String personalEmail) throws InterruptedException {
+	public void verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data(String primaryMobileNumber,
+			String secondaryMobileNumber, String personalEmail) throws InterruptedException {
 //		webElementActions.refreshThePage();
 //
 //		dashboard.clickOnEmployeeNameAtDashboard();
@@ -135,7 +136,7 @@ public class ProfilePageUpdateFunctionality {
 		Matcher matcher = pattern.matcher(personalEmail);
 
 		if (primaryMobileNumber.length() < 10) {
-			commonMethods.verifyToastMessage("after entering less than 10 digit primary mobile number",
+			commonMethods.verify_Toast_Message("after entering less than 10 digit primary mobile number",
 					"Enter Valid Primary Mobile Number");
 
 			String actualBorderColorOfPrimaryMobileNumberTextfieldAfterLeavingFieldEmpty = profile
@@ -145,7 +146,7 @@ public class ProfilePageUpdateFunctionality {
 							+ actualBorderColorOfPrimaryMobileNumberTextfieldAfterLeavingFieldEmpty);
 			assertEquals(actualBorderColorOfPrimaryMobileNumberTextfieldAfterLeavingFieldEmpty, "rgb(255, 0, 0)");
 		} else if (secondaryMobileNumber.length() < 10) {
-			commonMethods.verifyToastMessage("after entering less than 10 digit secondary mobile number",
+			commonMethods.verify_Toast_Message("after entering less than 10 digit secondary mobile number",
 					"Enter Valid Secondary Mobile Number");
 
 			String actualBorderColorOfSecondaryMobileNumberTextfieldAfterLeavingFieldEmpty = profile
@@ -155,16 +156,16 @@ public class ProfilePageUpdateFunctionality {
 							+ actualBorderColorOfSecondaryMobileNumberTextfieldAfterLeavingFieldEmpty);
 			assertEquals(actualBorderColorOfSecondaryMobileNumberTextfieldAfterLeavingFieldEmpty, "rgb(255, 0, 0)");
 		} else if (matcher.matches() == false) {
-			commonMethods.verifyToastMessage("after entering invalid personal email for profile update",
+			commonMethods.verify_Toast_Message("after entering invalid personal email for profile update",
 					"Enter Valid personal email");
 		} else {
-			commonMethods.verifyToastMessage("after entering valid data for profile update",
+			commonMethods.verify_Toast_Message("after entering valid data for profile update",
 					"Employee details updated successfully");
 		}
 	}
 
 	@Test(priority = 6)
-	public void verifyProfileUpdateByEnteringOptionalFields() throws InterruptedException {
+	public void verify_Profile_Update_By_Entering_Optional_Fields() throws InterruptedException {
 		webElementActions.refreshThePage();
 
 		dashboard.clickOnEmployeeNameAtDashboard();
@@ -189,7 +190,7 @@ public class ProfilePageUpdateFunctionality {
 
 		profile.clickOnSubmitButton();
 
-		commonMethods.verifyToastMessage("after entering valid data for profile update",
+		commonMethods.verify_Toast_Message("after entering valid data for profile update",
 				"Employee details updated successfully");
 
 	}

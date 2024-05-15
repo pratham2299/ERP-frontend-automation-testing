@@ -18,7 +18,7 @@ public class MyActivitiesFunctionality extends BaseTest {
 	// This method is responsible for checking log message, log employee, log time.
 	// Also it is validating means comparing values of employee, action, time.
 	// If falied it print catch statement
-	public void verifyLogMessage(String employeeName, String message, String taskTitle) throws InterruptedException {
+	public void verify_Log_Message(String employeeName, String message, String taskTitle) throws InterruptedException {
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);
 
@@ -65,7 +65,7 @@ public class MyActivitiesFunctionality extends BaseTest {
 	// This method is responsible for checking log message, log employee, log time.
 	// Also it is validating means comparing values of employee, action, time.
 	// If falied it print catch statement
-	public void verifyLogMessage(String employeeName, String field, String oldValueOfField, String updatedValueOfField,
+	public void verify_Log_Message_After_Update_Task_Details(String employeeName, String field, String oldValueOfField, String updatedValueOfField,
 			String taskTitle) throws InterruptedException {
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);

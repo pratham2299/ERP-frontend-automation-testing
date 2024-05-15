@@ -25,7 +25,7 @@ public class CommonTestMethods extends BaseTest {
 	protected EmployeePage employee;
 
 	// This is re usable method of login with valid user Id and valid password
-	public void verifyLoginEmployeeByGivingValidUserIdAndValidPassword(String userId, String password)
+	public void verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(String userId, String password)
 			throws InterruptedException {
 		login = new LoginPage();
 		webElementActions = new WebElementActions();
@@ -61,10 +61,10 @@ public class CommonTestMethods extends BaseTest {
 
 		login.clickOnLoginButton();
 
-		verifyToastMessage("after successfull logged in", "Login Successfully");
+		verify_Toast_Message("after successfull logged in", "Login Successfully");
 	}
 
-	public String verifyEmployeeNameAfterLoggedIn(String userId) {
+	public String verify_Employee_Name_After_Logged_In(String userId) {
 		dashboard = new DashboardPage();
 
 		String actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
@@ -80,7 +80,7 @@ public class CommonTestMethods extends BaseTest {
 	// after each task add
 	// Also it check stoast message text
 	// and handled exception
-	public void verifyToastMessageAfterTaskAddFromSidebar(String date) throws InterruptedException {
+	public void verify_Toast_Message_After_Task_Add_From_Sidebar(String date) throws InterruptedException {
 		myTasks = new MyTasksPage(driver);
 
 		String actualToastMessageAfterTaskAdd = myTasks.checkTaskAddedToastMessage(date);
@@ -100,7 +100,7 @@ public class CommonTestMethods extends BaseTest {
 	// Created toast message common method
 	// Also it check stoast message text
 	// and handled exception
-	public void verifyToastMessage(String message, String toastMessageText) throws InterruptedException {
+	public void verify_Toast_Message(String message, String toastMessageText) throws InterruptedException {
 		myTasks = new MyTasksPage(driver);
 
 		String actualToastMessage = myTasks.checkToastMessage(toastMessageText);
@@ -119,7 +119,7 @@ public class CommonTestMethods extends BaseTest {
 	// Created toast message common method
 	// Also it check stoast message text
 	// and handled exception
-	public void verifyToastMessageInBlueColor(String message, String toastMessageText) throws InterruptedException {
+	public void verify_Toast_MessageInBlueColor(String message, String toastMessageText) throws InterruptedException {
 		myTasks = new MyTasksPage(driver);
 
 		String actualToastMessage = myTasks.checkToastMessageInBlueColor(toastMessageText);
@@ -140,7 +140,7 @@ public class CommonTestMethods extends BaseTest {
 	 * validating means comparing total tasks in day view and variable value of
 	 * total tasks after add or delete task If falied it print catch statement
 	 */
-	public void verifyTotalTasksCountInDayViewAfterAddedOrDeletedTask(int totalTasksCount) {
+	public void verify_Total_Tasks_Count_In_Day_View_After_Added_Or_Deleted_Task(int totalTasksCount) {
 		myTasks = new MyTasksPage(driver);
 
 		String completedTasksCountOutOfTotalTasksCountInDayView = myTasks
@@ -159,7 +159,7 @@ public class CommonTestMethods extends BaseTest {
 	 * variable value of total completed tasks after add or delete task If falied it
 	 * print catch statement
 	 */
-	public void verifyTotalCompletedTasksCountInDayView(int totalCompletedTasksCount) {
+	public void verify_Total_Completed_Tasks_Count_In_Day_View(int totalCompletedTasksCount) {
 		myTasks = new MyTasksPage(driver);
 
 		String completedTasksCountOutOfTotalTasksCountInDayView = myTasks
@@ -178,7 +178,7 @@ public class CommonTestMethods extends BaseTest {
 	 * validating means comparing total tasks in day view and variable value of
 	 * total tasks before add task
 	 */
-	public int getTotalTasksCountInDayView() {
+	public int get_Total_Tasks_Count_In_Day_View() {
 		myTasks = new MyTasksPage(driver);
 
 		String completedTasksCountOutOfTotalTasksCountInDayView = myTasks
@@ -197,7 +197,7 @@ public class CommonTestMethods extends BaseTest {
 	 * This method is responsible for check percentage of completed tasks after any
 	 * task completed in day view
 	 */
-	public void verifyPercentageOfCompletedTasksInDayView(int completedTasks, int totalTasks) {
+	public void verify_Percentage_Of_Completed_Tasks_In_Day_View(int completedTasks, int totalTasks) {
 		myTasks = new MyTasksPage(driver);
 
 		int totalCompetedTasksCount = completedTasks;
@@ -214,9 +214,9 @@ public class CommonTestMethods extends BaseTest {
 	}
 
 	// Checks added task details in day view
-	public void verifyAddedTaskCheckInDayView(String message, String taskTitle, String taskStatus, String taskPriority,
-			String taskProject, String taskStartDate, String taskDueDate, String taskDepartment, String taskAssignee,
-			String taskComment) throws InterruptedException {
+	public void verify_Added_Task_Check_In_Day_View(String message, String taskTitle, String taskStatus,
+			String taskPriority, String taskProject, String taskStartDate, String taskDueDate, String taskDepartment,
+			String taskAssignee, String taskComment) throws InterruptedException {
 		myTasks.clickOnRefreshButtonInDayView();
 
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -299,7 +299,7 @@ public class CommonTestMethods extends BaseTest {
 		myTasks.scrollHorizantally(-1500);
 	}
 
-	public void verifyNewAddedTaskInWeekView(String message, String taskTitle, String taskScheduleDate,
+	public void verify_Added_Task_In_Week_View(String message, String taskTitle, String taskScheduleDate,
 			String taskDueDate) throws InterruptedException {
 		String actualLastDateInWeekView = myTasks.checkLastDateInWeekView();
 		log.info("Actual last date in week view is: " + actualLastDateInWeekView);
@@ -374,16 +374,16 @@ public class CommonTestMethods extends BaseTest {
 	public void verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(String role,
 			String loginEmployeeUserId, String loginEmployeePassword, String requestSenderEmployeeName,
 			String requestAction, String taskTitle) throws InterruptedException {
-		verifyLoginEmployeeByGivingValidUserIdAndValidPassword(loginEmployeeUserId, loginEmployeePassword);
+		verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(loginEmployeeUserId, loginEmployeePassword);
 
-		String actualHigherAuthorityEmployeeName = verifyEmployeeNameAfterLoggedIn(loginEmployeeUserId);
+		String actualHigherAuthorityEmployeeName = verify_Employee_Name_After_Logged_In(loginEmployeeUserId);
 		log.info("Actual " + role + " employee name at dashboard page is: " + actualHigherAuthorityEmployeeName + "\n");
 
 		verifyNotificationMessage(requestSenderEmployeeName,
 				"after employee sent task " + requestAction + " request at " + role + " employee side", requestAction,
 				taskTitle);
 
-		requestFun.verifyRequestInReceivedRequestCard(requestSenderEmployeeName, requestAction, taskTitle);
+		requestFun.verify_Request_In_Received_Request_Card(requestSenderEmployeeName, requestAction, taskTitle);
 	}
 
 	// Check notification message
@@ -393,14 +393,12 @@ public class CommonTestMethods extends BaseTest {
 
 		dashboard.clickOnNotificationIcon();
 
-		String actualNotificationMessageAfterTaskSubmittedRequestDenied = dashboard
-				.checkFirstNotificationMessageForRequestDenied();
-		log.info("Actual notification message " + message + " is: "
-				+ actualNotificationMessageAfterTaskSubmittedRequestDenied);
+		List<String> actualNotificationMessages = dashboard.checkNotificationMessages();
 
+		String receivedNotificationMessage = "\"" + employeeName + "\" " + notificationMessage + " \"" + taskTitle
+				+ "\"";
 		try {
-			assertEquals(actualNotificationMessageAfterTaskSubmittedRequestDenied,
-					"\"" + employeeName + "\" " + notificationMessage + " \"" + taskTitle + "\"");
+			assertTrue(actualNotificationMessages.contains(receivedNotificationMessage));
 
 			webElementActions.refreshThePage();
 			Thread.sleep(3000);

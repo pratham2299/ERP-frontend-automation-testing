@@ -1,7 +1,7 @@
 package in.biencaps.erp.pages;
 
 import org.openqa.selenium.*;
-
+import java.util.*;
 import in.biencaps.erp.utilities.*;
 
 public class DashboardPage {
@@ -24,7 +24,7 @@ public class DashboardPage {
 	public By createClosureButton = By.xpath("//p[normalize-space()='Create Closure']");
 	public By notificationIcon = By
 			.xpath("//div[@class='notifaction-icon-container']//*[name()='svg']//*[name()='path']");
-	public By firstNotificationMessage = By.xpath("(//div[@class='notification_subject']/h4)[1]");
+	public By notificationMessages = By.xpath("//div[@class='notification_subject']/h4");
 
 	public By lastArrowForLevelView = By.xpath("(//button[@class='p-tree-toggler p-link']//*[name()='svg'])[last()]");
 	public By rolesForLevelView = By.xpath("//span[@class='p-treenode-label']");
@@ -88,8 +88,8 @@ public class DashboardPage {
 		webElementActions.clickOnMethod(notificationIcon);
 	}
 
-	public String checkFirstNotificationMessageForRequestDenied() {
-		return webElementActions.getTextMethod(firstNotificationMessage);
+	public List<String> checkNotificationMessages() {
+		return webElementActions.getValuesFromListOfWebElements(notificationMessages);
 	}
 
 	public void clickOnLastArrowForLevelView() {

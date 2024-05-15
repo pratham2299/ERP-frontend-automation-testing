@@ -41,10 +41,20 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 	private String actualTaskAssigneeNameWhileAddTaskFromLevelViewSidebar;
 	private String actualTaskCommentWhileAddTaskFromLevelViewSidebar;
 
+	public static String actualTaskTitleAfterClearAndUpdateFromDayView;
+	public static String actualLastAssignTaskTitleInDayView;
+	public static String actualLastAssignTaskStatusInDayView;
+	public static String actualLastAssignTaskPriorityInDayView;
+	public static String actualLastAssignTaskProjectInDayView;
+	public static String actualLastAssignTaskDueDateInDayView;
+	public static List<String> actualLastRowTaskDepartmentsInDayView;
+	public static String actualLastAssignTaskVerifiedStatusInDayView;
+	public static String actualLastAssignTaskCommentInDayView;
+
 	public String actualTaskOwnerName;
 
 	@Test(priority = 1)
-	public void verifyAssignTaskFromLevel() throws InterruptedException {
+	public void verify_Assign_Task_From_Level() throws InterruptedException {
 		myTasks = new MyTasksPage(driver);
 		commonMethods = new CommonTestMethods();
 		loginFun = new LoginAndForgotPasswordFunctionality();
@@ -55,13 +65,13 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 		myActivities = new MyActivitiesFunctionality();
 		webElementActions = new WebElementActions();
 
-		logOutFun.verifyLogOutEmployee();
+		logOutFun.verify_LogOut_Employee();
 
-		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(
+		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(
 				Constants.teamLeadLevelTesterEmployeeUserId, Constants.teamLeadLevelTesterEmployeePassword);
 
 		actualTaskOwnerName = commonMethods
-				.verifyEmployeeNameAfterLoggedIn(Constants.teamLeadLevelTesterEmployeeUserId);
+				.verify_Employee_Name_After_Logged_In(Constants.teamLeadLevelTesterEmployeeUserId);
 		log.info("Actual task owner employee name at dashboard page is: " + actualTaskOwnerName + "\n");
 
 		for (int i = 0; i < webElementActions.sizeOfListOfWebElement(dashboard.rolesForLevelView); i++) {
@@ -193,7 +203,7 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 
 				myTasks.clickOnAddTasksButtonInSidebar();
 
-				commonMethods.verifyToastMessageAfterTaskAddFromSidebar(
+				commonMethods.verify_Toast_Message_After_Task_Add_From_Sidebar(
 						actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar);
 			} else {
 				dashboard.clickOnLastArrowForLevelView();
@@ -203,8 +213,9 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 	}
 
 	@Test(priority = 2)
-	public void verifyTaskAddedFromLevelViewByHigherAuthorityInEmployeeDayView() throws InterruptedException {
-		commonMethods.verifyAddedTaskCheckInDayView("after added task from level view to lower level employee",
+	public void verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View()
+			throws InterruptedException {
+		commonMethods.verify_Added_Task_Check_In_Day_View("after added task from level view to lower level employee",
 				taskTitleInputWhileAddFromLevelViewSidebar, actualTaskStatusWhileAddTaskFromLevelViewSidebar,
 				actualTaskPriorityWhileAddTaskFromLevelViewSidebar, actualTaskProjectWhileAddTaskFromLevelViewSidebar,
 				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
@@ -214,21 +225,22 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 
 		myTasks.clickOnWeekButton();
 
-		commonMethods.verifyNewAddedTaskInWeekView("after added task from level view to lower level employee",
+		commonMethods.verify_Added_Task_In_Week_View("after added task from level view to lower level employee",
 				taskTitleInputWhileAddFromLevelViewSidebar,
 				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
 				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar);
 	}
 
 	@Test(priority = 3)
-	public void verifyNotificationAfterAssignedTaskFromHigherAuthorityAtLowerLevelEmployeeSide()
+	public void verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side()
 			throws InterruptedException {
-		logOutFun.verifyLogOutEmployee();
+		logOutFun.verify_LogOut_Employee();
 
-		commonMethods.verifyLoginEmployeeByGivingValidUserIdAndValidPassword(Constants.employeeUserId,
+		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
 				Constants.employeePassword);
 
-		String actualTaskAssignedEmployeeName = commonMethods.verifyEmployeeNameAfterLoggedIn(Constants.employeeUserId);
+		String actualTaskAssignedEmployeeName = commonMethods
+				.verify_Employee_Name_After_Logged_In(Constants.employeeUserId);
 		log.info("Actual task assigned employee name at dashboard page is: " + actualTaskAssignedEmployeeName + "\n");
 
 		commonMethods.verifyNotificationMessage(actualTaskOwnerName,
@@ -237,13 +249,13 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 	}
 
 	@Test(priority = 4)
-	public void verifyAssignedTaskDetailsInDayViewAndWeekViewAndLogMessage() throws InterruptedException {
+	public void verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message() throws InterruptedException {
 		myTasks.clickOnDayButton();
 
 		myTasks.clickOnTodayButton();
 		Thread.sleep(1000);
 
-		commonMethods.verifyAddedTaskCheckInDayView("after added task from level view to lower level employee",
+		commonMethods.verify_Added_Task_Check_In_Day_View("after added task from level view to lower level employee",
 				taskTitleInputWhileAddFromLevelViewSidebar, actualTaskStatusWhileAddTaskFromLevelViewSidebar,
 				actualTaskPriorityWhileAddTaskFromLevelViewSidebar, actualTaskProjectWhileAddTaskFromLevelViewSidebar,
 				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
@@ -253,7 +265,7 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 
 		myTasks.clickOnWeekButton();
 
-		commonMethods.verifyNewAddedTaskInWeekView("after added task from level view to lower level employee",
+		commonMethods.verify_Added_Task_In_Week_View("after added task from level view to lower level employee",
 				taskTitleInputWhileAddFromLevelViewSidebar,
 				actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
 				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar);
@@ -263,8 +275,96 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 		myTasks.clickOnTodayButton();
 		Thread.sleep(1000);
 
-		myActivities.verifyLogMessage(actualTaskOwnerName, "has added new task",
+		myActivities.verify_Log_Message(actualTaskOwnerName, "has added new task",
 				taskTitleInputWhileAddFromLevelViewSidebar);
 	}
 
+	// Prints last task details like title, status, priority, project, due date etc
+	@Test(priority = 5)
+	public void verify_Last_Task_Details_In_Day_View() throws InterruptedException {
+		// Passed driver get from BaseTest to my tasks page i.e. page object model and
+		// selenium methods, common test methods class
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
+		Thread.sleep(1000);
+
+		actualLastAssignTaskTitleInDayView = myTasks.checkLastTaskTitleInDayView();
+		log.info("Actual Last assign task title in day view is: " + actualLastAssignTaskTitleInDayView);
+
+		actualLastAssignTaskStatusInDayView = myTasks.checkLastTaskStatusTextInDayView();
+		log.info("Actual Last assign task status in day view is: " + actualLastAssignTaskStatusInDayView);
+
+		actualLastAssignTaskPriorityInDayView = myTasks.checkLastTaskPriorityTextInDayView();
+		log.info("Actual Last assign task priority in day view is: " + actualLastAssignTaskPriorityInDayView);
+
+		try {
+			actualLastAssignTaskProjectInDayView = myTasks.checkLastTaskProjectTextInDayView();
+			log.info("Actual Last assign task project in day view is: " + actualLastAssignTaskProjectInDayView);
+		} catch (Exception e) {
+			System.out.println("Last project not found in day view");
+			actualLastAssignTaskProjectInDayView = "";
+			log.info("Actual Last assign task project in day view is: " + actualLastAssignTaskProjectInDayView);
+		}
+
+		myTasks.scrollHorizantally(1600);
+		Thread.sleep(1000);
+
+		actualLastAssignTaskDueDateInDayView = myTasks.checkLastTaskDueDateTextInDayView();
+		log.info("Actual Last assign task due date in day view is: " + actualLastAssignTaskDueDateInDayView);
+
+		actualLastRowTaskDepartmentsInDayView = myTasks.checkLastRowTaskDepartmentTextsInDayView();
+		log.info("Actual Last assign task departments in day view is: " + actualLastRowTaskDepartmentsInDayView);
+
+		actualLastAssignTaskVerifiedStatusInDayView = myTasks.checkLastTaskVerifiedStatusTextInDayView();
+		log.info("Actual Last assign task verified status in day view is: "
+				+ actualLastAssignTaskVerifiedStatusInDayView);
+
+		myTasks.clickOnLastTaskCommentTextfieldInDayView();
+		Thread.sleep(1000);
+
+		myTasks.scrollUntilCommentTextfieldInUpdateTaskSidebar();
+		Thread.sleep(1000);
+
+		actualLastAssignTaskCommentInDayView = myTasks.checkLastTaskCommentTextInUpdateTaskSidebar();
+		log.info("Actual Last assign task comment in day view is: " + actualLastAssignTaskCommentInDayView + "\n");
+
+		myTasks.clickOnCloseIconOfSidebarForUpdateTaskInDayView();
+		Thread.sleep(1000);
+	}
+
+	@Test(priority = 6)
+	public void verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard() throws InterruptedException {
+		myTasks.scrollHorizantally(-1500);
+
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
+		Thread.sleep(1000);
+
+		String validTaskTitle = faker.book().title();
+
+		myTasks.clickOnLastTaskTitleTextfieldInDayView();
+		Thread.sleep(1000);
+
+		myTasks.clearLastTaskTitleTextfieldInDayView();
+		Thread.sleep(1000);
+
+		myTasks.enterTaskTitleInLastTaskTitleTextfieldDayView(validTaskTitle);
+
+		commonMethods.verify_Toast_Message("after task clear and update assign task in day view",
+				"Request for task title change sent successfully");
+
+		actualTaskTitleAfterClearAndUpdateFromDayView = myTasks.checkLastTaskTitleInDayView();
+		log.info("Actual task title after clear and update from day view is: "
+				+ actualTaskTitleAfterClearAndUpdateFromDayView);
+
+		if (actualTaskTitleAfterClearAndUpdateFromDayView.length() > 26) {
+			assertTrue(actualTaskTitleAfterClearAndUpdateFromDayView.startsWith(validTaskTitle));
+		} else {
+			assertEquals(actualTaskTitleAfterClearAndUpdateFromDayView, validTaskTitle);
+		}
+
+		requestFun
+				.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordFunctionality.actualEmployeeName,
+						"wants to change title from \"" + actualLastAssignTaskTitleInDayView + "\" to \""
+								+ actualTaskTitleAfterClearAndUpdateFromDayView + "\" in",
+						actualLastAssignTaskTitleInDayView);
+	}
 }

@@ -1,7 +1,7 @@
 package in.biencaps.erp.utilities;
 
 public interface Constants {
-	String environment = "stage";
+	String environment = "test";
 	String browserName = "chrome";
 
 	String websiteUrlOnStagingEnvironemnt = "https://erp.biencaps.in/login";
@@ -21,15 +21,15 @@ public interface Constants {
 
 	String gmailKey = "jxyn mast qqtg jhkh";
 
-	String adminLevelTesterEmployeeUserId = "INC017";
-	String adminLevelTesterEmployeePassword = "Admin@123";
+	String adminLevelTesterEmployeeUserId = "INC004";
+	String adminLevelTesterEmployeePassword = "Pass@123";
 
-	String teamLeadLevelTesterEmployeeUserId = "INC018";
-	String teamLeadLevelTesterEmployeePassword = "TeamLead@123";
+	String teamLeadLevelTesterEmployeeUserId = "INC017";
+	String teamLeadLevelTesterEmployeePassword = "Pass@123";
 
 	String leadLevelTesterEmployeeUserId = "INC012";
-	String leadLevelTesterEmployeePassword = "Pratham@2299";
+	String leadLevelTesterEmployeePassword = "Pass@123";
 
 	String employeeUserId = "INC012";
-	String employeePassword = "Pratham@2299";
+	String employeePassword = "Pass@123";
 }

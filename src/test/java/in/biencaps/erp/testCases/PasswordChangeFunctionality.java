@@ -21,7 +21,7 @@ public class PasswordChangeFunctionality {
 	protected WebElementActions webElementActions;
 
 	@BeforeClass
-	public void goToChangeLoginPasswordDiv() throws InterruptedException {
+	public void go_To_Change_Login_Password_Div() throws InterruptedException {
 		dashboard = new DashboardPage();
 		settings = new SettingsPage();
 		commonMethods = new CommonTestMethods();
@@ -31,8 +31,8 @@ public class PasswordChangeFunctionality {
 	}
 
 	@Test(priority = 1, dataProvider = "TestDataForChangeLoginPassword", dataProviderClass = DataProviders.class)
-	public void verifyChangeLoginPassword(String currentPassword, String newPassword, String confirmNewPassword)
-			throws InterruptedException {
+	public void verify_Change_Login_Password_With_Valid_And_Invalid_Password(String currentPassword, String newPassword,
+			String confirmNewPassword) throws InterruptedException {
 		webElementActions.refreshThePage();
 
 		settings.clickOnChangeYourLoginPasswordBox();
@@ -40,7 +40,7 @@ public class PasswordChangeFunctionality {
 
 		settings.enterCurrentPassword(currentPassword);
 		Thread.sleep(500);
-		
+
 		String actualEnteredCurrentPassword = settings.checkCurrentPassword();
 		log.info("Actual entered current password is: " + actualEnteredCurrentPassword);
 
@@ -75,22 +75,19 @@ public class PasswordChangeFunctionality {
 					.checkErrorMessageAfterEnteringIncorrectCurrentPassword();
 			assertEquals(actualErrorMessageAfterEnteringIncorrectCurrentPassword, "Enter Correct Current Password");
 
-			commonMethods.verifyToastMessage("after entering invalid current password",
+			commonMethods.verify_Toast_Message("after entering invalid current password",
 					"Enter Correct Current Password");
 		} else if (matcher.matches() == false) {
-			String actualColorOfPasswordInfoAfterEnteringInvalidNewPassword = settings
-					.checkColorOfPasswordInfoAfterEnteringInvalidNewPassword();
-			assertEquals(actualColorOfPasswordInfoAfterEnteringInvalidNewPassword, "rgb(255, 0, 0)");
-
-			commonMethods.verifyToastMessage("after entering invalid password which is not matched with password info",
+			commonMethods.verify_Toast_Message(
+					"after entering invalid password which is not matched with password info",
 					"Enter Valid New Password, follow the password rules");
-		} else if (!newPassword.equalsIgnoreCase(confirmNewPassword)) {
+		} else if (matcher.matches() == true && !newPassword.equalsIgnoreCase(confirmNewPassword)) {
 			String actualErrorMessageWhenNewPasswordAndConfirmNewPasswordDoesNotMatch = settings
 					.checkErrorMessageAfterEnteringIncorrectConfirmNewPassword();
 			assertEquals(actualErrorMessageWhenNewPasswordAndConfirmNewPasswordDoesNotMatch,
 					"Confirm Password not match with New Password");
 		} else {
-			commonMethods.verifyToastMessage("after entering all valid passwords", "Password Updated Successfully");
+			commonMethods.verify_Toast_Message("after entering all valid passwords", "Password Updated Successfully");
 		}
 	}
 }

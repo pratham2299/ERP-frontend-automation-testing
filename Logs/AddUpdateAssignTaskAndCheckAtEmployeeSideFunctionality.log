@@ -1,0 +1,26 @@
+17:42:08 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task owner employee name at dashboard page is: Test Team Lead
+
+17:42:08 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Last role for level view is: Team Lead
+17:42:09 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Last role for level view is: Lead
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual entered task title from month view and at particular date is: Beneath the Bleeding
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual schedule date field value while add task from month view and at particular date is: 2024-05-15
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual due date field value while add task from month view and at particular date is: 2024-05-15
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task assignee name while add task from month view and at particular date is: Prathamesh Dhasade
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task department while add task from month view and at particular date is: QA
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task priority while add task from month view and at particular date is: Medium
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual selected task status value from dropdown while add task from month view and at particular date is: In Progress
+17:42:15 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task status while add task from month view and at particular date is: In Progress
+17:42:16 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task project while add task from month view and at particular date is: Test Project
+17:42:16 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual entered task comment while add task from month view and at particular date is: Computer Software
+17:42:31 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task assigned employee name at dashboard page is: Prathamesh Dhasade
+
+17:43:00 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task title in day view is: Beneath the Bleeding
+17:43:00 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task status in day view is: In Progress
+17:43:00 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task priority in day view is: Medium
+17:43:00 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task project in day view is: Test Project
+17:43:01 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task due date in day view is: 2024-05-15
+17:43:01 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task departments in day view is: [QA]
+17:43:01 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task verified status in day view is: Not Verified
+17:43:04 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual Last assign task comment in day view is: Computer Software
+
+17:43:10 in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality - Actual task title after clear and update from day view is: Infinite Jest
