@@ -54,6 +54,10 @@ public class RequestPage {
 		return webElementActions.getTextMethod(requestCard, 2);
 	}
 
+	public String checkRequestAssignedByInMyRequestCard() {
+		return webElementActions.getTextMethod(requestCard, 1);
+	}
+
 	public String checkRequestSentToEmployeeNamesInMyRequestCard() {
 		return webElementActions.getTextMethod(requestSentToEmployees);
 	}

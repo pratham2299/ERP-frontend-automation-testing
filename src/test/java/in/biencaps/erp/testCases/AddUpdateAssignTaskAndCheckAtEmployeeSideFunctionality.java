@@ -361,10 +361,20 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality extends Base
 			assertEquals(actualTaskTitleAfterClearAndUpdateFromDayView, validTaskTitle);
 		}
 
-		requestFun
-				.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-						"wants to change title from \"" + actualLastAssignTaskTitleInDayView + "\" to \""
-								+ actualTaskTitleAfterClearAndUpdateFromDayView + "\" in",
-						actualLastAssignTaskTitleInDayView);
+		if (actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar
+				.equalsIgnoreCase(actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar)) {
+			requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordFunctionality.actualEmployeeName,
+					actualTaskOwnerName + " on " + actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + "",
+					"wants to change title from \"" + actualLastAssignTaskTitleInDayView + "\" to \""
+							+ actualTaskTitleAfterClearAndUpdateFromDayView + "\" in",
+					actualLastAssignTaskTitleInDayView);
+		} else {
+			requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordFunctionality.actualEmployeeName,
+					actualTaskOwnerName + " on " + actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + " to "
+							+ actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar + "",
+					"wants to change title from \"" + actualLastAssignTaskTitleInDayView + "\" to \""
+							+ actualTaskTitleAfterClearAndUpdateFromDayView + "\" in",
+					actualLastAssignTaskTitleInDayView);
+		}
 	}
 }

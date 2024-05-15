@@ -17,6 +17,8 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 	public static Logger log = LogManager.getLogger(SelfTaskSubmittedFunctionality.class);
 
 	public static String lastTaskTitleInDayView;
+	public static String lastTaskScheduleDatInDayView;
+	public static String lastTaskDueDatInDayView;
 	public static String actualHigherAuthorityName;
 
 	protected MyTasksPage myTasks;
@@ -52,6 +54,12 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 		lastTaskTitleInDayView = myTasks.checkLastTaskTitleInDayView();
 		log.info("Last task title in day view is: " + lastTaskTitleInDayView);
 
+		lastTaskScheduleDatInDayView = myTasks.checkLastTaskScheduleDateTextInDayView();
+		log.info("Last task schedule date in day view is: " + lastTaskScheduleDatInDayView);
+
+		lastTaskDueDatInDayView = myTasks.checkLastTaskDueDateTextInDayView();
+		log.info("Last task due date in day view is: " + lastTaskDueDatInDayView);
+
 		myTasks.clickOnLastTaskStatusInDayView();
 
 		myTasks.clickOnSelectedTaskStatusValueFromDropdownInDayView("Submitted");
@@ -64,19 +72,30 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 		assertEquals(actualUpdatedTaskStatusInDayView, "Submitted");
 		Thread.sleep(1000);
 
-		myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordFunctionality.actualEmployeeName, "status",
-				actualOldTaskStatusInDayView, actualUpdatedTaskStatusInDayView, lastTaskTitleInDayView);
+		myActivities.verify_Log_Message_After_Update_Task_Details(
+				LoginAndForgotPasswordFunctionality.actualEmployeeName, "status", actualOldTaskStatusInDayView,
+				actualUpdatedTaskStatusInDayView, lastTaskTitleInDayView);
 	}
 
 	// Check request details in my request
 	@Test(priority = 2)
 	public void verify_Task_Submitted_Request_In_My_Request_Section() throws InterruptedException {
-		requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordFunctionality.actualEmployeeName,
-				"wants to submit", lastTaskTitleInDayView);
+		if (lastTaskScheduleDatInDayView.equalsIgnoreCase(lastTaskDueDatInDayView)) {
+			requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordFunctionality.actualEmployeeName,
+					LoginAndForgotPasswordFunctionality.actualEmployeeName + " on " + lastTaskScheduleDatInDayView + "",
+					"wants to submit", lastTaskTitleInDayView);
+		} else {
+			requestFun
+					.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordFunctionality.actualEmployeeName,
+							LoginAndForgotPasswordFunctionality.actualEmployeeName + " on "
+									+ lastTaskScheduleDatInDayView + " to " + lastTaskDueDatInDayView + "",
+							"wants to submit", lastTaskTitleInDayView);
+		}
 	}
 
 	@Test(priority = 3)
-	public void verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority() throws InterruptedException {
+	public void verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority()
+			throws InterruptedException {
 		if (DataGenerator.employeeUserIdsAndRolesOnTestServer().get(Constants.employeeUserId)
 				.equalsIgnoreCase("Developer")) {
 			logOutFun.verify_LogOut_Employee();
@@ -130,7 +149,8 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	// Logout as admin and log in as employee
 	@Test(priority = 5)
-	public void verify_Logout_As_Higher_Authority_Login_As_Employee_And_Check_Employee_Name() throws InterruptedException {
+	public void verify_Logout_As_Higher_Authority_Login_As_Employee_And_Check_Employee_Name()
+			throws InterruptedException {
 		logOutFun.verify_LogOut_Employee();
 
 		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
@@ -143,7 +163,8 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	// Check notification message after rejected task submit request
 	@Test(priority = 6)
-	public void verify_Notification_Message_Of_Task_Submit_Request_Rejected_By_Higher_Authority() throws InterruptedException {
+	public void verify_Notification_Message_Of_Task_Submit_Request_Rejected_By_Higher_Authority()
+			throws InterruptedException {
 		commonMethods.verifyNotificationMessage(actualHigherAuthorityName, "after task submitted request rejected",
 				"rejected your request for", lastTaskTitleInDayView);
 	}
@@ -184,14 +205,16 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	// Check request details in my request
 	@Test(priority = 9)
-	public void verify_Task_Request_In_My_Request_Section_After_Rejected_Submit_Task_Request() throws InterruptedException {
+	public void verify_Task_Request_In_My_Request_Section_After_Rejected_Submit_Task_Request()
+			throws InterruptedException {
 		requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Rejected",
 				LoginAndForgotPasswordFunctionality.actualEmployeeName, actualHigherAuthorityName, "wants to submit",
 				lastTaskTitleInDayView);
 	}
 
 	@Test(priority = 18)
-	public void verify_Accepted_Request_For_Task_Submit_Of_Employee_From_Higher_Authority_Side() throws InterruptedException {
+	public void verify_Accepted_Request_For_Task_Submit_Of_Employee_From_Higher_Authority_Side()
+			throws InterruptedException {
 		verify_Self_Task_Submitted_In_Day_View();
 
 		verify_Task_Submitted_Request_In_My_Request_Section();
@@ -213,8 +236,7 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 			request.clickOnFirstApproveButton();
 			Thread.sleep(2000);
-		} else if (DataGenerator
-				.employeeUserIdsAndRolesOnTestServer().get(Constants.employeeUserId)
+		} else if (DataGenerator.employeeUserIdsAndRolesOnTestServer().get(Constants.employeeUserId)
 				.equalsIgnoreCase("Lead")) {
 			logOutFun.verify_LogOut_Employee();
 
@@ -234,7 +256,8 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	// Check notification message after approved task submit request
 	@Test(priority = 19)
-	public void verify_Notification_Message_Of_Task_Submit_Request_Accepted_By_Higher_Authority() throws InterruptedException {
+	public void verify_Notification_Message_Of_Task_Submit_Request_Accepted_By_Higher_Authority()
+			throws InterruptedException {
 		commonMethods.verifyNotificationMessage(actualHigherAuthorityName, "after task submitted request approved",
 				"accepted your request for", lastTaskTitleInDayView);
 	}
@@ -267,7 +290,8 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	// Check completed tasks count after task complete in day view
 	@Test(priority = 21)
-	public void verify_Completed_Tasks_Count_And_Percentage_After_Task_Completed_In_Day_View() throws InterruptedException {
+	public void verify_Completed_Tasks_Count_And_Percentage_After_Task_Completed_In_Day_View()
+			throws InterruptedException {
 		int totalCompetedTasksCount = myTasks.checkSizeOfCompletedTaskInDayView();
 		commonMethods.verify_Total_Completed_Tasks_Count_In_Day_View(totalCompetedTasksCount);
 		Thread.sleep(1000);
@@ -287,7 +311,8 @@ public class SelfTaskSubmittedFunctionality extends BaseTest {
 
 	// Check request details in my request
 	@Test(priority = 23)
-	public void verify_Task_Request_In_My_Request_Section_After_Accepted_Submit_Task_Request() throws InterruptedException {
+	public void verify_Task_Request_In_My_Request_Section_After_Accepted_Submit_Task_Request()
+			throws InterruptedException {
 		requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Accepted",
 				LoginAndForgotPasswordFunctionality.actualEmployeeName, actualHigherAuthorityName, "wants to submit",
 				lastTaskTitleInDayView);

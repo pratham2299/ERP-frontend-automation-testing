@@ -63,8 +63,8 @@ public class RequestFunctionality extends BaseTest {
 	 * This method is responsible to check first request card details and validate
 	 * details in my request section
 	 */
-	public void verify_Request_In_My_Requests_Card(String employeeName, String requestAction, String taskTitle)
-			throws InterruptedException {
+	public void verify_Request_In_My_Requests_Card(String employeeName, String taskOwnerNameWithTaskDate,
+			String requestAction, String taskTitle) throws InterruptedException {
 		dashboard = new DashboardPage();
 		request = new RequestPage();
 
@@ -90,6 +90,16 @@ public class RequestFunctionality extends BaseTest {
 		} catch (Exception e) {
 			log.error("Employee name in request card is not found" + "\n");
 		}
+
+		String actualTaskAssignedByInMyRequestCard = request.checkRequestSentToEmployeeNamesInMyRequestCard();
+		log.info("Actual task assigned by employee name in my request card is: " + actualTaskAssignedByInMyRequestCard);
+
+		String[] parts = actualTaskAssignedByInMyRequestCard.split(":");
+		// Trim any leading or trailing whitespace from the parts
+		String part1 = parts[0].trim();
+		String part2 = parts[1].trim();
+		assertEquals(part1, "Assigned By");
+		assertEquals(part2, taskOwnerNameWithTaskDate);
 
 		String actualRequestSentToEmployeeNameInMyRequestCard = request
 				.checkRequestSentToEmployeeNamesInMyRequestCard();
