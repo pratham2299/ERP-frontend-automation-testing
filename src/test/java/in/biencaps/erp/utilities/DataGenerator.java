@@ -13,51 +13,6 @@ public class DataGenerator {
 
 	static Random random = new Random();
 
-	// This method stores employee user Ids and names
-	public static HashMap<String, String> employeeUserIdsAndNames() {
-		List<String> keysList = webElementActions.getValuesFromListOfWebElements(employee.userIdsOfEmployee);
-		List<String> valuesList = webElementActions.getValuesFromListOfWebElements(employee.employeeNames);
-		HashMap<String, String> credentials = new HashMap<String, String>();
-		for (int i = 0; i < keysList.size() && i < valuesList.size(); i++) {
-			String key = keysList.get(i);
-			String value = valuesList.get(i);
-
-			credentials.put(key, value);
-		}
-
-		return credentials;
-	}
-
-	// This method stores employee user Ids and roles
-	public static HashMap<String, String> employeeUserIdsAndRoles() {
-		List<String> keysList = webElementActions.getValuesFromListOfWebElements(employee.userIdsOfEmployee);
-		List<String> valuesList = webElementActions.getValuesFromListOfWebElements(employee.employeeRoles);
-		HashMap<String, String> credentials = new HashMap<String, String>();
-		for (int i = 0; i < keysList.size() && i < valuesList.size(); i++) {
-			String key = keysList.get(i);
-			String value = valuesList.get(i);
-
-			credentials.put(key, value);
-		}
-
-		return credentials;
-	}
-	
-	// This method stores employee user Ids and departments
-	public static HashMap<String, String> employeeUserIdsAndDepartments() {
-		List<String> keysList = webElementActions.getValuesFromListOfWebElements(employee.userIdsOfEmployee);
-		List<String> valuesList = webElementActions.getValuesFromListOfWebElements(employee.employeeDepartments);
-		HashMap<String, String> credentials = new HashMap<String, String>();
-		for (int i = 0; i < keysList.size() && i < valuesList.size(); i++) {
-			String key = keysList.get(i);
-			String value = valuesList.get(i);
-
-			credentials.put(key, value);
-		}
-
-		return credentials;
-	}
-
 	// This method stores employee user Id and names
 	// So that we can use it while log in on production
 	public static HashMap<String, String> employeeUserIdsAndPasswordsOnTestingEnvironment() {
@@ -80,18 +35,18 @@ public class DataGenerator {
 	}
 
 	// This method stores employee user Id and names
-	public static HashMap<String, String> employeeUserIdsAndNamesOnTestServer() {
+	public static HashMap<String, String> employeeUserIdsAndNamesOnTestEnvironment() {
 		HashMap<String, String> employees = new HashMap<String, String>();
 		employees.put("INC012", "Prathamesh Dhasade");
 		employees.put("INC004", "Sachin Patil");
-		employees.put("INC017", "Prathamesh T Dhasade");
+		employees.put("INC017", "Test Team Lead");
 
 		return employees;
 	}
 
 	// This method stores employee user Id and roles
 	// So that we can use it while log in on production
-	public static HashMap<String, String> employeeUserIdsAndRolesOnTestServer() {
+	public static HashMap<String, String> employeeUserIdsAndRolesOnTestEnvironment() {
 		HashMap<String, String> employeeRoles = new HashMap<String, String>();
 		employeeRoles.put("INC012", "Lead");
 		employeeRoles.put("INC004", "Admin");
@@ -185,5 +140,15 @@ public class DataGenerator {
 		}
 
 		return invalidPassword.toString();
+	}
+
+	// Method to get user ID by employee name
+	public static String getUserIdByName(HashMap<String, String> employeeMap, String name) {
+		for (Map.Entry<String, String> entry : employeeMap.entrySet()) {
+			if (entry.getValue().equals(name)) {
+				return entry.getKey(); // Return user ID if name matches
+			}
+		}
+		return null; // Return -1 if name not found
 	}
 }

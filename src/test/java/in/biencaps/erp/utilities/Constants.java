@@ -5,7 +5,7 @@ public interface Constants {
 	String browserName = "chrome";
 
 	String websiteUrlOnStagingEnvironemnt = "https://erp.biencaps.in/login";
-	String websiteUrlOnTestEnvironemnt = "http://192.168.0.133:3000/login";
+	String websiteUrlOnTestEnvironemnt = "http://192.168.0.133:3001/login";
 
 	String backendUrl = "https://erp.biencaps.in:10004";
 
@@ -22,7 +22,6 @@ public interface Constants {
 	String gmailKey = "jxyn mast qqtg jhkh";
 
 	String adminLevelTesterEmployeeUserId = "INC004";
-	String adminLevelTesterEmployeePassword = "Pass@123";
 
 	String teamLeadLevelTesterEmployeeUserId = "INC017";
 	String teamLeadLevelTesterEmployeePassword = "Pass@123";

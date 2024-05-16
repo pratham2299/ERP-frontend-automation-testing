@@ -21,8 +21,9 @@ public class CommonTestMethods extends BaseTest {
 	protected WebElementActions webElementActions;
 	protected MyTasksPage myTasks;
 	protected DashboardPage dashboard;
-	protected RequestFunctionality requestFun;
+	protected RequestTests requestFun;
 	protected EmployeePage employee;
+	protected NotificationMessagesTests notification;
 
 	// This is re usable method of login with valid user Id and valid password
 	public void verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(String userId, String password)
@@ -31,8 +32,9 @@ public class CommonTestMethods extends BaseTest {
 		webElementActions = new WebElementActions();
 		myTasks = new MyTasksPage(driver);
 		dashboard = new DashboardPage();
-		requestFun = new RequestFunctionality();
+		requestFun = new RequestTests();
 		employee = new EmployeePage();
+		notification = new NotificationMessagesTests();
 
 		String validUserId = userId;
 
@@ -69,7 +71,7 @@ public class CommonTestMethods extends BaseTest {
 
 		String actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
 
-		String correspondingEmployeeNameFromHashmap = LoginAndForgotPasswordFunctionality.employeeUserIdsAndNames
+		String correspondingEmployeeNameFromHashmap = DataGenerator.employeeUserIdsAndNamesOnTestEnvironment()
 				.get(userId);
 		assertEquals(actualEmployeeName, correspondingEmployeeNameFromHashmap);
 
@@ -371,40 +373,19 @@ public class CommonTestMethods extends BaseTest {
 
 	}
 
-	public void verifyloggedInEmployeeNameNotificationMessageAndRequestForAllHigherAuthority(String role,
+	public void verify_logged_In_Employee_Name_Notification_Message_And_Request_For_All_Higher_Authority(String role,
 			String loginEmployeeUserId, String loginEmployeePassword, String requestSenderEmployeeName,
 			String requestAction, String taskTitle) throws InterruptedException {
 		verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(loginEmployeeUserId, loginEmployeePassword);
 
 		String actualHigherAuthorityEmployeeName = verify_Employee_Name_After_Logged_In(loginEmployeeUserId);
 		log.info("Actual " + role + " employee name at dashboard page is: " + actualHigherAuthorityEmployeeName + "\n");
-
-		verifyNotificationMessage(requestSenderEmployeeName,
-				"after employee sent task " + requestAction + " request at " + role + " employee side", requestAction,
-				taskTitle);
+//
+//		notification.verifyNotificationMessageForSelfTaskSubmit(
+//				"after employee sent task " + requestAction + " request at " + role + " employee side", requestAction,
+//				taskTitle);
 
 		requestFun.verify_Request_In_Received_Request_Card(requestSenderEmployeeName, requestAction, taskTitle);
 	}
 
-	// Check notification message
-	public void verifyNotificationMessage(String employeeName, String message, String notificationMessage,
-			String taskTitle) throws InterruptedException {
-		dashboard = new DashboardPage();
-
-		dashboard.clickOnNotificationIcon();
-
-		List<String> actualNotificationMessages = dashboard.checkNotificationMessages();
-
-		String receivedNotificationMessage = "\"" + employeeName + "\" " + notificationMessage + " \"" + taskTitle
-				+ "\"";
-		try {
-			assertTrue(actualNotificationMessages.contains(receivedNotificationMessage));
-
-			webElementActions.refreshThePage();
-			Thread.sleep(3000);
-		} catch (Exception e) {
-			log.error("Notification message " + message + " is incorrect" + "\n");
-			webElementActions.refreshThePage();
-		}
-	}
 }

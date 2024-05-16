@@ -2,7 +2,7 @@ package in.biencaps.erp.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-
+import java.util.*;
 import in.biencaps.erp.utilities.WebElementActions;
 
 public class ProfilePage {
@@ -18,8 +18,9 @@ public class ProfilePage {
 	public By bloodGroupTextfield = By.xpath("(//input[@placeholder='-'])[2]");
 	public By dateOfBirthCalendar = By.xpath("(//input[@type='date'])[2]");
 	public By addressTextfield = By.xpath("(//input[@type='text'])[10]");
-
 	public By submitButton = By.xpath("//div[@class='AddEmpButtonEmpty']");
+
+	public By reportingAuthorities = By.xpath("//div[@id='multiselectContainerReact']//span");
 
 	public void clickOnEditInfoButton() {
 		webElementActions.clickOnMethod(editInfoButton);
@@ -110,5 +111,9 @@ public class ProfilePage {
 
 	public void clickOnSubmitButton() {
 		webElementActions.clickOnMethod(submitButton);
+	}
+
+	public List<String> getAllReportingAuthorities() {
+		return webElementActions.getValuesFromListOfWebElements(reportingAuthorities);
 	}
 }

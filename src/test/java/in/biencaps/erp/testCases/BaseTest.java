@@ -38,42 +38,38 @@ public class BaseTest {
 	@BeforeSuite
 	public void launch_The_Website() throws Exception {
 		try {
-			driver_Setup();
+			if (Constants.browserName.equalsIgnoreCase("firefox")) {
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--ignore-certificate-errors");
+				driver = new FirefoxDriver(options);
+			} else if (Constants.browserName.equalsIgnoreCase("chrome")) {
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--ignore-certificate-errors");
+				driver = new ChromeDriver(options);
+			} else if (Constants.browserName.equalsIgnoreCase("edge")) {
+				EdgeOptions options = new EdgeOptions();
+				options.addArguments("--ignore-certificate-errors");
+				driver = new EdgeDriver(options);
+			} else {
+				log.info("Invalid browser name");
+			}
+
+			faker = new Faker();
+			random = new Random();
+
+			if (Constants.environment.equalsIgnoreCase("test")) {
+				driver.get(Constants.websiteUrlOnTestEnvironemnt);
+			} else {
+				driver.get(Constants.websiteUrlOnStagingEnvironemnt);
+			}
+			log.info("Chrome browser launched");
+
+			driver.manage().window().maximize();
+			log.info("Browser window maximized" + "\n");
 		} catch (Exception e) {
 			log.error("Window is not available" + "\n");
 			driver.quit();
 		}
-	}
-
-	public void driver_Setup() throws Exception {
-		if (Constants.browserName.equalsIgnoreCase("firefox")) {
-			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--ignore-certificate-errors");
-			driver = new FirefoxDriver(options);
-		} else if (Constants.browserName.equalsIgnoreCase("chrome")) {
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--ignore-certificate-errors");
-			driver = new ChromeDriver(options);
-		} else if (Constants.browserName.equalsIgnoreCase("edge")) {
-			EdgeOptions options = new EdgeOptions();
-			options.addArguments("--ignore-certificate-errors");
-			driver = new EdgeDriver(options);
-		} else {
-			log.info("Invalid browser name");
-		}
-
-		faker = new Faker();
-		random = new Random();
-
-		if (Constants.environment.equalsIgnoreCase("test")) {
-			driver.get(Constants.websiteUrlOnTestEnvironemnt);
-		} else {
-			driver.get(Constants.websiteUrlOnStagingEnvironemnt);
-		}
-		log.info("Chrome browser launched");
-
-		driver.manage().window().maximize();
-		log.info("Browser window maximized" + "\n");
 	}
 
 	public void setup_Backend_API() {
@@ -90,7 +86,7 @@ public class BaseTest {
 		log.info("Connected to database" + "\n");
 	}
 
-	@BeforeTest
+	@BeforeClass
 	public void extent_Report_Setup() {
 		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + File.separator + "Reports"
 				+ File.separator + Constants.extentReportHTMLFileName);

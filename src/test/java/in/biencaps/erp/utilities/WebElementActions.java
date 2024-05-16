@@ -23,48 +23,12 @@ public class WebElementActions {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
-	public WebElement waitForElementToBeClickable(WebElement element) {
-		return wait.until(ExpectedConditions.elementToBeClickable(element));
+	public List<WebElement> waitForAllElementsVisibility(By locator) {
+		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
 
-	public WebElement getWebElement(String locatorIdentifierType, String locatorIdentifierValue) {
-		WebElement element;
-		switch (locatorIdentifierType) {
-		case "id":
-			element = waitForElementVisibility(By.id(locatorIdentifierValue));
-			return element;
-
-		case "name":
-			element = waitForElementVisibility(By.name(locatorIdentifierValue));
-			return element;
-
-		case "tag":
-			element = waitForElementVisibility(By.tagName(locatorIdentifierValue));
-			return element;
-
-		case "xpath":
-			element = waitForElementVisibility(By.xpath(locatorIdentifierValue));
-			return element;
-
-		case "cssSelector":
-			element = waitForElementVisibility(By.cssSelector(locatorIdentifierValue));
-			return element;
-
-		case "class":
-			element = waitForElementVisibility(By.className(locatorIdentifierValue));
-			return element;
-
-		case "linkText":
-			element = waitForElementVisibility(By.linkText(locatorIdentifierValue));
-			return element;
-
-		case "partialLinkText":
-			element = waitForElementVisibility(By.partialLinkText(locatorIdentifierValue));
-			return element;
-
-		default:
-			return null;
-		}
+	public WebElement waitForElementToBeClickable(WebElement element) {
+		return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
 	public void refreshThePage() {
@@ -76,25 +40,25 @@ public class WebElementActions {
 	}
 
 	public int sizeOfListOfWebElement(By locator) {
-		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).size();
+		return waitForAllElementsVisibility(locator).size();
 	}
 
 	public void scrollUntilElementFound(By locator) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element = waitForElementVisibility(locator);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// Scrolling down the page till the element is found
 		js.executeScript("arguments[0].scrollIntoView();", element);
 	}
 
 	public void scrollUntilElementFound(By locator, int index) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).get(index);
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// Scrolling down the page till the element is found
 		js.executeScript("arguments[0].scrollIntoView();", element);
 	}
 
 	public void mouseHoverOnElement(By locator) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element = waitForElementVisibility(locator);
 		// Creating object of an Actions class
 		Actions action = new Actions(driver);
 
@@ -103,14 +67,14 @@ public class WebElementActions {
 	}
 
 	public void scrollHorizantally(int xValue, By locator) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element = waitForElementVisibility(locator);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollLeft += arguments[1];", element, xValue);
 	}
 
 	public void clickOnMethod(By locator) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+		WebElement element = waitForElementVisibility(locator);
+		waitForElementToBeClickable(element).click();
 	}
 
 	public void clickOnMethod(WebElement element) {
@@ -118,12 +82,12 @@ public class WebElementActions {
 	}
 
 	public void clickOnMethod(By locator, int index) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).get(index);
-		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
+		waitForElementToBeClickable(element).click();
 	}
 
 	public void clearMethod(By locator) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element = waitForElementVisibility(locator);
 		// Click on the element to focus it (optional)
 		element.click();
 
@@ -135,7 +99,7 @@ public class WebElementActions {
 	}
 
 	public void clearMethod(By locator, int index) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).get(index);
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
 		// Click on the element to focus it (optional)
 		element.click();
 
@@ -147,11 +111,11 @@ public class WebElementActions {
 	}
 
 	public void sendKeysMethod(By locator, String input) {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).sendKeys(input);
+		waitForElementVisibility(locator).sendKeys(input);
 	}
 
 	public void sendKeysMethod(By locator, int index, String input) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).get(index);
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
 		element.sendKeys(input);
 	}
 
@@ -160,7 +124,7 @@ public class WebElementActions {
 	}
 
 	public void sendKeysMethod(By locator, int index, Keys key) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).get(index);
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
 		element.sendKeys(key);
 	}
 
@@ -168,40 +132,45 @@ public class WebElementActions {
 		return driver.findElement(locator).getCssValue(value);
 	}
 
+	public String getCssValue(By locator, int index, String value) {
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
+		return element.getCssValue(value);
+	}
+
 	public String getAtrributeMethod(By locator, String value) {
 		return driver.findElement(locator).getAttribute(value);
 	}
 
 	public String getAtrributeMethod(By locator, int index, String value) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).get(index);
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
 		return element.getAttribute(value);
 	}
 
 	public String getTextMethod(By locator) {
-		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
+		return waitForElementVisibility(locator).getText();
 	}
 
 	public String getTextMethod(By locator, int index) {
-		WebElement element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)).get(index);
+		WebElement element = waitForAllElementsVisibility(locator).get(index);
 		return element.getText();
 	}
 
 	public boolean isDisplayedMethod(By locator) {
-		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
+		return waitForElementVisibility(locator).isDisplayed();
 	}
 
 	public void selectByIndexMethod(By locator, int index) {
-		Select select = new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(locator)));
+		Select select = new Select(waitForElementVisibility(locator));
 		select.selectByIndex(index);
 	}
 
 	public void selectByVisibleTextMethod(By locator, String text) {
-		Select select = new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(locator)));
+		Select select = new Select(waitForElementVisibility(locator));
 		select.selectByVisibleText(text);
 	}
 
 	public List<String> getValuesFromListOfWebElements(By locator) {
-		List<WebElement> webElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+		List<WebElement> webElements = waitForAllElementsVisibility(locator);
 		int sizeOfWebElements = webElements.size();
 		List<String> values = new ArrayList<String>();
 
@@ -212,7 +181,7 @@ public class WebElementActions {
 	}
 
 	public List<String> getValuesOfWebelements(By locator) {
-		List<WebElement> webElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+		List<WebElement> webElements = waitForAllElementsVisibility(locator);
 		int sizeOfWebElements = webElements.size();
 		List<String> values = new ArrayList<String>();
 

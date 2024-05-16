@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" class="method navigator-link" hash-for-method="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority">verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,67 +117,62 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="check_Employee_Name_After_Logged_In">check_Employee_Name_After_Logged_In</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" class="method navigator-link" hash-for-method="check_Employee_Name_After_Logged_In">check_Employee_Name_After_Logged_In</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="get_All_Employee_Details">get_All_Employee_Details</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" class="method navigator-link" hash-for-method="verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard">verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" class="method navigator-link" hash-for-method="verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard">verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" class="method navigator-link" hash-for-method="verify_Assign_Task_From_Level">verify_Assign_Task_From_Level</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" class="method navigator-link" hash-for-method="verify_Assign_Task_From_Level">verify_Assign_Task_From_Level</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" class="method navigator-link" hash-for-method="verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message">verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" class="method navigator-link" hash-for-method="verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message">verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" class="method navigator-link" hash-for-method="verify_Forgot_Password_Without_Giving_UserId">verify_Forgot_Password_Without_Giving_UserId</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="verify_Forgot_Password_Without_Giving_UserId">verify_Forgot_Password_Without_Giving_UserId</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" class="method navigator-link" hash-for-method="verify_Last_Task_Details_In_Day_View">verify_Last_Task_Details_In_Day_View</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" class="method navigator-link" hash-for-method="verify_Last_Task_Details_In_Day_View">verify_Last_Task_Details_In_Day_View</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, Pass@123)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, Pass@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, Pass@123)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, Pass@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3nze07ztw099k)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3nze07ztw099k)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3xzib7yfv2uq0oc)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3xzib7yfv2uq0oc)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, Pass@123)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, Pass@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, 3xzib7yfv2uq0oc)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, 3xzib7yfv2uq0oc)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, 3nze07ztw099k)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, 3nze07ztw099k)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" class="method navigator-link" hash-for-method="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, Pass@123)">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, Pass@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" class="method navigator-link" hash-for-method="verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side">verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" class="method navigator-link" hash-for-method="verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side">verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" class="method navigator-link" hash-for-method="verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View">verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" class="method navigator-link" hash-for-method="verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View">verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -178,10 +187,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority">
+                  </a> <!-- verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority -->
+                  <span class="method-name">verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at in.biencaps.erp.testCases.RequestTests.verify_Request_In_Received_Request_Card(RequestTests.java:56)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_logged_In_Employee_Name_Notification_Message_And_Request_For_All_Higher_Authority(CommonTestMethods.java:388)
+	at in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(AddUpdateAssignTaskAndCheckAtEmployeeSideTests.java:415)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</span>
+              <span class="class-name">in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -231,7 +262,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality</span>
+              <span class="class-name">in.biencaps.erp.testCases.LoginAndForgotPasswordTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -243,16 +274,25 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="get_All_Employee_Details">
-                  </a> <!-- get_All_Employee_Details -->
-                  <span class="method-name">get_All_Employee_Details</span>
+                  <a name="verify_Forgot_Password_Without_Giving_UserId">
+                  </a> <!-- verify_Forgot_Password_Without_Giving_UserId -->
+                  <span class="method-name">verify_Forgot_Password_Without_Giving_UserId</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_Forgot_Password_Without_Giving_UserId">
-                  </a> <!-- verify_Forgot_Password_Without_Giving_UserId -->
-                  <span class="method-name">verify_Forgot_Password_Without_Giving_UserId</span>
+                  <a name="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, Pass@123)">
+                  </a> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, Pass@123) -->
+                  <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails</span>
+                  <span class="parameters">(Sarajevo,Pass@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3nze07ztw099k)">
+                  </a> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3nze07ztw099k) -->
+                  <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails</span>
+                  <span class="parameters">(INC012,3nze07ztw099k)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -265,26 +305,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3xzib7yfv2uq0oc)">
-                  </a> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3xzib7yfv2uq0oc) -->
+                  <a name="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, 3nze07ztw099k)">
+                  </a> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, 3nze07ztw099k) -->
                   <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails</span>
-                  <span class="parameters">(INC012,3xzib7yfv2uq0oc)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, 3xzib7yfv2uq0oc)">
-                  </a> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, 3xzib7yfv2uq0oc) -->
-                  <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails</span>
-                  <span class="parameters">(Vaduz,3xzib7yfv2uq0oc)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, Pass@123)">
-                  </a> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, Pass@123) -->
-                  <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails</span>
-                  <span class="parameters">(Vaduz,Pass@123)</span>
+                  <span class="parameters">(Sarajevo,3nze07ztw099k)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,16 +326,12 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;in.biencaps.erp.utilities.SuiteListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login And Forgot Password Functionality&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality&quot;/&gt;
+      &lt;class name=&quot;in.biencaps.erp.testCases.LoginAndForgotPasswordTests&quot;/&gt;
+      &lt;class name=&quot;in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login And Forgot Password Functionality --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Add Update Assign Task And Check At Employee Side Functionality&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Add Update Assign Task And Check At Employee Side Functionality --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -323,10 +343,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login And Forgot Password Functionality (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Add Update Assign Task And Check At Employee Side Functionality (1 class)</span>
+                <span class="test-name">Test1 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -355,56 +372,56 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message')
-data.setCell(0, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality')
-data.setCell(0, 3, 20722);
+data.setCell(0, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests')
+data.setCell(0, 3, 21868);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'get_All_Employee_Details')
-data.setCell(1, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(1, 3, 14166);
+data.setCell(1, 1, 'verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side')
+data.setCell(1, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests')
+data.setCell(1, 3, 16899);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard')
-data.setCell(2, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality')
-data.setCell(2, 3, 13873);
+data.setCell(2, 1, 'verify_Assign_Task_From_Level')
+data.setCell(2, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests')
+data.setCell(2, 3, 15513);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_Assign_Task_From_Level')
-data.setCell(3, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality')
-data.setCell(3, 3, 12911);
+data.setCell(3, 1, 'verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard')
+data.setCell(3, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests')
+data.setCell(3, 3, 13138);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side')
-data.setCell(4, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality')
-data.setCell(4, 3, 11130);
+data.setCell(4, 1, 'verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority')
+data.setCell(4, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests')
+data.setCell(4, 3, 10875);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View')
-data.setCell(5, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality')
-data.setCell(5, 3, 9231);
+data.setCell(5, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests')
+data.setCell(5, 3, 10187);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verify_Last_Task_Details_In_Day_View')
-data.setCell(6, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality')
-data.setCell(6, 3, 5512);
+data.setCell(6, 2, 'in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests')
+data.setCell(6, 3, 6021);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verify_Login_Employee_With_Valid_And_Invalid_Credentails')
-data.setCell(7, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(7, 3, 3286);
+data.setCell(7, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordTests')
+data.setCell(7, 3, 3235);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verify_Login_Employee_With_Valid_And_Invalid_Credentails')
-data.setCell(8, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(8, 3, 2851);
+data.setCell(8, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordTests')
+data.setCell(8, 3, 3062);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verify_Login_Employee_With_Valid_And_Invalid_Credentails')
-data.setCell(9, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(9, 3, 1832);
+data.setCell(9, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordTests')
+data.setCell(9, 3, 2885);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verify_Login_Employee_With_Valid_And_Invalid_Credentails')
-data.setCell(10, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(10, 3, 1793);
+data.setCell(10, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordTests')
+data.setCell(10, 3, 2521);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verify_Forgot_Password_Without_Giving_UserId')
-data.setCell(11, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(11, 3, 719);
+data.setCell(11, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordTests')
+data.setCell(11, 3, 1046);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'check_Employee_Name_After_Logged_In')
-data.setCell(12, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality')
-data.setCell(12, 3, 634);
+data.setCell(12, 2, 'in.biencaps.erp.testCases.LoginAndForgotPasswordTests')
+data.setCell(12, 3, 765);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -424,11 +441,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality</span>
+              <span class="ignored-class-name">in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launch_The_Website</span>
+                <br/>
+                <span class="ignored-method-name">tear_Down</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">in.biencaps.erp.testCases.LoginAndForgotPasswordTests</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verify_Forgot_Password_By_Giving_Valid_UserId</span>
                 <br/>
@@ -442,184 +468,186 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">in.biencaps.erp.testCases.LoginAndForgotPasswordTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">launch_The_Website</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-class before">
                 <span class="method-name">extent_Report_Setup</span>
-                <span class="method-start">3561 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-start">5855 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.get_All_Employee_Details()...)</span>
-                <span class="method-start">4013 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">get_All_Employee_Details</span>
-                <span class="method-start">4022 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">test_Method_Exection_Result([TestResult name=get_All_Employee_Details status=SUCCESS method=LoginAndForgotPasswordFunctionality....)</span>
-                <span class="method-start">18197 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Forgot_Password_Wit...)</span>
-                <span class="method-start">18212 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Forgot_Password_Without_Giv...)</span>
+                <span class="method-start">6485 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Forgot_Password_Without_Giving_UserId</span>
-                <span class="method-start">18213 ms</span>
+                <span class="method-start">6504 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Forgot_Password_Without_Giving_UserId status=SUCCESS method=LoginAndForgotPa...)</span>
-                <span class="method-start">18934 ms</span>
+                <span class="method-start">7558 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With...)</span>
-                <span class="method-start">19126 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_A...)</span>
+                <span class="method-start">7825 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, Pass@123)</span>
-                <span class="method-start">19126 ms</span>
+                <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, Pass@123)</span>
+                <span class="method-start">7826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=Logi...)</span>
-                <span class="method-start">21981 ms</span>
+                <span class="method-start">10897 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With...)</span>
-                <span class="method-start">21983 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_A...)</span>
+                <span class="method-start">10899 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3xzib7yfv2uq0oc)</span>
-                <span class="method-start">21986 ms</span>
+                <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, 3nze07ztw099k)</span>
+                <span class="method-start">10901 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=Logi...)</span>
-                <span class="method-start">23822 ms</span>
+                <span class="method-start">13428 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With...)</span>
-                <span class="method-start">23831 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_A...)</span>
+                <span class="method-start">13450 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Vaduz, 3xzib7yfv2uq0oc)</span>
-                <span class="method-start">23833 ms</span>
+                <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails(Sarajevo, 3nze07ztw099k)</span>
+                <span class="method-start">13452 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=Logi...)</span>
-                <span class="method-start">25629 ms</span>
+                <span class="method-start">16340 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With...)</span>
-                <span class="method-start">25633 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_A...)</span>
+                <span class="method-start">16344 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Login_Employee_With_Valid_And_Invalid_Credentails(INC012, Pass@123)</span>
-                <span class="method-start">25635 ms</span>
+                <span class="method-start">16345 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=Logi...)</span>
-                <span class="method-start">28926 ms</span>
+                <span class="method-start">19582 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.check_Employee_Name_After_...)</span>
-                <span class="method-start">28932 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.check_Employee_Name_After_Logged_I...)</span>
+                <span class="method-start">19586 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">check_Employee_Name_After_Logged_In</span>
-                <span class="method-start">28932 ms</span>
+                <span class="method-start">19587 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">test_Method_Exection_Result([TestResult name=check_Employee_Name_After_Logged_In status=SUCCESS method=LoginAndForgotPasswordFun...)</span>
-                <span class="method-start">29567 ms</span>
+                <span class="method-name">test_Method_Exection_Result([TestResult name=check_Employee_Name_After_Logged_In status=SUCCESS method=LoginAndForgotPasswordTes...)</span>
+                <span class="method-start">20356 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">extent_Report_Setup</span>
-                <span class="method-start">29637 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-start">20358 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_...)</span>
-                <span class="method-start">29641 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assign_T...)</span>
+                <span class="method-start">20360 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Assign_Task_From_Level</span>
-                <span class="method-start">29642 ms</span>
+                <span class="method-start">20362 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Assign_Task_From_Level status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEm...)</span>
-                <span class="method-start">42555 ms</span>
+                <span class="method-start">35877 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_...)</span>
-                <span class="method-start">42556 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Task_Add...)</span>
+                <span class="method-start">35881 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View</span>
-                <span class="method-start">42556 ms</span>
+                <span class="method-start">35882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View status=S...)</span>
-                <span class="method-start">51788 ms</span>
+                <span class="method-start">46070 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_...)</span>
-                <span class="method-start">51789 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notifica...)</span>
+                <span class="method-start">46072 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side</span>
-                <span class="method-start">51790 ms</span>
+                <span class="method-start">46072 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employ...)</span>
-                <span class="method-start">62922 ms</span>
+                <span class="method-start">62973 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assigned...)</span>
+                <span class="method-start">62975 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message</span>
-                <span class="method-start">62924 ms</span>
+                <span class="method-start">62976 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_...)</span>
-                <span class="method-start">62924 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message status=SUCCE...)</span>
-                <span class="method-start">83648 ms</span>
+                <span class="method-start">84847 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Last_Tas...)</span>
+                <span class="method-start">84849 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Last_Task_Details_In_Day_View</span>
-                <span class="method-start">83651 ms</span>
+                <span class="method-start">84850 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_...)</span>
-                <span class="method-start">83651 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Last_Task_Details_In_Day_View status=SUCCESS method=AddUpdateAssignTaskAndCh...)</span>
-                <span class="method-start">89166 ms</span>
+                <span class="method-start">90873 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyA...)</span>
-                <span class="method-start">89169 ms</span>
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verifyAssignTas...)</span>
+                <span class="method-start">90876 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard</span>
-                <span class="method-start">89170 ms</span>
+                <span class="method-start">90877 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">test_Method_Exection_Result([TestResult name=verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard status=SUCCESS method=Add...)</span>
-                <span class="method-start">103044 ms</span>
+                <span class="method-start">104018 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">create_Extent_Report_For_Each_Test_Method(public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notifica...)</span>
+                <span class="method-start">104021 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority</span>
+                <span class="method-start">104022 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">test_Method_Exection_Result([TestResult name=verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority status=...)</span>
+                <span class="method-start">115112 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">in.biencaps.erp.testCases.LoginAndForgotPasswordTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tear_Down</span>
-                <span class="method-start">103056 ms</span>
+                <span class="method-start">115202 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,419 +1,461 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-15T17:41:39 IST" name="Suite" finished-at="2024-05-15T17:43:18 IST" duration-ms="99507">
+  <suite started-at="2024-05-16T17:48:07 IST" name="Suite" finished-at="2024-05-16T17:49:57 IST" duration-ms="109366">
     <groups>
     </groups>
-    <test started-at="2024-05-15T17:41:39 IST" name="Login And Forgot Password Functionality" finished-at="2024-05-15T17:42:05 IST" duration-ms="26030">
-      <class name="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality">
-        <test-method is-config="true" signature="extent_Report_Setup()[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:39 IST" name="extent_Report_Setup" finished-at="2024-05-15T17:41:39 IST" duration-ms="413" status="PASS">
+    <test started-at="2024-05-16T17:48:07 IST" name="Test1" finished-at="2024-05-16T17:49:57 IST" duration-ms="109366">
+      <class name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests">
+        <test-method is-config="true" signature="extent_Report_Setup()[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:22 IST" name="extent_Report_Setup" finished-at="2024-05-16T17:48:22 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extent_Report_Setup -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:39 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:41:39 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:22 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.get_All_Employee_Details() throws java.lang.InterruptedException]]>
+                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assign_Task_From_Level() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="get_All_Employee_Details()[pri:1, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:39 IST" name="get_All_Employee_Details" finished-at="2024-05-15T17:41:54 IST" duration-ms="14166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_All_Employee_Details -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:54 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:41:54 IST" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=get_All_Employee_Details status=SUCCESS method=LoginAndForgotPasswordFunctionality.get_All_Employee_Details()[pri:1, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Method_Exection_Result -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:54 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:41:54 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Forgot_Password_Without_Giving_UserId() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="verify_Forgot_Password_Without_Giving_UserId()[pri:2, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:54 IST" name="verify_Forgot_Password_Without_Giving_UserId" finished-at="2024-05-15T17:41:54 IST" duration-ms="719" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Forgot_Password_Without_Giving_UserId -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:54 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:41:54 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Forgot_Password_Without_Giving_UserId status=SUCCESS method=LoginAndForgotPasswordFunctionality.verify_Forgot_Password_Without_Giving_UserId()[pri:2, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Method_Exection_Result -->
-        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:55 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-15T17:41:57 IST" duration-ms="2851" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vaduz]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pass@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:55 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:41:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:57 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:41:57 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Method_Exection_Result -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:57 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:41:57 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:57 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-15T17:41:59 IST" duration-ms="1832" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[INC012]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3xzib7yfv2uq0oc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:59 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:41:59 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Method_Exection_Result -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:59 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:41:59 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:41:59 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-15T17:42:01 IST" duration-ms="1793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vaduz]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3xzib7yfv2uq0oc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:42:01 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:42:01 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Method_Exection_Result -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:42:01 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:42:01 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:42:01 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-15T17:42:04 IST" duration-ms="3286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[INC012]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pass@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:42:04 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:42:04 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordFunctionality.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Method_Exection_Result -->
-        <test-method signature="check_Employee_Name_After_Logged_In()[pri:8, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:42:04 IST" name="check_Employee_Name_After_Logged_In" finished-at="2024-05-15T17:42:05 IST" duration-ms="634" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_Employee_Name_After_Logged_In -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:42:04 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:42:04 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality.check_Employee_Name_After_Logged_In()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc]" started-at="2024-05-15T17:42:05 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:42:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=check_Employee_Name_After_Logged_In status=SUCCESS method=LoginAndForgotPasswordFunctionality.check_Employee_Name_After_Logged_In()[pri:8, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality@47c4ecdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Method_Exection_Result -->
-      </class> <!-- in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality -->
-    </test> <!-- Login And Forgot Password Functionality -->
-    <test started-at="2024-05-15T17:42:05 IST" name="Add Update Assign Task And Check At Employee Side Functionality" finished-at="2024-05-15T17:43:18 IST" duration-ms="73410">
-      <class name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality">
-        <test-method is-config="true" signature="launch_The_Website()[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:41:35 IST" name="launch_The_Website" finished-at="2024-05-15T17:41:39 IST" duration-ms="3535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch_The_Website -->
-        <test-method is-config="true" signature="extent_Report_Setup()[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:05 IST" name="extent_Report_Setup" finished-at="2024-05-15T17:42:05 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extent_Report_Setup -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:05 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:42:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Assign_Task_From_Level() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="verify_Assign_Task_From_Level()[pri:1, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:05 IST" name="verify_Assign_Task_From_Level" finished-at="2024-05-15T17:42:18 IST" duration-ms="12911" status="PASS">
+        <test-method signature="verify_Assign_Task_From_Level()[pri:1, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:22 IST" name="verify_Assign_Task_From_Level" finished-at="2024-05-16T17:48:38 IST" duration-ms="15513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Assign_Task_From_Level -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:18 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:42:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:38 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:38 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Assign_Task_From_Level status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Assign_Task_From_Level()[pri:1, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Assign_Task_From_Level status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assign_Task_From_Level()[pri:1, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Method_Exection_Result -->
-        <test-method signature="verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View()[pri:2, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:18 IST" name="verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View" finished-at="2024-05-15T17:42:27 IST" duration-ms="9231" status="PASS">
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:38 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View()[pri:2, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:38 IST" name="verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View" finished-at="2024-05-16T17:48:48 IST" duration-ms="10187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:18 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:42:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:48 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:27 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:42:27 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View()[pri:2, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View()[pri:2, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Method_Exection_Result -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:27 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:42:27 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side()[pri:3, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:27 IST" name="verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side" finished-at="2024-05-15T17:42:38 IST" duration-ms="11130" status="PASS">
+        <test-method signature="verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side()[pri:3, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:48 IST" name="verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side" finished-at="2024-05-16T17:49:05 IST" duration-ms="16899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:38 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:42:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:48:48 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:48 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side()[pri:3, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37] output={null}]]]>
+                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:05 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:49:05 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side()[pri:3, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Method_Exection_Result -->
-        <test-method signature="verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message()[pri:4, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:38 IST" name="verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message" finished-at="2024-05-15T17:42:59 IST" duration-ms="20722" status="PASS">
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:05 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:49:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message()[pri:4, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:05 IST" name="verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message" finished-at="2024-05-16T17:49:26 IST" duration-ms="21868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:38 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:42:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:26 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:49:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:59 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:42:59 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message()[pri:4, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message()[pri:4, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Method_Exection_Result -->
-        <test-method signature="verify_Last_Task_Details_In_Day_View()[pri:5, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:59 IST" name="verify_Last_Task_Details_In_Day_View" finished-at="2024-05-15T17:43:05 IST" duration-ms="5512" status="PASS">
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:26 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:49:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Last_Task_Details_In_Day_View() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Last_Task_Details_In_Day_View()[pri:5, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:26 IST" name="verify_Last_Task_Details_In_Day_View" finished-at="2024-05-16T17:49:33 IST" duration-ms="6021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Last_Task_Details_In_Day_View -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:42:59 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:42:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:33 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:49:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Last_Task_Details_In_Day_View() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:43:05 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:43:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Last_Task_Details_In_Day_View status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verify_Last_Task_Details_In_Day_View()[pri:5, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Last_Task_Details_In_Day_View status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Last_Task_Details_In_Day_View()[pri:5, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Method_Exection_Result -->
-        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:43:05 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-15T17:43:05 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:33 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:49:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard() throws java.lang.InterruptedException]]>
+                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
-        <test-method signature="verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard()[pri:6, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:43:05 IST" name="verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard" finished-at="2024-05-15T17:43:18 IST" duration-ms="13873" status="PASS">
+        <test-method signature="verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard()[pri:6, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:33 IST" name="verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard" finished-at="2024-05-16T17:49:46 IST" duration-ms="13138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard -->
-        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:43:18 IST" name="test_Method_Exection_Result" finished-at="2024-05-15T17:43:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:46 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:49:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard()[pri:6, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard status=SUCCESS method=AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard()[pri:6, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Method_Exection_Result -->
-        <test-method is-config="true" signature="tear_Down()[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality@17a87e37]" started-at="2024-05-15T17:43:18 IST" name="tear_Down" finished-at="2024-05-15T17:43:19 IST" duration-ms="720" status="PASS">
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:46 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:49:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority()[pri:7, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:46 IST" name="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority" finished-at="2024-05-16T17:49:57 IST" duration-ms="10875" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at in.biencaps.erp.testCases.RequestTests.verify_Request_In_Received_Request_Card(RequestTests.java:56)
+at in.biencaps.erp.utilities.CommonTestMethods.verify_logged_In_Employee_Name_Notification_Message_And_Request_For_All_Higher_Authority(CommonTestMethods.java:388)
+at in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(AddUpdateAssignTaskAndCheckAtEmployeeSideTests.java:415)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3]" started-at="2024-05-16T17:49:57 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:49:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority status=FAILURE method=AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority()[pri:7, instance:in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@7c098bb3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Method_Exection_Result -->
+      </class> <!-- in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests -->
+      <class name="in.biencaps.erp.testCases.LoginAndForgotPasswordTests">
+        <test-method is-config="true" signature="launch_The_Website()[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:02 IST" name="launch_The_Website" finished-at="2024-05-16T17:48:07 IST" duration-ms="5742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_The_Website -->
+        <test-method is-config="true" signature="extent_Report_Setup()[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:07 IST" name="extent_Report_Setup" finished-at="2024-05-16T17:48:08 IST" duration-ms="601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extent_Report_Setup -->
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:08 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:08 IST" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Forgot_Password_Without_Giving_UserId() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Forgot_Password_Without_Giving_UserId()[pri:1, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:08 IST" name="verify_Forgot_Password_Without_Giving_UserId" finished-at="2024-05-16T17:48:09 IST" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Forgot_Password_Without_Giving_UserId -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:09 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:09 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Forgot_Password_Without_Giving_UserId status=SUCCESS method=LoginAndForgotPasswordTests.verify_Forgot_Password_Without_Giving_UserId()[pri:1, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Method_Exection_Result -->
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:09 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException,java.io.FileNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:09 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-16T17:48:13 IST" duration-ms="3062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sarajevo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:13 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Method_Exection_Result -->
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:13 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException,java.io.FileNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:13 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-16T17:48:15 IST" duration-ms="2521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INC012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3nze07ztw099k]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:15 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:15 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Method_Exection_Result -->
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:15 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:15 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException,java.io.FileNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:15 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-16T17:48:18 IST" duration-ms="2885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sarajevo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3nze07ztw099k]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:18 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:18 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Method_Exection_Result -->
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:18 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String) throws java.lang.InterruptedException,java.io.FileNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:18 IST" name="verify_Login_Employee_With_Valid_And_Invalid_Credentails" data-provider="TestDataForLoginEmployee" finished-at="2024-05-16T17:48:21 IST" duration-ms="3235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INC012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Employee_With_Valid_And_Invalid_Credentails -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:21 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:21 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Login_Employee_With_Valid_And_Invalid_Credentails status=SUCCESS method=LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(java.lang.String,java.lang.String)[pri:3, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Method_Exection_Result -->
+        <test-method is-config="true" signature="create_Extent_Report_For_Each_Test_Method(java.lang.reflect.Method)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:21 IST" name="create_Extent_Report_For_Each_Test_Method" finished-at="2024-05-16T17:48:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.biencaps.erp.testCases.LoginAndForgotPasswordTests.check_Employee_Name_After_Logged_In() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Extent_Report_For_Each_Test_Method -->
+        <test-method signature="check_Employee_Name_After_Logged_In()[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:21 IST" name="check_Employee_Name_After_Logged_In" finished-at="2024-05-16T17:48:22 IST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Employee_Name_After_Logged_In -->
+        <test-method is-config="true" signature="test_Method_Exection_Result(org.testng.ITestResult)[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:48:22 IST" name="test_Method_Exection_Result" finished-at="2024-05-16T17:48:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_Employee_Name_After_Logged_In status=SUCCESS method=LoginAndForgotPasswordTests.check_Employee_Name_After_Logged_In()[pri:4, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Method_Exection_Result -->
+        <test-method is-config="true" signature="tear_Down()[pri:0, instance:in.biencaps.erp.testCases.LoginAndForgotPasswordTests@43aaf813]" started-at="2024-05-16T17:49:57 IST" name="tear_Down" finished-at="2024-05-16T17:49:58 IST" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_Down -->
-      </class> <!-- in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality -->
-    </test> <!-- Add Update Assign Task And Check At Employee Side Functionality -->
+      </class> <!-- in.biencaps.erp.testCases.LoginAndForgotPasswordTests -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

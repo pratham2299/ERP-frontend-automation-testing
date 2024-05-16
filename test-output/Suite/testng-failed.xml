@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="in.biencaps.erp.utilities.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="Add Update Assign Task And Check At Employee Side Functionality(failed)">
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality">
+      <class name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests">
         <methods>
           <include name="test_Method_Exection_Result"/>
+          <include name="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority"/>
           <include name="extent_Report_Setup"/>
-          <include name="verify_Last_Task_Details_In_Day_View"/>
           <include name="launch_The_Website"/>
           <include name="create_Extent_Report_For_Each_Test_Method"/>
           <include name="tear_Down"/>
         </methods>
-      </class> <!-- in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality -->
+      </class> <!-- in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests -->
     </classes>
-  </test> <!-- Add Update Assign Task And Check At Employee Side Functionality(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

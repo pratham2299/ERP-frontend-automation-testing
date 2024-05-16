@@ -5,17 +5,12 @@
 		<listener class-name="in.biencaps.erp.utilities.SuiteListener" />
 	</listeners>
 
-	<test thread-count="5" name="Login And Forgot Password Functionality">
+	<test thread-count="5" name="Test1">
 		<classes>
 			<class
-				name="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality" />
-		</classes>
-	</test>
-	<test thread-count="5"
-		name="Add Update Assign Task And Check At Employee Side Functionality">
-		<classes>
+				name="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" />
 			<class
-				name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" />
+				name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" />
 		</classes>
 	</test>
 </suite> 

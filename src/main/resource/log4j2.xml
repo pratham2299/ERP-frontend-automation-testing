@@ -15,38 +15,38 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="LoginAndForgotPasswordFunctionality"
-			fileName="Logs/LoginAndForgotPasswordFunctionality.log">
+		<File name="LoginAndForgotPasswordTests"
+			fileName="Logs/LoginAndForgotPasswordTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="ProfilePageUpdateFunctionality"
-			fileName="Logs/ProfilePageUpdateFunctionality.log">
+		<File name="ProfilePageUpdateTests"
+			fileName="Logs/ProfilePageUpdateTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="PasswordChangeFunctionality"
-			fileName="Logs/PasswordChangeFunctionality.log">
+		<File name="PasswordChangeTests"
+			fileName="Logs/PasswordChangeTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="LogoutFunctionality"
-			fileName="Logs/LogoutFunctionality.log">
+		<File name="LogoutTests"
+			fileName="Logs/LogoutTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="AddSelfTaskAndCheckInDayViewFunctionality"
-			fileName="Logs/AddSelfTaskAndCheckInDayViewFunctionality.log">
+		<File name="AddSelfTaskAndCheckInDayViewTests"
+			fileName="Logs/AddSelfTaskAndCheckInDayViewTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="MyActivitiesFunctionality"
-			fileName="Logs/MyActivitiesFunctionality.log">
+		<File name="MyActivitiesTests"
+			fileName="Logs/MyActivitiesTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="RequestFunctionality"
-			fileName="Logs/RequestFunctionality.log">
+		<File name="RequestTests"
+			fileName="Logs/RequestTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
@@ -55,23 +55,23 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="SelfTaskUpdateFunctionality"
-			fileName="Logs/SelfTaskUpdateFunctionality.log">
+		<File name="SelfTaskUpdateTests"
+			fileName="Logs/SelfTaskUpdateTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality"
-			fileName="Logs/AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality.log">
+		<File name="AddUpdateAssignTaskAndCheckAtEmployeeSideTests"
+			fileName="Logs/AddUpdateAssignTaskAndCheckAtEmployeeSideTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="SelfTaskSubmittedFunctionality"
-			fileName="Logs/SelfTaskSubmittedFunctionality.log">
+		<File name="SelfTaskSubmittedTests"
+			fileName="Logs/SelfTaskSubmittedTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
-		<File name="SelfTaskDeleteFunctionality"
-			fileName="Logs/SelfTaskDeleteFunctionality.log">
+		<File name="SelfTaskDeleteTests"
+			fileName="Logs/SelfTaskDeleteTests.log">
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
@@ -91,51 +91,51 @@
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.LoginAndForgotPasswordFunctionality"
+			name="in.biencaps.erp.testCases.LoginAndForgotPasswordTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="LoginAndForgotPasswordFunctionality" />
+			<AppenderRef ref="LoginAndForgotPasswordTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.ProfilePageUpdateFunctionality"
+			name="in.biencaps.erp.testCases.ProfilePageUpdateTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="ProfilePageUpdateFunctionality" />
+			<AppenderRef ref="ProfilePageUpdateTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.PasswordChangeFunctionality"
+			name="in.biencaps.erp.testCases.PasswordChangeTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="PasswordChangeFunctionality" />
+			<AppenderRef ref="PasswordChangeTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
-		<Logger name="in.biencaps.erp.testCases.LogoutFunctionality"
+		<Logger name="in.biencaps.erp.testCases.LogoutTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="LogoutFunctionality" />
-			<AppenderRef ref="Console" />
-		</Logger>
-		<Logger
-			name="in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewFunctionality"
-			level="all"
-			additivity="false">
-			<AppenderRef ref="AddSelfTaskAndCheckInDayViewFunctionality" />
+			<AppenderRef ref="LogoutTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.MyActivitiesFunctionality"
+			name="in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="MyActivitiesFunctionality" />
+			<AppenderRef ref="AddSelfTaskAndCheckInDayViewTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.RequestFunctionality"
+			name="in.biencaps.erp.testCases.MyActivitiesTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="RequestFunctionality" />
+			<AppenderRef ref="MyActivitiesTests" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="in.biencaps.erp.testCases.RequestTests"
+			level="all"
+			additivity="false">
+			<AppenderRef ref="RequestTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
@@ -146,32 +146,32 @@
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.SelfTaskUpdateFunctionality"
+			name="in.biencaps.erp.testCases.SelfTaskUpdateTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="SelfTaskUpdateFunctionality" />
+			<AppenderRef ref="SelfTaskUpdateTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality"
+			name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests"
 			level="all"
 			additivity="false">
 			<AppenderRef
-				ref="AddUpdateAssignTaskAndCheckAtEmployeeSideFunctionality" />
+				ref="AddUpdateAssignTaskAndCheckAtEmployeeSideTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.SelfTaskSubmittedFunctionality"
+			name="in.biencaps.erp.testCases.SelfTaskSubmittedTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="SelfTaskSubmittedFunctionality" />
+			<AppenderRef ref="SelfTaskSubmittedTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
-			name="in.biencaps.erp.testCases.SelfTaskDeleteFunctionality"
+			name="in.biencaps.erp.testCases.SelfTaskDeleteTests"
 			level="all"
 			additivity="false">
-			<AppenderRef ref="SelfTaskDeleteFunctionality" />
+			<AppenderRef ref="SelfTaskDeleteTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 	</Loggers>
