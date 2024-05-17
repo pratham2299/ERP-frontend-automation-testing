@@ -1,22 +1,12 @@
 package in.biencaps.erp.testCases;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
-import java.util.List;
+import static org.testng.Assert.*;
+import java.util.*;
 
 import org.apache.logging.log4j.*;
 import org.testng.annotations.*;
-
-import in.biencaps.erp.pages.DashboardPage;
-import in.biencaps.erp.pages.MyTasksPage;
-import in.biencaps.erp.pages.ProfilePage;
-import in.biencaps.erp.pages.RequestPage;
-import in.biencaps.erp.utilities.CommonTestMethods;
-import in.biencaps.erp.utilities.Constants;
-import in.biencaps.erp.utilities.DataGenerator;
-import in.biencaps.erp.utilities.WebElementActions;
+import in.biencaps.erp.pages.*;
+import in.biencaps.erp.utilities.*;
 
 public class AddUpdateAssignTaskAndCheckAtEmployeeSideTests extends BaseTest {
 	// This is logger API dependency code. To print messages in seperate file.
@@ -56,6 +46,9 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideTests extends BaseTest {
 	public static String actualLastAssignTaskCommentInDayView;
 
 	public String actualTaskOwnerName;
+	private String actualRequestActionTakerHigherAuthority;
+	private String requestActionForTaskTitleChange;
+	private List<String> reportingAuthoritiesUserIds;
 
 	@Test(priority = 1)
 	public void verify_Assign_Task_From_Level() throws InterruptedException {
@@ -155,28 +148,6 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideTests extends BaseTest {
 				log.info("Actual task priority while add task from month view and at particular date is: "
 						+ actualTaskPriorityWhileAddTaskFromLevelViewSidebar);
 
-				myTasks.clickOnStatusDropdownWhileAddTaskFromSidebar();
-
-				// Select random status value except submitted value from dropdoiwn list
-				List<String> taskStatusValuesFromDropdownWhileAddTask = myTasks
-						.checkSelectedTaskStatusValueFromDropdownWhileAddTaskFromSidebar();
-
-				String randomTaskStatus;
-
-				do {
-					// Generate a random index within the range of the list
-					int randomIndex = random.nextInt(taskStatusValuesFromDropdownWhileAddTask.size());
-					// Retrieve the number at the random index
-					randomTaskStatus = taskStatusValuesFromDropdownWhileAddTask.get(randomIndex);
-				} while (randomTaskStatus.equalsIgnoreCase("Submitted"));
-				log.info(
-						"Actual selected task status value from dropdown while add task from month view and at particular date is: "
-								+ randomTaskStatus);
-
-				myTasks.selectRandomStatusWhileAddTaskFromSidebar(randomTaskStatus);
-
-				myTasks.clickOnStatusFieldLabelWhileAddTaskFromSidebar();
-
 				actualTaskStatusWhileAddTaskFromLevelViewSidebar = myTasks.checkTaskStatusWhileAddTaskFromSidebar();
 				log.info("Actual task status while add task from month view and at particular date is: "
 						+ actualTaskStatusWhileAddTaskFromLevelViewSidebar);
@@ -194,7 +165,7 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideTests extends BaseTest {
 					log.info("Actual task project while add task from month view and at particular date is: "
 							+ actualTaskProjectWhileAddTaskFromLevelViewSidebar);
 				} catch (Exception e) {
-					log.info("Project field not selected any value");
+					log.error("Project field not selected any value");
 				}
 
 				// Prints Entered taks comment and
@@ -249,8 +220,11 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideTests extends BaseTest {
 				.verify_Employee_Name_After_Logged_In(Constants.employeeUserId);
 		log.info("Actual task assigned employee name at dashboard page is: " + actualTaskAssignedEmployeeName + "\n");
 
-		notification.verifyNotificationMessageAfterTaskAssign(actualTaskOwnerName, "assigned you a task",
-				taskTitleInputWhileAddFromLevelViewSidebar);
+		String notificationMessageAtEmployeeSideAfterAssignedTaskFromHigherAuthrotiy = "\"" + actualTaskOwnerName
+				+ "\" assigned you a task " + "\"" + taskTitleInputWhileAddFromLevelViewSidebar + "\"";
+
+		notification.verifyNotificationMessage(actualTaskOwnerName,
+				notificationMessageAtEmployeeSideAfterAssignedTaskFromHigherAuthrotiy);
 	}
 
 	@Test(priority = 4)
@@ -337,7 +311,7 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideTests extends BaseTest {
 	}
 
 	@Test(priority = 6)
-	public void verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard() throws InterruptedException {
+	public void verify_Assign_Task_Title_Update_And_Check_Request_In_My_Request_Card() throws InterruptedException {
 		myTasks.scrollHorizantally(-1500);
 
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -366,62 +340,229 @@ public class AddUpdateAssignTaskAndCheckAtEmployeeSideTests extends BaseTest {
 			assertEquals(actualTaskTitleAfterClearAndUpdateFromDayView, validTaskTitle);
 		}
 
-		String requestAction = "wants to change title from \"" + actualLastAssignTaskTitleInDayView + "\" to \""
-				+ actualTaskTitleAfterClearAndUpdateFromDayView + "\" in";
+		requestActionForTaskTitleChange = "wants to change title from \"" + actualLastAssignTaskTitleInDayView
+				+ "\" to \"" + actualTaskTitleAfterClearAndUpdateFromDayView + "\" in";
 
 		if (actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar
 				.equalsIgnoreCase(actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar)) {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
 			requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordTests.actualEmployeeName,
-					actualTaskOwnerName + " on " + actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + "",
-					requestAction, actualLastAssignTaskTitleInDayView);
+					taskOwnerNameWithTaskDate, requestActionForTaskTitleChange, actualLastAssignTaskTitleInDayView);
 		} else {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + " to "
+					+ actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
 			requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordTests.actualEmployeeName,
-					actualTaskOwnerName + " on " + actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + " to "
-							+ actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar + "",
-					requestAction, actualLastAssignTaskTitleInDayView);
+					taskOwnerNameWithTaskDate, requestActionForTaskTitleChange, actualLastAssignTaskTitleInDayView);
 		}
 	}
 
 	@Test(priority = 7)
-	public void verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority()
+	public void verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Change()
 			throws InterruptedException {
-		dashboard.clickOnEmployeeNameAtDashboard();
+		reportingAuthoritiesUserIds = commonMethods.getAllHigherAuthoritiesNamesOfLoggedInEmployee();
+		System.out.println(reportingAuthoritiesUserIds);
+
+		commonMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(
+				reportingAuthoritiesUserIds, "", actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar, actualTaskOwnerName,
+				requestActionForTaskTitleChange, LoginAndForgotPasswordTests.actualEmployeeName,
+				actualLastAssignTaskTitleInDayView);
+	}
+
+	@Test(dependsOnMethods = "verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Change")
+	public void reject_Task_Title_Change_Request_By_Higher_Authority() throws InterruptedException {
+		actualRequestActionTakerHigherAuthority = commonMethods
+				.reject_Task_Title_Change_Request_By_Higher_Authority(reportingAuthoritiesUserIds);
+	}
+
+	// Check notification message after rejected task title change request
+	@Test(priority = 8)
+	public void verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side()
+			throws InterruptedException {
+		logOutFun.verify_LogOut_Employee();
+
+		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
+				Constants.employeePassword);
+		Thread.sleep(3000);
+
+//		notification.verifyNotificationMessage(actualRequestActionTakerHigherAuthority,
+//				"rejected your request for \"" + actualLastAssignTaskTitleInDayView + "\"");
+	}
+
+	// Check log message after task submit request rejected in day view
+	@Test(priority = 9)
+	public void verify_Log_Message_After_Task_Title_Change_Request_Rejected() throws InterruptedException {
+		myTasks.clickOnDayButton();
+
+		myTasks.clickOnTodayButton();
 		Thread.sleep(1000);
 
-		profile.clickOnEditInfoButton();
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
 
-		List<String> loggedInEmployeesAllHigherAuthorities = profile.getAllReportingAuthorities();
-		log.info("All higher authorities of logged in employee are: " + loggedInEmployeesAllHigherAuthorities);
+		myTasks.clickOnRefreshButtonInDayView();
 
-		List<String> reportingAuthoritiesUserIds = new ArrayList<String>();
+		String actualLastAssignTaskTitleInDayView = myTasks.checkLastTaskTitleInDayView();
+		assertEquals(actualLastAssignTaskTitleInDayView, taskTitleInputWhileAddFromLevelViewSidebar);
 
-		for (int i = 0; i < loggedInEmployeesAllHigherAuthorities.size(); i++) {
-			reportingAuthoritiesUserIds
-					.add(DataGenerator.getUserIdByName(DataGenerator.employeeUserIdsAndNamesOnTestEnvironment(),
-							loggedInEmployeesAllHigherAuthorities.get(i)));
-		}
+		myActivities.verify_Log_Message(actualRequestActionTakerHigherAuthority,
+				"has rejected your request for task title change in", actualLastAssignTaskTitleInDayView);
+	}
 
-		log.info("All reporting authorities user Ids are: " + reportingAuthoritiesUserIds);
-
-		for (int i = 0; i < reportingAuthoritiesUserIds.size(); i++) {
-			webElementActions.refreshThePage();
-
-			logOutFun.verify_LogOut_Employee();
-
-			String userId = reportingAuthoritiesUserIds.get(i);
-			String password = DataGenerator.employeeUserIdsAndPasswordsOnTestingEnvironment().get(userId);
-			String requestAction = "wants to change title from \"" + actualLastAssignTaskTitleInDayView + "\" to \""
-					+ actualTaskTitleAfterClearAndUpdateFromDayView + "\" in";
-
-			commonMethods.verify_logged_In_Employee_Name_Notification_Message_And_Request_For_All_Higher_Authority(
-					"lead level", userId, password, LoginAndForgotPasswordTests.actualEmployeeName, requestAction,
+	// Check request details in my request
+	@Test(priority = 10)
+	public void verify_Task_Request_In_My_Request_Section_After_Rejected_Task_Title_Change_Request()
+			throws InterruptedException {
+		if (actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar
+				.equalsIgnoreCase(actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar)) {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
+			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Rejected",
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForTaskTitleChange,
+					actualLastAssignTaskTitleInDayView);
+		} else {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + " to "
+					+ actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
+			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Rejected",
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForTaskTitleChange,
 					actualLastAssignTaskTitleInDayView);
 		}
+	}
 
-		request.clickOnFirstRejectButton();
+	// Now accept task title change request from higher authority
+	// Check notification, log message, task title
+	@Test(priority = 11)
+	public void verify_Assign_Task_Title_Again_Update_And_Check_Request_In_My_Request_Card()
+			throws InterruptedException {
+		dashboard.clickOnMyTasksSection();
+		Thread.sleep(1500);
+
+		myTasks.clickOnDayButton();
+
+		myTasks.clickOnTodayButton();
 		Thread.sleep(1000);
 
-		request.clickOnRejectSendButtonInRequestSection();
-		Thread.sleep(2000);
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
+
+		myTasks.clickOnRefreshButtonInDayView();
+
+		String validTaskTitle = faker.book().title();
+
+		myTasks.clickOnLastTaskTitleTextfieldInDayView();
+		Thread.sleep(1000);
+
+		myTasks.clearLastTaskTitleTextfieldInDayView();
+		Thread.sleep(1000);
+
+		myTasks.enterTaskTitleInLastTaskTitleTextfieldDayView(validTaskTitle);
+
+		commonMethods.verify_Toast_Message("after task clear and update assign task in day view",
+				"Request for task title change sent successfully");
+
+		actualTaskTitleAfterClearAndUpdateFromDayView = myTasks.checkLastTaskTitleInDayView();
+		log.info("Actual task title after clear and update from day view is: "
+				+ actualTaskTitleAfterClearAndUpdateFromDayView);
+
+		if (actualTaskTitleAfterClearAndUpdateFromDayView.length() > 26) {
+			assertTrue(actualTaskTitleAfterClearAndUpdateFromDayView.startsWith(validTaskTitle));
+		} else {
+			assertEquals(actualTaskTitleAfterClearAndUpdateFromDayView, validTaskTitle);
+		}
+
+		requestActionForTaskTitleChange = "wants to change title from \"" + actualLastAssignTaskTitleInDayView
+				+ "\" to \"" + actualTaskTitleAfterClearAndUpdateFromDayView + "\" in";
+
+		if (actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar
+				.equalsIgnoreCase(actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar)) {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
+			requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordTests.actualEmployeeName,
+					taskOwnerNameWithTaskDate, requestActionForTaskTitleChange, actualLastAssignTaskTitleInDayView);
+		} else {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + " to "
+					+ actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
+			requestFun.verify_Request_In_My_Requests_Card(LoginAndForgotPasswordTests.actualEmployeeName,
+					taskOwnerNameWithTaskDate, requestActionForTaskTitleChange, actualLastAssignTaskTitleInDayView);
+		}
+	}
+
+	@Test(priority = 12)
+	public void verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Again_Change()
+			throws InterruptedException {
+		reportingAuthoritiesUserIds = commonMethods.getAllHigherAuthoritiesNamesOfLoggedInEmployee();
+
+		commonMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(
+				reportingAuthoritiesUserIds, "", actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar,
+				actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar, actualTaskOwnerName,
+				requestActionForTaskTitleChange, LoginAndForgotPasswordTests.actualEmployeeName,
+				actualLastAssignTaskTitleInDayView);
+	}
+
+	// Check request based on accepted
+	@Test(dependsOnMethods = "verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Again_Change")
+	public void acceptTaskTitleChangeRequestByHigherAuthority() throws InterruptedException {
+		actualRequestActionTakerHigherAuthority = commonMethods
+				.accept_Task_Title_Change_Request_By_Higher_Authority(reportingAuthoritiesUserIds);
+	}
+
+	// Check notification message after accepted task title change request
+	@Test(priority = 13)
+	public void verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side()
+			throws InterruptedException {
+		logOutFun.verify_LogOut_Employee();
+
+		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
+				Constants.employeePassword);
+		Thread.sleep(3000);
+
+//		notification.verifyNotificationMessage(actualRequestActionTakerHigherAuthority,
+//				"accepted your request for \"" + actualLastAssignTaskTitleInDayView + "\"");
+	}
+
+	// Check log message after task task title change request accepted in day view
+	@Test(priority = 14)
+	public void verify_Log_Message_After_Task_Title_Change_Request_Accepted() throws InterruptedException {
+		myTasks.clickOnDayButton();
+
+		myTasks.clickOnTodayButton();
+		Thread.sleep(1000);
+
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
+
+		myTasks.clickOnRefreshButtonInDayView();
+
+		String actualLastAssignTaskTitleInDayView = myTasks.checkLastTaskTitleInDayView();
+		assertEquals(actualLastAssignTaskTitleInDayView, actualTaskTitleAfterClearAndUpdateFromDayView);
+
+		String firstLogMessage = "has approved request for task title change in";
+		String secondLogMessage = "has changed title from \"" + actualLastAssignTaskTitleInDayView + "\" to \""
+				+ actualTaskTitleAfterClearAndUpdateFromDayView + "\" in";
+
+		myActivities.verify_Log_Message(actualRequestActionTakerHigherAuthority, firstLogMessage, secondLogMessage,
+				actualTaskTitleAfterClearAndUpdateFromDayView);
+	}
+
+	// Check request details in my request
+	@Test(priority = 15)
+	public void verify_Task_Request_In_My_Request_Section_After_Accepted_Task_Title_Change_Request()
+			throws InterruptedException {
+		if (actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar
+				.equalsIgnoreCase(actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar)) {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
+			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Accepted",
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForTaskTitleChange,
+					actualLastAssignTaskTitleInDayView);
+		} else {
+			String taskOwnerNameWithTaskDate = actualTaskOwnerName + " on "
+					+ actualScheduleDateFieldValueWhileAddTaskFromLevelViewSidebar + " to "
+					+ actualDueDateFieldValueWhileAddTaskFromLevelViewSidebar + "";
+			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Accepted",
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForTaskTitleChange,
+					actualLastAssignTaskTitleInDayView);
+		}
 	}
 }

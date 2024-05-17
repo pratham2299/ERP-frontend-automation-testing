@@ -24,6 +24,8 @@ public class DashboardPage {
 	public By createClosureButton = By.xpath("//p[normalize-space()='Create Closure']");
 	public By notificationIcon = By
 			.xpath("//div[@class='notifaction-icon-container']//*[name()='svg']//*[name()='path']");
+	public By notificationCount = By.xpath("//div[@class='notification-count']");
+	public By notificationSenderEmployeeNames = By.xpath("//div[@class='Notification_img_and_Admin']//p");
 	public By notificationMessages = By.xpath("//div[@class='notification_subject']/h4");
 
 	public By lastArrowForLevelView = By.xpath("(//button[@class='p-tree-toggler p-link']//*[name()='svg'])[last()]");
@@ -86,6 +88,14 @@ public class DashboardPage {
 
 	public void clickOnNotificationIcon() {
 		webElementActions.clickOnMethod(notificationIcon);
+	}
+
+	public String checkNotificationCount() {
+		return webElementActions.getTextMethod(notificationCount);
+	}
+
+	public List<String> checkNotificationSenderEmployeeNames() {
+		return webElementActions.getValuesFromListOfWebElements(notificationSenderEmployeeNames);
 	}
 
 	public List<String> checkNotificationMessages() {

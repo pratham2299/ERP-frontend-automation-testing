@@ -1,7 +1,6 @@
 package in.biencaps.erp.testCases;
 
 import static org.testng.Assert.*;
-import java.util.*;
 import org.apache.logging.log4j.*;
 import org.testng.annotations.*;
 
@@ -103,12 +102,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	// task and initialized in our totalTasksCount variable
 	@Test(priority = 2)
 	public void verify_Total_Tasks_Count_Before_Add_New_Task() throws InterruptedException {
-		myTasks.clickOnDayButton();
-		Thread.sleep(1500);
-
-		myTasks.clickOnRefreshButtonInDayView();
-
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
+		commonMethods.goToDayView();
 
 		int totaTasksCountBeforeAddNewTaskInDayView = commonMethods.get_Total_Tasks_Count_In_Day_View();
 		log.info("Total tasks count before add new task in day view is: " + totaTasksCountBeforeAddNewTaskInDayView
@@ -192,23 +186,8 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 
 		myTasks.clickOnStatusDropdownWhileAddTaskFromSidebar();
 
-		// Select random status value except submitted value from dropdoiwn list
-		List<String> taskStatusValuesFromDropdownWhileAddTask = myTasks
-				.checkSelectedTaskStatusValueFromDropdownWhileAddTaskFromSidebar();
-
-		String randomTaskStatus;
-
-		do {
-			// Generate a random index within the range of the list
-			int randomIndex = random.nextInt(taskStatusValuesFromDropdownWhileAddTask.size());
-			// Retrieve the number at the random index
-			randomTaskStatus = taskStatusValuesFromDropdownWhileAddTask.get(randomIndex);
-		} while (randomTaskStatus.equalsIgnoreCase("Submitted"));
-		log.info(
-				"Actual selected task status value from dropdown while add task from month view and at particular date is: "
-						+ randomTaskStatus);
-
-		myTasks.selectRandomStatusWhileAddTaskFromSidebar(randomTaskStatus);
+		// Select random status value
+		myTasks.selectRandomStatusWhileAddTaskFromSidebar();
 
 		myTasks.clickOnStatusFieldLabelWhileAddTaskFromSidebar();
 
@@ -254,10 +233,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	// Checks added task details from month view at particular date in day view
 	@Test(dependsOnMethods = "verify_Add_Task_From_Month_View_At_Current_Date")
 	public void verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View() throws InterruptedException {
-		myTasks.clickOnDayButton();
-		Thread.sleep(1500);
-
-		myTasks.clickOnTodayButton();
+		commonMethods.goToDayView();
 
 		commonMethods.verify_Added_Task_Check_In_Day_View("from month view at particular date",
 				taskTitleInputWhileAddFromMonthViewAtParticularDate,
@@ -356,23 +332,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 
 		myTasks.clickOnStatusDropdownWhileAddTaskFromSidebar();
 
-		List<String> taskStatusValuesFromDropdownWhileAddTask = myTasks
-				.checkSelectedTaskStatusValueFromDropdownWhileAddTaskFromSidebar();
-		log.info("Task status values from dropdown while add task from month view sidebar are: "
-				+ taskStatusValuesFromDropdownWhileAddTask);
-
-		String randomTaskStatus;
-
-		do {
-			// Generate a random index within the range of the list
-			int randomIndex = random.nextInt(taskStatusValuesFromDropdownWhileAddTask.size());
-			// Retrieve the number at the random index
-			randomTaskStatus = taskStatusValuesFromDropdownWhileAddTask.get(randomIndex);
-		} while (randomTaskStatus.equalsIgnoreCase("Submitted"));
-		log.info("Actual selected task status value from dropdown while add task from month view sidebar is: "
-				+ randomTaskStatus);
-
-		myTasks.selectRandomStatusWhileAddTaskFromSidebar(randomTaskStatus);
+		myTasks.selectRandomStatusWhileAddTaskFromSidebar();
 
 		myTasks.clickOnStatusFieldLabelWhileAddTaskFromSidebar();
 
@@ -396,10 +356,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	@Test(dependsOnMethods = "verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same")
 	public void verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.clickOnCalendarInDayView();
 		Thread.sleep(1000);
@@ -464,28 +421,19 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	@Test(dependsOnMethods = "verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View")
 	public void verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		commonMethods.verify_Total_Tasks_Count_In_Day_View_After_Added_Or_Deleted_Task(
 				commonMethods.get_Total_Tasks_Count_In_Day_View());
 
-		myActivitiesFun.verify_Log_Message(LoginAndForgotPasswordTests.actualEmployeeName,
-				"has added new task on " + actualTaskScheduleDateValueWhileAddTaskFromMonthViewSidebar + "",
+		myActivitiesFun.verify_Log_Message(LoginAndForgotPasswordTests.actualEmployeeName, "has added new task",
 				taskTitleInputWhileAddFromMonthViewSidebar);
 	}
 
 	// This method add task from day view
 	@Test(priority = 5)
 	public void verify_Add_New_Task_From_Day_View_At_Current_Date() throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
-
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
+		commonMethods.goToDayView();
 
 		try {
 			myTasks.clickOnAddTasksButtonInDayView();
@@ -522,10 +470,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	@Test(dependsOnMethods = "verify_Add_New_Task_From_Day_View_At_Current_Date")
 	public void verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		commonMethods.verify_Total_Tasks_Count_In_Day_View_After_Added_Or_Deleted_Task(totalTasksCount);
 
@@ -537,10 +482,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	@Test(priority = 6)
 	public void verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.clickOnAddTaskButtonAtRightTopSide();
 		Thread.sleep(1000);
@@ -611,24 +553,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 
 		myTasks.clickOnStatusDropdownWhileAddTaskFromSidebar();
 
-		List<String> taskStatusValuesFromDropdownWhileAddTask = myTasks
-				.checkSelectedTaskStatusValueFromDropdownWhileAddTaskFromSidebar();
-		log.info("Task status values from dropdown while add task from day view sidebar are: "
-				+ taskStatusValuesFromDropdownWhileAddTask);
-
-		String randomTaskStatus;
-
-		do {
-			// Generate a random index within the range of the list
-			int randomIndex = random.nextInt(taskStatusValuesFromDropdownWhileAddTask.size());
-			// Retrieve the number at the random index
-			randomTaskStatus = taskStatusValuesFromDropdownWhileAddTask.get(randomIndex);
-		} while (randomTaskStatus.equalsIgnoreCase("Submitted"));
-
-		log.info("Actual selected task status value from dropdown while add task from day view sidebar is: "
-				+ randomTaskStatus);
-
-		myTasks.selectRandomStatusWhileAddTaskFromSidebar(randomTaskStatus);
+		myTasks.selectRandomStatusWhileAddTaskFromSidebar();
 
 		myTasks.clickOnStatusFieldLabelWhileAddTaskFromSidebar();
 
@@ -670,13 +595,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	@Test(dependsOnMethods = "verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date")
 	public void verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
-
-		myTasks.clickOnRefreshButtonInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		for (int i = 0; i < 10; i++) {
 			String dateWithDayInCurrentDayView = myTasks.checkDateInCurrentDayView();
@@ -714,7 +633,6 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 				myTasks.clickOnNextDayIconInDayView();
 			}
 		}
-
 	}
 
 	// Checks total tasks count after added task from day view sidebar and also
@@ -722,10 +640,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	@Test(dependsOnMethods = "verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View")
 	public void verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(2500);
+		commonMethods.goToDayView();
 
 		commonMethods.verify_Total_Tasks_Count_In_Day_View_After_Added_Or_Deleted_Task(totalTasksCount);
 
@@ -809,25 +724,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 
 		myTasks.clickOnStatusDropdownWhileAddTaskFromSidebar();
 
-		List<String> taskStatusValuesFromDropdownWhileAddTask = myTasks
-				.checkSelectedTaskStatusValueFromDropdownWhileAddTaskFromSidebar();
-		log.info("Task status values from dropdown while add task from week view and at particular date are: "
-				+ taskStatusValuesFromDropdownWhileAddTask);
-
-		String randomTaskStatus;
-
-		do {
-			// Generate a random index within the range of the list
-			int randomIndex = random.nextInt(taskStatusValuesFromDropdownWhileAddTask.size());
-			// Retrieve the number at the random index
-			randomTaskStatus = taskStatusValuesFromDropdownWhileAddTask.get(randomIndex);
-		} while (randomTaskStatus.equalsIgnoreCase("Submitted"));
-
-		log.info(
-				"Actual selected task status value from dropdown while add task from week view and at particular date is: "
-						+ randomTaskStatus);
-
-		myTasks.selectRandomStatusWhileAddTaskFromSidebar(randomTaskStatus);
+		myTasks.selectRandomStatusWhileAddTaskFromSidebar();
 
 		myTasks.clickOnStatusFieldLabelWhileAddTaskFromSidebar();
 
@@ -884,10 +781,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	// day view task list
 	@Test(dependsOnMethods = "verify_Add_Task_From_Week_View_At_Future_Date", enabled = false)
 	public void verify_Added_Task_From_Week_View_At_Future_Date_Check_In_Day_View() throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.clickOnCalendarInDayView();
 		Thread.sleep(1000);
@@ -1018,24 +912,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 
 		myTasks.clickOnStatusDropdownWhileAddTaskFromSidebar();
 
-		List<String> taskStatusValuesFromDropdownWhileAddTask = myTasks
-				.checkSelectedTaskStatusValueFromDropdownWhileAddTaskFromSidebar();
-		log.info("Task status values from dropdown while add task from week view sidebar are: "
-				+ taskStatusValuesFromDropdownWhileAddTask);
-
-		String randomTaskStatus;
-
-		do {
-			// Generate a random index within the range of the list
-			int randomIndex = random.nextInt(taskStatusValuesFromDropdownWhileAddTask.size());
-			// Retrieve the number at the random index
-			randomTaskStatus = taskStatusValuesFromDropdownWhileAddTask.get(randomIndex);
-		} while (randomTaskStatus.equalsIgnoreCase("Submitted"));
-
-		log.info("Actual selected task status value from dropdown while add task from week view sidebar is: "
-				+ randomTaskStatus);
-
-		myTasks.selectRandomStatusWhileAddTaskFromSidebar(randomTaskStatus);
+		myTasks.selectRandomStatusWhileAddTaskFromSidebar();
 
 		myTasks.clickOnStatusFieldLabelWhileAddTaskFromSidebar();
 
@@ -1075,10 +952,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	// day view task list
 	@Test(dependsOnMethods = "verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment")
 	public void verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View() throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.clickOnCalendarInDayView();
 		Thread.sleep(1000);
@@ -1131,7 +1005,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 				if (Integer.parseInt(actualTaskDueDateValueWhileAddTaskFromWeekViewSidebar.substring(8)) <= Integer
 						.parseInt(formattedDate.substring(8)) && i > 0) {
 					String rollOverTaskColor = myTasks.checkRollOverTaskColor();
-					log.info("Roll over task color is: " + rollOverTaskColor);
+//					log.info("Roll over task color is: " + rollOverTaskColor);
 					assertEquals(rollOverTaskColor, "rgba(255, 15, 0, 1)");
 				}
 
@@ -1145,10 +1019,7 @@ public class AddSelfTaskAndCheckInDayViewTests extends BaseTest {
 	@Test(dependsOnMethods = "verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View")
 	public void verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar()
 			throws InterruptedException {
-		myTasks.clickOnDayButton();
-
-		myTasks.clickOnTodayButton();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		commonMethods.verify_Total_Tasks_Count_In_Day_View_After_Added_Or_Deleted_Task(totalTasksCount);
 

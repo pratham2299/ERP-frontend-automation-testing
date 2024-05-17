@@ -1,134 +1,287 @@
-15:43:59 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
-15:43:59 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-15:44:01 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:40:21 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:44:17 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC012
-15:44:17 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-15:44:19 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:40:25 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering password for gmail key submit is: Please Fill Correct password
 
-15:45:41 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
-15:45:42 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-15:45:43 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:40:29 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:45:53 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-16
+17:40:33 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title after added task from level view to lower level employee in day view is: The Painted Veil
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status after added task from level view to lower level employee in day view is: Not Started
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority after added task from level view to lower level employee in day view is: Medium
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project after added task from level view to lower level employee in day view is: Test Project
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date after added task from level view to lower level employee in day view is: 2024-05-16
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date after added task from level view to lower level employee in day view is: 2024-05-16
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added after added task from level view to lower level employee in day view is: QA
-15:45:54 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added after added task from level view to lower level employee in day view is: Test Team Lead
-15:45:55 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added after added task from level view to lower level employee in day view is: Judiciary
-15:45:56 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added after added task from level view to lower level employee in day view is: Judiciary
+17:40:38 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid password for gmail key submit is: Enter valid password
 
-15:45:57 in.biencaps.erp.utilities.CommonTestMethods - Actual last date in week view is: 19
-15:45:57 in.biencaps.erp.utilities.CommonTestMethods - Actual first date in week view is: 13
-15:46:03 in.biencaps.erp.utilities.CommonTestMethods - Actual new added task title after added task from level view to lower level employee in week view is: The Painted Veil
-15:46:04 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC012
-15:46:04 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-15:46:06 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:40:43 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title after added task from level view to lower level employee in day view is: The Painted Veil
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status after added task from level view to lower level employee in day view is: Not Started
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority after added task from level view to lower level employee in day view is: Medium
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project after added task from level view to lower level employee in day view is: Test Project
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date after added task from level view to lower level employee in day view is: 2024-05-16
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date after added task from level view to lower level employee in day view is: 2024-05-16
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added after added task from level view to lower level employee in day view is: QA
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added after added task from level view to lower level employee in day view is: Test Team Lead
-15:46:17 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added after added task from level view to lower level employee in day view is: Judiciary
-15:46:18 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added after added task from level view to lower level employee in day view is: Judiciary
+17:40:47 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
 
-15:46:19 in.biencaps.erp.utilities.CommonTestMethods - Actual last date in week view is: 19
-15:46:19 in.biencaps.erp.utilities.CommonTestMethods - Actual first date in week view is: 13
-15:46:25 in.biencaps.erp.utilities.CommonTestMethods - Actual new added task title after added task from level view to lower level employee in week view is: The Painted Veil
-15:46:46 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task clear and update assign task in day view is: Request for task title change sent successfully
+17:40:51 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering valid gmail key and valid password for gmail key submit is: Updated Successfully
 
-17:44:03 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
-17:44:03 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-17:44:06 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:40:53 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving primary mobile number textfield empty is: Enter Valid Primary Mobile Number
 
-17:44:18 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-16
+17:40:56 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering less than 10 digit primary mobile number is: Enter Valid Primary Mobile Number
 
-17:44:19 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title after added task from level view to lower level employee in day view is: Down to a Sunless Sea
-17:44:19 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status after added task from level view to lower level employee in day view is: In Progress
-17:44:19 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority after added task from level view to lower level employee in day view is: Low
-17:44:20 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project after added task from level view to lower level employee in day view is: Test Project
-17:44:20 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date after added task from level view to lower level employee in day view is: 2024-05-16
-17:44:20 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date after added task from level view to lower level employee in day view is: 2024-05-16
-17:44:20 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added after added task from level view to lower level employee in day view is: QA
-17:44:20 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added after added task from level view to lower level employee in day view is: Test Team Lead
-17:44:20 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added after added task from level view to lower level employee in day view is: Mining & Metals
-17:44:21 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added after added task from level view to lower level employee in day view is: Mining & Metals
+17:40:58 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering less than 10 digit secondary mobile number is: Enter Valid Secondary Mobile Number
 
-17:44:23 in.biencaps.erp.utilities.CommonTestMethods - Actual last date in week view is: 19
-17:44:23 in.biencaps.erp.utilities.CommonTestMethods - Actual first date in week view is: 13
-17:44:30 in.biencaps.erp.utilities.CommonTestMethods - Actual new added task title after added task from level view to lower level employee in week view is: Down to a Sunless Sea
-17:44:31 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC012
-17:44:32 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-17:44:34 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:41:01 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid personal email for profile update is: Enter Valid personal email
 
-17:44:50 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title after added task from level view to lower level employee in day view is: Down to a Sunless Sea
-17:44:50 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status after added task from level view to lower level employee in day view is: In Progress
-17:44:50 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority after added task from level view to lower level employee in day view is: Low
-17:44:50 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project after added task from level view to lower level employee in day view is: Test Project
-17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date after added task from level view to lower level employee in day view is: 2024-05-16
-17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date after added task from level view to lower level employee in day view is: 2024-05-16
-17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added after added task from level view to lower level employee in day view is: QA
-17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added after added task from level view to lower level employee in day view is: Test Team Lead
-17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added after added task from level view to lower level employee in day view is: Mining & Metals
-17:44:53 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added after added task from level view to lower level employee in day view is: Mining & Metals
+17:41:05 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering valid data for profile update is: Employee details updated successfully
 
-17:44:54 in.biencaps.erp.utilities.CommonTestMethods - Actual last date in week view is: 19
-17:44:54 in.biencaps.erp.utilities.CommonTestMethods - Actual first date in week view is: 13
-17:45:01 in.biencaps.erp.utilities.CommonTestMethods - Actual new added task title after added task from level view to lower level employee in week view is: Down to a Sunless Sea
-17:45:25 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task clear and update assign task in day view is: Request for task title change sent successfully
+17:41:14 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering valid data for profile update is: Employee details updated successfully
 
-17:48:23 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
-17:48:23 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-17:48:26 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:41:21 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid current password is: Enter Correct Current Password
 
-17:48:37 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-16
+17:41:28 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid password which is not matched with password info is: Enter Valid New Password, follow the password rules
 
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title after added task from level view to lower level employee in day view is: Beyond the Mexique Bay
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status after added task from level view to lower level employee in day view is: Not Started
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority after added task from level view to lower level employee in day view is: Medium
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project after added task from level view to lower level employee in day view is: Test Project
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date after added task from level view to lower level employee in day view is: 2024-05-16
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date after added task from level view to lower level employee in day view is: 2024-05-16
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added after added task from level view to lower level employee in day view is: QA
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added after added task from level view to lower level employee in day view is: Test Team Lead
-17:48:38 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added after added task from level view to lower level employee in day view is: Primary / Secondary Education
-17:48:40 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added after added task from level view to lower level employee in day view is: Primary / Secondary Education
+17:41:41 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering all valid passwords is: Password Updated Successfully
 
-17:48:41 in.biencaps.erp.utilities.CommonTestMethods - Actual last date in week view is: 19
-17:48:41 in.biencaps.erp.utilities.CommonTestMethods - Actual first date in week view is: 13
-17:48:48 in.biencaps.erp.utilities.CommonTestMethods - Actual new added task title after added task from level view to lower level employee in week view is: Beyond the Mexique Bay
-17:48:49 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC012
-17:48:49 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-17:48:52 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:41:44 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving task title field empty is: Please Add the task first
 
-17:49:06 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title after added task from level view to lower level employee in day view is: Beyond the Mexique Bay
-17:49:06 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status after added task from level view to lower level employee in day view is: Not Started
-17:49:06 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority after added task from level view to lower level employee in day view is: Medium
-17:49:07 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project after added task from level view to lower level employee in day view is: Test Project
-17:49:07 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date after added task from level view to lower level employee in day view is: 2024-05-16
-17:49:07 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date after added task from level view to lower level employee in day view is: 2024-05-16
-17:49:07 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added after added task from level view to lower level employee in day view is: QA
-17:49:07 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added after added task from level view to lower level employee in day view is: Test Team Lead
-17:49:07 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added after added task from level view to lower level employee in day view is: Primary / Secondary Education
-17:49:08 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added after added task from level view to lower level employee in day view is: Primary / Secondary Education
+17:41:51 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/0
+17:41:51 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 0
 
-17:49:10 in.biencaps.erp.utilities.CommonTestMethods - Actual last date in week view is: 19
-17:49:10 in.biencaps.erp.utilities.CommonTestMethods - Actual first date in week view is: 13
-17:49:16 in.biencaps.erp.utilities.CommonTestMethods - Actual new added task title after added task from level view to lower level employee in week view is: Beyond the Mexique Bay
-17:49:38 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task clear and update assign task in day view is: Request for task title change sent successfully
+17:41:59 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-17
 
-17:49:48 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
-17:49:49 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
-17:49:51 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from month view at particular date in day view is: Specimen Days
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from month view at particular date in day view is: Submitted
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from month view at particular date in day view is: Highest
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project from month view at particular date in day view is: Test Project
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from month view at particular date in day view is: 2024-05-17
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from month view at particular date in day view is: 2024-05-17
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from month view at particular date in day view is: QA
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from month view at particular date in day view is: Prathamesh Dhasade
+17:42:05 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from month view at particular date in day view is: Logistics and Supply Chain
+17:42:07 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from month view at particular date in day view is: Logistics and Supply Chain
 
-17:49:52 in.biencaps.erp.utilities.CommonTestMethods - Actual lead level employee name at dashboard page is: Test Team Lead
+17:42:08 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/1
+17:42:08 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 1
+
+17:42:27 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-13
+
+17:42:35 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from month view sidebar in day view is: Death Be Not Proud
+17:42:35 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from month view sidebar in day view is: Submitted
+17:42:35 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from month view sidebar in day view is: High
+17:42:43 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from day view is: task added successfully
+
+17:42:48 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/2
+17:42:48 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 2
+
+17:43:01 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-17
+
+17:43:07 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from day view sidebar in day view is: Nectar in a Sieve
+17:43:07 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from day view sidebar in day view is: In Progress
+17:43:07 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from day view sidebar in day view is: Medium
+17:43:13 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from day view sidebar
+17:43:13 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from day view sidebar in day view is: 2024-05-17
+17:43:13 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from day view sidebar in day view is: 2024-05-20
+17:43:13 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from day view sidebar in day view is: QA
+17:43:14 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from day view sidebar in day view is: Prathamesh Dhasade
+17:43:14 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from day view sidebar in day view is: Trantow-Kreiger
+17:43:15 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from day view sidebar in day view is: Trantow-Kreiger
+
+17:43:18 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from day view sidebar in day view is: Nectar in a Sieve
+17:43:18 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from day view sidebar in day view is: In Progress
+17:43:18 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from day view sidebar in day view is: Medium
+17:43:24 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from day view sidebar
+17:43:24 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from day view sidebar in day view is: 2024-05-17
+17:43:24 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from day view sidebar in day view is: 2024-05-20
+17:43:24 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from day view sidebar in day view is: QA
+17:43:25 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from day view sidebar in day view is: Prathamesh Dhasade
+17:43:25 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from day view sidebar in day view is: Trantow-Kreiger
+17:43:26 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from day view sidebar in day view is: Trantow-Kreiger
+
+17:43:28 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from day view sidebar in day view is: Nectar in a Sieve
+17:43:28 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from day view sidebar in day view is: In Progress
+17:43:28 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from day view sidebar in day view is: Medium
+17:43:35 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from day view sidebar
+17:43:35 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from day view sidebar in day view is: 2024-05-17
+17:43:35 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from day view sidebar in day view is: 2024-05-20
+17:43:35 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from day view sidebar in day view is: QA
+17:43:35 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from day view sidebar in day view is: Prathamesh Dhasade
+17:43:35 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from day view sidebar in day view is: Trantow-Kreiger
+17:43:36 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from day view sidebar in day view is: Trantow-Kreiger
+
+17:43:39 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from day view sidebar in day view is: Nectar in a Sieve
+17:43:39 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from day view sidebar in day view is: In Progress
+17:43:39 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from day view sidebar in day view is: Medium
+17:43:45 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from day view sidebar
+17:43:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from day view sidebar in day view is: 2024-05-17
+17:43:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from day view sidebar in day view is: 2024-05-20
+17:43:45 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from day view sidebar in day view is: QA
+17:43:45 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from day view sidebar in day view is: Prathamesh Dhasade
+17:43:45 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from day view sidebar in day view is: Trantow-Kreiger
+17:43:47 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from day view sidebar in day view is: Trantow-Kreiger
+
+17:43:53 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/3
+17:43:53 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 3
+
+17:44:04 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-14
+
+17:44:12 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from week view sidebar in day view is: A Time to Kill
+17:44:12 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from week view sidebar in day view is: Submitted
+17:44:12 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from week view sidebar in day view is: Low
+17:44:18 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from week view sidebar
+17:44:18 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from week view sidebar in day view is: 2024-05-14
+17:44:18 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from week view sidebar in day view is: 2024-05-18
+17:44:19 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from week view sidebar in day view is: QA
+17:44:19 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from week view sidebar in day view is: Prathamesh Dhasade
+17:44:19 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from week view sidebar in day view is: Boyer-Ryan
+17:44:20 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from week view sidebar in day view is: Boyer-Ryan
+
+17:44:23 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from week view sidebar in day view is: A Time to Kill
+17:44:23 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from week view sidebar in day view is: Submitted
+17:44:23 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from week view sidebar in day view is: Low
+17:44:29 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from week view sidebar
+17:44:29 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from week view sidebar in day view is: 2024-05-14
+17:44:29 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from week view sidebar in day view is: 2024-05-18
+17:44:29 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from week view sidebar in day view is: QA
+17:44:30 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from week view sidebar in day view is: Prathamesh Dhasade
+17:44:30 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from week view sidebar in day view is: Boyer-Ryan
+17:44:31 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from week view sidebar in day view is: Boyer-Ryan
+
+17:44:34 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from week view sidebar in day view is: A Time to Kill
+17:44:34 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from week view sidebar in day view is: Submitted
+17:44:34 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from week view sidebar in day view is: Low
+17:44:40 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from week view sidebar
+17:44:40 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from week view sidebar in day view is: 2024-05-14
+17:44:40 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from week view sidebar in day view is: 2024-05-18
+17:44:40 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from week view sidebar in day view is: QA
+17:44:40 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from week view sidebar in day view is: Prathamesh Dhasade
+17:44:40 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from week view sidebar in day view is: Boyer-Ryan
+17:44:42 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from week view sidebar in day view is: Boyer-Ryan
+
+17:44:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from week view sidebar in day view is: A Time to Kill
+17:44:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from week view sidebar in day view is: Submitted
+17:44:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from week view sidebar in day view is: Low
+17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from week view sidebar
+17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from week view sidebar in day view is: 2024-05-14
+17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from week view sidebar in day view is: 2024-05-18
+17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from week view sidebar in day view is: QA
+17:44:51 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from week view sidebar in day view is: Prathamesh Dhasade
+17:44:52 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from week view sidebar in day view is: Boyer-Ryan
+17:44:53 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from week view sidebar in day view is: Boyer-Ryan
+
+17:44:55 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from week view sidebar in day view is: A Time to Kill
+17:44:55 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from week view sidebar in day view is: Submitted
+17:44:55 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from week view sidebar in day view is: Low
+17:45:02 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from week view sidebar
+17:45:02 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from week view sidebar in day view is: 2024-05-14
+17:45:02 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from week view sidebar in day view is: 2024-05-18
+17:45:02 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from week view sidebar in day view is: QA
+17:45:02 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from week view sidebar in day view is: Prathamesh Dhasade
+17:45:02 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from week view sidebar in day view is: Boyer-Ryan
+17:45:03 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from week view sidebar in day view is: Boyer-Ryan
+
+17:45:12 in.biencaps.erp.utilities.CommonTestMethods - Actual new added task title from week view sidebar in week view is: A Time to Kill
+17:45:17 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/4
+17:45:17 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 4
+
+17:45:18 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC017
+17:45:19 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
+17:45:21 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+
+17:45:26 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after viwed tasks by higher authority is: You viewed Prathamesh Dhasade's Tasks
+
+17:45:28 in.biencaps.erp.utilities.CommonTestMethods - Actual entered user Id is: INC012
+17:45:28 in.biencaps.erp.utilities.CommonTestMethods - Actual entered password is: Pass@123
+17:45:30 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after successfull logged in is: Login Successfully
+
+17:45:59 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task clear and update in day view is: task title updated successfully
+
+17:46:29 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task priority updated in day view is: task priority updated successfully
+
+17:46:49 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task start time updated in day view is: Start-time Updated successfully
+
+17:47:09 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task end time updated in day view is: End time Updated successfully
+
+17:53:04 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering gmail key for gmail key submit is: Please Fill Correct 16 digit key
+
+17:53:08 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after not entering password for gmail key submit is: Please Fill Correct password
+
+17:53:12 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+
+17:53:16 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+
+17:53:21 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid password for gmail key submit is: Enter valid password
+
+17:53:25 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+
+17:53:30 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid gmail key for gmail key submit is: Please Fill Correct 16 digit key
+
+17:53:34 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering valid gmail key and valid password for gmail key submit is: Updated Successfully
+
+17:53:36 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving primary mobile number textfield empty is: Enter Valid Primary Mobile Number
+
+17:53:39 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering less than 10 digit primary mobile number is: Enter Valid Primary Mobile Number
+
+17:53:41 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering less than 10 digit secondary mobile number is: Enter Valid Secondary Mobile Number
+
+17:53:44 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid personal email for profile update is: Enter Valid personal email
+
+17:53:47 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering valid data for profile update is: Employee details updated successfully
+
+17:53:56 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering valid data for profile update is: Employee details updated successfully
+
+17:54:04 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering invalid current password is: Enter Correct Current Password
+
+17:54:22 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after entering all valid passwords is: Password Updated Successfully
+
+17:54:25 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after leaving task title field empty is: Please Add the task first
+
+17:54:31 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/0
+17:54:31 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 0
+
+17:54:39 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-17
+
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from month view at particular date in day view is: No Longer at Ease
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from month view at particular date in day view is: In Discussion
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from month view at particular date in day view is: Low
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task project from month view at particular date in day view is: Incubators
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from month view at particular date in day view is: 2024-05-17
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from month view at particular date in day view is: 2024-05-17
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from month view at particular date in day view is: QA
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from month view at particular date in day view is: Prathamesh Dhasade
+17:54:45 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from month view at particular date in day view is: Machinery
+17:54:46 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment in sidebar for update task added from month view at particular date in day view is: Machinery
+
+17:54:48 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/1
+17:54:48 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 1
+
+17:55:06 in.biencaps.erp.utilities.CommonTestMethods - Actual toast message after task add from sidebar is: Task Added Successfully on: 2024-05-15
+
+17:55:14 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from month view sidebar in day view is: The Far-Distant Oxus
+17:55:14 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from month view sidebar in day view is: Not Started
+17:55:14 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from month view sidebar in day view is: Low
+17:55:20 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from month view sidebar
+17:55:21 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from month view sidebar in day view is: 2024-05-15
+17:55:21 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from month view sidebar in day view is: 2024-05-15
+17:55:21 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from month view sidebar in day view is: QA
+17:55:21 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from month view sidebar in day view is: Prathamesh Dhasade
+17:55:21 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from month view sidebar in day view is: 
+17:55:21 in.biencaps.erp.utilities.CommonTestMethods - Task comment is empty or null
+
+17:55:22 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from month view sidebar in day view is: The Far-Distant Oxus
+17:55:22 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from month view sidebar in day view is: Not Started
+17:55:22 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from month view sidebar in day view is: Low
+17:55:29 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from month view sidebar
+17:55:29 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from month view sidebar in day view is: 2024-05-15
+17:55:29 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from month view sidebar in day view is: 2024-05-15
+17:55:29 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from month view sidebar in day view is: QA
+17:55:29 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from month view sidebar in day view is: Prathamesh Dhasade
+17:55:29 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from month view sidebar in day view is: 
+17:55:29 in.biencaps.erp.utilities.CommonTestMethods - Task comment is empty or null
+
+17:55:31 in.biencaps.erp.utilities.CommonTestMethods - Actual added task title from month view sidebar in day view is: The Far-Distant Oxus
+17:55:31 in.biencaps.erp.utilities.CommonTestMethods - Actual added task status from month view sidebar in day view is: Not Started
+17:55:31 in.biencaps.erp.utilities.CommonTestMethods - Actual added task priority from month view sidebar in day view is: Low
+17:55:38 in.biencaps.erp.utilities.CommonTestMethods - Project field is not selected while add task from month view sidebar
+17:55:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task schedule date from month view sidebar in day view is: 2024-05-15
+17:55:38 in.biencaps.erp.utilities.CommonTestMethods - Actual added task due date from month view sidebar in day view is: 2024-05-15
+17:55:38 in.biencaps.erp.utilities.CommonTestMethods - Actual  task department value added from month view sidebar in day view is: QA
+17:55:38 in.biencaps.erp.utilities.CommonTestMethods - Actual task assignee name added from month view sidebar in day view is: Prathamesh Dhasade
+17:55:38 in.biencaps.erp.utilities.CommonTestMethods - Actual task comment added from month view sidebar in day view is: 
+17:55:38 in.biencaps.erp.utilities.CommonTestMethods - Task comment is empty or null
+
+17:55:43 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/2
+17:55:43 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 2
+
+17:55:43 in.biencaps.erp.utilities.CommonTestMethods - Completed tasks count out of total tasks count in day view is: 0/2
+17:55:43 in.biencaps.erp.utilities.CommonTestMethods - Total tasks count in day view is: 2
 

@@ -82,11 +82,7 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 		commonMethods.verify_Employee_Name_After_Logged_In(Constants.employeeUserId);
 
-		myTasks.clickOnDayButton();
-		Thread.sleep(1500);
-
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.scrollHorizantally(1600);
 
@@ -100,13 +96,7 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Prints last task details like title, status, priority, project, due date etc
 	@Test(priority = 2)
 	public void verify_Last_Task_Details_In_Day_View() throws InterruptedException {
-		// Passed driver get from BaseTest to my tasks page i.e. page object model and
-		// selenium methods, common test methods class
-		myTasks.clickOnDayButton();
-		Thread.sleep(1500);
-
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		actualLastSelfTaskTitleInDayView = myTasks.checkLastTaskTitleInDayView();
 		log.info("Actual Last self task title in day view is: " + actualLastSelfTaskTitleInDayView);
@@ -200,7 +190,12 @@ public class SelfTaskUpdateTests extends BaseTest {
 		Thread.sleep(1000);
 
 		myTasks.clickOnLastTaskStatusInDayView();
-//		Thread.sleep(1000);
+
+		dashboard.clickOnRequestSectionLink();
+
+		commonMethods.goToDayView();
+
+		myTasks.clickOnLastTaskStatusInDayView();
 
 		List<String> taskStatusValuesFromDropdown = myTasks.listOfTaskStatusValuesFromDropdownInDayView();
 		log.info("Task status values from dropdown are: " + taskStatusValuesFromDropdown);
@@ -259,7 +254,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 		Thread.sleep(1000);
 
 		myTasks.clickOnLastTaskPriorityInDayView();
-//		Thread.sleep(1000);
 
 		String actualSelectedTaskPriorityValueFromDropdown = myTasks
 				.checkSelectedTaskPriorityValueFromDropdownInDayView();
@@ -307,7 +301,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 		String actualLastRowTaskStartTimeInDayView = myTasks.checkSelectedTimeOfLastRowTaskInDayView();
 		log.info("Actual selected task start time in day view is: " + actualLastRowTaskStartTimeInDayView);
-//		Thread.sleep(1000);
 
 		myTasks.clickOnSelectedTaskTimeValueFromDropdownInDayView(actualLastRowTaskStartTimeInDayView);
 
@@ -321,6 +314,7 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 		// Extract hour and minute parts
 		String hourOfStartTime = partsOfStartTime[0];
+		System.out.println(hourOfStartTime);
 
 		if (Integer.parseInt(hourOfStartTime) < 10) {
 			myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
@@ -339,7 +333,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 		String actualLastRowTaskEndTimeInDayView = myTasks.checkSelectedTimeOfLastRowTaskInDayView();
 		log.info("Actual selected task end time in day view is: " + actualLastRowTaskStartTimeInDayView);
-//		Thread.sleep(1000);
 
 		myTasks.clickOnSelectedTaskTimeValueFromDropdownInDayView(actualLastRowTaskEndTimeInDayView);
 
@@ -350,6 +343,7 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 		// Extract hour and minute parts
 		String hourOfEndTime = partsOfEndTime[0];
+		System.out.println(hourOfEndTime);
 
 		if (actualLastRowTaskEndTimeInDayView.equalsIgnoreCase(actualLastRowTaskStartTimeInDayView)) {
 			commonMethods.verify_Toast_Message("after selected task end time same as task start time in day view",
@@ -383,7 +377,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 		Thread.sleep(1000);
 
 		myTasks.clickOnLastTaskDueDateInDayView();
-//		Thread.sleep(1000);
 
 		String dateValueFromDueDateString = actualLastSelfTaskDueDateInDayView.substring(8);
 		int indexForTaskDueDateSelection = faker.number().numberBetween(Integer.parseInt(dateValueFromDueDateString),
@@ -447,7 +440,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 		myTasks.scrollHorizantally(1600);
 
 		myTasks.clickOnLastTaskDepartmentInDayView();
-//		Thread.sleep(1000);
 
 		String actualSelectedTaskDepartmentValueFromDropdownInDayView = myTasks
 				.checkSelectedTaskDepartmentValueFromDropdownInDayView();
@@ -526,7 +518,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 		Thread.sleep(1000);
 
 		myTasks.clickOnLastGitlinkIconInDayView();
-//		Thread.sleep(1000);
 
 		String actualTextForNotSelectingProjectOfTaskBeforeAddGitlinkInDayView = myTasks
 				.checkTextForNotSelectingProjectBeforeGitlinkAddInDayView();
@@ -548,7 +539,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 		Thread.sleep(1000);
 
 		myTasks.clickOnLastTaskProjectInDayView();
-//		Thread.sleep(1000);
 
 		String actualSelectedTaskProjectValueFromDropdownInDayView = myTasks
 				.checkSelectedTaskProjectValueFromDropdownInDayView();
@@ -636,8 +626,18 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 		myTasks.enterGitlinkValueInDayView(taskGitlinkInput);
 
-		commonMethods.verify_Toast_Message("after task git link updated by giving valid gitlink in day view",
-				"task gitLink Updated successfully");
+		String actualToastMessage = myTasks.checkToastMessage("task gitLink");
+		log.info("Actual toast message after task git link updated by giving valid gitlink in day view is: "
+				+ actualToastMessage + "\n");
+
+		if (actualToastMessage.equals(null) || actualToastMessage.isBlank() || actualToastMessage.isEmpty()) {
+			log.error("Toast message text is null or empty");
+		} else {
+			assertEquals(actualToastMessage, "task gitLink Updated successfully");
+			Thread.sleep(500);
+
+			myTasks.clickOnCloseIconOfToastMessage();
+		}
 
 		String actualGitlinkPushTextInDayView = myTasks.checkGitlinkPushedtextInDayView();
 		log.info("Actual git link pushed text in day view is: " + actualGitlinkPushTextInDayView);

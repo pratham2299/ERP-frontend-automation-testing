@@ -31,6 +31,8 @@ public class LoginAndForgotPasswordTests extends BaseTest {
 		webElementActions = new WebElementActions();
 		commonMethods = new CommonTestMethods();
 
+		logger = extent.createTest("Verify forgot password without giving user id");
+
 		login.clickOnForgotPasswordLink();
 
 		String actualErrorMessageForForgotPassword = login.checkErrorToastMessageForForgotPassword();
@@ -45,6 +47,8 @@ public class LoginAndForgotPasswordTests extends BaseTest {
 	// field
 	@Test(priority = 2, enabled = false)
 	public void verify_Forgot_Password_By_Giving_Valid_UserId() throws InterruptedException {
+		logger = extent.createTest("Verify forgot password by giving user id");
+
 		String actualEnteredUserId = login.enterAndCheckUserId(Constants.employeeUserId);
 		log.info("Actual entered user Id is: " + actualEnteredUserId + "\n");
 		assertEquals(actualEnteredUserId, Constants.employeeUserId);
@@ -64,6 +68,8 @@ public class LoginAndForgotPasswordTests extends BaseTest {
 	@Test(priority = 3, dataProvider = "TestDataForLoginEmployee", dataProviderClass = DataProviders.class)
 	public void verify_Login_Employee_With_Valid_And_Invalid_Credentails(String userId, String password)
 			throws InterruptedException, FileNotFoundException {
+		logger = extent.createTest("Verify login employee with valid and invalid credentials");
+
 		login.clickOnUserIdTextfield();
 
 		String actualEnteredUserId = login.enterAndCheckUserId(userId);
@@ -105,7 +111,9 @@ public class LoginAndForgotPasswordTests extends BaseTest {
 	// And also validate employee name is correct or not
 	// By checking in hashmap value created in different class
 	@Test(priority = 4)
-	public void check_Employee_Name_After_Logged_In() throws Exception {
+	public void verify_Employee_Name_After_Logged_In() throws Exception {
+		logger = extent.createTest("Verify employee name after logged in");
+
 		actualEmployeeName = commonMethods.verify_Employee_Name_After_Logged_In(Constants.employeeUserId);
 	}
 }

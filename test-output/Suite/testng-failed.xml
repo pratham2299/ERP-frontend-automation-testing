@@ -8,10 +8,19 @@
     <classes>
       <class name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests">
         <methods>
-          <include name="test_Method_Exection_Result"/>
-          <include name="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority"/>
+          <include name="verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side"/>
           <include name="extent_Report_Setup"/>
+          <include name="verify_Task_Request_In_My_Request_Section_After_Accepted_Task_Title_Change_Request"/>
+          <include name="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Again_Change"/>
           <include name="launch_The_Website"/>
+          <include name="test_Method_Exection_Result"/>
+          <include name="verify_Task_Request_In_My_Request_Section_After_Rejected_Task_Title_Change_Request"/>
+          <include name="verify_Log_Message_After_Task_Title_Change_Request_Accepted"/>
+          <include name="rejectTaskTitleChangeRequestByHigherAuthority"/>
+          <include name="verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Change"/>
+          <include name="verify_Assign_Task_Title_Again_Update_And_Check_Request_In_My_Request_Card"/>
+          <include name="verify_Log_Message_After_Task_Title_Change_Request_Rejected"/>
+          <include name="acceptTaskTitleChangeRequestByHigherAuthority"/>
           <include name="create_Extent_Report_For_Each_Test_Method"/>
           <include name="tear_Down"/>
         </methods>

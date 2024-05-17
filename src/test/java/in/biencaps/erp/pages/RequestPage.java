@@ -14,9 +14,9 @@ public class RequestPage {
 	public By receivedRequestButton = By.xpath("//button[normalize-space()='Requests']");
 	public By myRequestsButton = By.xpath("//button[normalize-space()='My Requests']");
 	public By requestCategoryDropdown = By.xpath("//select[@class='filtersForRequests']");
-	public By requestCardInMyRequest = By.xpath("//div[@class='request-card']//p");
-	public By requestSentToEmployees = By.xpath("(//p[@class='sendTo'])[1]");
-	public By requestCard = By.xpath("//div[@class='request-main-container']//p");
+	public By requestCard = By.xpath("//div[@class='request-card']//p");
+	public By requestOfTaskAssignedByEmployee = By.xpath("(//p[@class='sendTo'])[1]");
+	public By requestSentToEmployees = By.xpath("(//p[@class='sendTo'])[2]");
 
 	public By approveButtons = By.xpath("//button[@id='req-approved-btn']");
 	public By rejectButtons = By.xpath("//button[@id='req-deny-btn']");
@@ -47,15 +47,15 @@ public class RequestPage {
 	}
 
 	public String checkRequestActionReceivedRequestCard() {
-		return webElementActions.getTextMethod(requestCard, 1);
-	}
-
-	public String checkRequestTaskTitleInReceivedRequestCard() {
 		return webElementActions.getTextMethod(requestCard, 2);
 	}
 
+	public String checkRequestTaskTitleInReceivedRequestCard() {
+		return webElementActions.getTextMethod(requestCard, 3);
+	}
+
 	public String checkRequestAssignedByInMyRequestCard() {
-		return webElementActions.getTextMethod(requestCard, 1);
+		return webElementActions.getTextMethod(requestOfTaskAssignedByEmployee);
 	}
 
 	public String checkRequestSentToEmployeeNamesInMyRequestCard() {

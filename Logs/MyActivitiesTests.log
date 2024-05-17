@@ -1,9 +1,21 @@
-15:46:31 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Test Team Lead
-15:46:31 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message at my activities in day view is: has added new task
-The Painted Veil
-17:45:08 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Test Team Lead
-17:45:08 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message at my activities in day view is: has added new task
-Down to a Sunless Sea
-17:49:22 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Test Team Lead
-17:49:22 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message at my activities in day view is: has added new task
-Beyond the Mexique Bay
+17:42:15 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Prathamesh Dhasade
+17:42:17 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message at my activities in day view is: has added new task
+Specimen Days
+17:46:06 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Prathamesh Dhasade
+17:46:09 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message after task title updated at my activities in day view is: has changed title from "A Time to Kill" to "Alone on a Wide, Wide Sea" in
+Alone on a Wide, Wide Sea
+17:46:37 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Prathamesh Dhasade
+17:46:40 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message after task priority updated at my activities in day view is: has changed priority from "Low" to "High" in
+Alone on a Wide, Wide Sea
+17:46:57 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Prathamesh Dhasade
+17:46:59 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message after task start time updated at my activities in day view is: has changed start time from "No Time" to "10:45 AM" in
+Alone on a Wide, Wide Sea
+17:47:16 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Prathamesh Dhasade
+17:47:18 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message after task end time updated at my activities in day view is: has changed end time from "No Time" to "08:00 AM" in
+Alone on a Wide, Wide Sea
+17:54:54 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Prathamesh Dhasade
+17:54:56 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message at my activities in day view is: has added new task
+No Longer at Ease
+17:55:49 in.biencaps.erp.testCases.MyActivitiesTests - Actual employee name at my activities in day view is: Prathamesh Dhasade
+17:55:51 in.biencaps.erp.testCases.MyActivitiesTests - Actual log message at my activities in day view is: has added new task
+The Far-Distant Oxus

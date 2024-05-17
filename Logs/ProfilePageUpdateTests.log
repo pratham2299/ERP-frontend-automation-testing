@@ -1,0 +1,6 @@
+17:40:54 in.biencaps.erp.testCases.ProfilePageUpdateTests - Actual border color of primary mobile number textfield after leaving field empty is: rgb(255, 0, 0)
+17:40:56 in.biencaps.erp.testCases.ProfilePageUpdateTests - Actual border color of primary mobile number textfield entering less than 10 digit mobile number is: rgb(255, 0, 0)
+17:40:59 in.biencaps.erp.testCases.ProfilePageUpdateTests - Actual border color of secondary mobile number textfield entering less than 10 digit mobile number is: rgb(255, 0, 0)
+17:53:37 in.biencaps.erp.testCases.ProfilePageUpdateTests - Actual border color of primary mobile number textfield after leaving field empty is: rgb(255, 0, 0)
+17:53:39 in.biencaps.erp.testCases.ProfilePageUpdateTests - Actual border color of primary mobile number textfield entering less than 10 digit mobile number is: rgb(255, 0, 0)
+17:53:42 in.biencaps.erp.testCases.ProfilePageUpdateTests - Actual border color of secondary mobile number textfield entering less than 10 digit mobile number is: rgb(255, 0, 0)

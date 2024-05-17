@@ -1,194 +1,392 @@
-15:43:47 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Forgot_Password_Without_Giving_UserId
+17:40:04 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Forgot_Password_Without_Giving_UserId
 
-15:43:48 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Forgot_Password_Without_Giving_UserId
+17:40:05 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Forgot_Password_Without_Giving_UserId
 
-15:43:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:06 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:51 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:09 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:51 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:09 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:53 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:12 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:53 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:12 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:55 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:15 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:55 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:15 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:58 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:18 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
 
-15:43:58 in.biencaps.erp.utilities.SuiteListener - Test Started: check_Employee_Name_After_Logged_In
+17:40:18 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Employee_Name_After_Logged_In
 
-15:43:58 in.biencaps.erp.utilities.SuiteListener - Test Passed: check_Employee_Name_After_Logged_In
+17:40:19 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Employee_Name_After_Logged_In
 
-15:43:58 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assign_Task_From_Level
+17:40:19 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Gmail_Key
 
-15:44:10 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Assign_Task_From_Level
+17:40:22 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Gmail_Key
 
-15:44:10 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:40:22 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Password
 
-15:44:17 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:40:25 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Password
 
-15:44:17 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:40:25 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:44:24 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:40:30 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:44:24 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:40:30 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:44:25 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:40:34 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:44:25 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Last_Task_Details_In_Day_View
+17:40:34 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:30 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Forgot_Password_Without_Giving_UserId
+17:40:39 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:31 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Forgot_Password_Without_Giving_UserId
+17:40:39 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:31 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:43 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:34 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:43 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:34 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:48 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:36 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:36 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:52 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:37 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:52 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Primary_Mobile_Number_Textfield_By_Leaving_Field_Empty
 
-15:45:37 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:54 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Primary_Mobile_Number_Textfield_By_Leaving_Field_Empty
 
-15:45:40 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:40:54 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:40 in.biencaps.erp.utilities.SuiteListener - Test Started: check_Employee_Name_After_Logged_In
+17:40:56 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:41 in.biencaps.erp.utilities.SuiteListener - Test Passed: check_Employee_Name_After_Logged_In
+17:40:56 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:41 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assign_Task_From_Level
+17:40:59 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:54 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Assign_Task_From_Level
+17:40:59 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:45:54 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:41:02 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:46:03 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:41:02 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:46:03 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:41:05 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
 
-15:46:15 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:41:05 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_By_Entering_Optional_Fields
 
-15:46:15 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:41:14 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_By_Entering_Optional_Fields
 
-15:46:36 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:41:14 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-15:46:36 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Last_Task_Details_In_Day_View
+17:41:22 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-15:46:41 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Last_Task_Details_In_Day_View
+17:41:22 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-15:46:41 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard
+17:41:29 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-15:46:53 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard
+17:41:29 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-17:43:47 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Forgot_Password_Without_Giving_UserId
+17:41:35 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-17:43:48 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Forgot_Password_Without_Giving_UserId
+17:41:35 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-17:43:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:41:42 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
 
-17:43:51 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:41:42 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Sidebar_Without_Entering_Task_Title
 
-17:43:51 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:41:45 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Task_From_Sidebar_Without_Entering_Task_Title
 
-17:43:54 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:41:45 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_Before_Add_New_Task
 
-17:43:54 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:41:51 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Total_Tasks_Count_Before_Add_New_Task
 
-17:43:57 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:41:51 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Month_View_At_Current_Date
 
-17:43:57 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:42:00 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Task_From_Month_View_At_Current_Date
 
-17:44:01 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:42:00 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View
 
-17:44:01 in.biencaps.erp.utilities.SuiteListener - Test Started: check_Employee_Name_After_Logged_In
+17:42:08 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View
 
-17:44:02 in.biencaps.erp.utilities.SuiteListener - Test Passed: check_Employee_Name_After_Logged_In
+17:42:08 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date
 
-17:44:02 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assign_Task_From_Level
+17:42:21 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date
 
-17:44:19 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Assign_Task_From_Level
+17:42:21 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same
 
-17:44:19 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:42:28 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same
 
-17:44:30 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:42:28 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View
 
-17:44:30 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:42:35 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View
 
-17:44:47 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:42:36 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar
 
-17:44:47 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:42:36 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar
 
-17:45:12 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:42:36 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_New_Task_From_Day_View_At_Current_Date
 
-17:45:12 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Last_Task_Details_In_Day_View
+17:42:44 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_New_Task_From_Day_View_At_Current_Date
 
-17:45:19 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Last_Task_Details_In_Day_View
+17:42:44 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View
 
-17:45:19 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard
+17:42:48 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View
 
-17:45:33 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard
+17:42:49 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date
 
-17:45:33 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority
+17:43:02 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date
 
-17:45:35 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority
+17:43:02 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View
 
-17:48:08 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Forgot_Password_Without_Giving_UserId
+17:43:48 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View
 
-17:48:09 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Forgot_Password_Without_Giving_UserId
+17:43:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar
 
-17:48:09 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:43:53 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar
 
-17:48:13 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:43:53 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment
 
-17:48:13 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:44:04 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment
 
-17:48:15 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:44:04 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View
 
-17:48:15 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:45:05 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View
 
-17:48:18 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:45:05 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Week_View_Sidebar_In_Week_View
 
-17:48:18 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:45:12 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Added_Task_From_Week_View_Sidebar_In_Week_View
 
-17:48:21 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+17:45:12 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar
 
-17:48:21 in.biencaps.erp.utilities.SuiteListener - Test Started: check_Employee_Name_After_Logged_In
+17:45:17 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar
 
-17:48:22 in.biencaps.erp.utilities.SuiteListener - Test Passed: check_Employee_Name_After_Logged_In
+17:45:17 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Higher_Authority_Viewed_Tasks
 
-17:48:22 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assign_Task_From_Level
+17:45:37 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Higher_Authority_Viewed_Tasks
 
-17:48:38 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Assign_Task_From_Level
+17:45:37 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Last_Task_Details_In_Day_View
 
-17:48:38 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:45:53 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Last_Task_Details_In_Day_View
 
-17:48:48 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View
+17:45:53 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs
 
-17:48:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:46:13 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs
 
-17:49:05 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side
+17:46:13 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs
 
-17:49:05 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:46:26 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs
 
-17:49:26 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message
+17:46:26 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs
 
-17:49:26 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Last_Task_Details_In_Day_View
+17:46:44 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs
 
-17:49:33 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Last_Task_Details_In_Day_View
+17:46:44 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs
 
-17:49:33 in.biencaps.erp.utilities.SuiteListener - Test Started: verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard
+17:47:18 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs
 
-17:49:46 in.biencaps.erp.utilities.SuiteListener - Test Passed: verifyAssignTaskTitleUpdateAndCheckRequestInMyRequestCard
+17:47:18 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Due_Date_From_Day_View_And_Check_Task_Due_Date_And_Logs
 
-17:49:46 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority
+17:47:22 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Due_Date_From_Day_View_And_Check_Task_Due_Date_And_Logs
 
-17:49:57 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority
+17:47:22 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Department_From_Day_View_And_Check_Task_Department_And_Logs
+
+17:47:24 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Department_From_Day_View_And_Check_Task_Department_And_Logs
+
+17:47:24 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Gitlink_From_Day_View_Without_Selecting_Project
+
+17:47:27 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Update_Self_Task_Gitlink_From_Day_View_Without_Selecting_Project
+
+17:47:27 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs
+
+17:52:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Forgot_Password_Without_Giving_UserId
+
+17:52:49 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Forgot_Password_Without_Giving_UserId
+
+17:52:49 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:52:53 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:52:53 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:52:55 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:52:55 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:52:58 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:52:58 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:53:01 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Login_Employee_With_Valid_And_Invalid_Credentails
+
+17:53:01 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Employee_Name_After_Logged_In
+
+17:53:02 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Employee_Name_After_Logged_In
+
+17:53:02 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Gmail_Key
+
+17:53:05 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Gmail_Key
+
+17:53:05 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Password
+
+17:53:08 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Password
+
+17:53:08 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:12 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:12 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:17 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:17 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:22 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:22 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:26 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:26 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:30 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:30 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:35 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:35 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Primary_Mobile_Number_Textfield_By_Leaving_Field_Empty
+
+17:53:37 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Primary_Mobile_Number_Textfield_By_Leaving_Field_Empty
+
+17:53:37 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:39 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:39 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:42 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:42 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:44 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:44 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:47 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data
+
+17:53:47 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Profile_Update_By_Entering_Optional_Fields
+
+17:53:57 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Profile_Update_By_Entering_Optional_Fields
+
+17:53:57 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:04 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:04 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:10 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:10 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:15 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:15 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:23 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Change_Login_Password_With_Valid_And_Invalid_Password
+
+17:54:23 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Sidebar_Without_Entering_Task_Title
+
+17:54:26 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Task_From_Sidebar_Without_Entering_Task_Title
+
+17:54:26 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_Before_Add_New_Task
+
+17:54:31 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Total_Tasks_Count_Before_Add_New_Task
+
+17:54:31 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Month_View_At_Current_Date
+
+17:54:40 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Task_From_Month_View_At_Current_Date
+
+17:54:40 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View
+
+17:54:48 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View
+
+17:54:48 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date
+
+17:55:01 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date
+
+17:55:01 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same
+
+17:55:06 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same
+
+17:55:06 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View
+
+17:55:38 in.biencaps.erp.utilities.SuiteListener - Test Passed: verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View
+
+17:55:38 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar
+
+17:55:51 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar
+
+17:55:52 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_New_Task_From_Day_View_At_Current_Date
+
+17:55:53 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Add_New_Task_From_Day_View_At_Current_Date
+
+17:55:53 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View
+
+17:55:53 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View
+
+17:55:53 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date
+
+17:55:54 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date
+
+17:55:55 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View
+
+17:55:55 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View
+
+17:55:55 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar
+
+17:55:55 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar
+
+17:55:55 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Added_Task_From_Week_View_Sidebar_In_Week_View
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verify_Added_Task_From_Week_View_Sidebar_In_Week_View
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Skipped: verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar
+
+17:55:56 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Higher_Authority_Viewed_Tasks
+
+17:55:57 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Higher_Authority_Viewed_Tasks
+
+17:55:57 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Last_Task_Details_In_Day_View
+
+17:55:58 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Last_Task_Details_In_Day_View
+
+17:55:59 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs
+
+17:56:01 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs
+
+17:56:01 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs
+
+17:56:03 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs
+
+17:56:04 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs
+
+17:56:06 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs
+
+17:56:06 in.biencaps.erp.utilities.SuiteListener - Test Started: verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs
+
+17:56:14 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs
+
+17:56:14 in.biencaps.erp.utilities.SuiteListener - Test Failed: verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs
 

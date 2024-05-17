@@ -53,8 +53,8 @@ public class MyTasksPage {
 	public By weekButton = By.xpath("//button[normalize-space()='Week']");
 	public By addTasksButtonInWeekView = By
 			.xpath("//div[@class='rbc-header rbc-today']//div[normalize-space()='Add Tasks']");
-	public By calendarInDayView = By.cssSelector("div[class='date-holder-dashboard']");
-	public By dateInCurrentDayView = By.cssSelector("div[class='date-holder-dashboard'] p");
+	public By calendarInDayView = By.xpath("//div[@class='date-holder-dashboard']");
+	public By dateInCurrentDayView = By.xpath("//div[@class='date-holder-dashboard']//p");
 	public By previousDayIconInDayView = By.xpath("(//div[@class='dayViewDateSeletor']//*[name()='svg'])[1]");
 	public By nextDayIconInDayView = By.xpath("(//div[@class='dayViewDateSeletor']//*[name()='svg'])[2]");
 	public By lastRollOverTaskTitle = By.xpath("(//input[@id='due-task-title'])[last()]");
@@ -98,7 +98,7 @@ public class MyTasksPage {
 	public String taskGitlinkIconInDayView = "//div[@class='selectDiv selectGitDiv']//*[name()='svg']";
 	public String taskCommentTextfieldInDayView = "taskTitle-input";
 
-	public By dayViewScroller = By.cssSelector(".DayViewScroller");
+	public By dayViewScroller = By.xpath("//div[@class='DayViewScroller']");
 
 	public By gitMessageForNotSelectingProjectOfTaskInDayView = By.xpath("//div[@class='gitmsgforProject']");
 	public By refreshButtonInDayView = By.xpath("(//*[name()='svg'][@id='refresh-icon'])[1]");
@@ -109,22 +109,20 @@ public class MyTasksPage {
 
 	public By addTasksButtonInDayView = By.xpath("//p[normalize-space()='Add Tasks']");
 	public By tasksCountInDayView = By.xpath("//div[@class='DayViewActualProgressContentView']/p");
-	public By myActivitiesButtonInDayView = By.cssSelector(".getLogs");
-	public By employeeNameAfterClickedOnMyActivitiesButton = By.xpath("(//div[@class='logInfo']//span)[1]");
-	public By logMessageAfterClickedOnMyActivitiesButton = By.xpath("(//div[@class='log']//p)[1]");
-	public By logTimeAfterClickedOnMyActivitiesButton = By.xpath("(//div[@class='logTime'])[1]");
-	public By searchBarInDayView = By.cssSelector("input[placeholder='Search task name']");
+	public By myActivitiesButtonInDayView = By.xpath("//div[@class='getLogs']");
+	public By employeeNamesAfterClickedOnMyActivitiesButton = By.xpath("//div[@class='logInfo']//span");
+	public By logMessagesAfterClickedOnMyActivitiesButton = By.xpath("//div[@class='log']//p");
+	public By searchBarInDayView = By.xpath("//input[@placeholder='Search task name']");
 	public By taskStatusesValuesFromDropdown = By.xpath("//div[@class='listOfStatusWrapper']//div");
 	public By taskPrioritiesValuesFromDropdown = By.xpath("//div[@class='listOfProrityWrapper']/div");
-	public By taskProjectValuesFromDropdown = By.cssSelector(".ProjectTitleDiv");
+	public By taskProjectValuesFromDropdown = By.xpath("//div[@class='ProjectTitleDiv']");
 	public By previousMonthIconInDayView = By.xpath("//button[@aria-label='Previous Month']//*[name()='svg']");
 	public By nextMonthIconInDayView = By.xpath("//button[@aria-label='Next Month']//*[name()='svg']");
 	public By taskDepartmentValuesFromDropdown = By.xpath("//div[@class='listOfTagsWrapper']/div");
 	public By taskVerifiedStatusValuesFromDropdown = By.xpath("//div[@class='listOfVerifiedWrapper']//div");
 	public By taskGitlinkInputTextfieldInDayView = By.id("gitInputBox");
 	public By taskGitlinkPushedTextInDayView = By.xpath("//a[normalize-space()='Pushed']");
-	public By commentTextfieldForUpdateFromSidebarInDayView = By
-			.cssSelector("textarea[placeholder='enter task comment']");
+	public By commentTextfieldForUpdateFromSidebarInDayView = By.xpath("//textarea[@placeholder='enter task comment']");
 	public By closeIconOfSidebarForTaskUpdateInDayView = By
 			.xpath("//div[@class='newTask_header_cross_icon']//*[name()='svg']");
 	public By saveButtonForUpdateTaskOfSidebarInDayView = By.id("btnSave");
@@ -292,15 +290,9 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(statusDropdownInSidebar);
 	}
 
-	public List<String> checkSelectedTaskStatusValueFromDropdownWhileAddTaskFromSidebar() {
-		List<String> taskStatusValues = webElementActions
-				.getValuesFromListOfWebElements(statusValuesFromDropdownInSidebar);
-		return taskStatusValues;
-	}
-
-	public void selectRandomStatusWhileAddTaskFromSidebar(String taskStatus) throws InterruptedException {
-		By taskStatusValue = By.xpath("//div[@class='TagContentDiv'][normalize-space()='" + taskStatus + "']");
-		webElementActions.clickOnMethod(taskStatusValue);
+	public void selectRandomStatusWhileAddTaskFromSidebar() throws InterruptedException {
+		int randomIndex = random.nextInt(webElementActions.sizeOfListOfWebElement(statusValuesFromDropdownInSidebar));
+		webElementActions.clickOnMethod(statusValuesFromDropdownInSidebar, randomIndex);
 	}
 
 	public String checkTaskStatusWhileAddTaskFromSidebar() {
@@ -598,8 +590,8 @@ public class MyTasksPage {
 	}
 
 	public String checkNewAddedTaskTitleInWeekView(String taskTitle) {
-		By lastTaskTitleInWeekView = By.xpath("//p[@title='" + taskTitle + "']");
-		return webElementActions.getTextMethod(lastTaskTitleInWeekView);
+		By taskTitleInWeekView = By.xpath("//p[@title='" + taskTitle + "']");
+		return webElementActions.getTextMethod(taskTitleInWeekView);
 	}
 
 	public void clickOnAddTasksButtonInDayView() {
@@ -638,16 +630,20 @@ public class MyTasksPage {
 		webElementActions.clickOnMethod(myActivitiesButtonInDayView);
 	}
 
-	public String checkEmployeeNameAtMyActivitiesInDayView(String employeeName) {
-		return webElementActions.getTextMethod(employeeNameAfterClickedOnMyActivitiesButton);
+	public String checkFirstEmployeeNameAtMyActivitiesInDayView(String employeeName) {
+		return webElementActions.getTextMethod(employeeNamesAfterClickedOnMyActivitiesButton, 0);
 	}
 
-	public String checkActionAtMyActivitiesInDayView() {
-		return webElementActions.getTextMethod(logMessageAfterClickedOnMyActivitiesButton);
+	public String checkFirstActionAtMyActivitiesInDayView() {
+		return webElementActions.getTextMethod(logMessagesAfterClickedOnMyActivitiesButton, 0);
 	}
 
-	public String checkLogTimeAtMyActivitiesInDayView() {
-		return webElementActions.getTextMethod(logTimeAfterClickedOnMyActivitiesButton);
+	public String checkSecondEmployeeNameAtMyActivitiesInDayView(String employeeName) {
+		return webElementActions.getTextMethod(employeeNamesAfterClickedOnMyActivitiesButton, 1);
+	}
+
+	public String checkSecondActionAtMyActivitiesInDayView() {
+		return webElementActions.getTextMethod(logMessagesAfterClickedOnMyActivitiesButton, 1);
 	}
 
 	public String checkSearchedTaskInDayView(String searchKey) throws InterruptedException {

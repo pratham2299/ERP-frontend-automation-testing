@@ -43,8 +43,20 @@ public class WebElementActions {
 		return waitForAllElementsVisibility(locator).size();
 	}
 
+	public WebElement lastWebELement(By locator) {
+		int indexOfLastElement = sizeOfListOfWebElement(locator) - 1;
+		WebElement lastElement = driver.findElements(locator).get(indexOfLastElement);
+		return lastElement;
+	}
+
 	public void scrollUntilElementFound(By locator) {
 		WebElement element = waitForElementVisibility(locator);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		// Scrolling down the page till the element is found
+		js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+
+	public void scrollUntilElementFound(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// Scrolling down the page till the element is found
 		js.executeScript("arguments[0].scrollIntoView();", element);

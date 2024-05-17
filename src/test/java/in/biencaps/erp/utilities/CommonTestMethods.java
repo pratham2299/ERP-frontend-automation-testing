@@ -2,7 +2,7 @@ package in.biencaps.erp.utilities;
 
 import static org.testng.Assert.*;
 
-import java.util.List;
+import java.util.*;
 
 import org.apache.logging.log4j.*;
 
@@ -17,24 +17,10 @@ public class CommonTestMethods extends BaseTest {
 	// So that you can check all execution logs anytime. Logs stores in Logs folder
 	public Logger log = LogManager.getLogger(CommonTestMethods.class);
 
-	protected LoginPage login;
-	protected WebElementActions webElementActions;
-	protected MyTasksPage myTasks;
-	protected DashboardPage dashboard;
-	protected RequestTests requestFun;
-	protected EmployeePage employee;
-	protected NotificationMessagesTests notification;
-
 	// This is re usable method of login with valid user Id and valid password
 	public void verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(String userId, String password)
 			throws InterruptedException {
-		login = new LoginPage();
-		webElementActions = new WebElementActions();
-		myTasks = new MyTasksPage(driver);
-		dashboard = new DashboardPage();
-		requestFun = new RequestTests();
-		employee = new EmployeePage();
-		notification = new NotificationMessagesTests();
+		LoginPage login = new LoginPage();
 
 		String validUserId = userId;
 
@@ -67,7 +53,7 @@ public class CommonTestMethods extends BaseTest {
 	}
 
 	public String verify_Employee_Name_After_Logged_In(String userId) {
-		dashboard = new DashboardPage();
+		DashboardPage dashboard = new DashboardPage();
 
 		String actualEmployeeName = dashboard.checkEmployeeNameAtDashboard();
 
@@ -83,7 +69,7 @@ public class CommonTestMethods extends BaseTest {
 	// Also it check stoast message text
 	// and handled exception
 	public void verify_Toast_Message_After_Task_Add_From_Sidebar(String date) throws InterruptedException {
-		myTasks = new MyTasksPage(driver);
+		MyTasksPage myTasks = new MyTasksPage(driver);
 
 		String actualToastMessageAfterTaskAdd = myTasks.checkTaskAddedToastMessage(date);
 		log.info("Actual toast message after task add from sidebar is: " + actualToastMessageAfterTaskAdd + "\n");
@@ -103,7 +89,7 @@ public class CommonTestMethods extends BaseTest {
 	// Also it check stoast message text
 	// and handled exception
 	public void verify_Toast_Message(String message, String toastMessageText) throws InterruptedException {
-		myTasks = new MyTasksPage(driver);
+		MyTasksPage myTasks = new MyTasksPage(driver);
 
 		String actualToastMessage = myTasks.checkToastMessage(toastMessageText);
 		log.info("Actual toast message " + message + " is: " + actualToastMessage + "\n");
@@ -118,11 +104,29 @@ public class CommonTestMethods extends BaseTest {
 		}
 	}
 
+	public void goToDayView() throws InterruptedException {
+		DashboardPage dashboard = new DashboardPage();
+		MyTasksPage myTasks = new MyTasksPage(driver);
+
+		dashboard.clickOnMyTasksSection();
+		Thread.sleep(1500);
+
+		myTasks.clickOnDayButton();
+
+		myTasks.clickOnTodayButton();
+		Thread.sleep(1000);
+
+		myTasks.clickOnRefreshButtonInDayView();
+		Thread.sleep(1500);
+
+		myTasks.scrollUptoBottomOfTaskDivInDayView();
+	}
+
 	// Created toast message common method
 	// Also it check stoast message text
 	// and handled exception
 	public void verify_Toast_MessageInBlueColor(String message, String toastMessageText) throws InterruptedException {
-		myTasks = new MyTasksPage(driver);
+		MyTasksPage myTasks = new MyTasksPage(driver);
 
 		String actualToastMessage = myTasks.checkToastMessageInBlueColor(toastMessageText);
 		log.info("Actual toast message " + message + " is: " + actualToastMessage + "\n");
@@ -143,7 +147,7 @@ public class CommonTestMethods extends BaseTest {
 	 * total tasks after add or delete task If falied it print catch statement
 	 */
 	public void verify_Total_Tasks_Count_In_Day_View_After_Added_Or_Deleted_Task(int totalTasksCount) {
-		myTasks = new MyTasksPage(driver);
+		MyTasksPage myTasks = new MyTasksPage(driver);
 
 		String completedTasksCountOutOfTotalTasksCountInDayView = myTasks
 				.checkCompletedTaskCountOutOfTotalTasksCountInDayView();
@@ -162,7 +166,7 @@ public class CommonTestMethods extends BaseTest {
 	 * print catch statement
 	 */
 	public void verify_Total_Completed_Tasks_Count_In_Day_View(int totalCompletedTasksCount) {
-		myTasks = new MyTasksPage(driver);
+		MyTasksPage myTasks = new MyTasksPage(driver);
 
 		String completedTasksCountOutOfTotalTasksCountInDayView = myTasks
 				.checkCompletedTaskCountOutOfTotalTasksCountInDayView();
@@ -181,7 +185,7 @@ public class CommonTestMethods extends BaseTest {
 	 * total tasks before add task
 	 */
 	public int get_Total_Tasks_Count_In_Day_View() {
-		myTasks = new MyTasksPage(driver);
+		MyTasksPage myTasks = new MyTasksPage(driver);
 
 		String completedTasksCountOutOfTotalTasksCountInDayView = myTasks
 				.checkCompletedTaskCountOutOfTotalTasksCountInDayView();
@@ -200,7 +204,7 @@ public class CommonTestMethods extends BaseTest {
 	 * task completed in day view
 	 */
 	public void verify_Percentage_Of_Completed_Tasks_In_Day_View(int completedTasks, int totalTasks) {
-		myTasks = new MyTasksPage(driver);
+		MyTasksPage myTasks = new MyTasksPage(driver);
 
 		int totalCompetedTasksCount = completedTasks;
 		int totalTasksCount = totalTasks;
@@ -219,6 +223,8 @@ public class CommonTestMethods extends BaseTest {
 	public void verify_Added_Task_Check_In_Day_View(String message, String taskTitle, String taskStatus,
 			String taskPriority, String taskProject, String taskStartDate, String taskDueDate, String taskDepartment,
 			String taskAssignee, String taskComment) throws InterruptedException {
+		MyTasksPage myTasks = new MyTasksPage(driver);
+
 		myTasks.clickOnRefreshButtonInDayView();
 
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -303,11 +309,11 @@ public class CommonTestMethods extends BaseTest {
 
 	public void verify_Added_Task_In_Week_View(String message, String taskTitle, String taskScheduleDate,
 			String taskDueDate) throws InterruptedException {
+		MyTasksPage myTasks = new MyTasksPage(driver);
+
 		String actualLastDateInWeekView = myTasks.checkLastDateInWeekView();
-		log.info("Actual last date in week view is: " + actualLastDateInWeekView);
 
 		String actualFirstDateInWeekView = myTasks.checkFirstDateInWeekView();
-		log.info("Actual first date in week view is: " + actualFirstDateInWeekView);
 
 		if (Integer.parseInt(actualLastDateInWeekView) < Integer.parseInt(taskDueDate.substring(8))) {
 			myTasks.clickOnNextWeekSelectIcon();
@@ -370,22 +376,127 @@ public class CommonTestMethods extends BaseTest {
 				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
 			}
 		}
-
 	}
 
-	public void verify_logged_In_Employee_Name_Notification_Message_And_Request_For_All_Higher_Authority(String role,
-			String loginEmployeeUserId, String loginEmployeePassword, String requestSenderEmployeeName,
-			String requestAction, String taskTitle) throws InterruptedException {
-		verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(loginEmployeeUserId, loginEmployeePassword);
+	public List<String> getAllHigherAuthoritiesNamesOfLoggedInEmployee() throws InterruptedException {
+		DashboardPage dashboard = new DashboardPage();
+		ProfilePage profile = new ProfilePage();
 
-		String actualHigherAuthorityEmployeeName = verify_Employee_Name_After_Logged_In(loginEmployeeUserId);
-		log.info("Actual " + role + " employee name at dashboard page is: " + actualHigherAuthorityEmployeeName + "\n");
-//
-//		notification.verifyNotificationMessageForSelfTaskSubmit(
-//				"after employee sent task " + requestAction + " request at " + role + " employee side", requestAction,
-//				taskTitle);
+		dashboard.clickOnEmployeeNameAtDashboard();
+		Thread.sleep(1000);
 
-		requestFun.verify_Request_In_Received_Request_Card(requestSenderEmployeeName, requestAction, taskTitle);
+		profile.clickOnEditInfoButton();
+
+		List<String> loggedInEmployeesAllHigherAuthorities = profile.getAllReportingAuthorities();
+		log.info("All higher authorities of logged in employee are: " + loggedInEmployeesAllHigherAuthorities);
+
+		List<String> reportingAuthoritiesUserIds = new ArrayList<String>();
+
+		for (String higherAuthority : loggedInEmployeesAllHigherAuthorities) {
+			reportingAuthoritiesUserIds.add(DataGenerator
+					.getUserIdByName(DataGenerator.employeeUserIdsAndNamesOnTestEnvironment(), higherAuthority));
+		}
+
+		log.info("All reporting authorities user Ids are: " + reportingAuthoritiesUserIds);
+		return reportingAuthoritiesUserIds;
 	}
 
+	public String reject_Task_Title_Change_Request_By_Higher_Authority(List<String> reportingAuthoritiesUserIds)
+			throws InterruptedException {
+		DashboardPage dashboard = new DashboardPage();
+		WebElementActions webElementActions = new WebElementActions();
+		RequestPage request = new RequestPage();
+		LogoutTests logOutFun = new LogoutTests();
+
+		webElementActions.refreshThePage();
+
+		logOutFun.verify_LogOut_Employee();
+
+		int randomIndex = random.nextInt(reportingAuthoritiesUserIds.size());
+		String userId = reportingAuthoritiesUserIds.get(randomIndex);
+		String password = DataGenerator.employeeUserIdsAndPasswordsOnTestingEnvironment().get(userId);
+
+		verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(userId, password);
+
+		String actualHigherAuthorityEmployeeName = verify_Employee_Name_After_Logged_In(userId);
+		log.info("Actual higher authority name at dashboard is: " + actualHigherAuthorityEmployeeName);
+
+		dashboard.clickOnRequestSectionLink();
+
+		request.clickOnRefreshIconInRequestSection();
+		Thread.sleep(2000);
+
+		request.clickOnFirstRejectButton();
+		Thread.sleep(1000);
+
+		request.clickOnRejectSendButtonInRequestSection();
+		Thread.sleep(2000);
+
+		return actualHigherAuthorityEmployeeName;
+	}
+
+	public String accept_Task_Title_Change_Request_By_Higher_Authority(List<String> reportingAuthoritiesUserIds)
+			throws InterruptedException {
+		DashboardPage dashboard = new DashboardPage();
+		WebElementActions webElementActions = new WebElementActions();
+		RequestPage request = new RequestPage();
+		LogoutTests logOutFun = new LogoutTests();
+
+		webElementActions.refreshThePage();
+
+		logOutFun.verify_LogOut_Employee();
+
+		int randomIndex = random.nextInt(reportingAuthoritiesUserIds.size());
+		String userId = reportingAuthoritiesUserIds.get(randomIndex);
+		String password = DataGenerator.employeeUserIdsAndPasswordsOnTestingEnvironment().get(userId);
+
+		verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(userId, password);
+
+		String actualHigherAuthorityEmployeeName = verify_Employee_Name_After_Logged_In(userId);
+		log.info("Actual higher authority name at dashboard is: " + actualHigherAuthorityEmployeeName);
+
+		dashboard.clickOnRequestSectionLink();
+
+		request.clickOnRefreshIconInRequestSection();
+		Thread.sleep(2000);
+
+		request.clickOnFirstApproveButton();
+		Thread.sleep(1000);
+
+		return actualHigherAuthorityEmployeeName;
+	}
+
+	public void verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(
+			List<String> reportingAuthoritiesUserIds, String notificationMessage, String taskScheduleDate,
+			String taskDueDate, String taskOwner, String requestAction, String requestSenderEmployeeName,
+			String taskTitle) throws InterruptedException {
+		WebElementActions webElementActions = new WebElementActions();
+		RequestTests requestFun = new RequestTests();
+		LogoutTests logOutFun = new LogoutTests();
+
+		for (String higherAuthorityUserId : reportingAuthoritiesUserIds) {
+			webElementActions.refreshThePage();
+
+			logOutFun.verify_LogOut_Employee();
+
+			String userId = higherAuthorityUserId;
+			String password = DataGenerator.employeeUserIdsAndPasswordsOnTestingEnvironment().get(userId);
+
+			verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(userId, password);
+
+			String actualRequestActionTakerHigherAuthority = verify_Employee_Name_After_Logged_In(userId);
+			log.info("Actual higher authority name at dashboard is: " + actualRequestActionTakerHigherAuthority);
+//			notification.verifyNotificationMessage(requestSenderEmployeeName, notificationMessage);
+
+			if (taskScheduleDate.equalsIgnoreCase(taskDueDate)) {
+				String taskOwnerNameWithTaskDate = taskOwner + " on " + taskScheduleDate + "";
+				requestFun.verify_Request_In_Received_Request_Card(requestSenderEmployeeName, taskOwnerNameWithTaskDate,
+						requestAction, taskTitle);
+			} else {
+				String taskOwnerNameWithTaskDate = taskOwner + " on " + taskScheduleDate + " to " + taskDueDate + "";
+				requestFun.verify_Request_In_Received_Request_Card(requestSenderEmployeeName, taskOwnerNameWithTaskDate,
+						requestAction, taskTitle);
+			}
+		}
+	}
 }

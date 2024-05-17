@@ -1,0 +1,21 @@
+17:45:21 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual higher authority employee name for tasks view at dashboard page is: Test Team Lead
+
+17:45:22 in.biencaps.erp.testCases.SelfTaskUpdateTests - Last role for level view is: Team Lead
+17:45:23 in.biencaps.erp.testCases.SelfTaskUpdateTests - Last role for level view is: Lead
+17:45:37 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual task viewed higher authority employee name in day view is: Test Team Lead
+17:45:42 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task title in day view is: A Time to Kill
+17:45:42 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task status in day view is: Submitted
+17:45:42 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task priority in day view is: Low
+17:45:49 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task project in day view is: 
+17:45:50 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task due date in day view is: 2024-05-18
+17:45:50 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task departments in day view is: [QA]
+17:45:50 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task verified status in day view is: Not Verified
+17:45:52 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual Last self task comment in day view is: Boyer-Ryan
+
+17:46:00 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual task title after clear and update from day view is: Alone on a Wide, Wide Sea
+17:46:28 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual selected task priority value from dropdown is: High
+17:46:31 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual updated task priority in day view is: High
+17:46:48 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual selected task start time in day view is: 10:45 AM
+17:47:07 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual selected task end time in day view is: 10:45 AM
+17:47:27 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual text for not selecting project of task before add gitlink in day view is: please assign a project to this task
+17:47:29 in.biencaps.erp.testCases.SelfTaskUpdateTests - Actual selected task project value from dropdown is: Incubators

@@ -65,6 +65,11 @@
 			<PatternLayout
 				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
 		</File>
+		<File name="NotificationMessagesTests"
+			fileName="Logs/NotificationMessagesTests.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %logger{36} - %msg%n" />
+		</File>
 		<File name="SelfTaskSubmittedTests"
 			fileName="Logs/SelfTaskSubmittedTests.log">
 			<PatternLayout
@@ -158,6 +163,14 @@
 			additivity="false">
 			<AppenderRef
 				ref="AddUpdateAssignTaskAndCheckAtEmployeeSideTests" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger
+			name="in.biencaps.erp.testCases.NotificationMessagesTests"
+			level="all"
+			additivity="false">
+			<AppenderRef
+				ref="NotificationMessagesTests" />
 			<AppenderRef ref="Console" />
 		</Logger>
 		<Logger
