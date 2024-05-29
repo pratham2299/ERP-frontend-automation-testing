@@ -56,11 +56,11 @@ public class SuiteListener implements ITestListener, IAnnotationTransformer {
 		}
 	}
 
-	@Override
 	public void onFinish(ITestContext context) {
 		if (isBrowserClosed()) {
 			System.out.println("Browser session has been closed unexpectedly.");
 			BaseTest.driver.quit();
+			BaseTest.extent.flush();
 		}
 	}
 }

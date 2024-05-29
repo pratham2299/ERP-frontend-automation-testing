@@ -5,9 +5,10 @@ public interface Constants {
 	String browserName = "chrome";
 
 	String websiteUrlOnStagingEnvironemnt = "https://erp.biencaps.in/login";
-	String websiteUrlOnTestEnvironemnt = "http://192.168.0.133:3001/login";
+	String websiteUrlOnTestEnvironemnt = "http://192.168.0.121:3000/login";
 
-	String backendUrl = "https://erp.biencaps.in:10004";
+	String backendUrlOnTestEnvironment = "https://erp.biencaps.in:10004";
+	String backendUrlOnDevEnvironment = "http://192.168.0.121:10002";
 
 	String databaseUrl = "jdbc:mysql://localhost:3306/mydatabase";
 	String databaseUserName = "root";
@@ -20,14 +21,6 @@ public interface Constants {
 	String extentReportName = "ERP Automation Test Exection Results By Prathamesh Dhasade";
 
 	String gmailKey = "jxyn mast qqtg jhkh";
-
-	String adminLevelTesterEmployeeUserId = "INC004";
-
-	String teamLeadLevelTesterEmployeeUserId = "INC017";
-	String teamLeadLevelTesterEmployeePassword = "Pass@123";
-
-	String leadLevelTesterEmployeeUserId = "INC012";
-	String leadLevelTesterEmployeePassword = "Pass@123";
 
 	String employeeUserId = "INC012";
 	String employeePassword = "Pass@123";

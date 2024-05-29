@@ -34,6 +34,8 @@ public class PasswordChangeTests {
 	public void verify_Change_Login_Password_With_Valid_And_Invalid_Password(String currentPassword, String newPassword,
 			String confirmNewPassword) throws Exception {
 		webElementActions.refreshThePage();
+		
+		dashboard.clickOnSettingsSectionLink();
 
 		settings.clickOnChangeYourLoginPasswordBox();
 		Thread.sleep(500);

@@ -5,19 +5,27 @@ import java.time.format.*;
 import java.util.*;
 import java.util.concurrent.*;
 
+import com.github.javafaker.Faker;
+
 import in.biencaps.erp.pages.*;
 
 public class DataGenerator {
 	static WebElementActions webElementActions = new WebElementActions();
 	static EmployeePage employee = new EmployeePage();
 
+	static Faker faker = new Faker();
 	static Random random = new Random();
+
+	public static String taskTitlesInput() {
+		return faker.book().title();
+	}
 
 	// This method stores employee user Id and names
 	// So that we can use it while log in on production
 	public static HashMap<String, String> employeeUserIdsAndPasswordsOnTestingEnvironment() {
 		HashMap<String, String> employees = new HashMap<String, String>();
 		employees.put("INC012", "Pass@123");
+		employees.put("INC003", "Pass@123");
 		employees.put("INC004", "Pass@123");
 		employees.put("INC017", "Pass@123");
 
@@ -38,6 +46,7 @@ public class DataGenerator {
 	public static HashMap<String, String> employeeUserIdsAndNamesOnTestEnvironment() {
 		HashMap<String, String> employees = new HashMap<String, String>();
 		employees.put("INC012", "Prathamesh Dhasade");
+		employees.put("INC003", "Pramod Bansode");
 		employees.put("INC004", "Sachin Patil");
 		employees.put("INC017", "Test Team Lead");
 
@@ -99,7 +108,7 @@ public class DataGenerator {
 		return sb.toString();
 	}
 
-	public static String generateRandomLessThan10DigitMobileNumber(int stringMinLength, int stringMaxLength) {
+	public static String generateRandomInvalidDigitMobileNumber(int stringMinLength, int stringMaxLength) {
 		int minLength = stringMinLength;
 		int maxLength = stringMaxLength; // You can adjust this as per your requirement
 		int length = minLength + new Random().nextInt(maxLength - minLength);
@@ -150,5 +159,20 @@ public class DataGenerator {
 			}
 		}
 		return null; // Return -1 if name not found
+	}
+
+	// Get current time
+	public static LocalDateTime getCurrentTime() {
+		LocalDateTime currentTime = LocalDateTime.now();
+
+		return currentTime;
+	}
+
+	// Check difference of start and end time in minutes
+	public static long getDifferenceOfTimeInMinutes(LocalDateTime startTime, LocalDateTime endTime) {
+		Duration duration = Duration.between(startTime, endTime);
+		long differenceInMinutes = duration.toMinutes();
+
+		return differenceInMinutes;
 	}
 }

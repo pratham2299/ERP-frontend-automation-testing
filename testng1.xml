@@ -10,7 +10,11 @@
 			<class
 				name="in.biencaps.erp.testCases.LoginAndForgotPasswordTests" />
 			<class
-				name="in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests" />
+				name="in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests" />
+			<class
+				name="in.biencaps.erp.testCases.SelfTaskUpdateTests" />
+			<class
+				name="in.biencaps.erp.testCases.SelfTaskSubmittedTests" />
 		</classes>
 	</test>
 </suite> 

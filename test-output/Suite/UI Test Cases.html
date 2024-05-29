@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>UI Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>31/9/6</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 17 17:52:48 IST 2024</td>
+<td>Started on:</td><td>Sat May 18 10:19:48 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>205 seconds (205931 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20601 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,1069 +76,123 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Last_Task_Details_In_Day_View()'><b>verify_Last_Task_Details_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1754}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:46)
-	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:111)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Last_Task_Details_In_Day_View(SelfTaskUpdateTests.java:99)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace780299217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace780299217'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1754}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:46)
-	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:111)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Last_Task_Details_In_Day_View(SelfTaskUpdateTests.java:99)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@3dd1dc90</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment()'><b>verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button style=&quot;margin-left: 3px;&quot;&gt;...&lt;/button&gt; is not clickable at point (1362, 118). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.2196}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //button[normalize-space()=&apos;Week&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnWeekButton(MyTasksPage.java:557)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment(AddSelfTaskAndCheckInDayViewTests.java:828)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace555334461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace555334461'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button style=&quot;margin-left: 3px;&quot;&gt;...&lt;/button&gt; is not clickable at point (1362, 118). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.2196}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //button[normalize-space()=&apos;Week&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnWeekButton(MyTasksPage.java:557)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment(AddSelfTaskAndCheckInDayViewTests.java:828)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs()'><b>verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;taskTitle&quot; id=&quot;due-task-title&quot; type=&quot;text&quot; value=&quot;The Far-Distant Oxus&quot;&gt; is not clickable at point (562, 252). Other element would receive the click: &lt;span class=&quot;log-taskName&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1835}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//div[@class=&apos;taskTileDivContainer&apos;]//input[@type=&apos;text&apos;])[last()]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnLastTaskTitleTextfieldInDayView(MyTasksPage.java:602)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs(SelfTaskUpdateTests.java:157)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369420609", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace369420609'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;taskTitle&quot; id=&quot;due-task-title&quot; type=&quot;text&quot; value=&quot;The Far-Distant Oxus&quot;&gt; is not clickable at point (562, 252). Other element would receive the click: &lt;span class=&quot;log-taskName&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1835}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//div[@class=&apos;taskTileDivContainer&apos;]//input[@type=&apos;text&apos;])[last()]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnLastTaskTitleTextfieldInDayView(MyTasksPage.java:602)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs(SelfTaskUpdateTests.java:157)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@3dd1dc90</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar()'><b>verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>java.lang.AssertionError: expected [has added new task on 2024-05-15] but found [has added new task]
-	at in.biencaps.erp.testCases.MyActivitiesTests.verify_Log_Message(MyActivitiesTests.java:45)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar(AddSelfTaskAndCheckInDayViewTests.java:429)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1335943526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1335943526'><pre>java.lang.AssertionError: expected [has added new task on 2024-05-15] but found [has added new task]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at in.biencaps.erp.testCases.MyActivitiesTests.verify_Log_Message(MyActivitiesTests.java:45)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar(AddSelfTaskAndCheckInDayViewTests.java:429)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>13</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs()'><b>verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;OutputWrapperPrority&quot; style=&quot;background-color: rgb(237, 223, 203);&quot;&gt;...&lt;/div&gt; is not clickable at point (968, 252). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1842}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//div[@class=&apos;OutputWrapperPrority&apos;])[last()]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnLastTaskPriorityInDayView(MyTasksPage.java:694)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs(SelfTaskUpdateTests.java:256)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931933364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace931933364'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;OutputWrapperPrority&quot; style=&quot;background-color: rgb(237, 223, 203);&quot;&gt;...&lt;/div&gt; is not clickable at point (968, 252). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1842}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//div[@class=&apos;OutputWrapperPrority&apos;])[last()]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnLastTaskPriorityInDayView(MyTasksPage.java:694)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs(SelfTaskUpdateTests.java:256)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@3dd1dc90</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_New_Task_From_Day_View_At_Current_Date()'><b>verify_Add_New_Task_From_Day_View_At_Current_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1754}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:46)
-	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:111)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_New_Task_From_Day_View_At_Current_Date(AddSelfTaskAndCheckInDayViewTests.java:437)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace840105755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace840105755'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1754}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:46)
-	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:111)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_New_Task_From_Day_View_At_Current_Date(AddSelfTaskAndCheckInDayViewTests.java:437)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date()'><b>verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1754}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:46)
-	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:111)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date(AddSelfTaskAndCheckInDayViewTests.java:486)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1199071589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1199071589'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p&gt;...&lt;/p&gt; is not clickable at point (87, 109). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1754}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: //p[normalize-space()=&apos;My Tasks&apos;]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnMyTasksSection(DashboardPage.java:46)
-	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:111)
-	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date(AddSelfTaskAndCheckInDayViewTests.java:486)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Higher_Authority_Viewed_Tasks()'><b>verify_Higher_Authority_Viewed_Tasks</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg class=&quot;logout-req&quot; width=&quot;19&quot; height=&quot;18&quot; viewBox=&quot;0 0 19 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (1491, 25). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.2197}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//*[name()=&apos;svg&apos;][@class=&apos;logout-req&apos;])[1]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnLogOutIcon(DashboardPage.java:78)
-	at in.biencaps.erp.testCases.LogoutTests.verify_LogOut_Employee(LogoutTests.java:27)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Higher_Authority_Viewed_Tasks(SelfTaskUpdateTests.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1289193817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1289193817'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg class=&quot;logout-req&quot; width=&quot;19&quot; height=&quot;18&quot; viewBox=&quot;0 0 19 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (1491, 25). Other element would receive the click: &lt;div class=&quot;logs-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.2197}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//*[name()=&apos;svg&apos;][@class=&apos;logout-req&apos;])[1]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.DashboardPage.clickOnLogOutIcon(DashboardPage.java:78)
-	at in.biencaps.erp.testCases.LogoutTests.verify_LogOut_Employee(LogoutTests.java:27)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Higher_Authority_Viewed_Tasks(SelfTaskUpdateTests.java:48)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@3dd1dc90</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs()'><b>verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;OutputWrapperStatus&quot; style=&quot;background-color: rgb(201, 200, 200);&quot;&gt;...&lt;/div&gt; is not clickable at point (847, 252). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1841}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//div[@class=&apos;OutputWrapperStatus&apos;])[last()]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnLastTaskStatusInDayView(MyTasksPage.java:674)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs(SelfTaskUpdateTests.java:192)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1101629239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1101629239'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;OutputWrapperStatus&quot; style=&quot;background-color: rgb(201, 200, 200);&quot;&gt;...&lt;/div&gt; is not clickable at point (847, 252). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
-  (Session info: chrome=125.0.6422.60)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86006e3bf226fe8ed3d92777d155140d, clickElement {id=f.E8A2B62062166603811D12EF065B9EDF.d.C2E56B3EA5BE8116F28AB1E9C450D7B9.e.1841}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53032/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86006e3bf226fe8ed3d92777d155140d)] -&gt; xpath: (//div[@class=&apos;OutputWrapperStatus&apos;])[last()]]
-Session ID: 86006e3bf226fe8ed3d92777d155140d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:89)
-	at in.biencaps.erp.pages.MyTasksPage.clickOnLastTaskStatusInDayView(MyTasksPage.java:674)
-	at in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs(SelfTaskUpdateTests.java:192)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@3dd1dc90</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='in.biencaps.erp.testCases.PasswordChangeTests.verify_Change_Login_Password_With_Valid_And_Invalid_Password()'><b>verify_Change_Login_Password_With_Valid_And_Invalid_Password</b><br>Test class: in.biencaps.erp.testCases.PasswordChangeTests<br>Parameters: Pass@123, *umk93nZD*R0hh37q426, Pass@123</td>
-<td></td>
-<td>5</td>
-<td>in.biencaps.erp.testCases.PasswordChangeTests@4189d70b</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: 73, 9850708611, prathmeshdhasade99@gmail.com</td>
-<td></td>
-<td>2</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same()'><b>verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td></td>
-<td>5</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_Before_Add_New_Task()'><b>verify_Total_Tasks_Count_Before_Add_New_Task</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td></td>
-<td>4</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: d, Pass@123</td>
-<td></td>
-<td>4</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: Riga, Pass@123</td>
-<td></td>
-<td>3</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@6941827a</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: 9834530434, 5867079, prathmeshdhasade99@gmail.com</td>
-<td></td>
-<td>2</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View()'><b>verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td></td>
-<td>7</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Profile_Update_By_Entering_Optional_Fields()'><b>verify_Profile_Update_By_Entering_Optional_Fields</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests</td>
-<td></td>
-<td>9</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.PasswordChangeTests.verify_Change_Login_Password_With_Valid_And_Invalid_Password()'><b>verify_Change_Login_Password_With_Valid_And_Invalid_Password</b><br>Test class: in.biencaps.erp.testCases.PasswordChangeTests<br>Parameters: Pass@123, Pass@123, Pass@123</td>
-<td></td>
-<td>7</td>
-<td>in.biencaps.erp.testCases.PasswordChangeTests@4189d70b</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: jxyn mast qqtg jhkh, lkl8bb4w</td>
-<td></td>
-<td>4</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Sidebar_Without_Entering_Task_Title()'><b>verify_Add_Task_From_Sidebar_Without_Entering_Task_Title</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td></td>
-<td>3</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: INC012, Pass@123</td>
-<td></td>
-<td>3</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@6941827a</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Password()'><b>verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Password</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests</td>
-<td></td>
-<td>3</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: 9834530434, 9850708611, prathmeshdhasade99@gmail.com</td>
-<td></td>
-<td>3</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: QL365JHFr56eDAyRi9pMvM, lkl8bb4w</td>
-<td></td>
-<td>4</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
 <td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Forgot_Password_Without_Giving_UserId()'><b>verify_Forgot_Password_Without_Giving_UserId</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests</td>
-<td></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@6941827a</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Gmail_Key()'><b>verify_Gmail_Key_Submit_At_Employee_Side_Without_Entering_Gmail_Key</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests</td>
-<td></td>
-<td>3</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Month_View_At_Current_Date()'><b>verify_Add_Task_From_Month_View_At_Current_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td></td>
-<td>8</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.PasswordChangeTests.verify_Change_Login_Password_With_Valid_And_Invalid_Password()'><b>verify_Change_Login_Password_With_Valid_And_Invalid_Password</b><br>Test class: in.biencaps.erp.testCases.PasswordChangeTests<br>Parameters: Pass@123, Pass@123, 2zk9pk24186</td>
-<td></td>
-<td>5</td>
-<td>in.biencaps.erp.testCases.PasswordChangeTests@4189d70b</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View()'><b>verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td></td>
-<td>31</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Employee_Name_After_Logged_In()'><b>verify_Employee_Name_After_Logged_In</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests</td>
-<td></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@6941827a</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Profile_Update_From_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: 9834530434, 9850708611, prathmeshdhasade</td>
-<td></td>
-<td>2</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Primary_Mobile_Number_Textfield_By_Leaving_Field_Empty()'><b>verify_Primary_Mobile_Number_Textfield_By_Leaving_Field_Empty</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests</td>
-<td></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.PasswordChangeTests.verify_Change_Login_Password_With_Valid_And_Invalid_Password()'><b>verify_Change_Login_Password_With_Valid_And_Invalid_Password</b><br>Test class: in.biencaps.erp.testCases.PasswordChangeTests<br>Parameters: 7kqlnfk3i, Pass@123, Pass@123</td>
-<td></td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;Forgot Password?&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55145}, msedge: {msedgedriverVersion: 124.0.2478.109 (86e86c0432b..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55145/devtoo..., se:cdpVersion: 124.0.2478.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 675b8a5acb8f3089ebd0ae1ee59309b0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:88)
+	at in.biencaps.erp.pages.LoginPage.clickOnForgotPasswordLink(LoginPage.java:71)
+	at in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Forgot_Password_Without_Giving_UserId(LoginAndForgotPasswordTests.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688113407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688113407'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;Forgot Password?&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55145}, msedge: {msedgedriverVersion: 124.0.2478.109 (86e86c0432b..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55145/devtoo..., se:cdpVersion: 124.0.2478.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 675b8a5acb8f3089ebd0ae1ee59309b0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:88)
+	at in.biencaps.erp.pages.LoginPage.clickOnForgotPasswordLink(LoginPage.java:71)
+	at in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Forgot_Password_Without_Giving_UserId(LoginAndForgotPasswordTests.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>7</td>
-<td>in.biencaps.erp.testCases.PasswordChangeTests@4189d70b</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date()'><b>verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td></td>
-<td>13</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: Riga, lnkwzs2n4b</td>
-<td></td>
-<td>2</td>
 <td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@6941827a</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: d, lkl8bb4w</td>
-<td></td>
-<td>4</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: jxyn mast qqtg jhkh, Pass@123</td>
-<td></td>
-<td>4</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.ProfilePageUpdateTests.verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data()'><b>verify_Gmail_Key_Submit_At_Employee_Side_With_Valid_And_Invalid_Data</b><br>Test class: in.biencaps.erp.testCases.ProfilePageUpdateTests<br>Parameters: QL365JHFr56eDAyRi9pMvM, Pass@123</td>
-<td></td>
-<td>4</td>
-<td>in.biencaps.erp.testCases.ProfilePageUpdateTests@5e81e5ac</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: INC012, lnkwzs2n4b</td>
-<td></td>
-<td>2</td>
+<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: Yerevan, Pass@123</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type=&apos;text&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55145}, msedge: {msedgedriverVersion: 124.0.2478.109 (86e86c0432b..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55145/devtoo..., se:cdpVersion: 124.0.2478.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 675b8a5acb8f3089ebd0ae1ee59309b0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:88)
+	at in.biencaps.erp.pages.LoginPage.clickOnUserIdTextfield(LoginPage.java:29)
+	at in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(LoginAndForgotPasswordTests.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1222590577", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1222590577'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type=&apos;text&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55145}, msedge: {msedgedriverVersion: 124.0.2478.109 (86e86c0432b..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55145/devtoo..., se:cdpVersion: 124.0.2478.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 675b8a5acb8f3089ebd0ae1ee59309b0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:88)
+	at in.biencaps.erp.pages.LoginPage.clickOnUserIdTextfield(LoginPage.java:29)
+	at in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails(LoginAndForgotPasswordTests.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
 <td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@6941827a</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View()'><b>verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_New_Task_From_Day_View_At_Current_Date() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1655651660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1655651660'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_New_Task_From_Day_View_At_Current_Date() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar()'><b>verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace236077926", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace236077926'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar()'><b>verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1563640426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1563640426'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View()'><b>verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace185317361", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace185317361'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_In_Week_View()'><b>verify_Added_Task_From_Week_View_Sidebar_In_Week_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_In_Week_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace182129047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace182129047'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_In_Week_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View()'><b>verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
-<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082097780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2082097780'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e depends on not successfully finished methods 
-[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@6f0b0a5e</td></tr>
 </table><p>
 </body>
 </html>

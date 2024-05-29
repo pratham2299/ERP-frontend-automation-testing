@@ -110,8 +110,10 @@ public class MyTasksPage {
 	public By addTasksButtonInDayView = By.xpath("//p[normalize-space()='Add Tasks']");
 	public By tasksCountInDayView = By.xpath("//div[@class='DayViewActualProgressContentView']/p");
 	public By myActivitiesButtonInDayView = By.xpath("//div[@class='getLogs']");
-	public By employeeNamesAfterClickedOnMyActivitiesButton = By.xpath("//div[@class='logInfo']//span");
-	public By logMessagesAfterClickedOnMyActivitiesButton = By.xpath("//div[@class='log']//p");
+	public By employeeNamesInMyActivities = By.xpath("//div[@class='logInfo']//span");
+	public By logMessagesInMyActivities = By.xpath("//div[@class='log']//p");
+	public By logTaskNameInMyActivities = By.xpath("//span[@class='log-taskName']");
+	public By logTimeInMyActivities = By.xpath("//div[@class='logTime']");
 	public By searchBarInDayView = By.xpath("//input[@placeholder='Search task name']");
 	public By taskStatusesValuesFromDropdown = By.xpath("//div[@class='listOfStatusWrapper']//div");
 	public By taskPrioritiesValuesFromDropdown = By.xpath("//div[@class='listOfProrityWrapper']/div");
@@ -137,6 +139,7 @@ public class MyTasksPage {
 	public By lastEndTimeTextfieldInDayView = By.xpath("(//input[@placeholder='End time'])[last()]");
 
 	public By imageOfTaskViewedEmployeeInDayView = By.xpath("(//div[@class='taskOwnerImage viewedByDiv'])[last()]");
+	public By approveButtonForView = By.xpath("//div[@class='approve-task']");
 
 	// constructor created for webdriver initialized to this class driver variable
 	// Also that webdriver passed as argument to selenium methods class
@@ -194,15 +197,21 @@ public class MyTasksPage {
 	}
 
 	public void selectTaskScheduleDateValueFromCalendarWhileAddTaskFromSidebar(int date) {
+		By lastDateOfMonth = By.xpath("(//span[@aria-disabled='false'])[last()]");
+		String lastDateOfMonthText = webElementActions.getTextMethod(lastDateOfMonth);
+
 		By selectedTaskScheduleDateValue;
 		if (date < 1) {
 			webElementActions.clickOnMethod(previousMonthIconInDayView);
 
-			By lastDateOfMonth = By.xpath("(//span[@aria-disabled='false'])[last()]");
-			String lastDateOfMonthText = webElementActions.getTextMethod(lastDateOfMonth);
 			String taskStartDate = String.valueOf(Integer.parseInt(lastDateOfMonthText) + date);
 			selectedTaskScheduleDateValue = By
 					.xpath("//span[@aria-disabled='false'][normalize-space()='" + taskStartDate + "']");
+		} else if (date > Integer.parseInt(lastDateOfMonthText)) {
+			webElementActions.clickOnMethod(nextMonthIconInDayView);
+			int randomDate = new Faker().number().numberBetween(1, 5);
+			selectedTaskScheduleDateValue = By
+					.xpath("//span[@aria-disabled='false'][normalize-space()='" + randomDate + "']");
 		} else {
 			selectedTaskScheduleDateValue = By
 					.xpath("//span[@aria-disabled='false'][normalize-space()='" + date + "']");
@@ -430,17 +439,33 @@ public class MyTasksPage {
 
 	public int checkNewAddedTaskTitleRowIndexInDayView(String taskTitle) {
 		List<String> taskTitles = webElementActions.getValuesOfWebelements(taskTitlesInDayView);
-		int index = 0;
+		int firstOccurrence = -1;
+		int lastOccurrence = -1;
+		int count = 0;
+
+		// loop through task titles list
+		// check provided task title matches with index of task titles list
+		// If matched increment count value
 		for (int i = 0; i < taskTitles.size(); i++) {
 			if (taskTitles.get(i).equalsIgnoreCase(taskTitle)) {
-				index++;
-
-				if (index == 2) {
-					return index;
+				count++;
+				if (count == 1) {
+					firstOccurrence = i;
 				}
+				lastOccurrence = i;
 			}
 		}
-		return taskTitles.indexOf(taskTitle);
+
+		// If count is 1 then return first occurence index
+		// or else if count is 2 then return last occurence index
+		// else return -1 it shows that provided task title is not found in list
+		if (count == 1) {
+			return firstOccurrence;
+		} else if (count == 2) {
+			return lastOccurrence;
+		} else {
+			return -1; // or another value to indicate it doesn't appear exactly twice
+		}
 	}
 
 	public String checkLastTaskStatusTextInDayView() {
@@ -631,19 +656,35 @@ public class MyTasksPage {
 	}
 
 	public String checkFirstEmployeeNameAtMyActivitiesInDayView(String employeeName) {
-		return webElementActions.getTextMethod(employeeNamesAfterClickedOnMyActivitiesButton, 0);
+		return webElementActions.getTextMethod(employeeNamesInMyActivities, 0);
+	}
+
+	public String checkFirstLogTimeAtMyActivitiesInDayView() {
+		return webElementActions.getTextMethod(logTimeInMyActivities, 0);
 	}
 
 	public String checkFirstActionAtMyActivitiesInDayView() {
-		return webElementActions.getTextMethod(logMessagesAfterClickedOnMyActivitiesButton, 0);
+		return webElementActions.getTextMethod(logMessagesInMyActivities, 0);
+	}
+
+	public String checkFirstTaskTitleAtMyActivitiesInDayView() {
+		return webElementActions.getTextMethod(logTaskNameInMyActivities, 0);
 	}
 
 	public String checkSecondEmployeeNameAtMyActivitiesInDayView(String employeeName) {
-		return webElementActions.getTextMethod(employeeNamesAfterClickedOnMyActivitiesButton, 1);
+		return webElementActions.getTextMethod(employeeNamesInMyActivities, 1);
+	}
+
+	public String checkSecondLogTimeAtMyActivitiesInDayView() {
+		return webElementActions.getTextMethod(logTimeInMyActivities, 1);
 	}
 
 	public String checkSecondActionAtMyActivitiesInDayView() {
-		return webElementActions.getTextMethod(logMessagesAfterClickedOnMyActivitiesButton, 1);
+		return webElementActions.getTextMethod(logMessagesInMyActivities, 1);
+	}
+
+	public String checkSecondTaskTitleAtMyActivitiesInDayView() {
+		return webElementActions.getTextMethod(logTaskNameInMyActivities, 1);
 	}
 
 	public String checkSearchedTaskInDayView(String searchKey) throws InterruptedException {
@@ -915,5 +956,10 @@ public class MyTasksPage {
 		By taskViwedEmployeeNameAfterHover = By.xpath("//div[normalize-space()='" + taskViwedEmployee + "']");
 
 		return webElementActions.getTextMethod(taskViwedEmployeeNameAfterHover);
+	}
+
+	public void clickOnLastApproveButtonForTaskView() {
+		int sizeOfApproveButtons = webElementActions.sizeOfListOfWebElement(approveButtonForView);
+		webElementActions.clickOnMethod(approveButtonForView, sizeOfApproveButtons - 1);
 	}
 }

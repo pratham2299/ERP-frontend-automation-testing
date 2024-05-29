@@ -21,7 +21,6 @@ public class SelfTaskSubmittedTests extends BaseTest {
 	private String lastTaskTitleInDayView;
 	private String lastTaskScheduleDatInDayView;
 	private String lastTaskDueDatInDayView;
-	private String actualHigherAuthorityName;
 	private List<String> reportingAuthoritiesUserIds;
 	private String actualTaskOwner;
 	private String requestActionForSelfTaskSubmit;
@@ -105,9 +104,11 @@ public class SelfTaskSubmittedTests extends BaseTest {
 		reportingAuthoritiesUserIds = commonMethods.getAllHigherAuthoritiesNamesOfLoggedInEmployee();
 		System.out.println(reportingAuthoritiesUserIds);
 
+		String notificationMessage = "wants to submit self task \"" + lastTaskTitleInDayView + "\"";
+
 		commonMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(
-				reportingAuthoritiesUserIds, "", lastTaskScheduleDatInDayView, lastTaskDueDatInDayView, actualTaskOwner,
-				requestActionForSelfTaskSubmit, actualTaskOwner, lastTaskTitleInDayView);
+				reportingAuthoritiesUserIds, notificationMessage, lastTaskScheduleDatInDayView, lastTaskDueDatInDayView,
+				actualTaskOwner, requestActionForSelfTaskSubmit, actualTaskOwner, lastTaskTitleInDayView);
 	}
 
 	@Test(dependsOnMethods = "verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task")
@@ -120,14 +121,10 @@ public class SelfTaskSubmittedTests extends BaseTest {
 	@Test(priority = 4)
 	public void verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side()
 			throws InterruptedException {
-		logOutFun.verify_LogOut_Employee();
+		commonMethods.login_Employee_And_Get_Name();
 
-		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
-				Constants.employeePassword);
-		Thread.sleep(3000);
-
-//		notification.verifyNotificationMessage(actualRequestActionTakerHigherAuthority,
-//				"rejected your request for \"" + actualLastAssignTaskTitleInDayView + "\"");
+		notification.verifyNotificationMessage(actualRequestActionTakerHigherAuthority,
+				"rejected your request for \"" + lastTaskTitleInDayView + "\"");
 	}
 
 	// Check task status after task submit request rejected in day view
@@ -144,8 +141,8 @@ public class SelfTaskSubmittedTests extends BaseTest {
 		if (actualTaskStatusInDayViewAfterTaskSubmittedRequestDeniedByAdmin.equalsIgnoreCase("In Progress")) {
 			assertEquals(actualTaskStatusInDayViewAfterTaskSubmittedRequestDeniedByAdmin, "In Progress");
 
-			myActivities.verify_Log_Message(actualHigherAuthorityName, "has rejected your request for task submit in",
-					lastTaskTitleInDayView);
+			myActivities.verify_Log_Message(actualRequestActionTakerHigherAuthority,
+					"has rejected your request for task submit in", lastTaskTitleInDayView);
 		} else {
 			log.info("Task status remained as it is");
 		}
@@ -159,13 +156,13 @@ public class SelfTaskSubmittedTests extends BaseTest {
 		if (lastTaskScheduleDatInDayView.equalsIgnoreCase(lastTaskDueDatInDayView)) {
 			String taskOwnerNameWithTaskDate = actualTaskOwner + " on " + lastTaskScheduleDatInDayView + "";
 			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Rejected",
-					taskOwnerNameWithTaskDate, actualHigherAuthorityName, requestActionForSelfTaskSubmit,
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForSelfTaskSubmit,
 					lastTaskTitleInDayView);
 		} else {
 			String taskOwnerNameWithTaskDate = actualTaskOwner + " on " + lastTaskScheduleDatInDayView + " to "
 					+ lastTaskDueDatInDayView + "";
 			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Rejected",
-					taskOwnerNameWithTaskDate, actualHigherAuthorityName, requestActionForSelfTaskSubmit,
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForSelfTaskSubmit,
 					lastTaskTitleInDayView);
 		}
 	}
@@ -227,9 +224,11 @@ public class SelfTaskSubmittedTests extends BaseTest {
 		reportingAuthoritiesUserIds = commonMethods.getAllHigherAuthoritiesNamesOfLoggedInEmployee();
 		System.out.println(reportingAuthoritiesUserIds);
 
+		String notificationMessage = "wants to submit self task \"" + lastTaskTitleInDayView + "\"";
+
 		commonMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(
-				reportingAuthoritiesUserIds, "", lastTaskScheduleDatInDayView, lastTaskDueDatInDayView, actualTaskOwner,
-				requestActionForSelfTaskSubmit, actualTaskOwner, lastTaskTitleInDayView);
+				reportingAuthoritiesUserIds, notificationMessage, lastTaskScheduleDatInDayView, lastTaskDueDatInDayView,
+				actualTaskOwner, requestActionForSelfTaskSubmit, actualTaskOwner, lastTaskTitleInDayView);
 	}
 
 	@Test(dependsOnMethods = "verify_New_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task")
@@ -242,14 +241,10 @@ public class SelfTaskSubmittedTests extends BaseTest {
 	@Test(priority = 13)
 	public void verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side()
 			throws InterruptedException {
-		logOutFun.verify_LogOut_Employee();
+		commonMethods.login_Employee_And_Get_Name();
 
-		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
-				Constants.employeePassword);
-		Thread.sleep(3000);
-
-//		notification.verifyNotificationMessage(actualRequestActionTakerHigherAuthority,
-//				"accepted your request for \"" + actualLastAssignTaskTitleInDayView + "\"");
+		notification.verifyNotificationMessage(actualRequestActionTakerHigherAuthority,
+				"accepted your request for \"" + lastTaskTitleInDayView + "\"");
 	}
 
 	// Check task status after task submit request accepted in day view
@@ -287,7 +282,7 @@ public class SelfTaskSubmittedTests extends BaseTest {
 	// Check log message after task submit request accepted in day view
 	@Test(priority = 16)
 	public void verify_Log_Message_After_Submit_Task_Request_Accepted() throws InterruptedException {
-		myActivities.verify_Log_Message(actualHigherAuthorityName,
+		myActivities.verify_Log_Message(actualRequestActionTakerHigherAuthority,
 				"has approved your request and changed task status from \"Submitted\" to \"Completed\" in",
 				lastTaskTitleInDayView);
 	}
@@ -299,13 +294,13 @@ public class SelfTaskSubmittedTests extends BaseTest {
 		if (lastTaskScheduleDatInDayView.equalsIgnoreCase(lastTaskDueDatInDayView)) {
 			String taskOwnerNameWithTaskDate = actualTaskOwner + " on " + lastTaskScheduleDatInDayView + "";
 			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Accepted",
-					taskOwnerNameWithTaskDate, actualHigherAuthorityName, requestActionForSelfTaskSubmit,
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForSelfTaskSubmit,
 					lastTaskTitleInDayView);
 		} else {
 			String taskOwnerNameWithTaskDate = actualTaskOwner + " on " + lastTaskScheduleDatInDayView + " to "
 					+ lastTaskDueDatInDayView + "";
 			requestFun.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category("Accepted",
-					taskOwnerNameWithTaskDate, actualHigherAuthorityName, requestActionForSelfTaskSubmit,
+					taskOwnerNameWithTaskDate, actualRequestActionTakerHigherAuthority, requestActionForSelfTaskSubmit,
 					lastTaskTitleInDayView);
 		}
 	}

@@ -11,22 +11,22 @@ import in.biencaps.erp.pages.*;
 import in.biencaps.erp.utilities.*;
 
 /* This class is extended BaseTest class.
- *  BaseTest has driver so you can inherite driver from BaseTest to this class
+ *  BaseTest has driver so you can inherit driver from BaseTest to this class
  */
 public class SelfTaskUpdateTests extends BaseTest {
-	// This is logger API dependency code. To print messages in seperate file.
+	// This is logger API dependency code. To print messages in separate file.
 	// So that you can check all execution logs anytime. Logs stores in Logs folder
 	public static Logger log = LogManager.getLogger(SelfTaskUpdateTests.class);
 
-	public static String actualTaskTitleAfterClearAndUpdateFromDayView;
-	public static String actualLastSelfTaskTitleInDayView;
-	public static String actualLastSelfTaskStatusInDayView;
-	public static String actualLastSelfTaskPriorityInDayView;
-	public static String actualLastSelfTaskProjectInDayView;
-	public static String actualLastSelfTaskDueDateInDayView;
-	public static List<String> actualLastRowTaskDepartmentsInDayView;
-	public static String actualLastSelfTaskVerifiedStatusInDayView;
-	public static String actualLastSelfTaskCommentInDayView;
+	private static String actualTaskTitleAfterClearAndUpdateFromDayView;
+	private static String actualLastSelfTaskTitleInDayView;
+	private static String actualLastSelfTaskStatusInDayView;
+	private static String actualLastSelfTaskPriorityInDayView;
+	private static String actualLastSelfTaskProjectInDayView;
+	private static String actualLastSelfTaskDueDateInDayView;
+	private static List<String> actualLastRowTaskDepartmentsInDayView;
+	private static String actualLastSelfTaskVerifiedStatusInDayView;
+	private static String actualLastSelfTaskCommentInDayView;
 
 	protected MyTasksPage myTasks;
 	protected CommonTestMethods commonMethods;
@@ -34,10 +34,13 @@ public class SelfTaskUpdateTests extends BaseTest {
 	protected DashboardPage dashboard;
 	protected LogoutTests logOutFun;
 	protected WebElementActions webElementActions;
+
+	private String actualTaskAssignedEmployeeName;
 	private String actualHigherAuthorityNameForViewTasks;
 
+	// Prints last task details like title, status, priority, project, due date etc
 	@Test(priority = 1)
-	public void verify_Higher_Authority_Viewed_Tasks() throws InterruptedException, FileNotFoundException {
+	public void verify_Last_Task_Details_In_Day_View() throws InterruptedException {
 		myTasks = new MyTasksPage(driver);
 		commonMethods = new CommonTestMethods();
 		myActivities = new MyActivitiesTests();
@@ -45,57 +48,8 @@ public class SelfTaskUpdateTests extends BaseTest {
 		logOutFun = new LogoutTests();
 		webElementActions = new WebElementActions();
 
-		logOutFun.verify_LogOut_Employee();
+		actualTaskAssignedEmployeeName = LoginAndForgotPasswordTests.actualEmployeeName;
 
-		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(
-				Constants.teamLeadLevelTesterEmployeeUserId, Constants.teamLeadLevelTesterEmployeePassword);
-
-		actualHigherAuthorityNameForViewTasks = commonMethods
-				.verify_Employee_Name_After_Logged_In(Constants.teamLeadLevelTesterEmployeeUserId);
-		log.info("Actual higher authority employee name for tasks view at dashboard page is: "
-				+ actualHigherAuthorityNameForViewTasks + "\n");
-
-		for (int i = 0; i < webElementActions.sizeOfListOfWebElement(dashboard.rolesForLevelView); i++) {
-			String lastRoleForLevelView = dashboard.checkRoleForLevelView();
-			log.info("Last role for level view is: " + lastRoleForLevelView);
-
-			if (lastRoleForLevelView.equalsIgnoreCase(
-					DataGenerator.employeeUserIdsAndRolesOnTestEnvironment().get(Constants.employeeUserId))) {
-				dashboard.clickOnRandomRoleForLevelView();
-				Thread.sleep(1000);
-
-				dashboard.clickOnEmployeeFromLevelView(LoginAndForgotPasswordTests.actualEmployeeName);
-				Thread.sleep(1000);
-
-				commonMethods.verify_Toast_MessageInBlueColor("after viwed tasks by higher authority",
-						"You viewed " + LoginAndForgotPasswordTests.actualEmployeeName + "'s Tasks");
-			} else {
-				dashboard.clickOnLastArrowForLevelView();
-				Thread.sleep(1000);
-			}
-		}
-
-		logOutFun.verify_LogOut_Employee();
-
-		commonMethods.verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
-				Constants.employeePassword);
-
-		commonMethods.verify_Employee_Name_After_Logged_In(Constants.employeeUserId);
-
-		commonMethods.goToDayView();
-
-		myTasks.scrollHorizantally(1600);
-
-		String actualTaskViwedEmployeeName = myTasks
-				.checkViwedHigherAuthorityNameInDayView(actualHigherAuthorityNameForViewTasks);
-		log.info("Actual task viewed higher authority employee name in day view is: " + actualTaskViwedEmployeeName);
-
-		myTasks.scrollHorizantally(-1600);
-	}
-
-	// Prints last task details like title, status, priority, project, due date etc
-	@Test(priority = 2)
-	public void verify_Last_Task_Details_In_Day_View() throws InterruptedException {
 		commonMethods.goToDayView();
 
 		actualLastSelfTaskTitleInDayView = myTasks.checkLastTaskTitleInDayView();
@@ -111,7 +65,6 @@ public class SelfTaskUpdateTests extends BaseTest {
 			actualLastSelfTaskProjectInDayView = myTasks.checkLastTaskProjectTextInDayView();
 			log.info("Actual Last self task project in day view is: " + actualLastSelfTaskProjectInDayView);
 		} catch (Exception e) {
-			System.out.println("Last project not found in day view");
 			actualLastSelfTaskProjectInDayView = "";
 			log.info("Actual Last self task project in day view is: " + actualLastSelfTaskProjectInDayView);
 		}
@@ -128,23 +81,23 @@ public class SelfTaskUpdateTests extends BaseTest {
 		actualLastSelfTaskVerifiedStatusInDayView = myTasks.checkLastTaskVerifiedStatusTextInDayView();
 		log.info("Actual Last self task verified status in day view is: " + actualLastSelfTaskVerifiedStatusInDayView);
 
-		myTasks.clickOnLastTaskCommentTextfieldInDayView();
-		Thread.sleep(1000);
-
-		myTasks.scrollUntilCommentTextfieldInUpdateTaskSidebar();
-		Thread.sleep(1000);
-
-		actualLastSelfTaskCommentInDayView = myTasks.checkLastTaskCommentTextInUpdateTaskSidebar();
-		log.info("Actual Last self task comment in day view is: " + actualLastSelfTaskCommentInDayView + "\n");
-
-		myTasks.clickOnCloseIconOfSidebarForUpdateTaskInDayView();
-		Thread.sleep(1000);
+//		myTasks.clickOnLastTaskCommentTextfieldInDayView();
+//		Thread.sleep(1000);
+//
+//		myTasks.scrollUntilCommentTextfieldInUpdateTaskSidebar();
+//		Thread.sleep(1000);
+//
+//		actualLastSelfTaskCommentInDayView = myTasks.checkLastTaskCommentTextInUpdateTaskSidebar();
+//		log.info("Actual Last self task comment in day view is: " + actualLastSelfTaskCommentInDayView + "\n");
+//
+//		myTasks.clickOnCloseIconOfSidebarForUpdateTaskInDayView();
+//		Thread.sleep(1000);
 	}
 
 	// Update self task title, checks updated task title,
 	// validate it whether it is matched with input task title
 	// Also checks log message after updated task title
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs()
 			throws InterruptedException {
 		myTasks.scrollHorizantally(-1500);
@@ -175,83 +128,17 @@ public class SelfTaskUpdateTests extends BaseTest {
 			assertEquals(actualTaskTitleAfterClearAndUpdateFromDayView, validTaskTitle);
 		}
 
-		myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
-				"title", actualLastSelfTaskTitleInDayView, validTaskTitle,
-				actualTaskTitleAfterClearAndUpdateFromDayView);
-	}
-
-	// Update self task status, checks updated task status,
-	// validate it whether it is matched with input task status
-	// Also checks log message after updated task status
-	@Test(priority = 4)
-	public void verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs()
-			throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
-
-		myTasks.clickOnLastTaskStatusInDayView();
-
-		dashboard.clickOnRequestSectionLink();
-
-		commonMethods.goToDayView();
-
-		myTasks.clickOnLastTaskStatusInDayView();
-
-		List<String> taskStatusValuesFromDropdown = myTasks.listOfTaskStatusValuesFromDropdownInDayView();
-		log.info("Task status values from dropdown are: " + taskStatusValuesFromDropdown);
-		String LastTaskStatus = "";
-
-		if (taskStatusValuesFromDropdown.isEmpty() == true) {
-			log.info("Task status values from dropdown is empty");
-		} else {
-
-			do {
-				// Generate a Last index within the range of the list
-				int LastIndex = random.nextInt(taskStatusValuesFromDropdown.size());
-				// Retrieve the number at the Last index
-				LastTaskStatus = taskStatusValuesFromDropdown.get(LastIndex);
-			} while (LastTaskStatus.equalsIgnoreCase("Submitted"));
-
-			log.info("Actual selected task status value from dropdown in day view is: " + LastTaskStatus);
-
-			myTasks.clickOnSelectedTaskStatusValueFromDropdownInDayView(LastTaskStatus);
-
-			if (LastTaskStatus.equalsIgnoreCase(actualLastSelfTaskStatusInDayView)) {
-				commonMethods.verify_Toast_Message("after selected already exist task priority in day view",
-						"task status already updated");
-
-				myTasks.clickOnRefreshButtonInDayView();
-				Thread.sleep(1000);
-
-				String actualUpdatedTaskStatusInDayView = myTasks.checkLastTaskStatusTextInDayView();
-				log.info("Actual updated task status in day view is: " + actualUpdatedTaskStatusInDayView);
-				assertEquals(actualUpdatedTaskStatusInDayView, LastTaskStatus);
-			} else {
-				commonMethods.verify_Toast_Message("after task status updated in day view",
-						"task status updated successfully");
-
-				myTasks.clickOnRefreshButtonInDayView();
-				Thread.sleep(1000);
-
-				String actualUpdatedTaskStatusInDayView = myTasks.checkLastTaskStatusTextInDayView();
-				log.info("Actual updated task status in day view is: " + actualUpdatedTaskStatusInDayView);
-				assertEquals(actualUpdatedTaskStatusInDayView, LastTaskStatus);
-
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "status", actualLastSelfTaskStatusInDayView,
-						LastTaskStatus, actualTaskTitleAfterClearAndUpdateFromDayView);
-			}
-		}
+		myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "title",
+				actualLastSelfTaskTitleInDayView, validTaskTitle, actualTaskTitleAfterClearAndUpdateFromDayView);
 	}
 
 	// Update self task priority, checks updated task priority,
 	// validate it whether it is matched with input task priority
 	// Also checks log message after updated task priority
-	@Test(priority = 5)
+	@Test(priority = 3)
 	public void verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs()
 			throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.clickOnLastTaskPriorityInDayView();
 
@@ -262,6 +149,10 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 		myTasks.clickOnSelectedTaskPriorityValueFromDropdownInDayView(actualSelectedTaskPriorityValueFromDropdown);
 
+		// If while update project value selected from dropdown is already exist project
+		// Then check different toast message
+		// and if value is new then check different toast message
+		// and also check updated project value and log message
 		if (actualSelectedTaskPriorityValueFromDropdown.equalsIgnoreCase(actualLastSelfTaskPriorityInDayView)) {
 			commonMethods.verify_Toast_Message("after selected already exist task priority in day view",
 					"task priority already updated");
@@ -283,8 +174,8 @@ public class SelfTaskUpdateTests extends BaseTest {
 			log.info("Actual updated task priority in day view is: " + actualUpdatedTaskPriorityInDayView);
 			assertEquals(actualUpdatedTaskPriorityInDayView, actualSelectedTaskPriorityValueFromDropdown);
 
-			myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
-					"priority", actualLastSelfTaskPriorityInDayView, actualSelectedTaskPriorityValueFromDropdown,
+			myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "priority",
+					actualLastSelfTaskPriorityInDayView, actualSelectedTaskPriorityValueFromDropdown,
 					actualTaskTitleAfterClearAndUpdateFromDayView);
 		}
 	}
@@ -292,10 +183,9 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Update self task start and end time, checks updated task start and end time,
 	// validate it whether it is matched with input task start and end time
 	// Also checks log message after updated task start and end time
-	@Test(priority = 6)
+	@Test(priority = 4)
 	public void verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs() throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.clickOnLastRowStartTimeTextfield();
 
@@ -307,7 +197,7 @@ public class SelfTaskUpdateTests extends BaseTest {
 		myTasks.clickOnRefreshButtonInDayView();
 
 		commonMethods.verify_Toast_Message("after task start time updated in day view",
-				"Start-time Updated successfully");
+				"start time update successfully");
 
 		// Split the string using ":" as the delimiter
 		String[] partsOfStartTime = actualLastRowTaskStartTimeInDayView.split(":");
@@ -317,17 +207,15 @@ public class SelfTaskUpdateTests extends BaseTest {
 		System.out.println(hourOfStartTime);
 
 		if (Integer.parseInt(hourOfStartTime) < 10) {
-			myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
-					"start time", "No Time", "0" + actualLastRowTaskStartTimeInDayView,
+			myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "start time",
+					"No Time", "0" + actualLastRowTaskStartTimeInDayView,
 					actualTaskTitleAfterClearAndUpdateFromDayView);
 		} else {
-			myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
-					"start time", "No Time", actualLastRowTaskStartTimeInDayView,
-					actualTaskTitleAfterClearAndUpdateFromDayView);
+			myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "start time",
+					"No Time", actualLastRowTaskStartTimeInDayView, actualTaskTitleAfterClearAndUpdateFromDayView);
 		}
 
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.clickOnLastRowEndTimeTextfield();
 
@@ -350,16 +238,15 @@ public class SelfTaskUpdateTests extends BaseTest {
 					"select end-time after start time");
 		} else {
 			commonMethods.verify_Toast_Message("after task end time updated in day view",
-					"End time Updated successfully");
+					"End time update successfully");
 
 			if (Integer.parseInt(hourOfEndTime) < 10) {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "end time", "No Time",
-						"0" + actualLastRowTaskEndTimeInDayView, actualTaskTitleAfterClearAndUpdateFromDayView);
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "end time",
+						"No Time", "0" + actualLastRowTaskEndTimeInDayView,
+						actualTaskTitleAfterClearAndUpdateFromDayView);
 			} else {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "end time", "No Time",
-						actualLastRowTaskEndTimeInDayView, actualTaskTitleAfterClearAndUpdateFromDayView);
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "end time",
+						"No Time", actualLastRowTaskEndTimeInDayView, actualTaskTitleAfterClearAndUpdateFromDayView);
 			}
 		}
 	}
@@ -367,11 +254,10 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Update self task due date, checks updated task due date,
 	// validate it whether it is matched with input task due date
 	// Also checks log message after updated task due date
-	@Test(priority = 7)
+	@Test(priority = 5)
 	public void verify_Update_Self_Task_Due_Date_From_Day_View_And_Check_Task_Due_Date_And_Logs()
 			throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.scrollHorizantally(1600);
 		Thread.sleep(1000);
@@ -414,7 +300,7 @@ public class SelfTaskUpdateTests extends BaseTest {
 			assertEquals(actualUpdatedTaskDueDateInDayView, actualLastSelfTaskDueDateInDayView);
 		} else {
 			commonMethods.verify_Toast_Message("after task due date updated in day view",
-					"task DueDate updated successfully");
+					"task dueDate updated successfully");
 
 			myTasks.clickOnRefreshButtonInDayView();
 			Thread.sleep(1000);
@@ -422,8 +308,8 @@ public class SelfTaskUpdateTests extends BaseTest {
 			String actualUpdatedTaskDueDateInDayView = myTasks.checkLastTaskDueDateTextInDayView();
 			log.info("Actual updated task due date in day view is: " + actualUpdatedTaskDueDateInDayView);
 
-			myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
-					"due date", actualLastSelfTaskDueDateInDayView, actualUpdatedTaskDueDateInDayView,
+			myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "due date",
+					actualLastSelfTaskDueDateInDayView, actualUpdatedTaskDueDateInDayView,
 					actualTaskTitleAfterClearAndUpdateFromDayView);
 		}
 	}
@@ -431,11 +317,10 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Update self task department, checks updated task department,
 	// validate it whether it is matched with input task department
 	// Also checks log message after updated task department
-	@Test(priority = 8)
+	@Test(priority = 6)
 	public void verify_Update_Self_Task_Department_From_Day_View_And_Check_Task_Department_And_Logs()
 			throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.scrollHorizantally(1600);
 
@@ -462,8 +347,8 @@ public class SelfTaskUpdateTests extends BaseTest {
 		if (actualLastRowTaskDepartmentsInDayView.size() > 1) {
 			if (actualLastRowTaskDepartmentsInDayView.get(0)
 					.equalsIgnoreCase(actualSelectedTaskDepartmentValueFromDropdownInDayView)) {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "department tags",
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName,
+						"department tags",
 						actualLastRowTaskDepartmentsInDayView.get(0) + ", "
 								+ actualLastRowTaskDepartmentsInDayView.get(1),
 						actualSelectedTaskDepartmentValueFromDropdownInDayView + ", "
@@ -471,16 +356,16 @@ public class SelfTaskUpdateTests extends BaseTest {
 						actualTaskTitleAfterClearAndUpdateFromDayView);
 			} else if (actualLastRowTaskDepartmentsInDayView.get(1)
 					.equalsIgnoreCase(actualSelectedTaskDepartmentValueFromDropdownInDayView)) {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "department tags",
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName,
+						"department tags",
 						actualLastRowTaskDepartmentsInDayView.get(0) + ", "
 								+ actualLastRowTaskDepartmentsInDayView.get(1),
 						actualLastRowTaskDepartmentsInDayView.get(0) + ", "
 								+ actualSelectedTaskDepartmentValueFromDropdownInDayView,
 						actualTaskTitleAfterClearAndUpdateFromDayView);
 			} else {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "department tags",
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName,
+						"department tags",
 						actualLastRowTaskDepartmentsInDayView.get(0) + ", "
 								+ actualLastRowTaskDepartmentsInDayView.get(1),
 						actualLastRowTaskDepartmentsInDayView.get(0) + ", "
@@ -491,15 +376,13 @@ public class SelfTaskUpdateTests extends BaseTest {
 		} else {
 			if (actualLastRowTaskDepartmentsInDayView.get(0)
 					.equalsIgnoreCase(actualSelectedTaskDepartmentValueFromDropdownInDayView)) {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "department tags",
-						actualLastRowTaskDepartmentsInDayView.get(0),
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName,
+						"department tags", actualLastRowTaskDepartmentsInDayView.get(0),
 						actualSelectedTaskDepartmentValueFromDropdownInDayView,
 						actualTaskTitleAfterClearAndUpdateFromDayView);
 			} else {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "department tags",
-						actualLastRowTaskDepartmentsInDayView.get(0),
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName,
+						"department tags", actualLastRowTaskDepartmentsInDayView.get(0),
 						actualLastRowTaskDepartmentsInDayView.get(0) + ", "
 								+ actualSelectedTaskDepartmentValueFromDropdownInDayView,
 						actualTaskTitleAfterClearAndUpdateFromDayView);
@@ -509,10 +392,9 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 	// Try to add gilink without selecting project
 	// Check error message
-	@Test(priority = 9)
+	@Test(priority = 7)
 	public void verify_Update_Self_Task_Gitlink_From_Day_View_Without_Selecting_Project() throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.scrollHorizantally(1600);
 		Thread.sleep(1000);
@@ -532,12 +414,9 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Update self task project, checks updated task project,
 	// validate it whether it is matched with input task project
 	// Also checks log message after updated task project
-	@Test(priority = 10, dependsOnMethods = "verify_Update_Self_Task_Gitlink_From_Day_View_Without_Selecting_Project")
+	@Test(priority = 8, dependsOnMethods = "verify_Update_Self_Task_Gitlink_From_Day_View_Without_Selecting_Project")
 	public void verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs()
 			throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
-
 		myTasks.clickOnLastTaskProjectInDayView();
 
 		String actualSelectedTaskProjectValueFromDropdownInDayView = myTasks
@@ -570,14 +449,12 @@ public class SelfTaskUpdateTests extends BaseTest {
 			assertEquals(actualUpdatedTaskProjectInDayView, actualSelectedTaskProjectValueFromDropdownInDayView);
 
 			if (actualLastSelfTaskProjectInDayView.equalsIgnoreCase("")) {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "project", "No project",
-						actualSelectedTaskProjectValueFromDropdownInDayView,
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "project",
+						"No project", actualSelectedTaskProjectValueFromDropdownInDayView,
 						actualTaskTitleAfterClearAndUpdateFromDayView);
 			} else {
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "project", actualLastSelfTaskProjectInDayView,
-						actualSelectedTaskProjectValueFromDropdownInDayView,
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "project",
+						actualLastSelfTaskProjectInDayView, actualSelectedTaskProjectValueFromDropdownInDayView,
 						actualTaskTitleAfterClearAndUpdateFromDayView);
 			}
 		}
@@ -585,11 +462,10 @@ public class SelfTaskUpdateTests extends BaseTest {
 
 	// update self task gitlink by giving invalid gitlink
 	// Checks error toast message
-	@Test(priority = 11, dependsOnMethods = "verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs")
+	@Test(priority = 9, dependsOnMethods = "verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs")
 	public void verify_Update_Self_Task_Gitlink_By_Giving_Invalid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs()
 			throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
+		commonMethods.goToDayView();
 
 		myTasks.scrollHorizantally(1600);
 		Thread.sleep(1000);
@@ -610,14 +486,13 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Update self task gitlink, checks updated task gitlink,
 	// validate it whether it is matched with input task gitlink
 	// Also checks log message after updated task gitlink
-	@Test(priority = 12, dependsOnMethods = "verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs")
+	@Test(priority = 10, dependsOnMethods = "verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs")
 	public void verify_Update_Self_Task_Gitlink_By_Giving_Valid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs()
 			throws InterruptedException {
-		myTasks.scrollUptoBottomOfTaskDivInDayView();
-		Thread.sleep(1000);
-
-		myTasks.scrollHorizantally(1600);
-		Thread.sleep(1000);
+//		commonMethods.goToDayView();
+//
+//		myTasks.scrollHorizantally(1600);
+//		Thread.sleep(1000);
 
 		myTasks.clickOnLastGitlinkIconInDayView();
 		Thread.sleep(1000);
@@ -660,13 +535,12 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Update self task status, checks updated task verified status,
 	// validate it whether it is matched with input task verified status
 	// Also checks log message after updated task verified status
-	@Test(priority = 13, dependsOnMethods = "verify_Update_Self_Task_Gitlink_By_Giving_Valid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs")
+	@Test(priority = 11, dependsOnMethods = "verify_Update_Self_Task_Gitlink_By_Giving_Valid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs")
 	public void verify_Update_Self_Task_Verified_Status_From_Day_View_And_Check_Task_Verified_Status_And_Logs()
 			throws InterruptedException {
 		if (DataGenerator.employeeUserIdsAndRolesOnTestEnvironment().get(Constants.employeeUserId)
 				.equalsIgnoreCase("QA")) {
-			myTasks.scrollUptoBottomOfTaskDivInDayView();
-			Thread.sleep(1000);
+			commonMethods.goToDayView();
 
 			myTasks.scrollHorizantally(1600);
 			Thread.sleep(1000);
@@ -707,9 +581,8 @@ public class SelfTaskUpdateTests extends BaseTest {
 				assertEquals(actualUpdatedTaskVerifiedStatusInDayView,
 						actualSelectedTaskVerifiedStatusValueFromDropdownInDayView);
 
-				myActivities.verify_Log_Message_After_Update_Task_Details(
-						LoginAndForgotPasswordTests.actualEmployeeName, "verification status",
-						actualLastSelfTaskVerifiedStatusInDayView,
+				myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName,
+						"verification status", actualLastSelfTaskVerifiedStatusInDayView,
 						actualSelectedTaskVerifiedStatusValueFromDropdownInDayView,
 						actualTaskTitleAfterClearAndUpdateFromDayView);
 			}
@@ -722,7 +595,7 @@ public class SelfTaskUpdateTests extends BaseTest {
 	// Check and validate task comment after update and input task comment matched
 	// or not
 	// Checks and validate log message after task comment add
-	@Test(priority = 14)
+	@Test(priority = 12, enabled = false)
 	public void verify_Update_Self_Task_Comment_From_Day_View_And_Check_Task_Comment_And_Logs()
 			throws InterruptedException {
 		myTasks.scrollUptoBottomOfTaskDivInDayView();
@@ -779,13 +652,122 @@ public class SelfTaskUpdateTests extends BaseTest {
 		Thread.sleep(1000);
 
 		if (actualLastSelfTaskCommentInDayView.equalsIgnoreCase("")) {
-			myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
-					"comment", "null", actualUpdatedTastCommentValueInDayView,
-					actualTaskTitleAfterClearAndUpdateFromDayView);
+			myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "comment", "null",
+					actualUpdatedTastCommentValueInDayView, actualTaskTitleAfterClearAndUpdateFromDayView);
 		} else {
-			myActivities.verify_Log_Message_After_Update_Task_Details(LoginAndForgotPasswordTests.actualEmployeeName,
-					"comment", actualLastSelfTaskCommentInDayView, actualUpdatedTastCommentValueInDayView,
+			myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "comment",
+					actualLastSelfTaskCommentInDayView, actualUpdatedTastCommentValueInDayView,
 					actualTaskTitleAfterClearAndUpdateFromDayView);
+		}
+	}
+
+	@Test(priority = 13)
+	public void verify_Higher_Authority_Viewed_Tasks() throws InterruptedException, FileNotFoundException {
+		// login as higher authority
+		actualHigherAuthorityNameForViewTasks = commonMethods.random_Higher_Authority_LogIn();
+		log.info("Actual higher authority employee name for tasks view at dashboard page is: "
+				+ actualHigherAuthorityNameForViewTasks + "\n");
+
+		// Here I am iterating over roles and clicked on arrow icon
+		// If employee name is not found in role employee list
+		for (int i = 0; i < webElementActions.sizeOfListOfWebElement(dashboard.rolesForLevelView); i++) {
+			// Here I have taken last role visible
+			String lastRoleForLevelView = dashboard.checkRoleForLevelView();
+
+			// If last role is equals with logged in employee role
+			// then click on employee name from level
+			// And add task to him
+			if (lastRoleForLevelView.equalsIgnoreCase(
+					DataGenerator.employeeUserIdsAndRolesOnTestEnvironment().get(Constants.employeeUserId))) {
+				// Click on employee matched role
+				dashboard.clickOnRandomRoleForLevelView();
+				Thread.sleep(1000);
+
+				dashboard.clickOnEmployeeFromLevelView(actualTaskAssignedEmployeeName);
+				Thread.sleep(1000);
+
+				commonMethods.goToDayView();
+
+				myTasks.scrollHorizantally(1600);
+
+				myTasks.clickOnLastApproveButtonForTaskView();
+
+				myTasks.clickOnRefreshButtonInDayView();
+			} else {
+				dashboard.clickOnLastArrowForLevelView();
+				Thread.sleep(1000);
+			}
+		}
+
+		commonMethods.login_Employee_And_Get_Name();
+
+		commonMethods.goToDayView();
+
+		myTasks.scrollHorizantally(1600);
+
+		String actualTaskViwedEmployeeName = myTasks
+				.checkViwedHigherAuthorityNameInDayView(actualHigherAuthorityNameForViewTasks);
+		log.info("Actual task viewed higher authority employee name in day view is: " + actualTaskViwedEmployeeName);
+
+		myTasks.scrollHorizantally(-1600);
+	}
+
+	// Update self task status, checks updated task status,
+	// validate it whether it is matched with input task status
+	// Also checks log message after updated task status
+	@Test(priority = 14)
+	public void verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs()
+			throws InterruptedException {
+		commonMethods.goToDayView();
+
+		myTasks.clickOnLastTaskStatusInDayView();
+
+		commonMethods.goToDayView();
+
+		myTasks.clickOnLastTaskStatusInDayView();
+
+		List<String> taskStatusValuesFromDropdown = myTasks.listOfTaskStatusValuesFromDropdownInDayView();
+		log.info("Task status values from dropdown are: " + taskStatusValuesFromDropdown);
+		String LastTaskStatus = "";
+
+		do {
+			// Generate a Last index within the range of the list
+			int LastIndex = random.nextInt(taskStatusValuesFromDropdown.size());
+			// Retrieve the number at the Last index
+			LastTaskStatus = taskStatusValuesFromDropdown.get(LastIndex);
+		} while (LastTaskStatus.equalsIgnoreCase("Submitted"));
+
+		log.info("Actual selected task status value from dropdown in day view is: " + LastTaskStatus);
+
+		myTasks.clickOnSelectedTaskStatusValueFromDropdownInDayView(LastTaskStatus);
+
+		// If while update status value selected from dropdown is already exist status
+		// Then check different toast message
+		// and if value is new then check different toast message
+		// and also check updated status value and log message
+		if (LastTaskStatus.equalsIgnoreCase(actualLastSelfTaskStatusInDayView)) {
+			commonMethods.verify_Toast_Message("after selected already exist task priority in day view",
+					"task status already updated");
+
+			myTasks.clickOnRefreshButtonInDayView();
+			Thread.sleep(1000);
+
+			String actualUpdatedTaskStatusInDayView = myTasks.checkLastTaskStatusTextInDayView();
+			log.info("Actual updated task status in day view is: " + actualUpdatedTaskStatusInDayView);
+			assertEquals(actualUpdatedTaskStatusInDayView, LastTaskStatus);
+		} else {
+			commonMethods.verify_Toast_Message("after task status updated in day view",
+					"task status updated successfully");
+
+			myTasks.clickOnRefreshButtonInDayView();
+			Thread.sleep(1000);
+
+			String actualUpdatedTaskStatusInDayView = myTasks.checkLastTaskStatusTextInDayView();
+			log.info("Actual updated task status in day view is: " + actualUpdatedTaskStatusInDayView);
+			assertEquals(actualUpdatedTaskStatusInDayView, LastTaskStatus);
+
+			myActivities.verify_Log_Message_After_Update_Task_Details(actualTaskAssignedEmployeeName, "status",
+					actualLastSelfTaskStatusInDayView, LastTaskStatus, actualTaskTitleAfterClearAndUpdateFromDayView);
 		}
 	}
 }

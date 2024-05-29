@@ -22,6 +22,7 @@ import com.github.javafaker.Faker;
 import in.biencaps.erp.utilities.*;
 import io.restassured.RestAssured;
 
+
 public class BaseTest {
 	// This is logger API dependency code. To print messages in seperate file.
 	// So that you can check all execution logs anytime. Logs stores in Logs folder
@@ -31,7 +32,7 @@ public class BaseTest {
 	public static Faker faker;
 	public static Random random;
 	public ExtentSparkReporter sparkReporter;
-	public ExtentReports extent;
+	public static ExtentReports extent;
 	public static ExtentTest logger;
 	public Connection connection;
 
@@ -57,6 +58,8 @@ public class BaseTest {
 			faker = new Faker();
 			random = new Random();
 
+			driver.manage().deleteAllCookies();
+
 			if (Constants.environment.equalsIgnoreCase("test")) {
 				driver.get(Constants.websiteUrlOnTestEnvironemnt);
 			} else {
@@ -73,7 +76,11 @@ public class BaseTest {
 	}
 
 	public void setup_Backend_API() {
-		RestAssured.baseURI = Constants.backendUrl;
+		if (Constants.environment.equalsIgnoreCase("test")) {
+			RestAssured.baseURI = Constants.backendUrlOnTestEnvironment;
+		} else {
+			RestAssured.baseURI = Constants.backendUrlOnDevEnvironment;
+		}
 		log.info("Connected to backend API" + "\n");
 	}
 
@@ -100,8 +107,9 @@ public class BaseTest {
 	}
 
 	@BeforeMethod
-	public void create_Extent_Report_For_Each_Test_Method(Method testMethod) {
-		logger = extent.createTest(testMethod.getName());
+	public void create_Extent_Report_For_Each_Test_Method(ITestResult result) {
+		logger = extent.createTest(
+				"Test Name: " + result.getTestClass().getName() + " - " + result.getMethod().getMethodName());
 	}
 
 	@AfterMethod
@@ -117,6 +125,7 @@ public class BaseTest {
 		} else {
 			logger.log(Status.PASS,
 					MarkupHelper.createLabel(result.getName() + " - Test Case Passed", ExtentColor.GREEN));
+
 		}
 	}
 

@@ -23,7 +23,7 @@ public class MyActivitiesTests extends BaseTest {
 		myTasks = new MyTasksPage(driver);
 
 		myTasks.clickOnGetMyActivitiesButtonInDayView();
-		Thread.sleep(4500);
+		Thread.sleep(2500);
 
 		String actualEmployeeNameAtMyActivitiesInDayView = myTasks
 				.checkFirstEmployeeNameAtMyActivitiesInDayView(employeeName);
@@ -57,7 +57,7 @@ public class MyActivitiesTests extends BaseTest {
 		myTasks = new MyTasksPage(driver);
 
 		myTasks.clickOnGetMyActivitiesButtonInDayView();
-		Thread.sleep(4500);
+		Thread.sleep(2500);
 
 		String actualEmployeeNameAtMyActivitiesInDayView = myTasks
 				.checkFirstEmployeeNameAtMyActivitiesInDayView(employeeName);
@@ -94,7 +94,7 @@ public class MyActivitiesTests extends BaseTest {
 		myTasks = new MyTasksPage(driver);
 
 		myTasks.clickOnGetMyActivitiesButtonInDayView();
-		Thread.sleep(4500);
+		Thread.sleep(2500);
 
 		String actualFirstEmployeeNameAtMyActivitiesInDayView = myTasks
 				.checkFirstEmployeeNameAtMyActivitiesInDayView(employeeName);

@@ -35,9 +35,9 @@ public class DataProviders {
 	@DataProvider(name = "TestDataForUpdateProfile")
 	public Object[][] testDataForUpdateProfile() {
 		String validPrimaryMobileNumber = "9834530434";
-		String invalidPrimaryMobileNumber = DataGenerator.generateRandomLessThan10DigitMobileNumber(1, 9);
+		String invalidPrimaryMobileNumber = DataGenerator.generateRandomInvalidDigitMobileNumber(1, 9);
 		String validSecondaryMobileNumber = "9850708611";
-		String invalidSecondaryMobileNumber = DataGenerator.generateRandomLessThan10DigitMobileNumber(1, 9);
+		String invalidSecondaryMobileNumber = DataGenerator.generateRandomInvalidDigitMobileNumber(1, 9);
 		List<String> invalidPersonalEmails = Arrays.asList("prathmeshdhasade", "prathmeshdhasade99",
 				"prathmeshdhasade99@@gmail.com", "prathmeshdhasade@gmail");
 		int randomIndex = random.nextInt(invalidPersonalEmails.size());

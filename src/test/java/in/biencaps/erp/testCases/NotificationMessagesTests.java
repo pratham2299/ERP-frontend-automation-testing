@@ -48,7 +48,7 @@ public class NotificationMessagesTests {
 		}
 
 		webElementActions.refreshThePage();
-		Thread.sleep(3000);
+
 		log.info("Notification count after marked as read is: " + notificationCount);
 
 		notificationCountOfLoggedInEmployee = dashboard.checkNotificationCount();

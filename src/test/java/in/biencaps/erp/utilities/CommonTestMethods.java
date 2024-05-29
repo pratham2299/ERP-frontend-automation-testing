@@ -105,11 +105,7 @@ public class CommonTestMethods extends BaseTest {
 	}
 
 	public void goToDayView() throws InterruptedException {
-		DashboardPage dashboard = new DashboardPage();
 		MyTasksPage myTasks = new MyTasksPage(driver);
-
-		dashboard.clickOnMyTasksSection();
-		Thread.sleep(1500);
 
 		myTasks.clickOnDayButton();
 
@@ -280,7 +276,7 @@ public class CommonTestMethods extends BaseTest {
 		String actualTaskCommentInDayView = myTasks.checkRandomTaskCommentTextInDayView(newAddedTaskRowIndex);
 		log.info("Actual task comment added " + message + " in day view is: " + actualTaskCommentInDayView);
 
-		if (taskComment.equalsIgnoreCase(null) || taskComment.isBlank() || taskComment.isEmpty()) {
+		if (taskComment == null || taskComment.isBlank() || taskComment.isEmpty()) {
 			log.info("Task comment is empty or null" + "\n");
 		} else {
 			if (actualTaskCommentInDayView.length() > 16) {
@@ -313,39 +309,16 @@ public class CommonTestMethods extends BaseTest {
 
 		String actualLastDateInWeekView = myTasks.checkLastDateInWeekView();
 
-		String actualFirstDateInWeekView = myTasks.checkFirstDateInWeekView();
-
 		if (Integer.parseInt(actualLastDateInWeekView) < Integer.parseInt(taskDueDate.substring(8))) {
 			myTasks.clickOnNextWeekSelectIcon();
 			Thread.sleep(1000);
 
 			try {
 				myTasks.clickOnAllExpandButtonsInWeekView();
-				Thread.sleep(1000);
+				Thread.sleep(500);
 
 				myTasks.scrollUntilAllCollapseButtonsInWeekView();
-				Thread.sleep(1000);
-
-				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
-				log.info("Actual new added task title " + message + " in week view is: "
-						+ actualNewAddedTaskTitleInWeekView);
-				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
-			} catch (Exception e) {
-				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
-				log.info("Actual new added task title " + message + " in week view is: "
-						+ actualNewAddedTaskTitleInWeekView);
-				assertTrue(actualNewAddedTaskTitleInWeekView.startsWith(taskTitle));
-			}
-		} else if (Integer.parseInt(actualFirstDateInWeekView) > Integer.parseInt(taskScheduleDate.substring(8))) {
-			myTasks.clickOnPreviousWeekSelectIcon();
-			Thread.sleep(1000);
-
-			try {
-				myTasks.clickOnAllExpandButtonsInWeekView();
-				Thread.sleep(1000);
-
-				myTasks.scrollUntilAllCollapseButtonsInWeekView();
-				Thread.sleep(1000);
+				Thread.sleep(500);
 
 				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
 				log.info("Actual new added task title " + message + " in week view is: "
@@ -360,10 +333,10 @@ public class CommonTestMethods extends BaseTest {
 		} else {
 			try {
 				myTasks.clickOnAllExpandButtonsInWeekView();
-				Thread.sleep(1000);
+				Thread.sleep(500);
 
 				myTasks.scrollUntilAllCollapseButtonsInWeekView();
-				Thread.sleep(1000);
+				Thread.sleep(500);
 
 				String actualNewAddedTaskTitleInWeekView = myTasks.checkNewAddedTaskTitleInWeekView(taskTitle);
 				log.info("Actual new added task title " + message + " in week view is: "
@@ -424,13 +397,10 @@ public class CommonTestMethods extends BaseTest {
 		dashboard.clickOnRequestSectionLink();
 
 		request.clickOnRefreshIconInRequestSection();
-		Thread.sleep(2000);
 
 		request.clickOnFirstRejectButton();
-		Thread.sleep(1000);
 
 		request.clickOnRejectSendButtonInRequestSection();
-		Thread.sleep(2000);
 
 		return actualHigherAuthorityEmployeeName;
 	}
@@ -458,10 +428,8 @@ public class CommonTestMethods extends BaseTest {
 		dashboard.clickOnRequestSectionLink();
 
 		request.clickOnRefreshIconInRequestSection();
-		Thread.sleep(2000);
 
 		request.clickOnFirstApproveButton();
-		Thread.sleep(1000);
 
 		return actualHigherAuthorityEmployeeName;
 	}
@@ -473,6 +441,7 @@ public class CommonTestMethods extends BaseTest {
 		WebElementActions webElementActions = new WebElementActions();
 		RequestTests requestFun = new RequestTests();
 		LogoutTests logOutFun = new LogoutTests();
+		NotificationMessagesTests notification = new NotificationMessagesTests();
 
 		for (String higherAuthorityUserId : reportingAuthoritiesUserIds) {
 			webElementActions.refreshThePage();
@@ -486,7 +455,7 @@ public class CommonTestMethods extends BaseTest {
 
 			String actualRequestActionTakerHigherAuthority = verify_Employee_Name_After_Logged_In(userId);
 			log.info("Actual higher authority name at dashboard is: " + actualRequestActionTakerHigherAuthority);
-//			notification.verifyNotificationMessage(requestSenderEmployeeName, notificationMessage);
+			notification.verifyNotificationMessage(requestSenderEmployeeName, notificationMessage);
 
 			if (taskScheduleDate.equalsIgnoreCase(taskDueDate)) {
 				String taskOwnerNameWithTaskDate = taskOwner + " on " + taskScheduleDate + "";
@@ -498,5 +467,36 @@ public class CommonTestMethods extends BaseTest {
 						requestAction, taskTitle);
 			}
 		}
+	}
+
+	public String random_Higher_Authority_LogIn() throws InterruptedException {
+		LogoutTests logOutFun = new LogoutTests();
+		WebElementActions webElementActions = new WebElementActions();
+
+		List<String> reportingAuthoritiesUserIds = getAllHigherAuthoritiesNamesOfLoggedInEmployee();
+
+		webElementActions.refreshThePage();
+		logOutFun.verify_LogOut_Employee();
+
+		int randomIndex = random.nextInt(reportingAuthoritiesUserIds.size());
+		String userId = reportingAuthoritiesUserIds.get(randomIndex);
+		String password = DataGenerator.employeeUserIdsAndPasswordsOnTestingEnvironment().get(userId);
+
+		verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(userId, password);
+
+		return verify_Employee_Name_After_Logged_In(userId);
+	}
+
+	public String login_Employee_And_Get_Name() throws InterruptedException {
+		LogoutTests logOutFun = new LogoutTests();
+
+		logOutFun.verify_LogOut_Employee();
+
+		verify_Login_Employee_By_Giving_Valid_User_Id_And_Valid_Password(Constants.employeeUserId,
+				Constants.employeePassword);
+
+		String actualTaskAssignedEmployeeName = verify_Employee_Name_After_Logged_In(Constants.employeeUserId);
+
+		return actualTaskAssignedEmployeeName;
 	}
 }

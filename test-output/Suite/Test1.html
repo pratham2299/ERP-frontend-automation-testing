@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>37/9/3</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 17 16:32:18 IST 2024</td>
+<td>Started on:</td><td>Wed May 29 16:11:13 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>209 seconds (209895 ms)</td>
+<tr><td>Total time:</td><td>445 seconds (445833 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,540 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_New_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task()'><b>verify_New_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:54)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(CommonTestMethods.java:458)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_New_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task(SelfTaskSubmittedTests.java:229)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781393245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1781393245'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:54)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(CommonTestMethods.java:458)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_New_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task(SelfTaskSubmittedTests.java:229)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>17</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Self_Task_Submitted_Again__In_Day_View()'><b>verify_Self_Task_Submitted_Again__In_Day_View</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[normalize-space()=&apos;Day&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:88)
+	at in.biencaps.erp.pages.MyTasksPage.clickOnDayButton(MyTasksPage.java:341)
+	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:110)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Self_Task_Submitted_Again__In_Day_View(SelfTaskSubmittedTests.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901450201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901450201'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[normalize-space()=&apos;Day&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.clickOnMethod(WebElementActions.java:88)
+	at in.biencaps.erp.pages.MyTasksPage.clickOnDayButton(MyTasksPage.java:341)
+	at in.biencaps.erp.utilities.CommonTestMethods.goToDayView(CommonTestMethods.java:110)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Self_Task_Submitted_Again__In_Day_View(SelfTaskSubmittedTests.java:172)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify__New_Task_Submitted_Request_In_My_Request_Section()'><b>verify__New_Task_Submitted_Request_In_My_Request_Section</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>java.lang.AssertionError: expected [Prathamesh Dhasade on 2024-05-29 to 2024-05-30] but found [Sachin Patil on 2024-05-23]
+	at in.biencaps.erp.testCases.RequestTests.verify_Request_In_My_Requests_Card(RequestTests.java:103)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify__New_Task_Submitted_Request_In_My_Request_Section(SelfTaskSubmittedTests.java:216)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace339130116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace339130116'><pre>java.lang.AssertionError: expected [Prathamesh Dhasade on 2024-05-29 to 2024-05-30] but found [Sachin Patil on 2024-05-23]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at in.biencaps.erp.testCases.RequestTests.verify_Request_In_My_Requests_Card(RequestTests.java:103)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify__New_Task_Submitted_Request_In_My_Request_Section(SelfTaskSubmittedTests.java:216)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_In_Week_View()'><b>verify_Added_Task_From_Week_View_Sidebar_In_Week_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@title=&apos;The Torment of Others&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.MyTasksPage.checkNewAddedTaskTitleInWeekView(MyTasksPage.java:619)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Added_Task_In_Week_View(CommonTestMethods.java:328)
+	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_In_Week_View(AddSelfTaskAndCheckInDayViewTests.java:923)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace397672119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace397672119'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@title=&apos;The Torment of Others&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.MyTasksPage.checkNewAddedTaskTitleInWeekView(MyTasksPage.java:619)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Added_Task_In_Week_View(CommonTestMethods.java:328)
+	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_In_Week_View(AddSelfTaskAndCheckInDayViewTests.java:923)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side()'><b>verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:24)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side(SelfTaskSubmittedTests.java:246)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1207421827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1207421827'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:24)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side(SelfTaskSubmittedTests.java:246)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task()'><b>verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:54)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(CommonTestMethods.java:458)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task(SelfTaskSubmittedTests.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1225524634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225524634'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:54)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority(CommonTestMethods.java:458)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task(SelfTaskSubmittedTests.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>17</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View()'><b>verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class=&apos;taskTileDivContainer&apos;]//input[@type=&apos;text&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForAllElementsVisibility(WebElementActions.java:27)
+	at in.biencaps.erp.utilities.WebElementActions.getValuesOfWebelements(WebElementActions.java:196)
+	at in.biencaps.erp.pages.MyTasksPage.checkNewAddedTaskTitleRowIndexInDayView(MyTasksPage.java:441)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Added_Task_Check_In_Day_View(CommonTestMethods.java:228)
+	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View(AddSelfTaskAndCheckInDayViewTests.java:399)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1449647504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1449647504'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class=&apos;taskTileDivContainer&apos;]//input[@type=&apos;text&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForAllElementsVisibility(WebElementActions.java:27)
+	at in.biencaps.erp.utilities.WebElementActions.getValuesOfWebelements(WebElementActions.java:196)
+	at in.biencaps.erp.pages.MyTasksPage.checkNewAddedTaskTitleRowIndexInDayView(MyTasksPage.java:441)
+	at in.biencaps.erp.utilities.CommonTestMethods.verify_Added_Task_Check_In_Day_View(CommonTestMethods.java:228)
+	at in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View(AddSelfTaskAndCheckInDayViewTests.java:399)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Task_Request_In_My_Request_Section_After_Rejected_Submit_Task_Request()'><b>verify_Task_Request_In_My_Request_Section_After_Rejected_Submit_Task_Request</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>java.lang.AssertionError: expected [Prathamesh Dhasade on 2024-05-29 to 2024-05-30] but found [Sachin Patil on 2024-05-23]
+	at in.biencaps.erp.testCases.RequestTests.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category(RequestTests.java:167)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Task_Request_In_My_Request_Section_After_Rejected_Submit_Task_Request(SelfTaskSubmittedTests.java:164)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1749277999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1749277999'><pre>java.lang.AssertionError: expected [Prathamesh Dhasade on 2024-05-29 to 2024-05-30] but found [Sachin Patil on 2024-05-23]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at in.biencaps.erp.testCases.RequestTests.verify_Task_Request_In_My_Request_Section_By_Filtering_Request_Category(RequestTests.java:167)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Task_Request_In_My_Request_Section_After_Rejected_Submit_Task_Request(SelfTaskSubmittedTests.java:164)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side()'><b>verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:24)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side(SelfTaskSubmittedTests.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace321762211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace321762211'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;notification-count&apos;] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65235/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e501b6cab844a22ae59b1bc85dccb1bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at in.biencaps.erp.utilities.WebElementActions.waitForElementVisibility(WebElementActions.java:23)
+	at in.biencaps.erp.utilities.WebElementActions.getTextMethod(WebElementActions.java:162)
+	at in.biencaps.erp.pages.DashboardPage.checkNotificationCount(DashboardPage.java:94)
+	at in.biencaps.erp.testCases.NotificationMessagesTests.verifyNotificationMessage(NotificationMessagesTests.java:24)
+	at in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side(SelfTaskSubmittedTests.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,120 +610,289 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message()'><b>verify_Assigned_Task_Details_In_Day_View_And_Week_View_And_Log_Message</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs()'><b>verify_Update_Self_Task_Time_From_Day_View_And_Check_Task_Time_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
 <td></td>
-<td>21</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>22</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.acceptTaskTitleChangeRequestByHigherAuthority()'><b>acceptTaskTitleChangeRequestByHigherAuthority</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_New_Task_From_Day_View_At_Current_Date()'><b>verify_Add_New_Task_From_Day_View_At_Current_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
 <td></td>
 <td>6</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: Thimphu, nsqyvp0ci09n0</td>
-<td></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@13f17eb4</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View()'><b>verify_Task_Added_From_Level_View_By_Higher_Authority_In_Employee_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
-<td></td>
-<td>9</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side()'><b>verify_Notification_Message_Of_Request_Accepted_By_Higher_Authority_At_Employee_Side</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
-<td></td>
-<td>5</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
 <tr>
 <td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Employee_Name_After_Logged_In()'><b>verify_Employee_Name_After_Logged_In</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests</td>
 <td></td>
 <td>0</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@13f17eb4</td></tr>
+<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@3542162a</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Due_Date_From_Day_View_And_Check_Task_Due_Date_And_Logs()'><b>verify_Update_Self_Task_Due_Date_From_Day_View_And_Check_Task_Due_Date_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
+<td></td>
+<td>17</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Task_Status_And_Log_Message_In_Day_View_After_Task_Submitted_Request_Rejected_By_Higher_Authority()'><b>verify_Task_Status_And_Log_Message_In_Day_View_After_Task_Submitted_Request_Rejected_By_Higher_Authority</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td></td>
+<td>5</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date()'><b>verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_New_Task_Add_From_Month_View_At_Current_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>8</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same()'><b>verify_Add_Roll_Over_Task_At_Past_Date_Which_Start_And_End_Date_Is_Same</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>6</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Verified_Status_From_Day_View_And_Check_Task_Verified_Status_And_Logs()'><b>verify_Update_Self_Task_Verified_Status_From_Day_View_And_Check_Task_Verified_Status_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
+<td></td>
+<td>0</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment()'><b>verify_Add_Task_From_Week_View_Sidebar_By_Giving_Only_Title_Date_And_Comment</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>9</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Sidebar_Without_Entering_Task_Title()'><b>verify_Add_Task_From_Sidebar_Without_Entering_Task_Title</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>4</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: Taipei, 7jgg58g2mz</td>
+<td></td>
+<td>2</td>
+<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@3542162a</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View()'><b>verify_Added_Task_From_Month_View_At_Current_Date_Check_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>3</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar()'><b>verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Week_View_Sidebar</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>13</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: Taipei, Pass@123</td>
+<td></td>
+<td>3</td>
+<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@3542162a</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Gitlink_By_Giving_Valid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs()'><b>verify_Update_Self_Task_Gitlink_By_Giving_Valid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
+<td></td>
+<td>5</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Higher_Authority_Viewed_Tasks()'><b>verify_Higher_Authority_Viewed_Tasks</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
+<td></td>
+<td>20</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Month_View_At_Current_Date()'><b>verify_Add_Task_From_Month_View_At_Current_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>7</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs()'><b>verify_Update_Self_Task_Priority_From_Day_View_And_Check_Task_Priority_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
+<td></td>
+<td>15</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Department_From_Day_View_And_Check_Task_Department_And_Logs()'><b>verify_Update_Self_Task_Department_From_Day_View_And_Check_Task_Department_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
+<td></td>
+<td>15</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar()'><b>verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Adding_Another_Task_From_Day_View_Sidebar</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>12</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_Before_Add_New_Task()'><b>verify_Total_Tasks_Count_Before_Add_New_Task</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>3</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Gitlink_By_Giving_Invalid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs()'><b>verify_Update_Self_Task_Gitlink_By_Giving_Invalid_Gitlink_From_Day_View_And_Check_Task_Gitlink_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
+<td></td>
+<td>7</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date()'><b>verify_Add_Task_From_Day_View_Sidebar_With_Start_Date_As_Current_Date_And_Due_Date_As_Future_Date</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>8</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View()'><b>verify_Added_Task_From_Week_View_Sidebar_Check_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td></td>
+<td>10</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
 <tr>
 <td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: INC012, Pass@123</td>
 <td></td>
 <td>2</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@13f17eb4</td></tr>
+<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@3542162a</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.rejectTaskTitleChangeRequestByHigherAuthority()'><b>rejectTaskTitleChangeRequestByHigherAuthority</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Task_Status_In_Day_View_After_Task_Submitted_Request_Accepted_By_Higher_Authority()'><b>verify_Task_Status_In_Day_View_After_Task_Submitted_Request_Accepted_By_Higher_Authority</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
 <td></td>
-<td>8</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>5</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Task_Request_In_My_Request_Section_After_Rejected_Task_Title_Change_Request()'><b>verify_Task_Request_In_My_Request_Section_After_Rejected_Task_Title_Change_Request</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Task_Submitted_Request_In_My_Request_Section()'><b>verify_Task_Submitted_Request_In_My_Request_Section</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
 <td></td>
-<td>9</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>6</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: Thimphu, Pass@123</td>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs()'><b>verify_Update_Self_Task_Title_From_Day_View_And_Check_Task_Title_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
 <td></td>
-<td>2</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@13f17eb4</td></tr>
+<td>15</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Again_Change()'><b>verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Again_Change</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Last_Task_Details_In_Day_View()'><b>verify_Last_Task_Details_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
 <td></td>
-<td>16</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>10</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assign_Task_Title_Update_And_Check_Request_In_My_Request_Card()'><b>verify_Assign_Task_Title_Update_And_Check_Request_In_My_Request_Card</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
-<td></td>
-<td>11</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assign_Task_From_Level()'><b>verify_Assign_Task_From_Level</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View()'><b>verify_Total_Tasks_Count_And_Log_Message_In_Day_View_After_Added_Another_Task_From_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
 <td></td>
 <td>12</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Task_Request_In_My_Request_Section_After_Accepted_Task_Title_Change_Request()'><b>verify_Task_Request_In_My_Request_Section_After_Accepted_Task_Title_Change_Request</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs()'><b>verify_Update_Self_Task_Status_From_Day_View_And_Check_Task_Status_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
 <td></td>
-<td>9</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>18</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Change()'><b>verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_Of_Task_Title_Change</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: INC012, 7jgg58g2mz</td>
 <td></td>
-<td>16</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
-<tr>
-<td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Login_Employee_With_Valid_And_Invalid_Credentails()'><b>verify_Login_Employee_With_Valid_And_Invalid_Credentails</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests<br>Parameters: INC012, nsqyvp0ci09n0</td>
-<td></td>
-<td>1</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@13f17eb4</td></tr>
+<td>2</td>
+<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@3542162a</td></tr>
 <tr>
 <td title='in.biencaps.erp.testCases.LoginAndForgotPasswordTests.verify_Forgot_Password_Without_Giving_UserId()'><b>verify_Forgot_Password_Without_Giving_UserId</b><br>Test class: in.biencaps.erp.testCases.LoginAndForgotPasswordTests</td>
 <td></td>
 <td>0</td>
-<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@13f17eb4</td></tr>
+<td>in.biencaps.erp.testCases.LoginAndForgotPasswordTests@3542162a</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Last_Task_Details_In_Day_View()'><b>verify_Last_Task_Details_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs()'><b>verify_Update_Self_Task_Project_From_Day_View_And_Check_Task_Project_And_Logs</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
 <td></td>
-<td>5</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>12</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Log_Message_After_Task_Title_Change_Request_Rejected()'><b>verify_Log_Message_After_Task_Title_Change_Request_Rejected</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskUpdateTests.verify_Update_Self_Task_Gitlink_From_Day_View_Without_Selecting_Project()'><b>verify_Update_Self_Task_Gitlink_From_Day_View_Without_Selecting_Project</b><br>Test class: in.biencaps.erp.testCases.SelfTaskUpdateTests</td>
 <td></td>
-<td>11</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>4</td>
+<td>in.biencaps.erp.testCases.SelfTaskUpdateTests@655f7ea</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side()'><b>verify_Notification_After_Assigned_Task_From_Higher_Authority_At_Lower_Level_Employee_Side</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Self_Task_Submitted_In_Day_View()'><b>verify_Self_Task_Submitted_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
 <td></td>
-<td>19</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>15</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Assign_Task_Title_Again_Update_And_Check_Request_In_My_Request_Card()'><b>verify_Assign_Task_Title_Again_Update_And_Check_Request_In_My_Request_Card</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View()'><b>verify_Added_Task_From_Day_View_Sidebar_Check_In_Each_Day_Until_Future_Date_In_Day_View</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
 <td></td>
-<td>13</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td>7</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side()'><b>verify_Notification_Message_Of_Request_Rejected_By_Higher_Authority_At_Employee_Side</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
-<td></td>
-<td>6</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td title='in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar()'><b>verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar</b><br>Test class: in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests</td>
+<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd depends on not successfully finished methods 
+[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1845411114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1845411114'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Total_Tasks_Count_And_Log_Messages_In_Day_View_After_Added_Another_Task_From_Month_View_Sidebar() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd depends on not successfully finished methods 
+[in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests.verify_Added_Roll_Over_Task_In_Each_Day_From_Start_Date_Until_Current_Day_In_Day_View() on instance in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.biencaps.erp.testCases.AddSelfTaskAndCheckInDayViewTests@1c6804cd</td></tr>
 <tr>
-<td title='in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests.verify_Log_Message_After_Task_Title_Change_Request_Accepted()'><b>verify_Log_Message_After_Task_Title_Change_Request_Accepted</b><br>Test class: in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests</td>
-<td></td>
-<td>13</td>
-<td>in.biencaps.erp.testCases.AddUpdateAssignTaskAndCheckAtEmployeeSideTests@bff34c6</td></tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.reject_Task_Title_Change_Request_By_Higher_Authority()'><b>reject_Task_Title_Change_Request_By_Higher_Authority</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.SelfTaskSubmittedTests.reject_Task_Title_Change_Request_By_Higher_Authority() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be depends on not successfully finished methods 
+[in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1612388642", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1612388642'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.SelfTaskSubmittedTests.reject_Task_Title_Change_Request_By_Higher_Authority() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be depends on not successfully finished methods 
+[in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
+<tr>
+<td title='in.biencaps.erp.testCases.SelfTaskSubmittedTests.accept_Task_Title_Change_Request_By_Higher_Authority()'><b>accept_Task_Title_Change_Request_By_Higher_Authority</b><br>Test class: in.biencaps.erp.testCases.SelfTaskSubmittedTests</td>
+<td><div><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.SelfTaskSubmittedTests.accept_Task_Title_Change_Request_By_Higher_Authority() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be depends on not successfully finished methods 
+[in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_New_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855534706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855534706'><pre>java.lang.Throwable: Method in.biencaps.erp.testCases.SelfTaskSubmittedTests.accept_Task_Title_Change_Request_By_Higher_Authority() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be depends on not successfully finished methods 
+[in.biencaps.erp.testCases.SelfTaskSubmittedTests.verify_New_Notification_Message_And_Request_Of_Employee_At_All_Higher_Authority_of_Submit_Task() on instance in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.biencaps.erp.testCases.SelfTaskSubmittedTests@549949be</td></tr>
 </table><p>
 </body>
 </html>
